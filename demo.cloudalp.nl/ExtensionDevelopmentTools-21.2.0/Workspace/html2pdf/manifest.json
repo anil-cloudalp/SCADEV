@@ -1,0 +1,107 @@
+{
+    "name": "html2pdf",
+    "fantasyName": "html2pdf",
+    "vendor": "Acme",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=20.1.0",
+        "SCA": ">=20.1.0"
+    },
+    "description": "html2pdf",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/html2pdf.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/html2pdf/Configuration/html2pdf.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/html2pdf/Sass/_html2pdf-html2pdf.scss",
+            "myaccount": "Modules/html2pdf/Sass/_html2pdf-html2pdf.scss",
+            "checkout": "Modules/html2pdf/Sass/_html2pdf-html2pdf.scss"
+        },
+        "files": [
+            "Modules/html2pdf/Sass/_html2pdf-html2pdf.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/html2pdf/Templates/acme_html2pdf_html2pdf.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/html2pdf/Templates/acme_html2pdf_html2pdf.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/html2pdf/Templates/acme_html2pdf_html2pdf.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.js",
+            "myaccount": "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.js",
+            "checkout": "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.js",
+                    "Modules/html2pdf/JavaScript/html2pdf.View.js",
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.Model.js",
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.js",
+                    "Modules/html2pdf/JavaScript/html2pdf.View.js",
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.Model.js",
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.js",
+                    "Modules/html2pdf/JavaScript/html2pdf.View.js",
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.Model.js",
+                    "Modules/html2pdf/JavaScript/Acme.html2pdf.html2pdf.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/html2pdf/SuiteScript/Acme.html2pdf.html2pdf.js",
+        "files": [
+            "Modules/html2pdf/SuiteScript/Acme.html2pdf.html2pdf.js",
+            "Modules/html2pdf/SuiteScript/html2pdf.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\html2pdf",
+    "suitescript2": {
+        "files": [
+            "Modules/html2pdf/SuiteScript2/html2pdf.Service.ss"
+        ]
+    }
+}

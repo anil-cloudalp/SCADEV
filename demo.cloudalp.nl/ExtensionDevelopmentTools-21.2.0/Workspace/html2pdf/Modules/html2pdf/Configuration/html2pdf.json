@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "html2pdf.config": {
+            "group": "extensions",
+            "subtab": "html2pdf_subtab",
+            "type": "string",
+            "title": "html2pdf_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

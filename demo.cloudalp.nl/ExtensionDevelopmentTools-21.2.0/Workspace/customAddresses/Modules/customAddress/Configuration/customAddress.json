@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": { 
+        "customAddress.config": {
+            "group": "extensions",
+            "subtab": "customAddress_subtab",
+            "type": "string",
+            "title": "Stop default shipping / billing Process",
+            "description": "Stop the default Billing / Shipping Process in the checkout",
+            "enum": [
+                "Shipping",
+                "Billing",
+                "Both"
+            ],
+            "default": "Both"
+        }
+    }
+}
+
+
+   
