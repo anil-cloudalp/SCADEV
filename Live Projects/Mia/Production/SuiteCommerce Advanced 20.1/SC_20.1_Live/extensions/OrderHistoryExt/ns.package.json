@@ -1,0 +1,20 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+		"ssp-libraries": [
+            "SuiteScript/*.js"
+        ]
+    },
+    "overrides":
+ {
+		"Advanced/OrderHistory/JavaScript/OrderHistory.ts": "JavaScript/OrderHistory.ts",
+		"Advanced/OrderHistory/JavaScript/OrderHistory.Collection.ts": "JavaScript/OrderHistory.Collection.ts",
+		"Advanced/OrderHistory/JavaScript/OrderHistory.List.View.ts": "JavaScript/OrderHistory.List.View.ts",
+		"Advanced/OrderHistory/JavaScript/OrderHistory.Details.View.ts": "JavaScript/OrderHistory.Details.View.ts",
+		"Advanced/OrderHistory/JavaScript/OrderHistory.Packages.View.ts": "JavaScript/OrderHistory.Packages.View.ts",
+		"Advanced/OrderHistory/JavaScript/OrderHistory.Summary.View.ts": "JavaScript/OrderHistory.Summary.View.ts",
+		"Advanced/OrderHistory/JavaScript/OrderHistory.Item.Actions.View.ts": "JavaScript/OrderHistory.Item.Actions.View.ts"
+ }
+}

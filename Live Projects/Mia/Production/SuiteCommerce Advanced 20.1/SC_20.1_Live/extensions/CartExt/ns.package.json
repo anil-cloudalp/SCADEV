@@ -1,0 +1,14 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ]
+
+    },
+    "overrides":
+ {
+		"Commons/Cart/JavaScript/Cart.Detailed.View.ts": "JavaScript/Cart.Detailed.View.ts",
+		"Commons/Cart/JavaScript/Cart.QuickAddToCart.View.ts": "JavaScript/Cart.QuickAddToCart.View.ts",
+		"Commons/Cart/JavaScript/Cart.Confirmation.View.ts": "JavaScript/Cart.Confirmation.View.ts"
+ }
+}

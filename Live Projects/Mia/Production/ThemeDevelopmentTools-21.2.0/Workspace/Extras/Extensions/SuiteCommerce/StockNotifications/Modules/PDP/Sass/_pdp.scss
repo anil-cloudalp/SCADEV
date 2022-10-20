@@ -1,0 +1,18 @@
+.stocknotifications-placeholder {
+  position: relative;
+}
+.stocknotifications-show-form-button {
+  @extend .button-secondary;
+  @extend .button-medium;
+}
+.stocknotifications-form-wrapper {
+  padding: $sc-padding-lv3;
+}
+
+.stock-notifications-accordion {
+  margin-top: $sc-margin-lv2;
+}
+
+.stocknotifications-subscribing-item {
+  padding-bottom: $sc-padding-lv2;
+}

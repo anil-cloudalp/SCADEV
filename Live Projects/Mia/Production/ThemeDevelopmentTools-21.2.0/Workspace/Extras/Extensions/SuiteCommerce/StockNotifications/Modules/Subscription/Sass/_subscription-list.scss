@@ -1,0 +1,136 @@
+
+.stocknotifications-header{
+	@include clearfix();
+	border-top: 1px solid $sc-color-theme-border;
+	border-bottom: 1px solid $sc-color-theme-border;
+	padding-top: $sc-padding-base * 3;
+	padding-bottom: $sc-padding-base * 3;
+}
+.stocknotifications-title{
+	float: left;
+	margin-bottom: $sc-margin-base * 2;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 0;
+		line-height: 45px;
+		height: 45px;
+	}
+}
+
+.stocknotifications-details-wrapper{
+	border-bottom: 1px solid $sc-color-theme-border;
+}
+
+.stocknotifications-details-wrapper:hover{
+	background-color: $sc-color-theme-100;
+}
+
+.stocknotifications-details-main {
+	@extend .table-flex-td-first;
+  padding-bottom: $sc-padding-lv3;
+  padding-top: $sc-padding-lv3;
+	@media (min-width: $screen-md-min){
+		width: 45%;
+	}
+}
+
+.stocknotifications-actions-cell{
+  text-align: right;
+  &.mobile{
+    @media (min-width: $screen-md-min){
+      display: none;
+      margin:auto;
+    }
+  }
+  &.desktop{
+    @media (max-width: $screen-md-min){
+      display: none;
+      margin:auto;
+    }
+  }
+}
+
+.stock-notifications-group-arrow{
+  display: inline-block;
+  cursor: pointer;
+  float: initial;
+  margin-left: $sc-margin-base * 5;
+  transform: rotate(0deg);
+  transition: transform 300ms ease;
+}
+
+.stocknotifications-name-container{
+  @extend .small-title-navigable;
+  position: relative;
+  display: block;
+  padding-right: 20px;
+  .stock-notifications-group-arrow{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -10px 0 0 0;
+  }
+}
+
+.stocknotifications-item-name{
+	@extend .small-title-navigable;
+}
+
+.stocknotifications-details{
+  width: 100%;
+}
+
+.stocknotifications-table-body{
+  vertical-align: middle;
+  td,th {
+    vertical-align: middle;
+  }
+}
+
+.stocknotifications-table-head{
+  @extend .recordviews-actionable-header;
+}
+
+.stocknotifications-cover p{
+  opacity: 0.5;
+}
+
+.stocknotifications-hide-bottom-border{
+  border-bottom: none;
+}
+
+.stocknotifications-is-child{
+  padding-left: $sc-padding-base * 10;
+  @media (max-width: $screen-sm-min){
+    padding-left: $sc-padding-base * 5;
+  }
+}
+
+.stock-notifications-group-open{
+  transform: rotate(180deg);
+}
+
+.stocknotifications-button-small{
+  @extend .button-small;
+  display: inline-block;
+  padding: 0 0 0 15px;
+  text-align: right;
+}
+
+.stock-notification-processing,
+.stock-notification-processing:hover{
+  color: gray;
+  cursor: default;
+}
+
+.stocknotifications-actions-mobile{
+  padding: 5px 0;
+}
+
+.stocknotifications-notification-container{
+  padding-top: 10px;
+}
+
+.stocknotifications-notification.desktop{
+  text-align: center;
+}

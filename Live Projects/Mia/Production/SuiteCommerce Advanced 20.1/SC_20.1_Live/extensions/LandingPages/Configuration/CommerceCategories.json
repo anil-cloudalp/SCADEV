@@ -1,0 +1,32 @@
+{
+	"type": "object"
+,	"subtab": {
+		"id": "categoryext"
+	,	"group": "advancedSettings"
+	,	"title": "Commerce Categories"
+	}
+,	"properties": {
+		"categoryext.array": {
+			"group": "advancedSettings"
+		,	"subtab": "categoryext"
+		,	"type": "array"
+		,	"title": "Commerce Category Link"
+		,	"description": "Enter Commerce categories internalid and links to configure"
+		,	"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+                    	"type": "string"
+                    ,	"title": "Commerce Category ID"
+                	,	"description": "Enter Commerce categories internalid"
+                    }
+                ,	"link": {
+                        "type": "string"
+                    ,	"title": "External Link"
+                    ,	"description": "Enter the external link to use in shopping"
+                    }
+				}
+			}
+		}
+	}
+}

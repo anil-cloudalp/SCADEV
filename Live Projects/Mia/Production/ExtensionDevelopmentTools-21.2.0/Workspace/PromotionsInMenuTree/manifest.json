@@ -1,0 +1,99 @@
+{
+	"name": "PromotionsInMenuTree",
+	"fantasyName": "PromotionsInMenuTree",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCS,SCA",
+	"target_version": {},
+	"version": "1.0.0",
+	"description": "Adding Promotions as a new link in menu tree",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PromotionsInMenuTree.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PromotionsInMenuTree/Templates/ca_promotionsinmenutree_promotionsinmenutree.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/PromotionsInMenuTree/Templates/ca_promotionsinmenutree_promotionsinmenutree.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/PromotionsInMenuTree/Templates/ca_promotionsinmenutree_promotionsinmenutree.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/PromotionsInMenuTree/Sass/_promotionsinmenutree-promotionsinmenutree.scss",
+			"myaccount": "Modules/PromotionsInMenuTree/Sass/_promotionsinmenutree-promotionsinmenutree.scss",
+			"checkout": "Modules/PromotionsInMenuTree/Sass/_promotionsinmenutree-promotionsinmenutree.scss"
+		},
+		"files": [
+			"Modules/PromotionsInMenuTree/Sass/_promotionsinmenutree-promotionsinmenutree.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+			"myaccount": "Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+			"checkout": "Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+					"Modules/PromotionsInMenuTree/JavaScript/PromotionsInMenuTree.View.js",
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.Model.js",
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.Collection.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+					"Modules/PromotionsInMenuTree/JavaScript/PromotionsInMenuTree.View.js",
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.Model.js",
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.Collection.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+					"Modules/PromotionsInMenuTree/JavaScript/PromotionsInMenuTree.View.js",
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.Model.js",
+					"Modules/PromotionsInMenuTree/JavaScript/CA.PromotionsInMenuTree.Collection.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PromotionsInMenuTree/SuiteScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+		"files": [
+			"Modules/PromotionsInMenuTree/SuiteScript/CA.PromotionsInMenuTree.PromotionsInMenuTree.js",
+			"Modules/PromotionsInMenuTree/SuiteScript/PromotionsInMenuTree.ServiceController.js",
+			"Modules/PromotionsInMenuTree/SuiteScript/CA.PromotionsInMenuTree.Model.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/PromotionsInMenuTree@1.0.0",
+	"activation_id": "8",
+	"extension_id": "3101"
+}

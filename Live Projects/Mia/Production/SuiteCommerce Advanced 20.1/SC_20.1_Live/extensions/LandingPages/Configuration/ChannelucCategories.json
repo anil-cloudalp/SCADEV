@@ -1,0 +1,18 @@
+{
+	"type": "object"
+,	"subtab": {
+		"id": "channeluc"
+	,	"group": "advancedSettings"
+	,	"title": "ChannelUC"
+	}
+,	"properties": {
+		"channeluc.cats": {
+			"group": "advancedSettings"
+		,	"subtab": "channeluc"
+		,	"type": "string"
+		,	"title": "ChannelUC Categories ID"
+		,	"description": "Enter ChannelUC categories internalids separated by comma which are under SHOP "
+		,	"default": "84"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+
+/* CMS CONTENT */
+.cms-content-text {
+    padding: $sc-padding-lv2 0;
+}
+
+.banner-breadcrumb-top {
+    @media (min-width: $screen-md-min) {
+        //padding-top: $sc-header-height + $sc-main-navigation-height;
+    }
+
+    .theme-has-static-header & {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,92 @@
+// Edited for Horizon Theme
+
+.product-details-quantity-options-title {
+	text-transform: uppercase;
+	//margin-bottom: $sc-margin-lv2;
+	margin-bottom: 0 !important;
+	display: block;
+	font-weight: $sc-font-weight-light !important;//$sc-font-weight-normal;
+	font-family: $sc-font-family2;
+	font-size: $sc-font-size-base+2px;
+	color: rgb(136, 136, 136);
+	text-transform: none;
+}
+
+.product-details-quantity-options {
+	margin-top: 20px;
+	clear: both;
+	font-weight: $sc-font-weight-bold;
+
+	[data-validation-error="block"] {
+		margin-top: $sc-margin-lv2;
+	}
+}
+
+.product-details-quantity-options-title {
+	font-weight: $sc-font-weight-bold;
+}
+
+.product-details-quantity-options-title-help {
+	clear: both;
+	display: block;
+	font-weight: $sc-font-weight-light;
+	margin: $sc-margin-lv2 0;
+}
+
+.product-details-quantity-remove {
+	opacity: unset !important;
+}
+
+.product-details-quantity-add,
+.product-details-quantity-remove {
+	@extend .button-secondary;
+	background-color: transparent; //lighten($sc-color-theme, 20%);
+	//border:1px solid lighten($sc-color-theme, 20%);
+	outline: none;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	border-radius: 50px;
+	width: ($sc-target-size-mobile)-5px;
+	height: ($sc-target-size-mobile)-5px;
+	color: #000000;
+	border: none;
+	font-family: $sc-font-family2;
+	font-weight: $sc-font-weight-normal;
+	@media (min-width: $screen-md-min) {
+		display: inline-block; //none;
+	}
+
+	&:hover {
+		box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+	}
+}
+
+.product-details-quantity-value {
+	height: $sc-target-size-mobile;
+	//  padding:$sc-margin-lv2 $sc-padding-lv3 $sc-margin-lv2 $sc-padding-lv3 !important;
+	margin: 0 $sc-padding-lv1;
+	width: 50px !important;
+	outline: none;
+	//text-align: right;
+	text-align: center;
+	background-color: #fff;
+	border: 0 !important;
+	font-size: $sc-font-size-base+6px;
+	-webkit-border-radius: 0 0 0 0!important;
+	border-radius: 0 0 0 0 !important;
+	font-weight: $sc-font-weight-normal;
+	display: inline-block;
+}
+
+.product-details-quantity-container {
+	@extend .quantity-input-container;
+}
+
+input[id=quantity]::-webkit-inner-spin-button,
+input[id=quantity]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[id=quantity] {
+	-moz-appearance: textfield;
+}

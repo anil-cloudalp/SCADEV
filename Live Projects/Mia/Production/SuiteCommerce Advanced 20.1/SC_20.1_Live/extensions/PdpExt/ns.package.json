@@ -1,0 +1,30 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+        "images": [
+            "Images/*"
+        ],
+        "templates": [
+            "Templates/*"
+        ]
+
+    },
+    "overrides":
+ {
+
+	 "Advanced/Overview/JavaScript/Overview.Home.View.ts": "JavaScript/Overview.Home.View.ts",
+	 
+     "Commons/ProductLine/JavaScript/ProductLine.Sku.View.ts": "JavaScript/ProductLine.Sku.View.ts",
+
+	 "Commons/ProductDetails/JavaScript/ProductDetails.Information.View.ts": "JavaScript/ProductDetails.Information.View.ts",
+     "Commons/ProductDetails/JavaScript/ProductDetails.Base.View.ts": "JavaScript/ProductDetails.Base.View.ts",
+	 "Commons/ProductDetails/JavaScript/ProductDetails.ImageGallery.View.ts": "JavaScript/ProductDetails.ImageGallery.View.ts",
+	 
+     "Commons/ItemRelations/JavaScript/ItemRelations.RelatedItem.View.ts": "JavaScript/ItemRelations.RelatedItem.View.ts",
+	 "Commons/ItemRelations/JavaScript/ItemRelations.Correlated.View.ts": "JavaScript/ItemRelations.Correlated.View.ts",
+     "Commons/ItemRelations/JavaScript/ItemRelations.Related.View.ts": "JavaScript/ItemRelations.Related.View.ts",
+	 "Commons/ProductDetails/JavaScript/ProductDetails.Full.View.ts": "JavaScript/ProductDetails.Full.View.ts"
+ }
+}

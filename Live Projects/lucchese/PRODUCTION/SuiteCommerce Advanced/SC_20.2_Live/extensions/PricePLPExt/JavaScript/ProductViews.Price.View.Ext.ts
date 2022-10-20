@@ -12,7 +12,6 @@ _.extend(ProductViewsPriceView.prototype, {
 		
 		if(this.options.origin == 'ITEMCELL'){
 			var matrixPrice = this.model.get('item').get('onlinematrixpricerange') || '';
-			
 			var min_price_formatted = '';
 			var max_price_formatted = '';
 			var currency = _.has(SC.SESSION,'currency')? SC.SESSION.currency.symbol : '$';

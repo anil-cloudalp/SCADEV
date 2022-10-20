@@ -1,0 +1,26 @@
+/* Edited for Horizon Theme */
+
+.item-relations-correlated {
+	position: relative;
+}
+
+.item-relations-correlated .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-relations-correlated h3 {
+	font-size: 30px !important;
+	color: #0e1b23;
+	line-height: 40px;
+	text-align: left;
+	font-weight: 600;
+	font-family: $sc-font-family;
+	text-transform: none;
+	margin-bottom: 20px;
+}
+
+.item-relations-correlated .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}

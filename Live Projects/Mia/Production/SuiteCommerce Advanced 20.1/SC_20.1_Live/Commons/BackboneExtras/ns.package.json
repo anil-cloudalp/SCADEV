@@ -1,0 +1,17 @@
+{
+	"gulp": {
+		"javascript": [
+			"JavaScript/*.js",
+			"JavaScript/*.ts"
+		]
+	,	"sass": [
+			"Sass/*.scss"
+		]
+	,	"unit-test-files": [
+			"Tests/*.js"
+		]
+	,	"unit-test-entry-point": [
+			"Tests/UnitTest.BackboneExtras.js"
+		]
+	}
+}

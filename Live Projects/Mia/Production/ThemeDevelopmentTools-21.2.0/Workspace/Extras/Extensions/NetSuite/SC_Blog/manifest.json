@@ -1,0 +1,98 @@
+{
+	"name": "SC_Blog",
+	"fantasyName": "SC Blog",
+	"vendor": "NetSuite",
+	"type": "extension",
+	"cct": [
+		{
+			"icon": "img/ic_cct_sc_blog_post.svg",
+			"settings_record": "customrecord_cct_sc_blog_post",
+			"registercct_id": "cct_sc_blog_post",
+			"label": "Blog Post",
+			"description": "Blog post"
+		},
+		{
+			"icon": "img/ic_cct_sc_blog_list.svg",
+			"settings_record": "customrecord_cct_sc_blog_list",
+			"registercct_id": "cct_sc_blog_list",
+			"label": "Blog List",
+			"description": "A list of blog posts."
+		}
+	],
+	"target": "SCA,SCS",
+	"version": "1.1.1",
+	"description": "Add a blog to your website using Site Management Tools.",
+	"assets": {
+		"img": {
+			"files": [
+				"img/ic_cct_sc_blog_list.svg",
+				"img/ic_cct_sc_blog_post.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SC.Blog.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Blog/Templates/sc_blog_list.tpl",
+					"Modules/Blog/Templates/sc_blog_post.tpl",
+					"Modules/Blog/Templates/sc_blog_preview.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Blog/Sass/_blog-blog.scss"
+		},
+		"files": [
+			"Modules/Blog/Sass/_blog-blog.scss",
+			"Modules/Blog/Sass/_list.scss",
+			"Modules/Blog/Sass/_post.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Blog/JavaScript/SC.Blog.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Blog/JavaScript/Post.Collection.js",
+					"Modules/Blog/JavaScript/Post.Model.js",
+					"Modules/Blog/JavaScript/PostList.View.js",
+					"Modules/Blog/JavaScript/Post.View.js",
+					"Modules/Blog/JavaScript/PostPreview.View.js",
+					"Modules/Blog/Common/constants.js",
+					"Modules/Blog/JavaScript/SC.Blog.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Blog/SuiteScript/SC.Blog.js",
+		"files": [
+			"Modules/Blog/SuiteScript/Post.Model.js",
+			"Modules/Blog/Common/constants.js",
+			"Modules/Blog/Common/SearchBuilder.js",
+			"Modules/Blog/SuiteScript/ApiHelper.js",
+			"Modules/Blog/SuiteScript/CmsHelper.js",
+			"Modules/Blog/SuiteScript/SC.Blog.js",
+			"Modules/Blog/SuiteScript/SC.Blog.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/extensions/NetSuite/SC_Blog@1.1.1",
+	"activation_id": "8",
+	"extension_id": "901"
+}

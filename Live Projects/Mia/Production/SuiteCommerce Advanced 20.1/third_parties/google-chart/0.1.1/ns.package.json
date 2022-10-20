@@ -1,0 +1,8 @@
+{
+    "gulp": {
+        "javascript": [
+            "google-chart.js"
+        ]
+    },
+    "jshint": "false"
+}

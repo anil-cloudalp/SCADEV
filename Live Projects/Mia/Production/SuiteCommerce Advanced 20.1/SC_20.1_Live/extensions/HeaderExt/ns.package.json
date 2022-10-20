@@ -1,0 +1,18 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ]
+
+    },
+    "overrides":
+ {
+		"Advanced/Header/JavaScript/Header.ts": "JavaScript/Header.ts",
+		"Advanced/Header/JavaScript/Header.Menu.MyAccount.View.ts": "JavaScript/Header.Menu.MyAccount.View.ts",
+		"Advanced/Header/JavaScript/Header.View.ts": "JavaScript/Header.View.ts",
+		"Advanced/Header/JavaScript/Header.MiniCartItemCell.View.ts": "JavaScript/Header.MiniCartItemCell.View.ts",
+		"Advanced/Header/JavaScript/Header.MiniCart.View.ts": "JavaScript/Header.MiniCart.View.ts",
+		"Advanced/Header/JavaScript/Header.Logo.View.ts": "JavaScript/Header.Logo.View.ts",
+		"Advanced/Header/JavaScript/Header.Menu.View.ts": "JavaScript/Header.Menu.View.ts"
+ }
+}

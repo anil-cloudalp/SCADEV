@@ -1,0 +1,204 @@
+.order-history-list-button-back {
+  @extend .button-back;
+}
+
+.order-history-list-header {
+  border-top: 1px solid $sc-color-theme-border-light;
+  padding: $sc-padding-lv3 0;
+  h2{
+      font-family: $sc-font-family2;
+  }
+
+}
+
+.order-history-list-button-back-icon {
+  @extend .button-back-icon;
+}
+
+.order-history-list-empty {
+  @extend .list-empty;
+}
+
+.order-history-list-recordviews-container {
+  .recordviews-actionable {
+    font-family: $sc-font-family2;
+
+    .recordviews-actionable-title {
+      font-size: 16px;
+    }
+    .recordviews-actionable-status{
+      .recordviews-actionable-value{
+        color: #d66243;
+      }
+    }
+
+    .recordviews-actionable-label {
+      font-size: 16px;
+      color: $sc-color-link;
+      font-weight: $sc-font-weight-normal;
+    }
+
+    .recordviews-actionable-value {
+      font-size: 16px;
+      color: $sc-color-link;
+      font-weight: $sc-font-weight-light;
+    }
+  }
+
+  .order-history-list-tracking-number-not-available-label {
+    font-size: 16px;
+    color: $sc-color-link;
+    font-weight: $sc-font-weight-normal;
+  }
+
+  .order-history-list-tracking-number-not-available {
+    font-size: 16px;
+    font-weight: $sc-font-weight-light;
+  }
+  @media (min-width: $screen-md-min) {
+    .recordviews-actionable-title,
+    .recordviews-actionable-title-header {
+      width: 20%;
+    }
+
+    .recordviews-actionable-origin,
+    .recordviews-actionable-origin-header {
+      width: 15%;
+      text-align: left;
+    }
+
+    .recordviews-actionable-date,
+    .recordviews-actionable-date-header {
+      width: 15%;
+      text-align: right;
+    }
+
+    .recordviews-actionable-currency,
+    .recordviews-actionable-currency-header {
+      width: 20%;
+      text-align: right;
+    }
+
+    .recordviews-actionable-status,
+    .recordviews-actionable-status-header {
+      width: 25%;
+      text-align: left;
+    }
+
+    .recordviews-actionable-actions,
+    .recordviews-actionable-actions-header {
+      width: 30%;
+      text-align: right;
+    }
+  }
+}
+
+.order-history-list-recordviews-actionable-table {
+  @extend .recordviews-actionable-table;
+
+  .recordviews-actionable-origin {
+    padding-bottom: 0;
+  }
+  @media (min-width: $screen-sm-min) {
+    .recordviews-actionable-origin {
+      padding-bottom: $sc-padding-lv3;
+    }
+  }
+}
+
+.order-history-list-recordviews-actionable-header {
+  @extend .recordviews-actionable-header;
+  th{
+     font-size: 16px;
+     font-family: $sc-font-family2;
+     color: $sc-color-link;
+  }
+}
+
+.order-history-list-recordviews-actionable-title-header {
+  @extend .recordviews-actionable-title-header;
+  font-family: $sc-font-family2;
+  font-size: 16px;
+  color: $sc-color-link;
+}
+
+.order-history-list-recordviews-actionable-date-header {
+  @extend .recordviews-actionable-date-header;
+}
+
+.order-history-list-recordviews-actionable-currency-header {
+  @extend .recordviews-actionable-currency-header;
+}
+
+.order-history-list-recordviews-actionable-status-header {
+  @extend .recordviews-actionable-status-header;
+}
+
+.order-history-list-recordviews-actionable-actions-header {
+  @extend .recordviews-actionable-actions-header;
+}
+
+.order-history-list-case-list-paginator {
+  @extend .case-list-paginator;
+}
+
+.order-history-list-recordviews-actionable-origin-header {
+  @extend .recordviews-actionable-origin-header;
+}
+
+.order-history-list-header-nav {
+  margin-bottom: $sc-margin-lv4;
+  position: relative;
+}
+
+.order-history-list-header-button-group {
+  @extend .pill-button-group;
+
+  a,
+  span {
+    display: table-cell;
+  }
+}
+
+.order-history-list-header-button-active {
+  @extend .button-medium;
+  @extend .pill-button-active;
+}
+
+.order-history-list-header-button {
+  @extend .button-medium;
+  @extend .pill-button;
+}
+
+.order-history-list-header-button-open-active {
+  @extend .order-history-list-header-button-active;
+  width: auto;
+}
+
+.order-history-list-header-button-instore-active {
+  @extend .order-history-list-header-button-active;
+}
+
+.order-history-list-header-button-all-active {
+  @extend .order-history-list-header-button-active;
+  width: auto;
+}
+
+.order-history-list-header-button-open {
+  @extend .order-history-list-header-button;
+}
+
+.order-history-list-header-button-instore {
+  @extend .order-history-list-header-button;
+  border-left: 0;
+  border-right: 0;
+}
+
+.order-history-list-header-button-all {
+  @extend .order-history-list-header-button;
+}
+
+.order-history-list-empty-section {
+  padding: $sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3;
+  text-align: center;
+}
