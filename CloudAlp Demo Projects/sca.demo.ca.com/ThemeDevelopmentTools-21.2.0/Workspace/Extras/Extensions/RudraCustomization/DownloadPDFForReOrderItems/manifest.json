@@ -1,0 +1,80 @@
+{
+	"name": "DownloadPDFForReOrderItems",
+	"fantasyName": "Download CSV And PDF for ReOrderItems",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Download CSV And PDF for ReOrderItems which can download all reorder items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ReOrderItemsPDFGenerator.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ReOrderItemsPDFGenerator/Configuration/ReOrderItemsPDFGenerator.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ReOrderItemsPDFGenerator/Templates/rudracustomization_downloadpdfforreorderitems_reorderitemspdfgenerator.tpl",
+					"Modules/ReOrderItemsPDFGenerator/Templates/reorderitem_popup_msg.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ReOrderItemsPDFGenerator/Sass/_downloadpdfforreorderitems-reorderitemspdfgenerator.scss"
+		},
+		"files": [
+			"Modules/ReOrderItemsPDFGenerator/Sass/_downloadpdfforreorderitems-reorderitemspdfgenerator.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ReOrderItemsPDFGenerator/JavaScript/RudraCustomization.DownloadPDFForReOrderItems.ReOrderItemsPDFGenerator.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ReOrderItemsPDFGenerator/JavaScript/RudraCustomization.DownloadPDFForReOrderItems.ReOrderItemsPDFGenerator.js",
+					"Modules/ReOrderItemsPDFGenerator/JavaScript/ReOrderItemsPDFGenerator.View.js",
+					"Modules/ReOrderItemsPDFGenerator/JavaScript/RudraCustomization.DownloadPDFForReOrderItems.ReOrderItemsPDFGenerator.Model.js",
+					"Modules/ReOrderItemsPDFGenerator/JavaScript/RudraCustomization.DownloadPDFForReOrderItems.ReOrderItemsPDFGenerator.SS2Model.js",
+					"Modules/ReOrderItemsPDFGenerator/JavaScript/ReOrderItemsModalPopUp.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ReOrderItemsPDFGenerator/SuiteScript/RudraCustomization.DownloadPDFForReOrderItems.ReOrderItemsPDFGenerator.js",
+		"files": [
+			"Modules/ReOrderItemsPDFGenerator/SuiteScript/RudraCustomization.DownloadPDFForReOrderItems.ReOrderItemsPDFGenerator.js",
+			"Modules/ReOrderItemsPDFGenerator/SuiteScript/ReOrderItemsPDFGenerator.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ReOrderItemsPDFGenerator/SuiteScript2/ReOrderItemsPDFGenerator.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/DownloadPDFForReOrderItems@1.0.0",
+	"activation_id": "26",
+	"extension_id": "22612"
+}

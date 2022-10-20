@@ -1,0 +1,13 @@
+@import "variables";
+@import "comparison_page_comparison_lines";
+@import "comparison_page_field_types";
+
+.comparison-page-layout-container {
+  @extend .container;
+
+  .comparison-page-description {
+    margin-top: $sc-margin-lv2;
+  }
+}
+
+

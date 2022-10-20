@@ -1,0 +1,70 @@
+{
+	"name": "ShoppingCust",
+	"fantasyName": "ShoppingCust",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "customizing home page and header .",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ShoppingCust.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShoppingCust/Templates/ca_shoppingcust_shoppingcust.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ShoppingCust/Sass/_shoppingcust-shoppingcust.scss"
+		},
+		"files": [
+			"Modules/ShoppingCust/Sass/_shoppingcust-shoppingcust.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ShoppingCust/JavaScript/CA.ShoppingCust.ShoppingCust.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShoppingCust/JavaScript/CA.ShoppingCust.ShoppingCust.js",
+					"Modules/ShoppingCust/JavaScript/ShoppingCust.View.js",
+					"Modules/ShoppingCust/JavaScript/CA.ShoppingCust.ShoppingCust.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ShoppingCust/SuiteScript/CA.ShoppingCust.ShoppingCust.js",
+		"files": [
+			"Modules/ShoppingCust/SuiteScript/CA.ShoppingCust.ShoppingCust.js",
+			"Modules/ShoppingCust/SuiteScript/ShoppingCust.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/ShoppingCust@1.0.0",
+	"activation_id": "27",
+	"extension_id": "22212"
+}

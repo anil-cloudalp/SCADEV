@@ -1,0 +1,215 @@
+.engenius-container{
+  .cms-content-text,
+  .cms-content-CMS_TEXT {
+      padding: 0;
+  }
+}
+.engenius-image-container {
+  background-image: url(getThemeAssetsPath('img/vendor_top_image.png'));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  @media (min-width: $screen-md-min) {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height:auto;
+  }
+
+  position: relative;
+}
+
+.engenius-image-container-overlay {
+  background: linear-gradient(45deg,#d66243 0%,#0e1b23 100%);
+  opacity: 0.95;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.engenius-image-text-container {
+  @extend .container;
+
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: $sc-padding-lv4;
+  @media (min-width: $screen-md-min) {
+
+    padding: 0 9%;
+  }
+
+  .engenius-image-text-wrapper {
+    @extend .row;
+  }
+}
+
+.engenius-image-left-text {
+  @extend .col-md-6;
+  @media (max-width: ($screen-md-min)-1px) {
+    margin: 0 10%;
+    padding: 95px 10% 0 10%;
+  }
+ z-index: 3;
+  h2 {
+    font-size: 25.5px;
+    color: white;
+    text-align: left;
+    line-height: 31.5px;
+    font-weight: $sc-font-weight-semibold;
+    margin-bottom:25px !important;
+    @media (min-width: $screen-sm-min)and(max-width: $screen-md-min) {
+      font-size: 27.2px;
+      line-height: 33.6px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: 88px;
+      text-align: left;
+      line-height: 97px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    @extend .slideDown;
+  }
+}
+
+.engenius-image-right-text {
+  @extend .col-md-6;
+  @media (max-width: ($screen-md-min)-1px) {
+    margin: 0 10%;
+    padding: 0 10% 95px 10%;
+  }
+  z-index: 3;
+  p {
+    color: #fff;
+    font-weight: $sc-font-weight-semibold;
+    font-size: 16.2px;
+    line-height: 25.2px;
+    @media (min-width: $screen-sm-min)and(max-width: $screen-lg-min){
+      font-size: 18px;
+      line-height: 28px;
+    }
+    @media (min-width: $screen-lg-min){
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
+
+.engenius-content-container {
+
+  @extend .container-fluid;
+  .engenius-content-container-row {
+    @extend .row;
+    @media (min-width: $screen-md-min) {
+      display: flex;
+      position: relative;
+
+      justify-content: center;
+
+    }
+    .engenius-content-container-col {
+      @extend .col-md-6;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      flex-direction: column;
+
+      img {
+
+      }
+      .engenius-bg-img1{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 404px;
+        @media (min-width: $screen-lg-min) {
+         min-height: 404px;
+        }
+        @media (min-width: $screen-md-min) and (max-width: $screen-lg-min){
+          min-height: 480px;
+        }
+      }
+      .engenius-bg-img2{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 480px;
+        @media (min-width: $screen-lg-min) {
+          min-height: 670px;
+        }
+        @media (min-width: $screen-md-min) and (max-width: $screen-lg-min){
+          min-height: 720px;
+        }
+      }
+
+      @media (min-width: $screen-md-min) {
+
+
+        img {
+
+        }
+      }
+
+      h2 {
+        font-size: 25.5px;
+        line-height: 31.5px;
+        margin-bottom: 7px;
+        font-weight: 600;
+        text-align: left;
+
+        @media (min-width: $screen-md-min) {
+          font-size: 36px;
+          line-height: 45px;
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min){
+          font-size: 27.2px;
+          line-height: 33.3px;
+        }
+      }
+
+      p {
+        color:rgba(10,10,10,0.6);
+        text-align: left;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        font-weight: $sc-font-weight-light;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .text {
+    background: #f4f4f4 !important;
+    padding: 16% !important;
+    @media (min-width: $screen-md-min) {
+      padding: 10% !important;
+    }
+    p {
+      opacity: 0;
+      -webkit-transition: all 1s ease-in;
+      transition: all 1s ease-in;
+      transform: translateY(50px);
+      font-family: $sc-font-family2;
+    }
+  }
+
+  .text.appear {
+    p{
+      opacity: 0.8;
+      transform: translateY(0);
+    }
+  }
+}

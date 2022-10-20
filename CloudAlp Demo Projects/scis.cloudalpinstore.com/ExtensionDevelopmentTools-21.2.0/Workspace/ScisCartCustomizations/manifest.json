@@ -1,0 +1,54 @@
+{
+	"name": "ScisCartCustomizations",
+	"fantasyName": "ScisCartCustomizations",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCIS",
+	"target_version": {
+		"SCIS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "ScisCartCustomization",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ScisCartCustomizations.Service.ss"
+			]
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"instore": "Modules/ScisCartCustomizations/JavaScript/Acme.ScisCartCustomizations.ScisCartCustomizations.js"
+		},
+		"application": {
+			"instore": {
+				"files": [
+					"Modules/ScisCartCustomizations/JavaScript/Acme.ScisCartCustomizations.ScisCartCustomizations.js",
+					"Modules/ScisCartCustomizations/JavaScript/Acme.ScisCartCustomizations.ScisCartCustomizations.Model.js",
+					"Modules/ScisCartCustomizations/JavaScript/Acme.ScisCartCustomizations.ScisCartCustomizations.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ScisCartCustomizations/SuiteScript/Acme.ScisCartCustomizations.ScisCartCustomizations.js",
+		"files": [
+			"Modules/ScisCartCustomizations/SuiteScript/Acme.ScisCartCustomizations.ScisCartCustomizations.js",
+			"Modules/ScisCartCustomizations/SuiteScript/ScisCartCustomizations.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ScisCartCustomizations/SuiteScript2/ScisCartCustomizations.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/ScisCartCustomizations@1.0.0",
+	"activation_id": "23",
+	"extension_id": "21012"
+}

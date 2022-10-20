@@ -1,0 +1,71 @@
+@import "variables";
+@import "comparison_widget_header";
+@import "comparison_widget_item_cells";
+@import "comparison_widget_item_cell";
+
+.sc-item-comparison-widget-container {
+  background-color: $comparison-widget-container-bg-color;
+  border-top: 1px solid $comparison-widget-container-border-color;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  color: $comparison-widget-container-font-color;
+  bottom: 0;
+  max-height: 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  &.shown {
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-height: 500px;
+  }
+
+  .animated-ease {
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  .sc-allowed-items-message-mobile {
+    padding-left: $sc-padding-lv2;
+    font-size: $sc-font-size-xs;
+    font-weight: $sc-font-weight-light;
+    @media (max-width: $screen-xs-max) {
+      margin-top: $sc-margin-lv2;
+    }
+    .sc-allowed-items-message-container{
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .sc-widget-desktop {
+      display:block;
+    }
+    .sc-widget-non-desktop {
+      display: none;
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    .sc-widget-desktop {
+      display: none;
+    }
+    .sc-widget-non-desktop {
+      display:block;
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    .sc-allowed-items-message-container {
+      display: none;
+    }
+  }
+
+
+
+}
+
+

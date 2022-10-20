@@ -1,0 +1,73 @@
+.become-a-dealer-container{
+  // @extend .container;
+  padding-left:10px;
+  padding-right:15px;
+}
+.form-lables{
+  text-transform: capitalize;
+}
+.become-a-dealer-first-name-label{
+  @extend .form-lables;
+}
+.become-a-dealer-first-name-input{
+  @extend .input-large;
+}
+
+.become-a-dealer-last-name-label{
+  @extend .form-lables;
+}
+.become-a-dealer-last-name-input{
+  @extend .input-large;
+}
+
+
+.become-a-dealer-company-label{
+  @extend .form-lables;
+}
+.become-a-dealer-company-input{
+  @extend .input-large;
+}
+
+.become-a-dealer-email-address-label{
+  @extend .form-lables;
+}
+.become-a-dealer-email-address-input{
+  @extend .input-large;
+}
+
+.become-a-dealer-phone-label{
+  @extend .form-lables;
+}
+.become-a-dealer-phone-input{
+  @extend .input-large;
+}
+
+.become-a-dealer-comments-label{
+  @extend .form-lables;
+}
+.become-a-dealer-required{
+  @extend .input-required;
+}
+.become-a-dealer-form-actions{
+  padding-top: 15px;
+}
+.become-a-dealer-actions-button-submit{
+  @extend .button-large;
+	@extend .button-primary;
+}
+.become-a-dealer-title{
+  padding-bottom: 10px;
+}
+.status-form-msg{
+  .global-views-message{
+    margin-bottom: 0px;
+  }
+}
+
+@media(min-width:$screen-sm-min) {
+  .become-a-dealer-container{
+    padding-left:50px;
+    padding-right: 15px;
+    width: 50%;
+  }
+}

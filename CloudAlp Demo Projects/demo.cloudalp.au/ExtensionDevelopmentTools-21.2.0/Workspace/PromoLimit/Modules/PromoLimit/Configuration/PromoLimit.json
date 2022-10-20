@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "PromoLimit.config": {
+            "group": "extensions",
+            "subtab": "PromoLimit_subtab",
+            "type": "string",
+            "title": "PromoLimit_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

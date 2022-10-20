@@ -1,0 +1,32 @@
+{
+    "type":"object",
+    "subtab":{
+        "id":"checkoutcustomization",
+        "title":"Error message For checkout",
+        "description":"Error Message for checkout customization for Shipping Address and Billing Address and Delivery method",
+        "group":"extensions"
+    }
+,   "properties":{
+        "checkoutcustomization.shippingAddressMessage":{
+            "group":"extensions",
+            "subtab":"checkoutcustomization",
+            "type":"string",
+            "title": "Shipping Address Message",
+            "description":"Shipping Address message if the customer is not assign any shipping address "
+        }
+    ,   "checkoutcustomization.billingAddressMessage":{
+            "group":"extensions",
+            "subtab":"checkoutcustomization",
+            "type":"string",
+            "title": "Billing Address Message",
+            "description":"Billing Address message if the customer is not assign any Billing address "
+        }
+    ,   "checkoutcustomization.deliverymethodMessage":{
+            "group":"extensions",
+            "subtab":"checkoutcustomization",
+            "type":"string",
+            "title": "Delivery Method Message",
+            "description":"Delivery Method message if the customer is not assign any Delivery Method "
+        }
+    }
+}

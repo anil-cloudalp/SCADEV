@@ -1,0 +1,18 @@
+@import "../../Common/Sass/common";
+@import "../../ComparisonWidget/Sass/comparison_widget";
+@import "../../ComparisonPage/Sass/comparison_page";
+@import "../../RecordSearcher/Sass/record_searcher";
+@import "../../ItemSearcher/Sass/item_searcher";
+
+/*
+group({
+   "id": "sc-product-comparison",
+   "label": "SC Product Comparison",
+   "description": "",
+   "children": [
+      "comparison-quick-view",
+      "comparison-page",
+      "search-results-text"
+   ]
+})
+*/

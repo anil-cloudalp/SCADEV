@@ -1,0 +1,23 @@
+.global-views-breadcrumb-item-active {
+	@extend .breadcrumb-item-active;
+}
+
+.global-views-breadcrumb-item {
+	@extend .breadcrumb-item;
+}
+
+.global-views-breadcrumb-divider {
+	@extend .breadcrumb-divider;
+	@extend .fa;	
+	@extend %fa-angle-right;	
+}
+
+.global-views-breadcrumb {
+	// @extend .breadcrumb;	
+	font-size:14px;
+	padding: $sc-padding-lv3 0;
+}
+
+.global-views-breadcrumb-divider-icon {
+	@extend .breadcrumb-divider-icon;
+}

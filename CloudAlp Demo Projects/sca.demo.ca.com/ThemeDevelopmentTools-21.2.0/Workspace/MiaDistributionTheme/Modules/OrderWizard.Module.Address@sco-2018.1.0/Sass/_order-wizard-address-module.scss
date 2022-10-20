@@ -1,0 +1,142 @@
+.order-wizard-address-module-change-button {
+  @extend .button-tertiary;
+  @extend .button-small;
+}
+
+.order-wizard-address-module-edit-button {
+  @extend .button-tertiary;
+  @extend .button-small;
+}
+
+.order-wizard-address-module-new-button {
+  @extend .button-secondary;
+  @extend .button-medium;
+  margin-bottom: $sc-margin-lv6;
+}
+
+.order-wizard-msr-addresses-module-new-button {
+  @extend .order-wizard-address-module-new-button;
+}
+
+.order-wizard-address-module-form-placeholder {
+  .address-edit {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.order-wizard-address-module-save-button {
+  @extend .button-primary;
+  @extend .button-small;
+}
+
+.order-wizard-address-module-title {
+  margin-bottom: $sc-margin-lv2;
+}
+
+.order-wizard-address-module-address-container {
+  clear:both;
+  display:block;
+  overflow:hidden;
+  .order-wizard-address-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .address-details-new-address {
+    height: 295px;
+  }
+
+  .address-details-new-address-title {
+    margin-top: 90px;
+  }
+}
+[data-view="Address.Select"],
+.order-wizard-shipmethod-module{
+	padding: 0;
+	input,select,textarea{
+		width:100%;
+		font-family:$sc-font-family2;
+		font-size:16px;
+		padding: 16px;
+	}
+	select{background-position:100% 75%;}
+	input[type="checkbox"]{width:auto;}
+}
+[data-view="Address.Select"]{
+	select{
+		padding-right: $sc-padding-lv6;
+		max-width:100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	a{
+		@extend .button-secondary;
+		@extend .button-small;
+		text-transform:none;
+	}
+}
+.order-wizard-paymentmethod-selector-module{padding-bottom:0;}
+.order-wizard-address-module-show-addresses-container {
+  @extend .box-column;
+  overflow:hidden;
+  padding:0;
+  h5 {
+    text-transform:uppercase;
+    margin-bottom: $sc-margin-lv2;
+  }
+  .address-edit-fields{
+	display:block;
+	input,select,textarea{
+		width:100%;
+		font-family:$sc-font-family2;
+		font-size:16px;
+		padding: 16px;
+	}
+	select{background-position:100% 75%;}
+	input[type="checkbox"]{width:auto;}
+  }
+	
+}
+.address-details-info p,.address-details-action,.address-details-selected,.address-details-new-address-title{
+	font-size: 18px;
+	font-family:$sc-font-family2;
+}
+.order-wizard-paymentmethod-invoice-module p{
+	font-size: 18px;
+	font-family:$sc-font-family2;
+	color: $sc-color-link;
+}
+.order-wizard-cart-summary-body p{
+	font-size: 16px;
+	font-family:$sc-font-family2;
+	color: $sc-color-link;
+}
+.order-wizard-msr-addresses-module-address-container {
+  background: $sc-color-theme-background;
+  padding: $sc-padding-lv8;
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.order-wizard-address-module-checkbox {
+  margin-bottom: $sc-margin-lv4;
+  display:block;
+
+}
+
+.order-wizard-address-module-single {
+  .address-details {
+    @extend .col-sm-12;
+    @extend .col-md-6;
+  }
+}
+
+.order-wizard-address-cell12 {
+  .address-details {
+    margin-bottom: $sc-margin-lv4;
+  }
+}
+
+
+

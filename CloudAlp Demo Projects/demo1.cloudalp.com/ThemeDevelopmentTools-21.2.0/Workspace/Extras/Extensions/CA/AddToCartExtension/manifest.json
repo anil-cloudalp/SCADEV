@@ -1,0 +1,78 @@
+{
+	"name": "AddToCartExtension",
+	"fantasyName": "Add To Cart Extension",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "this extension provides custom Addtocart functionality in plp and pdp  for facets, related and recently viewed items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/AddToCartModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/AddToCartModule/Configuration/AddToCartModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/AddToCartModule/Templates/ca_addtocartextension_addtocartmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/AddToCartModule/Sass/_addtocartextension-addtocartmodule.scss"
+		},
+		"files": [
+			"Modules/AddToCartModule/Sass/_addtocartextension-addtocartmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/AddToCartModule/JavaScript/CA.AddToCartExtension.AddToCartModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/AddToCartModule/JavaScript/CA.AddToCartExtension.AddToCartModule.js",
+					"Modules/AddToCartModule/JavaScript/AddToCartModule.View.js",
+					"Modules/AddToCartModule/JavaScript/CA.AddToCartExtension.AddToCartModule.Model.js",
+					"Modules/AddToCartModule/JavaScript/CA.AddToCartExtension.AddToCartModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/AddToCartModule/SuiteScript/CA.AddToCartExtension.AddToCartModule.js",
+		"files": [
+			"Modules/AddToCartModule/SuiteScript/CA.AddToCartExtension.AddToCartModule.js",
+			"Modules/AddToCartModule/SuiteScript/AddToCartModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/AddToCartModule/SuiteScript2/AddToCartModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/AddToCartExtension@1.0.0",
+	"activation_id": "27",
+	"extension_id": "21912"
+}

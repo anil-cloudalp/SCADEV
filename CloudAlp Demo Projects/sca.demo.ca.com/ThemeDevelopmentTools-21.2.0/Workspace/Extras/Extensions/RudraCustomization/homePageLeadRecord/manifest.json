@@ -1,0 +1,77 @@
+{
+	"name": "homePageLeadRecord",
+	"fantasyName": "Home page Form Lead Record",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Home page Form Lead Record",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/homePageLeadRecord.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/homePageLeadRecord/Configuration/homePageLeadRecord.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/homePageLeadRecord/Templates/rudracustomization_homepageleadrecord_homepageleadrecord.tpl",
+					"Modules/homePageLeadRecord/Templates/contact_us.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/homePageLeadRecord/Sass/_homepageleadrecord-homepageleadrecord.scss"
+		},
+		"files": [
+			"Modules/homePageLeadRecord/Sass/_homepageleadrecord-homepageleadrecord.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/homePageLeadRecord/JavaScript/RudraCustomization.homePageLeadRecord.homePageLeadRecord.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/homePageLeadRecord/JavaScript/RudraCustomization.homePageLeadRecord.homePageLeadRecord.js",
+					"Modules/homePageLeadRecord/JavaScript/homePageLeadRecord.View.js",
+					"Modules/homePageLeadRecord/JavaScript/RudraCustomization.homePageLeadRecord.homePageLeadRecord.Model.js",
+					"Modules/homePageLeadRecord/JavaScript/ContactusPage.view.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/homePageLeadRecord/SuiteScript/RudraCustomization.homePageLeadRecord.homePageLeadRecord.js",
+		"files": [
+			"Modules/homePageLeadRecord/SuiteScript/RudraCustomization.homePageLeadRecord.homePageLeadRecord.js",
+			"Modules/homePageLeadRecord/SuiteScript/homePageLeadRecord.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/homePageLeadRecord@1.0.0",
+	"activation_id": "26",
+	"extension_id": "23412"
+}

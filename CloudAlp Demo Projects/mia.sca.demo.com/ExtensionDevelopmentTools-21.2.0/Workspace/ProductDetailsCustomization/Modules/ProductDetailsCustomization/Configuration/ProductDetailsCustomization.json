@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ProductDetailsCustomization.config": {
+            "group": "extensions",
+            "subtab": "ProductDetailsCustomization_subtab",
+            "type": "string",
+            "title": "ProductDetailsCustomization_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

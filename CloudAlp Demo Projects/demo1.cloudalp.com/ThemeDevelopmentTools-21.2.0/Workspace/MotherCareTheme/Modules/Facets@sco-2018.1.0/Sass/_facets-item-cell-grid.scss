@@ -1,0 +1,176 @@
+/* Edited for Threads Theme */
+
+.facets-item-cell-grid {
+	.product-list-control-flyout{
+		width: 100%;
+		position:absolute !important;
+		top:250px;
+
+	}
+
+	@extend .item-cell;
+	.cart-add-to-cart-button-container {
+		width:100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.cart-add-to-cart-button-button {
+		// padding:20px 20px;
+		background: none;
+    padding: 0;
+    color:$sc-color-secondary;
+    text-align: center;
+    border: none;
+		font-size: small;
+		font-family: $sc-font-family;
+	}
+
+	.cart-quickaddtocart-price {
+		// margin-bottom:$sc-margin-lv2;
+	}
+	.facets-item-cell-grid-image-wrapper{
+		height: 180px !important;
+		@media(max-width: $screen-xs-max){
+		height: 320px !important;
+		}
+		@media(max-width: $screen-xs-min){
+		height: 220px !important;
+		}
+	}
+    .wishlist{
+		position: absolute;
+		right: 15px;
+		top:330px;
+
+	@media(max-width: $screen-xs-max){
+		right: 15px;
+		top: 250px; //280px
+		}
+	@media(max-width: $screen-xs-min){
+		right: 10px;
+		top: 250px;
+		}
+	}
+	.wishlist-pink{
+		position: absolute;
+		right: 15px;
+		top: 330px;
+	@media(max-width: $screen-xs-max){
+		right: 15px;
+		top:250px; // 280px;
+		}
+	@media(max-width: $screen-xs-min){
+		right: 10px;
+		top: 250px;
+		}
+	}
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-image-wrapper {
+	position:relative;
+	text-align:center;
+	@media (max-width:$screen-xs-max){
+		height: 200px;
+	}
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {}
+
+
+.facets-item-cell-grid-details {
+	text-align:left;
+	display:grid;
+	place-items: center;
+	div{
+		margin: 2px;
+	}
+
+	.product-line-stock {
+		text-align:left;
+	}
+	.cart-add-to-cart-button-container {
+		padding: 0 0 $sc-padding-lv3 0;
+	}
+
+	@media(max-width:$screen-sm-max){
+			.facets-item-cell-addtocompare{
+				label{
+					font-size: 12px;
+				}
+			}
+	}
+}
+
+.facets-item-cell-grid-image {
+	@extend .item-cell-image;
+	width:auto;
+	height:auto;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+	text-align: center;
+	text-transform: capitalize;
+	height: initial;
+	span{
+		color:#505759;
+		text-transform: initial !important;
+		font-family: 'Mothercare-RegularExtended';
+    	// font-size: 1.25rem;
+	}
+
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+	// margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-grid-rating {
+	text-align:left;
+	display: inline-block;
+}
+
+.facets-item-cell-grid {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-stock-message {
+	text-align:left;
+}
+
+/*custom css*/
+.related-items-cart-btn{
+	a{
+		text-transform: capitalize;
+		font-size: small;
+	}
+}
+.quick-shop-plp{
+	text-align: center;
+	.quick-shop-plp-btn{
+		display:inline-block;
+	}
+}
+
+
+@media(min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+	.facets-item-cell-grid-title span{
+		font-size: 12px;
+	}
+}

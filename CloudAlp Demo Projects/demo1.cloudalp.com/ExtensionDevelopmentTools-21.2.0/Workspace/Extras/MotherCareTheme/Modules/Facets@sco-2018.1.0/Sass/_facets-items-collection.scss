@@ -1,0 +1,30 @@
+.facets-items-collection-view-row{
+  .facets-item-cell-addtocompare{
+    
+      text-align: center;
+    
+}
+}
+@media(min-width:$screen-md-min){
+  .facets-item-cell-grid-image-wrapper{
+    height: 400px;
+  }
+}
+@media (min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+  .facets-item-cell-grid-image-wrapper{
+    height: 325px;
+  }
+}
+@media(max-width:480){
+  .facets-item-cell-grid-image-wrapper{
+    height: 200px;
+  }
+}
+
+
+.facets-item-cell-grid-details{
+  .cart-quickaddtocart-price{
+    text-align: center;
+  }
+}
+

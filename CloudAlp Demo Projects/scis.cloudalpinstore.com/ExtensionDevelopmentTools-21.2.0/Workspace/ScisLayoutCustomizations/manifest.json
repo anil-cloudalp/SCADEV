@@ -1,0 +1,54 @@
+{
+	"name": "ScisLayoutCustomizations",
+	"fantasyName": "SCISLayoutCustomization",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCIS",
+	"target_version": {
+		"SCIS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "ScisLayout customizations",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ScisLayoutCustomization.Service.ss"
+			]
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"instore": "Modules/ScisLayoutCustomization/JavaScript/Acme.ScisLayoutCustomizations.ScisLayoutCustomization.js"
+		},
+		"application": {
+			"instore": {
+				"files": [
+					"Modules/ScisLayoutCustomization/JavaScript/Acme.ScisLayoutCustomizations.ScisLayoutCustomization.js",
+					"Modules/ScisLayoutCustomization/JavaScript/Acme.ScisLayoutCustomizations.ScisLayoutCustomization.Model.js",
+					"Modules/ScisLayoutCustomization/JavaScript/Acme.ScisLayoutCustomizations.ScisLayoutCustomization.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ScisLayoutCustomization/SuiteScript/Acme.ScisLayoutCustomizations.ScisLayoutCustomization.js",
+		"files": [
+			"Modules/ScisLayoutCustomization/SuiteScript/Acme.ScisLayoutCustomizations.ScisLayoutCustomization.js",
+			"Modules/ScisLayoutCustomization/SuiteScript/ScisLayoutCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ScisLayoutCustomization/SuiteScript2/ScisLayoutCustomization.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/ScisLayoutCustomizations@1.0.0",
+	"activation_id": "23",
+	"extension_id": "20912"
+}

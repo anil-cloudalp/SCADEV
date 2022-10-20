@@ -1,0 +1,77 @@
+{
+	"name": "FecetsCustomization",
+	"fantasyName": "Facets customization For mia site",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Facets customization For mia site on demo",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/FecetsCustomization.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/FecetsCustomization/Configuration/FecetsCustomization.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FecetsCustomization/Templates/rudracustomization_fecetscustomization_fecetscustomization.tpl",
+					"Modules/FecetsCustomization/Templates/facets_facets_sidebar.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/FecetsCustomization/Sass/_fecetscustomization-fecetscustomization.scss"
+		},
+		"files": [
+			"Modules/FecetsCustomization/Sass/_fecetscustomization-fecetscustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FecetsCustomization/JavaScript/RudraCustomization.FecetsCustomization.FecetsCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FecetsCustomization/JavaScript/RudraCustomization.FecetsCustomization.FecetsCustomization.js",
+					"Modules/FecetsCustomization/JavaScript/FecetsCustomization.View.js",
+					"Modules/FecetsCustomization/JavaScript/RudraCustomization.FecetsCustomization.FecetsCustomization.Model.js",
+					"Modules/FecetsCustomization/JavaScript/FacetsSideBar.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/FecetsCustomization/SuiteScript/RudraCustomization.FecetsCustomization.FecetsCustomization.js",
+		"files": [
+			"Modules/FecetsCustomization/SuiteScript/RudraCustomization.FecetsCustomization.FecetsCustomization.js",
+			"Modules/FecetsCustomization/SuiteScript/FecetsCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/FecetsCustomization@1.0.0",
+	"activation_id": "30",
+	"extension_id": "23512"
+}

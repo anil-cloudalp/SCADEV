@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "BulkOrderingInCSV.config": {
+            "group": "extensions",
+            "subtab": "BulkOrderingInCSV_subtab",
+            "type": "string",
+            "title": "BulkOrderingInCSV_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

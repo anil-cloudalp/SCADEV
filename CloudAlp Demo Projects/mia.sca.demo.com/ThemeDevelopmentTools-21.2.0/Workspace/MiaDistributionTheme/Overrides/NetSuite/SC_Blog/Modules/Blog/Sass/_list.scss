@@ -1,0 +1,98 @@
+.blogpostlist-container{
+	.blogpostlist-list{
+		@extend .row;
+		margin: 0;
+		padding: 5% 0;
+		.blog-preview-container{
+			border:1px solid rgba(0,0,0,0.06);
+			border-bottom:0;
+			@media (min-width: $screen-sm-min){height: 720px;}
+			display:block;
+			overflow: hidden;
+			background-color: #fff;
+		}
+		.col-sm-4{padding:$sc-padding-lv2;}
+		@media (max-width: $screen-xs-max){
+			.col-sm-4{
+			max-width: 350px;
+			margin: auto;
+			margin-bottom:$sc-margin-lv4;
+			}
+		}
+		.img-container,.post-content,.post-by{background-color:#fff;display:block;}
+		.post-by{
+			border:1px solid rgba(0,0,0,0.06);
+			border-radius:0 0 4px 4px;
+			padding:$sc-padding-lv2 +2 $sc-padding-lv4;
+			a{
+				font-family: $sc-font-family2;
+				font-size:12px;
+				margin-right:$sc-margin-lv3;
+				i:before{
+					@extend .fa;
+					font-size: 14px;
+					margin-right: $sc-margin-base +2;
+				}
+				i.user:before{content:'\f2c0';}
+				i.likes:before{@extend %fa-heart-o;}
+			}
+		}
+		.post-content{
+		
+			padding:$sc-padding-lv6 *2 ;
+			span{
+				font-family: $sc-font-family2;
+				font-size:12px;
+				color:#999;
+			}
+			p{
+				font-family: $sc-font-family2;
+				font-size:18px;
+				color:#888;
+				font-weight:300;
+			}
+			h2{
+				font-size:22px;
+				font-weight:600;
+				text-transform: none;
+				margin-bottom:$sc-margin-lv2 +2;
+			}
+		
+		}
+		.img-container{
+			position:relative;
+			overflow:hidden;
+			b{
+				position:absolute;
+				z-index: 2;
+				top:15px;
+				left:15px;
+				display:inline-block;
+				padding:0 $sc-padding-lv2;
+				border:2px solid #ccc;
+				border-radius:4px;
+				font-family: $sc-font-family2;
+				font-size:12px;
+				color: #fff;
+				font-weight: 700;
+				&:hover{
+					background-color:$sc-color-primary;
+					border-color:$sc-color-primary;
+					color:#fff;
+				}
+			}
+			img{
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				transition: all .7s cubic-bezier(.2,1,.22,1);
+				-webkit-transition: all .7s cubic-bezier(.2,1,.22,1);
+			}
+		}
+		.col-sm-4:hover{
+			img{
+				transform: scale(1.07);
+				-webkit-transform: scale(1.07);
+			}
+		}
+	}
+}

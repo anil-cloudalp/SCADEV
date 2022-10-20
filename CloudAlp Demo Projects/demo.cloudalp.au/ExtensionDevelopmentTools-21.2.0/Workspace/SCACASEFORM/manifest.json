@@ -1,0 +1,77 @@
+{
+    "name": "SCACASEFORM",
+    "fantasyName": "SCACASEFORM",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "adding addtional fileds to the case form",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/SCACASEFORM.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/SCACASEFORM/Configuration/SCACASEFORM.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/SCACASEFORM/Sass/_scacaseform-scacaseform.scss"
+        },
+        "files": [
+            "Modules/SCACASEFORM/Sass/_scacaseform-scacaseform.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/SCACASEFORM/Templates/cloudalp_scacaseform_scacaseform.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.js",
+                    "Modules/SCACASEFORM/JavaScript/SCACASEFORM.View.js",
+                    "Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.Model.js",
+                    "Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/SCACASEFORM/SuiteScript/CloudAlp.SCACASEFORM.SCACASEFORM.js",
+        "files": [
+            "Modules/SCACASEFORM/SuiteScript/CloudAlp.SCACASEFORM.SCACASEFORM.js",
+            "Modules/SCACASEFORM/SuiteScript/SCACASEFORM.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\SCACASEFORM",
+    "suitescript2": {
+        "files": [
+            "Modules/SCACASEFORM/SuiteScript2/SCACASEFORM.Service.ss"
+        ]
+    }
+}

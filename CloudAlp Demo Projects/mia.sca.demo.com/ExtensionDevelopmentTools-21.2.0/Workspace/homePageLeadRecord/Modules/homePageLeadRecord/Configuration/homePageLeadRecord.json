@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "homePageLeadRecord.config": {
+            "group": "extensions",
+            "subtab": "homePageLeadRecord_subtab",
+            "type": "string",
+            "title": "homePageLeadRecord_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+	"name": "ColorRefinementOnPLP",
+	"fantasyName": "ColorRefinement",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "change thumbnail images based on color refinement on a product list page and product details page.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PLPColorImages.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/PLPColorImages/Configuration/PLPColorImages.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PLPColorImages/Templates/ca_colorrefinementonplp_plpcolorimages.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/PLPColorImages/Sass/_colorrefinementonplp-plpcolorimages.scss"
+		},
+		"files": [
+			"Modules/PLPColorImages/Sass/_colorrefinementonplp-plpcolorimages.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/PLPColorImages/JavaScript/CA.ColorRefinementOnPLP.PLPColorImages.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PLPColorImages/JavaScript/CA.ColorRefinementOnPLP.PLPColorImages.js",
+					"Modules/PLPColorImages/JavaScript/PLPColorImages.View.js",
+					"Modules/PLPColorImages/JavaScript/CA.ColorRefinementOnPLP.PLPColorImages.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PLPColorImages/SuiteScript/CA.ColorRefinementOnPLP.PLPColorImages.js",
+		"files": [
+			"Modules/PLPColorImages/SuiteScript/CA.ColorRefinementOnPLP.PLPColorImages.js",
+			"Modules/PLPColorImages/SuiteScript/PLPColorImages.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/ColorRefinementOnPLP@1.0.0",
+	"activation_id": "27",
+	"extension_id": "22012"
+}

@@ -1,0 +1,96 @@
+/* Edited for Threads Theme */
+
+.facets-faceted-navigation-item-icon-ok {
+	@extend .fa;
+}
+
+.facets-faceted-navigation-item-icon-plus {
+	@extend .fa;
+}
+
+.facets-faceted-navigation-item-optionlist-extra-button {
+	@extend .button-small;
+	display: inline-block;
+	margin: $sc-margin-lv2 0;
+	padding: 0;
+}
+
+.facets-faceted-navigation-item-optionlist-extra-wrapper {}
+
+.facets-faceted-navigation-item-facet-group {
+	// padding: $sc-margin-lv2 $sc-margin-lv3;
+	@media (min-width: $screen-md-min) {
+		padding-left: 0;
+	}
+}
+
+.facets-faceted-navigation-item-facet-group-expander {
+	@extend .facets-faceted-navigation-facet-group-expander;
+}
+
+.facets-faceted-navigation-item-facet-group-expander-icon {
+	@extend .facets-faceted-navigation-facet-group-expander-icon;
+}
+
+.facets-faceted-navigation-item-facet-group-wrapper {}
+
+.facets-faceted-navigation-item-facet-group-content {}
+
+.facets-faceted-navigation-item-facet-optionlist {}
+
+.facets-faceted-navigation-item-facet-optionlist-extra {}
+
+.facets-faceted-navigation-item-facet-group-title {
+	@extend .facets-faceted-navigation-facet-group-title;
+	color: $sc-color-primary;
+	font-family: $sc-mc-thin-font-family;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.facets-faceted-navigation-item-facet-option {
+	@extend .facets-faceted-navigation-facet-option;
+}
+
+.facets-faceted-navigation-item-facet-option-circle {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+
+.facets-faceted-navigation-item-filter-delete {}
+
+.facets-faceted-navigation-item-filter-delete-icon {}
+
+.facets-faceted-navigation-item-alt-caption {
+	display:none;
+}
+
+.facets-faceted-navigation-item-facet-multi {
+	width: 21px !important;
+	height: 25px;
+	border: 1px solid $sc-color-secondary !important;
+}
+
+
+
+.facets-faceted-navigation-item-facet-option{
+	.facets-nav-display-name{
+		font-family:$sc-mc-reg-ext-family;
+		color: $sc-color-secondary;
+		margin-top: -1rem;
+	}
+}
+
+.facets-faceted-navigation-item-facet-clear{
+	@extend .facets-faceted-navigation-facets-clear
+}
+
+.facte-facted-all{
+	display:block;
+	font-family: $sc-font-family;
+	text-transform: capitalize;
+}
+
+a[aria-expanded="true"] .facte-facted-all{
+		display: none;
+}
+

@@ -1,0 +1,104 @@
+{
+    "name": "MiaRewardsExtension",
+    "fantasyName": "MIA Rewards",
+    "vendor": "MIA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "This extension will get used for Loyalty Programs",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/mia-light.png",
+                "img/icici-amazon-pay.png"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/MiaRewardsModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/MiaRewardsModule/Configuration/MiaRewardsModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/MiaRewardsModule/Sass/_miarewardsextension-miarewardsmodule.scss",
+            "shopping": "Modules/MiaRewardsModule/Sass/_miarewardsextension-miarewardsmodule.scss"
+        },
+        "files": [
+            "Modules/MiaRewardsModule/Sass/_miarewardsextension-miarewardsmodule.scss",
+            "Modules/MiaRewardsModule/Sass/_miarewardsextension-submitclaim.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/MiaRewardsModule/Templates/mia_miarewardsextension_miarewardsmodule.tpl",
+                    "Modules/MiaRewardsModule/Templates/mia_miarewardsextension_submitclaim.tpl",
+                    "Modules/MiaRewardsModule/Templates/mia_miarewardsextension_confirmation.tpl"
+                ]
+            },
+            "shopping": {
+                "files": [
+                    "Modules/MiaRewardsModule/Templates/mia_miarewardsextension_submitclaim.tpl",
+                    "Modules/MiaRewardsModule/Templates/mia_miarewardsextension_miarewardsmodule.tpl",
+                    "Modules/MiaRewardsModule/Templates/mia_miarewardsextension_confirmation.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.js",
+            "myaccount": "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.js",
+                    "Modules/MiaRewardsModule/JavaScript/MiaRewardsModule.View.js",
+                    "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.Model.js",
+                    "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.SS2Model.js",
+                    "Modules/MiaRewardsModule/JavaScript/SubmitClaim.View.js",
+                    "Modules/MiaRewardsModule/JavaScript/Confirmation.View.js"
+                ]
+            },
+            "shopping": {
+                "files": [
+                    "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.js",
+                    "Modules/MiaRewardsModule/JavaScript/MiaRewardsModule.View.js",
+                    "Modules/MiaRewardsModule/JavaScript/MIA.MiaRewardsExtension.MiaRewardsModule.Model.js",
+                    "Modules/MiaRewardsModule/JavaScript/SubmitClaim.View.js",
+                    "Modules/MiaRewardsModule/JavaScript/Confirmation.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/MiaRewardsModule/SuiteScript/MIA.MiaRewardsExtension.MiaRewardsModule.js",
+        "files": [
+            "Modules/MiaRewardsModule/SuiteScript/MIA.MiaRewardsExtension.MiaRewardsModule.js",
+            "Modules/MiaRewardsModule/SuiteScript/MiaRewardsModule.ServiceController.js",
+            "Modules/MiaRewardsModule/SuiteScript/MIA.MiaRewardsExtension.MiaRewardsModule.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\MiaRewardsExtension",
+    "suitescript2": {
+        "files": [
+            "Modules/MiaRewardsModule/SuiteScript2/MiaRewardsModule.Service.ss"
+        ]
+    }
+}

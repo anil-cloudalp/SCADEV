@@ -1,0 +1,75 @@
+{
+	"name": "CheckoutCustomization",
+	"fantasyName": "Checkout Customization",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "Checkout Customization",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CheckoutCustomization.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CheckoutCustomization/Configuration/CheckoutCustomization.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/CheckoutCustomization/Templates/ca_checkoutcustomization_checkoutcustomization.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/CheckoutCustomization/Sass/_checkoutcustomization-checkoutcustomization.scss"
+		},
+		"files": [
+			"Modules/CheckoutCustomization/Sass/_checkoutcustomization-checkoutcustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/CheckoutCustomization/JavaScript/CA.CheckoutCustomization.CheckoutCustomization.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/CheckoutCustomization/JavaScript/CA.CheckoutCustomization.CheckoutCustomization.js",
+					"Modules/CheckoutCustomization/JavaScript/CheckoutCustomization.View.js",
+					"Modules/CheckoutCustomization/JavaScript/CA.CheckoutCustomization.CheckoutCustomization.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CheckoutCustomization/SuiteScript/CA.CheckoutCustomization.CheckoutCustomization.js",
+		"files": [
+			"Modules/CheckoutCustomization/SuiteScript/CA.CheckoutCustomization.CheckoutCustomization.js",
+			"Modules/CheckoutCustomization/SuiteScript/CheckoutCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/CheckoutCustomization@1.0.0",
+	"activation_id": "26",
+	"extension_id": "23012"
+}

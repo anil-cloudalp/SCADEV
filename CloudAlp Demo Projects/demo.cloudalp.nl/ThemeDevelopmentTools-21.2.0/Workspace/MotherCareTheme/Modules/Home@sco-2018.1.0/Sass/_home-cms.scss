@@ -1,0 +1,104 @@
+.home-cms {
+	@extend .container;
+}
+.home-cms-page-banner-top {
+}
+.home-cms-page-banner-bottom-content {
+    @extend .clearfix;
+}
+.home-cms-page-banner-bottom {
+    @extend .col-sm-4;
+}
+.home-cms-page-banner-bottom-main {
+    @extend .col-sm-12;
+}
+
+.home-cms-page-main{}
+.home-cms-page-merchandising{}
+
+
+
+
+// home cms mothercare bx-slider
+.home-bx-slider-grid{
+
+    @media(min-width:$screen-sm-min){
+        grid-template-columns: 1fr 1fr;
+    }
+    display: grid;
+   background-color:  #E7B78A;
+    grid-row: 1fr;
+  }
+
+  .home-bx-slider-img{
+    @media(min-width:$screen-md-min){
+        img{
+            height: 450px;
+        }
+    }
+    @media(min-width:$screen-sm-min) and (max-width:$screen-sm-max) {
+        img{
+            height: 250px;
+        }
+    }
+    img{
+        margin: 0 auto -8px !important;
+      }
+  }
+.home-bx-slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  .home-bx-slider-content .home-bx-slider-caption-button-container{
+    text-align: center;
+  }
+  .home-bx-slider-content .home-bx-slider-caption{
+    p{
+        color: white;
+        font-size: x-large;
+    }
+    .home-bx-slider-caption-button{
+        @extend .button-secondary;
+        @extend .button-large;
+        background-color: #fff;//$sc-home-carousel-button-background-color;
+        border: 1px solid #fff;//$sc-home-carousel-button-border-color;
+        color: #E7B78A;//$sc-home-carousel-button-text-color;
+        width: auto;
+        padding: 13px $sc-padding-lv4;
+        font-weight: $sc-font-weight-light;
+        pointer-events: all;
+        border-radius: 10px ;
+        font-size: 22px;
+
+        &:hover {
+            background-color: #fff;//$sc-home-carousel-button-background-color-hover;
+            border: 1px solid #fff;//$sc-home-carousel-button-border-color-hover;
+            color: #E7B78A;//$sc-home-carousel-button-text-color-hover;
+        }
+    }
+
+}
+.home-bx-slider-content .home-bx-slider-caption-title{
+    color: white;
+    text-align: center;
+}
+@media(max-width:$screen-sm-max){
+    .home-bx-slider-content{
+        padding: $sc-padding-lv2;
+    }
+    .home-bx-slider-content{
+        .home-bx-slider-caption-button-container{
+            margin-bottom: $sc-margin-lv4;
+
+        .home-bx-slider-caption-button{
+            padding: $sc-padding-lv2  $sc-padding-lv2;
+        }
+        }
+    }
+    .home-bx-slider-caption-button-container {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,108 @@
+{
+	"name": "HeaderMenuCustomization",
+	"fantasyName": "Header Menu Customization",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Header Menu Customization Layout Changes",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/HeaderMenuCustomization.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/HeaderMenuCustomization/Configuration/HeaderMenuCustomization.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderMenuCustomization/Templates/rudracustomization_headermenucustomization_headermenucustomization.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderMenuCustomization/Templates/rudracustomization_headermenucustomization_headermenucustomization.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderMenuCustomization/Templates/rudracustomization_headermenucustomization_headermenucustomization.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss",
+			"myaccount": "Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss",
+			"checkout": "Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss"
+		},
+		"files": [
+			"Modules/HeaderMenuCustomization/Sass/_headermenucustomization-headermenucustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+			"myaccount": "Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+			"checkout": "Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+					"Modules/HeaderMenuCustomization/JavaScript/HeaderMenuCustomization.View.js",
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.Model.js",
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+					"Modules/HeaderMenuCustomization/JavaScript/HeaderMenuCustomization.View.js",
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.Model.js",
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+					"Modules/HeaderMenuCustomization/JavaScript/HeaderMenuCustomization.View.js",
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.Model.js",
+					"Modules/HeaderMenuCustomization/JavaScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/HeaderMenuCustomization/SuiteScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+		"files": [
+			"Modules/HeaderMenuCustomization/SuiteScript/RudraCustomization.HeaderMenuCustomization.HeaderMenuCustomization.js",
+			"Modules/HeaderMenuCustomization/SuiteScript/HeaderMenuCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/HeaderMenuCustomization/SuiteScript2/HeaderMenuCustomization.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/HeaderMenuCustomization@1.0.0",
+	"activation_id": "26",
+	"extension_id": "22512"
+}

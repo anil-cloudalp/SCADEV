@@ -1,0 +1,217 @@
+// edited with thread theme
+.header-menu-secondary-nav {
+//   @extend .container;
+  padding-left: 0;
+  padding-right: 0; //removing odd space
+  // font-family:$sc-mc-thin-font-family !important;
+  font-weight: 100;
+//   background-color:$sc-color-primary;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  //border-bottom: $sc-theme-border-light;
+
+}
+.header-menu-level1  li:last-child{
+    .header-menu-level1-anchor{
+
+      color: $sc-mc-light-orange-pa-129;
+    }
+  }
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+  float: right;
+}
+
+.header-menu-search-link {
+  font-size: $sc-font-size-xxl;
+  background: none;
+  padding: 0 0 0 $sc-padding-lv2;
+  color: $sc-color-primary;
+  cursor: pointer;
+  position: relative;
+  line-height:72px;
+  &:hover,
+  &:active {
+    color: $sc-color-primary;
+  }
+}
+
+.header-menu-search-icon {
+  @extend .fa;
+  @extend %fa-search;
+  //font-size: $sc-font-size-xxl;
+}
+
+.header-menu-searchmobile-link {
+  margin-right: 0;
+  cursor: pointer;
+  @media (min-width: $screen-sm-min) {
+    margin-right: $sc-margin-lv2;
+  }
+  bottom: 4px;
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+.nav-secation-1{
+  text-align: end;
+  padding: 0;
+}
+
+
+.header-menu-level1 > li {
+  float: left;
+}
+.header-menu-level1-anchor-last{
+  color: $sc-color-primary !important;
+}
+.header-menu-level1-anchor,
+.header-menu-home-anchor,
+.header-menu-shop-anchor {
+  display: block;
+  position: relative;
+  height:61px;
+  line-height:50px;
+  padding: 0 $sc-margin-lv3;
+  color: $sc-color-secondary;
+//   background-color: $sc-color-primary;
+  font-size: 9pt;
+  font-weight:$sc-font-weight-semibold;
+  text-transform:lowercase;
+  letter-spacing:2px;
+  border-style: solid;
+
+  border-top-width: 0;
+  //padding-top: ($sc-padding-lv2) - (0);
+
+  border-bottom-width:0;
+  //padding-bottom: ($sc-padding-lv2) - (0);
+  font-weight: $sc-mc-thin-font-family !important;
+
+  &:hover,
+  &:focus {
+    color:$sc-color-secondary;
+    // background-color: red;
+
+    border-style: solid;
+    border-color: $sc-color-primary;
+
+    border-top-width: 0;
+    //padding-top: ($sc-padding-lv2) - (0);
+
+    border-bottom-width:0;
+    //padding-bottom: ($sc-padding-lv2) - (0);
+  }
+
+  &:active {
+    color:$sc-color-secondary;
+    // background-color: red;
+
+    border-style: solid;
+    border-color:$sc-color-primary;
+
+    border-top-width:0;
+    //padding-top: ($sc-padding-lv2) - (0);
+
+    border-bottom-width:0;
+    //padding-bottom: ($sc-padding-lv2) - (0);
+  }
+}
+
+.open .header-menu-level1-anchor {
+  color: $sc-color-secondary;
+}
+
+//maxi menu level 2
+.header-menu-back {
+  display: none;
+}
+
+.header-menu-level2 > li {
+  float: left;
+  width: 20%;
+  padding-right: $sc-padding-lv6;
+}
+
+.header-menu-level2-anchor {
+  text-transform: lowercase;
+  text-decoration:none;
+  font-weight: $sc-font-weight-semibold;
+  font-family: $sc-mc-thin-font-family;
+  font-size: 1rem;
+  color: $sc-color-primary;
+  padding-bottom: $sc-padding-lv1;
+//   margin-bottom: $sc-margin-lv2;
+//   border-bottom: 1px solid $sc-color-primary;
+  display: block;
+
+  &:hover {
+    color: $sc-color-primary; //$sc-color-link-hover;
+  }
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+  display: block;
+  text-transform: lowercase;
+  padding: $sc-padding-lv1 0;
+  color:$sc-color-secondary;
+  font-size:0.90rem;
+
+  &:hover,
+  &:focus {
+    color: $sc-color-secondary;
+  }
+
+  &:active,
+  &.active {
+  color: $sc-color-secondary;
+  }
+}
+
+.header-menu-myaccount-anchor-level3:hover {
+ color: $sc-color-secondary;
+}
+
+.header-menu-myaccount-anchor-level3.active {
+  color: $sc-color-secondary;
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon,
+.header-menu-pop-icon {
+  display: none;
+}
+
+.header-menu-level-container {
+  background-color: transparent;
+  display: none;
+  position: absolute;
+  //top: 100%;
+  left: 30px;
+  width: 100%;
+  min-height: 150px;
+  z-index: 1003;
+
+  > li {
+    @extend .container;
+    margin-left: 0;
+    margin-right: 0;
+    background-color:#ffffff;
+    padding: $sc-padding-lv5 $sc-padding-lv7;
+    border-top: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    @include box-shadow(
+      0 6px 12px transparentize($sc-neutral-shade-500, 1-0.175)
+    );
+  }
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+  display: block;
+}

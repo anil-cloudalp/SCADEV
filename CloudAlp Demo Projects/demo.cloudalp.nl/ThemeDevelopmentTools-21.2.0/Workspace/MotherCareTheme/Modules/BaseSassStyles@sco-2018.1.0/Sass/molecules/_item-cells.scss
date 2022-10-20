@@ -1,0 +1,122 @@
+/* Edited for Threads Theme */
+
+.item-cell {
+    position: relative;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-cell-link-image {
+	height:250px;
+	line-height:250px;
+}
+
+.item-cell-image {
+	vertical-align:middle;
+}
+
+.item-cell-title {
+    @extend .xsmall-title-navigable;
+    line-height: 1.1;
+	padding: $sc-padding-lv2 0 0;
+	display: block;
+	text-align: left;
+	text-transform: none;
+	font-family: $sc-font-family;
+    height: 58px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    padding-bottom:1px;
+
+	@media (max-width: $screen-md-min) {
+		//height: 130px;
+	}
+	span{
+		color : #626362;
+	}
+}
+
+.item-cell-price {
+	@extend .small-price;
+	text-align: left;
+}
+
+.item-cell-rate {
+	text-align: left;
+}
+
+.item-cell-rate-filled {
+	@extend .icon-star-filled;
+}
+
+.item-cell-rate-empty {
+	@extend .icon-star;
+}
+
+///////////////////////////////////////////////////////////////
+//Quick view
+
+.item-cell-image-wrapper {
+	position: relative;
+}
+
+.item-cell-quick-view-wrapper {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 45%;
+}
+
+.item-cell:hover .item-cell-quick-view-wrapper {
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.item-cell-quick-view-link {
+	@extend .button-primary;
+    @extend .button-medium;
+    background-color: transparent;
+    color: $sc-color-primary;
+}
+
+.icon-cell-quick-view-icon {
+	@extend .fa;
+	@extend %fa-search;
+}
+@media(max-width:767px){
+   .facets-items-collection-view-row{
+       display: flex;
+       flex-wrap: wrap;
+
+       .facets-items-collection-view-cell-span6,
+       .facets-items-collection-view-cell-span3{
+           flex: 1 0 50%;
+           max-width: 50%;
+       }
+       .facets-items-collection-view-cell-span12{
+           flex: 1 0 100%;
+           max-width: 100%;
+           .facets-item-cell-list{
+               margin-left:0px;
+               .facets-item-cell-list-left{
+                   width:40%;
+                   padding:0px;
+               }
+               .facets-item-cell-list-right{
+                   width:60%;
+               }
+           }
+       }
+   }
+}
+
+/* custom css*/
+
+// .facets-items-collection-view-cell-span3{
+//     @extend .col-sm-4;
+// }

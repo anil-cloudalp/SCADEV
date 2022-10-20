@@ -1,0 +1,101 @@
+@import "variables";
+
+.comparison-page-layout-container {
+
+  .comparison-page-search-container {
+    @extend .col-sm-12;
+    background-color: $comparison-search-container-background-color;
+    padding-top: $sc-padding-lv4;
+    padding-bottom: $sc-padding-base;
+    margin-top: $sc-padding-lv4;
+    margin-bottom: $sc-padding-lv5;
+
+    .search-input-group {
+      @extend .col-sm-6
+    }
+  }
+
+  .record-searcher-suggestion {
+    padding: $sc-padding-lv2;
+
+
+    &:hover {
+      background-color: $comparison-page-search-results-hover;
+    }
+
+    .suggestion-image {
+      width: 20%;
+      float: left;
+    }
+
+    .suggestion-content {
+      line-height: $comparison-search-results-line-height;
+      width: 80%;
+      float: left;
+      padding-left: $sc-padding-lv2;
+
+      .item-name{        font-size: $comparison-search-results-mobile-size;
+        @media (min-width: $screen-md-min) {
+          font-size: $comparison-search-results-desktop-size;
+        }
+      }
+
+      .record-searcher-text-highlighter {
+        &.link-color {
+          color: $comparison-search-results-text-color;
+        }
+
+        .highlighted {
+          font-weight: bold;
+          color: $sc-color-primary;
+        }
+      }
+
+      .item-review {
+        .rating-label {
+          line-height: $sc-margin-lv2;
+        }
+
+        .global-views-star-rating {
+          position: $sc-margin-lv4;
+          clear: both;
+          float: left;
+          min-width: 90px;
+        }
+
+        .star-rating-area {
+          position: relative;
+          float: left;
+        }
+
+        .star-rating-filled,
+        .star-rating-empty {
+          @extend .icon-star;
+        }
+
+        .star-rating-filled {
+          @extend .icon-star-filled;
+        }
+
+        .star-rating-area-fill {
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+        }
+
+        .star-rating-area-filled {
+          width: 257px;
+          text-align: left;
+        }
+      }
+    }
+
+  }
+
+  .clear {
+    clear: both;
+  }
+
+}
+
+

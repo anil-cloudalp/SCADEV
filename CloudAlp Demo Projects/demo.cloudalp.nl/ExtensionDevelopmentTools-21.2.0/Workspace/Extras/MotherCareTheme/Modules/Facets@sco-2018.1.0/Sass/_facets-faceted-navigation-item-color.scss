@@ -1,0 +1,107 @@
+.facets-faceted-navigation-item-color-facet-group {
+	@extend .facets-faceted-navigation-facet-group;
+}
+
+.facets-faceted-navigation-item-color-facet-group-expander {
+	@extend .facets-faceted-navigation-facet-group-expander;
+}
+
+.facets-faceted-navigation-item-color-facet-group-expander-icon {
+	@extend .facets-faceted-navigation-facet-group-expander-icon;
+}
+
+.facets-faceted-navigation-item-color-facet-group-wrapper {}
+
+.facets-faceted-navigation-item-color-facet-group-content {}
+
+.facets-faceted-navigation-item-color-facet-group-title {
+	@extend .facets-faceted-navigation-facet-group-title;
+	font-size: 1rem;
+	color: #165c7d;
+	font-family: "MothercareThin",Arial,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.facets-faceted-navigation-item-color-filter-delete {}
+
+.facets-faceted-navigation-item-color-filter-delete-icon {}
+
+.facets-faceted-navigation-item-color-facet-option {
+	@extend .facets-faceted-navigation-facet-option;
+}
+
+.facets-faceted-navigation-item-color-facet-option-circle {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+
+.facets-faceted-navigation-item-color-picker {
+	@extend .color-picker-md;
+	@extend .clearfix;
+
+	li {
+		float:left;
+		min-width: 25px;
+		min-height: 25px;
+		margin-bottom: $sc-margin-lv2;
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.facets-faceted-navigation-item-color-picker-extra {
+
+	@extend .facets-faceted-navigation-item-color-picker;
+}
+
+.facets-faceted-navigation-item-color-option {}
+
+.facets-faceted-navigation-item-color-extra-option {}
+
+.facets-faceted-navigation-item-color-optionlist-extra-wrapper {}
+
+.facets-faceted-navigation-item-color-optionlist-extra-button {
+	@extend .button-small;
+	display: inline-block;
+	margin: $sc-margin-lv2 0;
+	padding: 0;
+}
+
+.facets-faceted-navigation-item-color-alt-caption {
+	display:none;
+}
+// customs css
+.facets-faceted-navigation-item-color-option {
+
+	span{
+		border-radius: 50%;
+
+	}
+
+}
+.facets-faceted-navigation-item-color-picker a:hover:before{
+	border:none;
+	width: 0;
+		margin: 0px;
+		top: 0px;
+}
+.facets-faceted-navigation-item-color-facet-group{
+	padding: 0px !important;
+}
+.facets-faceted-navigation-item-color-picker span{
+
+}
+.facets-faceted-navigation-item-color-picker a.active:before{
+	height: 0px;
+    width: 0px;
+		top: 0px;
+		left: 0px;
+}
+.facets-faceted-navigation-item-color-picker .white-border:hover:befor{
+	border: none;
+}
+.facets-faceted-navigation-item-color-picker a[data-color="white"].active:before{
+	border: none;
+}
+.facets-faceted-navigation-item-color-picker a[data-color="white"]:hover:before{
+	border: none;
+}

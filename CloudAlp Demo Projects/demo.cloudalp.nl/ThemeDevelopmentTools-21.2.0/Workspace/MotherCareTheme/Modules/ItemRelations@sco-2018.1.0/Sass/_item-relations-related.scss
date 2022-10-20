@@ -1,0 +1,120 @@
+/* Edited for Threads Theme */
+
+.item-relations-related {
+	position: relative;
+
+	.bx-wrapper{
+		display:grid;
+		place-items: center;
+		max-width: 100% !important;
+		// margin-left:8vw;
+		.bx-pager{
+	
+			a {
+			display: block;
+			width:10px;
+			height: 10px;
+			border-radius:100% !important;
+			opacity: 0.5;
+			color: #FFFFFF !important;
+			background-color: #FFFFFF !important;
+			margin: 0 $sc-margin-lv1;
+			border:2px solid $sc-color-primary !important;
+			content-visibility:hidden !important;
+			}
+	
+			a.active{
+			opacity: 1;
+			background-color: $sc-color-primary !important;
+			}	
+	
+				}
+		.bx-viewport{
+			@media (min-width:$screen-sm-min ){ //$screen-md-min
+				width: 79% !important;
+				}
+			@media (min-width:1550px){
+				width: 1180px !important;
+			}
+	@media screen and (min-device-width:$screen-md-min) and (max-device-width: 1500px) { 
+	width:885px !important;
+	}
+	@media screen and (min-device-width:$screen-sm-min) and (max-device-width: $screen-sm-max) { 
+	width:590px !important;
+	}
+		}
+	}
+}
+
+.item-relations-related .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+.item-relations-related h3 {
+    @extend .product-slider-title;
+}
+
+.item-relations-related .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.item-relations-related-row {
+	display:flex;
+	justify-content: center;
+	img{
+		@media(min-width: $screen-md-min){
+		height:360px !important;
+		}
+		@media screen and (min-device-width:$screen-sm-min) and (max-device-width: $screen-sm-max) { 
+		height:360px !important;
+		}
+		@media(max-width: $screen-xs-max){
+			height: 280px;
+		}
+	}
+
+}
+
+.item-relations-related-carousel-next {
+	margin-left:$sc-margin-lv2;
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	right:-5px;
+	top: 30%;
+	font-size: 3rem;
+	color: #dadbda;
+}
+
+.item-relations-related-carousel-prev {
+	cursor:pointer;
+	cursor:hand;
+	position:absolute;
+	left:-5px;
+	top: 30%;
+	font-size: 3rem;
+	color: #dadbda;
+}
+
+.item-relations-related-carousel-next.disabled,
+.item-relations-related-carousel-prev.disabled {
+	display: none;
+}
+.carousel-prev-arrow{
+	color: #505759  !important;
+	@media (max-width: $screen-md-min){
+    font-size: x-large;
+    font-weight: bold;
+	}
+}
+.carousel-next-arrow{
+	color:#505759 !important;
+	@media (max-width: $screen-md-min){
+    font-size: x-large;
+    font-weight: bold;
+	}
+}
+.control-text {
+	display:none;
+}

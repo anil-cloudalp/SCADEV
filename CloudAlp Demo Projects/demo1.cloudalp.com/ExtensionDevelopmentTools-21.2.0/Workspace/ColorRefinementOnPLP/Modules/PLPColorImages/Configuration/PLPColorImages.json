@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "PLPColorImages.config": {
+            "group": "extensions",
+            "subtab": "PLPColorImages_subtab",
+            "type": "string",
+            "title": "PLPColorImages_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

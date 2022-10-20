@@ -1,0 +1,84 @@
+.sc-widget-placeholders-container {
+  .sc-compare-item-wrapper {
+    @extend .col-xs-12;
+    @extend .col-sm-6;
+    @extend .col-md-6;
+    @extend .col-lg-3;
+    padding-right: $sc-padding-base;
+    padding-left: $sc-padding-base;
+    margin-bottom: $sc-margin-base;
+    @media (min-width: $screen-md-min) {
+      padding-right: $sc-padding-lv2;
+    }
+
+    .sc-compare-item {
+      @extend .col-sm-12;
+      height: 55px;
+      border: 1px solid $comparison-widget-items-border-color;
+      padding: 0 $sc-padding-base;
+      background-color: $comparison-widget-items-and-header-bg-color;
+
+      &.empty-cell {
+        background-color: $sc-color-copy-dark;
+      }
+
+      .sc-addedfromcomparison-product-thumbnail-container {
+        float: left;
+        width: 53px;
+        height: 100%;
+        padding: 1px 0;
+        overflow: hidden;
+        position: relative;
+        .sc-addedfromcomparison-product-thumbnail {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          max-height: 50px;
+          max-width: 100%;
+        }
+      }
+
+      .sc-addedfromcomparison-product-name-container {
+        @extend .col-xs-8;
+        @extend .col-sm-8;
+        @extend .col-md-8;
+        @extend .col-lg-8;
+        height: 53px;
+        overflow: hidden;
+        padding: $sc-padding-base 0 $sc-padding-base $sc-padding-base;
+        .sc-addedfromcomparison-product-name {
+          color: $comparison-widget-container-font-color;
+          font-size: $sc-font-size-xs;
+          font-weight: $sc-font-weight-light;
+          line-height: 18px;
+          text-align: left;
+        }
+      }
+
+      .sc-addedfromcomparison-remove-button-container {
+        padding: 0;
+        position: absolute;
+        text-align: right;
+        right: $sc-margin-base;
+        top: 4px;
+        .sc-addedfromcomparison-remove-button {
+          background-color: transparent;
+          font-size: larger;
+          overflow: hidden;
+        }
+
+        .sc-addedfromcomparison-remove-button-icon {
+          @extend .times-circle;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          color: $comparison-widget-container-font-color;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+}

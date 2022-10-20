@@ -1,0 +1,20 @@
+{
+    "type":"object",
+    "subtab":{
+        "id":"ReOrderItems",
+        "title":"ReOrderItems PDF file id in Netsuite file cabinet",
+        "description":"ReOrderItems PDF file id in Netsuite file cabinet",
+        "group":"extensions"
+    }
+,   "properties":{
+        "ReOrderItems.fileId":{
+            "group":"extensions",
+            "subtab":"ReOrderItems",
+            "type":"string",
+            "title": "Internalid Id of pdf file which can convert to pdf",
+            "description":"Add the Internalid Id of pdf file which can download the format of reorder item and converted to pdf"
+        }
+    
+
+    }
+}

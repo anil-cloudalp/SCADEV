@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "SCACASEFORM.config": {
+            "group": "extensions",
+            "subtab": "SCACASEFORM_subtab",
+            "type": "string",
+            "title": "SCACASEFORM_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

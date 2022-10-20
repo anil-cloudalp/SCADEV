@@ -1,0 +1,70 @@
+{
+	"name": "Filters",
+	"fantasyName": "Filters",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "show number of filters seleceted in particular section and clear only that section.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Filters.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Filters/Templates/ca_filters_filters.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Filters/Sass/_filters-filters.scss"
+		},
+		"files": [
+			"Modules/Filters/Sass/_filters-filters.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Filters/JavaScript/CA.Filters.Filters.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Filters/JavaScript/CA.Filters.Filters.js",
+					"Modules/Filters/JavaScript/Filters.View.js",
+					"Modules/Filters/JavaScript/CA.Filters.Filters.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Filters/SuiteScript/CA.Filters.Filters.js",
+		"files": [
+			"Modules/Filters/SuiteScript/CA.Filters.Filters.js",
+			"Modules/Filters/SuiteScript/Filters.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/Filters@1.0.0",
+	"activation_id": "27",
+	"extension_id": "22112"
+}

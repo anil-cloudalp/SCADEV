@@ -1,0 +1,25 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+@import "./shoppingcustomization-become-a-dealer";
+// .shoppingcustomization-info-card {
+//     @extend .info-card;
+// }
+
+// .shoppingcustomization-info-card-content {
+//     @extend .info-card-content;
+//     color: $sc-color-secondary;
+//     font-weight: bold;
+// }
+// new changes
+.Shoppingcustomization-plp-storedescription-sec{
+	padding-bottom: 15px;
+}
+.Shoppingcustomization-plp-storedescription-text{
+
+}

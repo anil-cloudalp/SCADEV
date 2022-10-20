@@ -1,0 +1,240 @@
+/* Edited for Threads Theme */
+
+// Font size variables
+//
+// A scale of sizes has been defined for its use along the different elements of the theme.
+// As it happens with many other sizing scales variables go from XS to XXXL
+// Every size is relative to a base font size that may be modified. In that case all the other sizes will change in relationship to this new base size.
+// With the exception of this base font size expressed in pixels, font sizes are expressed in rem units.
+//
+// $sc-font-size-xxs - Double extra small font size
+// $sc-font-size-xs - Extra small font size
+// $sc-font-size-s - Small font size
+// $sc-font-size-m - Medium font size
+// $sc-font-size-l - Large font size
+// $sc-font-size-xl - Extra large font size
+// $sc-font-size-xxl - Double extra large font size
+// $sc-font-size-xxxl - Triple extra large font size
+// $sc-font-weight-light - Light font weight
+// $sc-font-weight-normal - Normal font weight
+// $sc-font-weight-semibold - Semibold font weight
+// $sc-font-weight-bold - Bold font weight
+//
+// Markup:
+// <p style="font-size: $sc-font-size-xxs">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxs</strong>.</p>
+// <p style="font-size: $sc-font-size-xs">Good design is obvious. Great design is transparent <strong>$sc-font-size-xs</strong>.</p>
+// <p style="font-size: $sc-font-size-s">Good design is obvious. Great design is transparent <strong>$sc-font-size-s</strong>.</p>
+// <p style="font-size: $sc-font-size-m">Good design is obvious. Great design is transparent <strong>$sc-font-size-m</strong>.</p>
+// <p style="font-size: $sc-font-size-l">Good design is obvious. Great design is transparent <strong>$sc-font-size-l</strong>.</p>
+// <p style="font-size: $sc-font-size-xl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xl</strong>.</p>
+// <p style="font-size: $sc-font-size-xxl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxl</strong>.</p>
+// <p style="font-size: $sc-font-size-xxxl">Good design is obvious. Great design is transparent <strong>$sc-font-size-xxxl</strong>.</p>
+// <p style="font-weight: $sc-font-weight-light;">Freedom lies in being bold. - font weight $sc-font-weight-light.</p>
+// <p style="font-weight: $sc-font-weight-normal;">Freedom lies in being bold. - font weight $sc-font-weight-normal.</p>
+// <p style="font-weight: $sc-font-weight-semibold;">Freedom lies in being bold. - font weight $sc-font-weight-semibold.</p>
+// <p style="font-weight: $sc-font-weight-bold;">Freedom lies in being bold. - font weight $sc-font-weight-bold.</p>
+//
+
+/****MC Custom Font******/
+$sc-mc-font-path: getThemeAssetsPath("font-mc-custom");
+$sc-mc-font-custom-path: $sc-mc-font-path;
+
+@font-face {font-family: 'Mothercare-RegularExtended';
+	src: url('#{$sc-mc-font-custom-path}/Mothercare-RegularExtended.otf') format('opentype'),
+	url('#{$sc-mc-font-custom-path}/Mothercare-RegularExtended.woff') format('woff'), /* chrome、firefox */
+    url('#{$sc-mc-font-custom-path}/Mothercare-RegularExtended.ttf') format('truetype'); /* chrome、
+    firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+}
+@font-face {font-family: 'MothercareJunior-Regular';
+	src: url('#{$sc-mc-font-custom-path}/MothercareJunior-Regular.otf') format('opentype'),
+	url('#{$sc-mc-font-custom-path}/MothercareJunior-Regular.woff') format('woff'), /* chrome、firefox */
+    url('#{$sc-mc-font-custom-path}/MothercareJunior-Regular.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+}
+@font-face {font-family: 'Mothercare-Demi';
+	src: url('#{$sc-mc-font-custom-path}/Mothercare-DemiExtended.otf') format('opentype'),
+	url('#{$sc-mc-font-custom-path}/Mothercare-Demi.woff') format('woff'), /* chrome、firefox */
+    url('#{$sc-mc-font-custom-path}/Mothercare-Demi.ttf') format('truetype'); /* chrome、firefox、
+    opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+}
+@font-face {font-family: 'MothercareThin';
+    src: url('#{$sc-mc-font-custom-path}/MothercareThin.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-display: swap;
+}
+////////////////////////////////////////
+
+// MotherCare font-size
+$sc-font-size-base: 11pt;  //mothercare base   14px
+$sc-font-size-xxs: 0.6875rem; //11px
+$sc-font-size-xs: 0.8125rem; // 13px
+$sc-font-size-s: 0.9375rem; // 15px  //mobile h5
+
+$sc-font-size-m: 1rem; // 16pt  //desktop h5  //h4 mobile
+$sc-font-size-l: 1.125rem; // 18pt //desktop h4 //h3 mobile
+$sc-font-size-xl: 1.25rem; // 20pt  //desktop h3 //h2 mobile
+$sc-font-size-xxl:  2rem; // 24pt  //desktop h2
+$sc-font-size-xxxl: 2.5rem; // 30pt  //desktop
+
+$sc-font-size-12 : 12pt;
+
+//desktop
+$sc-mc-font-h1 : 30pt;
+$sc-mc-font-h2 : 24pt;
+$sc-mc-font-h3 : 20pt;
+$sc-mc-font-h4 : 18pt;
+$sc-mc-font-h5 : 16pt;
+
+$sc-mc-cta-mother-add-to-basket : 18pt;
+$sc-mc-cta-mother-cta-msg : 15pt;
+$sc-mc-body-txt : 14pt;
+$sc-mc-txt-link: 14pt;
+$sc-mc-tc : 11pt;
+
+//mobile
+$sc-mc-font-h1-mobile : 26pt;
+$sc-mc-font-h2-mobile : 20pt;
+$sc-mc-font-h3-mobile : 18pt;
+$sc-mc-font-h4-mobile : 16pt;
+$sc-mc-font-h5-mobile : 15pt;
+
+//$sc-font-size-base: 15px;
+//$sc-font-size-xxs: 0.75rem; // 12px
+//$sc-font-size-xs: 0.87rem; // 13.92px
+//$sc-font-size-s: 0.93rem; // 14.88px  //mobile h5
+//$sc-font-size-m: 1rem; // 16px   //mobile h4  //desktop h5
+//$sc-font-size-l: 1.067rem; // 17.072px //mobile h3  //desktop h4
+//$sc-font-size-xl: 1.2rem; // 19.2px   //desktop h1  //mobile h2
+//$sc-font-size-xxl: 1.47rem; // 23.52px   //desktop h2  //desktop h3
+//$sc-font-size-xxxl: 1.73rem; // 27.68px  //mobile h1
+
+// Font family
+// $sc-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sc-font-family: "Arial", sans-serif;
+$sc-mc-reg-ext-family: "Mothercare-RegularExtended", Arial, sans-serif;
+$sc-mc-jr-font-family: "MothercareJunior-Regular", Arial, sans-serif;
+$sc-mc-demi-font-family: "Mothercare-Demi", Arial, sans-serif;
+$sc-mc-thin-font-family: "MothercareThin", Arial, sans-serif;
+
+// Font weight
+$sc-font-weight-thin: 100;
+$sc-font-weight-extra-light: 200;
+$sc-font-weight-light: 300;
+$sc-font-weight-normal: 400;
+$sc-font-weight-semibold: 600;
+$sc-font-weight-bold: 800;
+$sc-navigation-icon-size: 25px;
+
+
+
+// For icons
+
+$sc-mc-icon-path: getThemeAssetsPath("font-mc-custom");
+$sc-mc-font-custom-path: $sc-mc-icon-path;
+
+$icomoon-font-family: "mc-icon" !default;
+$icomoon-font-path: $sc-mc-font-custom-path !default;
+
+$mcicon-Login: "\f8fd";
+$mcicon-Register: "\f901";
+$mcicon-Quick-add: "\f902";
+$mcicon-Cart: "\f903";
+$mcicon-Store-locator: "\f904";
+
+
+$icomoon-font-family-insta: "mc-instagram" !default;
+
+$mc-instagram-two: "\f906";
+$mc-instagram-one: "\f907";
+
+@font-face {
+	font-family: '#{$icomoon-font-family}';
+	src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?380t5p');
+	src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?380t5p#iefix') format('embedded-opentype'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?380t5p') format('truetype'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?380t5p') format('woff'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?380t5p##{$icomoon-font-family}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="mcicon-"], [class*=" mcicon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: '#{$icomoon-font-family}' !important;
+	font-style: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
+	font-size: 22px;
+	color : $sc-color-primary !important;
+	display: inline-block;
+}
+
+.mcicon-Login {
+	&:before {
+		content: $mcicon-Login;
+	}
+}
+.mcicon-Register{
+	&:before {
+		content: $mcicon-Register;
+		font-weight: 900;
+	}
+}
+.mcicon-Quick-add {
+	&:before {
+		content: $mcicon-Quick-add;
+	}
+}
+.mcicon-Cart {
+	&:before {
+		content: $mcicon-Cart;
+		vertical-align: middle;
+		color : #51585A !important;
+	}
+}
+.mcicon-Store-locator {
+	&:before {
+		content: $mcicon-Store-locator;
+	}
+}
+
+
+//instagram
+
+@font-face {
+	font-family: '#{$icomoon-font-family-insta}';
+	src:  url('#{$icomoon-font-path}/#{$icomoon-font-family-insta}.eot?9hix0e');
+	src:  url('#{$icomoon-font-path}/#{$icomoon-font-family-insta}.eot?9hix0e#iefix') format('embedded-opentype'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family-insta}.ttf?9hix0e') format('truetype'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family-insta}.woff?9hix0e') format('woff'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family-insta}.svg?9hix0e##{$icomoon-font-family-insta}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.mc-icons-extend{
+	font-family:  '#{$icomoon-font-family-insta}' !important;
+	font-style: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: middle;
+	font-size: 22px;
+	color : #003971;
+}
+
+.icon-mc-instagram-two {
+	&:before {
+		@extend .mc-icons-extend;
+		content: $mc-instagram-two;
+	}
+}
+.icon-mc-instagram-one {
+	&:before {
+		@extend .mc-icons-extend;
+		content: $mc-instagram-one;
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "HeaderMenuCustomization.config": {
+            "group": "extensions",
+            "subtab": "HeaderMenuCustomization_subtab",
+            "type": "string",
+            "title": "HeaderMenuCustomization_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

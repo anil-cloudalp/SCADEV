@@ -1,0 +1,86 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.order-wizard-module-search-for-address{
+.twitter-typeahead{
+    margin-bottom: $sc-margin-lv2;
+}
+}
+
+.table-format-data-search-for-address {
+    display: inline-block;
+    display: inline-grid;
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+    margin-left: $sc-margin-lv2*4;
+    background: $sc-color-theme-background;
+    width: 50%;
+
+
+}
+.addressBook-container-data{
+    padding: $sc-padding-lv2;
+}
+.table-format-content{
+    .address-details-selector-option{
+        width: 18px;
+        height: 16px;
+        margin-top: $sc-margin-lv2;
+    }
+	display: flex;
+    padding: $sc-padding-lv2;
+    border: 1px solid $sc-color-theme-border;
+}
+.custom-radio-button{
+	width: 0 !important;
+	border: 0 !important;
+}
+.custom-add-address-link {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+  }
+  .plus-font{
+    @extend .fa;	
+	@extend %fa-plus;
+    font-size: 18px;
+    margin-left: $sc-margin-lv1;
+  }
+  .content-add-address{
+      display: inline-flex;
+      align-items: center;
+      p{
+        padding-left: $sc-padding-lv2;
+        font-size: 16px !important;
+        text-transform: capitalize;
+      }
+  }
+.search-for-address-input-icon{
+    @extend .fa;
+    @extend %fa-search;
+    font-size: 18px;
+    margin-left: $sc-padding-lv1;
+}
+.search-for-address-input {
+    padding: $sc-padding-lv3;
+    margin-bottom: $sc-margin-lv1 - $sc-margin-lv1;   
+}
+.search-for-address-button-submit{
+    background: $sc-color-theme-700;
+    color: $sc-neutral-shade-0;
+    padding: $sc-padding-lv3;
+}
+.search-for-address-table-container{
+    padding: $sc-padding-lv3;
+}
+.table-format-content{
+    .address-details-container-multiselect-address-title{
+        font-size:$sc-font-size-l ;
+    }
+}

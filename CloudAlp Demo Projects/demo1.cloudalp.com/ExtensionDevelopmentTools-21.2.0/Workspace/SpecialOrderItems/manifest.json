@@ -1,0 +1,108 @@
+{
+	"name": "SpecialOrderItems",
+	"fantasyName": "SpecialOrderItem",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "showing special order items message to some items ",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Specialorderitem.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Specialorderitem/Configuration/Specialorderitem.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Specialorderitem/Templates/ca_specialorderitems_specialorderitem.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Specialorderitem/Templates/ca_specialorderitems_specialorderitem.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Specialorderitem/Templates/ca_specialorderitems_specialorderitem.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Specialorderitem/Sass/_specialorderitems-specialorderitem.scss",
+			"myaccount": "Modules/Specialorderitem/Sass/_specialorderitems-specialorderitem.scss",
+			"checkout": "Modules/Specialorderitem/Sass/_specialorderitems-specialorderitem.scss"
+		},
+		"files": [
+			"Modules/Specialorderitem/Sass/_specialorderitems-specialorderitem.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.js",
+			"myaccount": "Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.js",
+			"checkout": "Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.js",
+					"Modules/Specialorderitem/JavaScript/Specialorderitem.View.js",
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.Model.js",
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.js",
+					"Modules/Specialorderitem/JavaScript/Specialorderitem.View.js",
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.Model.js",
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.js",
+					"Modules/Specialorderitem/JavaScript/Specialorderitem.View.js",
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.Model.js",
+					"Modules/Specialorderitem/JavaScript/CA.SpecialOrderItems.Specialorderitem.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Specialorderitem/SuiteScript/CA.SpecialOrderItems.Specialorderitem.js",
+		"files": [
+			"Modules/Specialorderitem/SuiteScript/CA.SpecialOrderItems.Specialorderitem.js",
+			"Modules/Specialorderitem/SuiteScript/Specialorderitem.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/Specialorderitem/SuiteScript2/Specialorderitem.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/SpecialOrderItems@1.0.0",
+	"activation_id": "27",
+	"extension_id": "17512"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "Specialorderitem.config": {
+            "group": "extensions",
+            "subtab": "Specialorderitem_subtab",
+            "type": "string",
+            "title": "Specialorderitem_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

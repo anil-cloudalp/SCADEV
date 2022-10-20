@@ -1,0 +1,784 @@
+
+.find-the-location-content-login{
+	padding: 0;
+   
+   }
+   .login-register{
+	.col-sm-6{
+	   padding-top: 3%;
+   padding-right: 3%;
+   @media (max-width:767px){
+	   margin-bottom: $sc-margin-lv2*3;
+	   padding: 0.01%;
+   }
+   @media(min-width:$screen-md-min){
+	  
+	   padding-top: 6%;
+   }
+   }
+}
+   
+	   #alert-placeholder{
+		   display: inline-block;
+		   .global-views-message {
+			   @media (min-width:$screen-md-min){
+
+				   font-size: 16px;
+			   }
+			   margin-top: 10px;
+		   }
+	   }
+   .login-page-content{
+	//    padding: 0;
+	   @extend .container;
+	   @media (max-width:767px){
+		   .login-page-image-form{
+			   display: none;
+   
+		   }
+	   }
+   }
+   
+   
+   
+   .login-page-image-form{
+	   padding: 3%;
+   }
+   .login-page-main-form{
+	   padding: 3%;
+   }
+   .login-email-field{
+	   input{
+		   border: none;
+		   
+		   border-bottom: 2px solid #000000;
+		   background: none;
+	   }
+   }
+   .login-password-field{
+	   input{
+		   border: none;
+		   
+		   border-bottom: 2px solid #000000;
+		   background: none;
+	   }
+   }
+   .login-button1{
+	   
+	   width: 100%;
+	   
+	   height: 58px;
+	   border:0.3px solid #F58331;
+	   border-radius: 12px;
+	   float:left;
+	   text-align:center;
+	   cursor:pointer; 
+	   position:relative;
+	   box-sizing:border-box;
+	   overflow:hidden;
+	   margin:20px auto;
+	   
+	   background:#F58331;
+	   button{
+		 color: #F58331;
+	 }
+	 }
+	 .login-button1 button{
+   
+   
+	   font-size:22.8px;
+	   color:#fff;
+	   text-decoration:none;
+	   
+	   line-height: 58px;
+	   transition:all .4s ease;
+	   z-index:2;
+	   position:relative;
+	   display: inline-block;
+	   width: 100%;
+	 }
+	 .login-eff-1{
+	   
+	   width: 100%;
+	   height:58px;
+	   // left: -220px;
+	   left: -100%;
+	   background:#fff;
+	   position:absolute;
+	   transition:all .4s ease;
+	   z-index:1;
+	 }
+	 .login-button1:hover .login-eff-1{
+	   left:0;
+	 }
+	 .login-button1 .anchor-1{
+	   color:#fff;
+	   background: transparent;
+   }
+	 .login-button1:hover button{
+	   color:#F58331;
+	 }
+	 @media (max-width: 450px) {
+	   
+	   .login-button1{
+		   width: 100%;
+		   box-sizing: border-box;
+		   float: none;
+		   
+	   }
+	   .login-eff-1{
+		   width: 100%;
+		   left: -100%;
+	   }
+   }
+//    .login-page-content{
+
+// 	   .login-register{
+// 		.col-sm-6{
+// 			@media(max-width:767px){
+ 
+// 				padding-left: 0;
+// 			}
+// 		}
+
+// 	   } 
+//    }
+   
+   
+   
+   .login-button2{
+	   
+	   width: 100%;
+	   
+	   height: 50px;
+	   border:0.3px solid #F58331;
+	   border-radius: 12px;
+	   float:left;
+	   text-align:center;
+	   cursor:pointer; 
+	   position:relative;
+	   box-sizing:border-box;
+	   overflow:hidden;
+	   margin:20px auto;
+	   
+	   background:#F58331;
+	   button{
+		 color: #F58331;
+	 }
+	 }
+	 .login-button2 button{
+   
+	   font-size:22.8px;
+	   color:#fff;
+	   text-decoration:none;
+	   line-height: 50px;
+	   transition:all .4s ease;
+	   z-index:2;
+	   position:relative;
+	   display: inline-block;
+	   width: 100%;
+	 }
+	 .login-eff-2{
+	   
+	   width: 100%;
+	   height:58px;
+	   left: -100%;
+	   background:#fff;
+	   position:absolute;
+	   transition:all .4s ease;
+	   z-index:1;
+	 }
+	 .login-button2:hover .login-eff-2{
+	   left:0;
+	 }
+	 .login-button2 .anchor-2{
+	   color:#fff;
+	   background: transparent;
+   }
+	 .login-button2:hover button{
+	   color:#F58331;
+	 }
+	 @media (max-width: 450px) {
+	   .login-button2{
+		   width: 100%;
+		   box-sizing: border-box;
+		   float: none;
+	   }
+	   .login-eff-2{
+		   width: 100%;
+		   left: -100%;
+	   }
+   }
+   
+   .desktop-site{
+	  @media(min-width:$screen-sm-min){
+		  
+	  }
+	  @media(max-width:767px){
+		 display: none;
+	  } 
+   }
+   .mobile-site{
+	   @media(min-width:$screen-sm-min){
+		   display: none;
+	   }
+	   @media(max-width:767px){
+		  
+	   } 
+   }
+   
+   
+   
+   
+   
+   
+   .register-page-redirect-link{
+	   @extend .col-sm-12;
+	   
+	   p{
+		   color: #979797;
+		   font-size: 19px;
+		   
+	   }
+	   a{
+		   color: #979797;
+		   font-weight: 600;
+		
+		   border-bottom: 1px solid #979797;
+		   &:hover{
+			   color: #F58331;
+			   border: none;
+			   border-bottom: 1px solid #F58331 ;
+		   }
+	   }
+   }
+   .login-page-content-heading{
+	   @media(min-width:$screen-md-min){
+
+		font-size: 40px;
+	   }
+	   @media(min-width:$screen-sm-min)and(max-width:$screen-md-min){
+		font-size: 40px;
+	   }
+	   @media(min-width:$screen-xs-min)and(max-width:767px){
+		font-size: 40px;
+	   }
+	   @media(min-width:345px)and(max-width:$screen-xs-min){
+        font-size: 40px;
+	   }
+	   @media(max-width:345px){
+         font-size: 35px;
+	   }
+	   
+	   color: #F58331;
+   }
+   .login-page-content-heading-2{
+	   
+	@media(min-width:$screen-md-min){
+
+		font-size: 40px;
+	   }
+	   @media(min-width:$screen-sm-min)and(max-width:$screen-md-min){
+		font-size: 40px;
+	   }
+	   @media(min-width:$screen-xs-min)and(max-width:767px){
+		font-size: 40px;
+	   }
+	   @media(min-width:345px)and(max-width:$screen-xs-min){
+        font-size: 40px;
+	   }
+	   @media(max-width:345px){
+         font-size: 35px;
+	   }
+	   color: #222222;
+   }
+   .login-input-field{
+	   margin-top: $sc-margin-lv2;
+   }
+   
+   
+   .home-main-hr1{
+	   @media(min-width:$screen-sm-min){
+		   padding-top: 20px;
+		   padding-bottom: 20px;
+		//    margin-top: 40px;
+		//    margin-bottom: 40px;
+		   hr{
+			 background-color: #E6E6E6;
+		   }
+		 }
+		 @media(max-width:767px){
+			display: none;
+		 }
+   }
+   
+   
+   .find-the-location-content-login{
+   
+	   @media(min-width:$screen-md-min){
+		   margin-top: 40px;
+	   }
+	.about-us-button12-login{
+		@extend .col-sm-6;
+		border:0.3px solid #F58331;
+   
+	 @media (min-width:$screen-sm-min)and (max-width:$screen-md-min){
+	   
+	   width: 203px;
+	   height: 43.02px;
+	 }
+	 @media (min-width:$screen-md-min){
+	  
+	   width: 203px;
+	   height: 43.02px;
+	 }
+   
+		border:0.3px solid #F58331;
+		border-radius: 9px;
+		float:left;
+		text-align:center;
+		cursor:pointer; 
+		position:relative;
+		box-sizing:border-box;
+		overflow:hidden;
+		margin:20px auto;
+		background:#F58331;
+		a{
+		  color: #F58331;
+	  }
+	  }
+	   
+	  .about-us-button12-login a{
+		
+	   
+		color:#fff;
+		text-decoration:none;
+	  @media (max-width:767px){
+		line-height:50px;
+   
+	  }
+		transition:all .4s ease;
+		z-index:2;
+		position:relative;
+		width: 100%;
+		display: inline-block;
+	
+	 @media(min-width:$screen-sm-min){
+	   font-size: 20.04px;
+	   
+	   padding: 2%;
+	   font-weight: lighter;
+	 }
+   }
+   
+	 
+	  .about-us-eff-12-login{
+		width: 100%;
+		height:50px;
+		left: -100%;
+		background:#fff;
+		position:absolute;
+		transition:all .4s ease;
+		z-index:1;
+	  }
+	  .about-us-button12-login:hover .about-us-eff-12-login{
+		left:0;
+	  }
+	  .about-us-button12-login .anchor12-login{
+		color:#fff;
+	}
+	  .about-us-button12-login:hover a{
+		color:#F58331;
+	  }
+	
+	  @media (max-width: 767px) {
+	   
+		.about-us-button12-login{
+			width: 100%;
+			box-sizing: border-box;
+			float: none;
+			display: none;
+		}
+		.about-us-eff-12-login{
+			width: 100%;
+			left: -100%;
+		}
+	}
+   }
+   .location-heading-text-content-component-login{
+	   
+	   height: 500px;
+	   @media(max-width:767px){
+		  height: auto;
+		  margin-bottom: $sc-margin-lv2*2;
+	   
+		  p{
+		 
+			color: #222222;
+			margin-bottom: 20px;
+			font-size: 18px;
+			padding-right: 5%;
+			font-weight: lighter; 
+		  }
+	   }
+	   @media(min-width:$screen-sm-min) and (max-width:$screen-md-min){
+		   height: 600px;
+		   margin-bottom: $sc-margin-lv2*2;
+		   p{
+		  
+		   color: #222222;
+			 margin-bottom: 20px;
+			 font-size: 18px;
+			 padding-right: 5%;
+		   font-weight: lighter;
+		   }
+		 }
+	   @media (min-width:$screen-md-min){
+		height: 600px;
+		margin-bottom: $sc-margin-lv2*2;
+		p{
+	  
+		color: #222222;
+		  margin-bottom: 20px;
+		  font-size: 18px;
+		  padding-right: 5%;
+		font-weight: bold;
+		}
+	   }
+   
+	   .Desktop-location-view{
+		   @media(min-width:$screen-sm-min){
+   
+		   }
+		   @media(max-width:767px){
+			 display: none;
+		   }
+	   }
+	   .mobile-location-view{
+		   @media(min-width:$screen-sm-min){
+			   display: none;
+		   }
+		   @media(max-width:767px){
+			
+		   }
+	   }
+   }
+   .location-heading-content-component-login{
+	   margin-bottom: $sc-margin-lv2+5;
+	   @media(min-width:$screen-sm-min)and(max-width:$screen-md-min){
+		 .heading-1-location-login{
+		 color: #222222;
+		  font-size: 28px;
+		  font-weight: bold;
+		 
+		 }
+		 .heading-2-location-login{
+		  font-size: 28px;
+		color: #222222;
+		  font-weight:bold;
+		 
+		 }
+		 
+	   }
+	   @media (max-width:767px){
+	   margin-bottom:25px;
+		 .heading-1-location-login{
+		 color: #222222;
+		  font-size: 35px;
+		  font-weight: bold;
+	   
+		 }
+		 .heading-2-location-login{
+		 color: #222222;
+		  font-size: 35px;
+		  font-weight:lighter;
+	   
+		 }
+	   }
+	   @media (min-width:$screen-md-min){
+		 h2{
+		  font-size: 40px;
+		  font-weight: bold;
+		  color: #222222;
+		 }
+	   
+	   }
+	 
+   }
+   @media (max-width:767px){
+	   .mailborney-office-content1-login{
+   
+		   margin-top: 24px;
+	   }
+   }
+   
+   .sydney-office-content1-login{
+   
+	p{
+	 color: #222222;
+		font-size: 13px;
+		margin-top: $sc-margin-lv2*2;
+		margin-bottom: $sc-margin-lv2*2;
+	}
+	@media (max-width:767px){
+	  margin-bottom: 30px;
+	  p{
+	   color: #222222;
+	   font-weight: lighter;
+	   font-size: 16px;
+	   padding-right: 51%;
+	   margin: 24px auto;
+	  }
+	}
+	@media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+		  p{
+		 color: #222222;
+			font-size: 18px;
+	   
+			font-weight: lighter;
+			padding-right: 40%;
+		  }
+	}
+	@media (min-width:$screen-md-min){
+	   p{
+	   color: #222222;
+		 font-size: 18px;
+		 font-weight: lighter;
+	  
+		 padding-right: 43%;
+	   margin-top: $sc-margin-lv2*2;
+	   margin-bottom: $sc-margin-lv2*2;
+	   }
+   }
+   }
+   .sydney-office-text-content-login{
+	 @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+	   .sydney-heading-location-login{
+		font-size: 24px;
+		font-weight: lighter;
+		color: #333333;
+	 
+	   }
+	   .highlited-span-content-login{
+		font-weight: bold;
+	 
+		color: #F58331;
+	   }
+	   .component-login{
+		 font-size: 23px;
+		 font-weight: lighter;
+		 color: #333333;
+	   }
+	 }
+	 @media (max-width:$screen-sm-min){
+	   h2{
+		font-size: 30px;
+		font-weight: lighter;
+		color: #333333;
+	   }
+	   .highlited-span-content-login{
+		font-weight: bold;
+		color: #F58331;
+	 
+	   }
+	 }
+	 @media (min-width:$screen-md-min){
+	  .sydney-heading-location-login{
+		font-size: 30px;
+		font-weight: lighter;
+		color: #333333;
+	   }
+	   .highlited-span-content-login{
+		font-weight: bold;
+		color: #F58331;
+	 
+	   }
+	   .component-login{
+		 font-size: 30px;
+		 font-weight: lighter;
+		 color: #333333;
+	   }
+	 }
+   }
+   .highlited-span-content-login{
+	   font-weight: bold;
+	   color: #dd7e43;
+	
+   }
+   .sydney-map-content1-login{
+	position: relative;
+	@media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+	  width: 230px;
+	  height: 220px; 
+	  img{
+		width: 100%;
+		height: 100%;
+	  }
+	}
+	@media (min-width:993px)and (max-width:1199px){
+	 width: 300px;
+	 height: 200px;
+	 img{
+	   width: 100%;
+	   height: 100%;
+	 }
+   }
+   @media (min-width:1200px){
+   
+   width: 369px;
+   height: 221px;
+   img{
+   height: 100%;
+   width: 100%;
+   }
+   }
+   
+   @media (max-width:767px){
+	 img{
+	   width: 100%;
+	   height: 100%;
+	 }
+   }
+   
+   }
+   .mailborney-office-content1-login{
+   
+	p{
+		font-size: 13px;
+		margin-top: $sc-margin-lv2*2;
+	  color: #222222;
+	  font-weight: lighter;
+		margin-bottom: $sc-margin-lv2*2;
+	}
+	@media (max-width:767px){
+	  p{
+		font-weight: lighter;
+		font-size: 16px;
+		padding-right: 45%;
+	
+	  }
+	}
+	@media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+	  p{
+		font-size: 18px;
+	  color: #222222;
+		font-weight: lighter;
+		padding-right: 40%;
+	 
+	  }
+   }
+   @media (min-width:$screen-md-min){
+	   p{
+	   color: #222222;
+		 font-size: 18px;
+		 font-weight: lighter;
+		 padding-right: 43%;
+	  
+	   margin-top: $sc-margin-lv2*2;
+	   margin-bottom: $sc-margin-lv2*2;
+	   }
+	}
+   }
+   .mailborney-office-text-content-login{
+	@media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+	 .melborney-heading-content-1-login{
+	  font-size: 23px;
+	  font-weight: lighter;
+	  color: #333333;
+	 }
+	 .highlited-span-content-login{
+	  font-weight: bold;
+	  color: #F58331;
+	 
+	 }
+	 .melborney-heading-content-2-login{
+	  font-size: 22px;
+	  font-weight: lighter;
+	  color: #333333;
+	 }
+	}
+   @media (max-width:767px){
+	   .melborney-heading-content-1-login{
+	  font-size: 30px;
+	  font-weight: lighter;
+	  color: #333333;
+	}
+	.melborney-heading-content-2-login{
+		font-size: 30px;
+		font-weight: lighter;
+		color: #333333;
+	   }
+	   .highlited-span-content-login{
+		font-weight: bold;
+		color: #F58331;
+	 
+	   }
+   }
+	
+   @media (min-width:$screen-md-min){
+	   .melborney-heading-content-1-login{
+	  font-size: 30px;
+	  font-weight: lighter;
+	  color: #333333;
+	 }
+	 .highlited-span-content-login{
+	  font-weight: bold;
+	  color: #F58331;
+	 
+	 }
+	 .melborney-heading-content-2-login{
+	   font-size: 30px;
+	   font-weight: lighter;
+	   color: #333333;
+	 }
+   }
+	
+   }
+   .mailborney-map-content1-login{
+	position: relative;
+	overflow: hidden;
+   
+	@media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+	  width: 230px;
+	  height: 220px; 
+	  img{
+		width: 100%;
+		height: 100%;
+	  }
+	}
+   @media (min-width:993px)and (max-width:1199px){
+	 width: 300px;
+	 height: 200px;
+	 img{
+	   width: 100%;
+	   height: 100%;
+	 }
+   }
+   @media (min-width:1200px){
+   
+   width: 369px;
+   height: 221px;
+   img{
+	   width: 100%;
+	   height: 100%;
+   }
+   }
+   @media (max-width:767px){
+	 img{
+	   width: 100%;
+	   height: 100%;
+	 }
+   }
+   }
+   
+.login-register-forgetpassword-btn
+{
+	 padding: 0 $sc-padding-lv3;
+	 a{
+		color: #979797;
+		font-size: 19px;
+		text-decoration: none;
+		border-bottom: 1px solid #979797;
+		
+	 }
+}   

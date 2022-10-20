@@ -1,0 +1,22 @@
+.global-views-back-to-top {
+    display: block;
+    text-align:center;
+    padding-bottom: $sc-padding-lv3;
+    background-color: $sc-footer-background-color;
+    font-size: $sc-font-size-m;
+    color: $sc-color-link;
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+.global-views-back-to-top a:hover {
+    text-decoration: none;
+}
+.global-views-back-to-top-icon {
+    @extend .icon-angle-up;
+    color: $sc-color-link;
+    display: block;
+    font-size: $sc-navigation-icon-size;
+    padding: $sc-padding-lv2 0 0;
+}

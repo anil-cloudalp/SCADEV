@@ -1,0 +1,10 @@
+.itemssearcher-input {
+	@extend .nav-search-input;
+	width: 80%;
+	 
+}
+@media(max-width:$screen-xs-max){
+	input[type="search"]{
+		padding-left: 20px;
+	}
+}

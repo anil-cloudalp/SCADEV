@@ -1,0 +1,215 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.miarewardsmodule-info-card {
+    @extend .info-card;
+}
+
+.miarewardsmodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  form#submit-claim{
+    @media(min-width: $screen-md-min)
+    {
+      width:70%;
+    }
+    width:100%;
+    margin:auto;
+    padding: $sc-padding-lv3;
+    //box-shadow: rgba(112, 185, 241, 0.35) 0px 5px 15px;
+    box-shadow: rgba(93, 177, 237, 0.25) 0px 0.0625em 0.0625em, rgba(93, 177, 237, 0.25) 0px 0.125em 0.5em, rgba(93, 177, 237, 0.25) 0px 0px 0px 1px inset;
+	p[data-validation-error="block"]{
+		background-color: transparent !important;
+		border: 1px solid transparent !important;
+		padding: $sc-padding-lv2 0 !important;
+	}
+  }
+
+  .wrapper-container.err-block{
+	background-color: antiquewhite;
+	margin: $sc-margin-lv2;
+	border-top: 1px solid #c01a29;
+	border-bottom: 1px solid #c01a29;
+  }
+  
+  #demo{
+    h5{
+      margin:5px 0;
+	  text-transform: capitalize;
+	  font-weight: 700;
+    }
+  }
+  
+  .tabs {
+    width: 100%;
+  }
+  .input-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .wrapper-container{
+	padding: $sc-padding-lv1;
+    @media(max-width:767px)
+    {
+      width:100%;
+
+    }
+    width: 45%;
+	h4{
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+	select{
+		width: 100%;
+	}
+  }
+  select[name="system"]
+  {
+    background:none;
+    padding-right: unset;
+    outline: none;
+    padding: $sc-padding-lv2 0 $sc-padding-lv2 $sc-padding-lv2;
+    option{
+      padding : 3px;
+    }
+  }
+  .req{
+    color: #c01a29;
+  }
+  .form-header{
+     width: 100%;
+	 text-transform: capitalize;
+  }
+  .small-text{
+    font-size:14px;
+  }
+  .header-err-wrap{
+	border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: $sc-margin-lv4;
+    padding-top: $sc-padding-lv3;
+  }
+  .err-new .top-err-message{
+	color: #c01a29;
+    padding: $sc-padding-lv4 0;
+    font-weight: 700;
+    border-top: 2px solid #c01a29;
+    border-bottom: 2px solid #c01a29;
+    margin-bottom: $sc-margin-lv2;
+	text-align: center;
+  }
+  .err-new .tab-header{
+	margin-bottom: 0px !important;
+  }
+  .err-new .tab-header{
+	padding: $sc-padding-lv3 0 $sc-padding-lv3 0;
+  }
+  .tab-header{
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom:  $sc-margin-lv4;
+  }
+  
+  .tab-nav {
+    display: flex;
+	flex-wrap: wrap;
+   // background: #f0f0f0;
+  }
+ .wrapper-container .err-block{
+	background-color: antiquewhite;
+	margin: $sc-margin-lv2;
+	border-top: 1px solid #c01a29;
+	border-bottom: 1px solid #c01a29;
+ }
+  
+  .nav-item {
+    display: block;
+    padding: 16px;
+    cursor: context-menu;
+    opacity:0.6;
+	color:#000 !important;
+
+	&.active,&.focus,&.hover {
+		color:#000 !important;
+	}
+
+    
+    &.selected {
+      font-weight: 600;
+      background: #fff;
+      cursor: pointer;
+      opacity:1;
+    }
+  }
+  
+  .tab {
+    display: none;
+    padding: 16px;
+    
+    &.selected {
+      display: block;
+    }
+  }
+  
+  .tab-pag {
+    padding: 0 16px;
+    display: block;
+	text-align: center;
+    //justify-content: flex-end;
+  }
+  
+  .pag-item {
+   @extend .button-large;
+   @extend .button-primary;
+   display: block;
+   margin-bottom: 5px;
+    
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &.hidden {
+      display: none;
+    }
+  }
+  .disabled{
+     pointer-events: none;
+  }
+  
+  .pag-item-submit {
+    flex: 0 1 180px;
+    font-size: 1rem;
+	justify-content: center;
+  }
+  .confirm-tab,.confirm-key{
+	padding: $sc-padding-lv2 $sc-padding-lv2;
+  }
+  .confirm-tab{
+	font-weight: 700;
+	background-color: #ccc;
+	font-size: 16px;
+  }
+  .confirm-key{
+	font-weight: 700;
+	font-size: 14px;
+	background-color: aliceblue;
+  }
+  .confirm-value{
+	font-size: 14px;
+	padding: $sc-padding-lv2 $sc-padding-lv4;
+  }

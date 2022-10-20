@@ -1,0 +1,167 @@
+{
+    "type":"object",
+    "subtab":{
+        "id":"instagramApi",
+        "title":"Instagram Post Authentication",
+        "description":"Instagram Post is used to show the all post to the webstore",
+        "group":"extensions"
+    }
+,   "properties":{
+        "instagramApi.accessKey":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"string",
+            "title": "instagram TokenID/Accesskey",
+            "description":"Instagram Post is used"
+        }
+    ,   "instagramApi.userId":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"string",
+            "title":"instagram userId",
+            "description":"Your Instagram UserId Number Format"
+        }
+    ,   "instagramApi.sortBy":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"string",
+            "title":"which Post you want to Show",
+            "enum":[
+                "none",
+                "most-recent",
+                "least-recent",
+                "most-liked",
+                "least-liked",
+                "most-commented",
+                "least-commented"
+            ],
+            "description":"which post you want to show 1- none (default)As they come from Instagram. 2- most-recent 3- least-recent 4- most-liked 5- least-liked 6- most-commented 7- least-commented",
+            "default":"most-recent"
+        }
+    ,   "instagramApi.getData":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"string",
+            "title":"Which Type of Data you want",
+            "enum":[
+                "user",
+                "location",
+                "tagged",
+                "popular"
+            ],
+            "description":"whuch type of data you want 1- popular (default)Images from the popular page 2- tagged - Images with a specific tag. Use tagName to specify the tag. 3- location - Images from a location. Use locationId to specify the location 4- user - Images from a user. Use userId to specify the user.",
+            "default":"user"
+        }
+    ,   "instagramApi.resolution":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"string",
+            "title":"Resolution Type",
+            "enum":[
+                "thumbnail",
+                "low_resolution",
+                "standard_resolution"
+            ],
+            "description":"which type of resolution you want 1- standard_resolution 612 x 612 , 2-low_resolution 306 x 306 , 3- thumbnail (default) 150 x 150",
+            "default":"thumbnail"
+        }
+    ,   "instagramApi.sliderDots":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"boolean",
+            "title":"slider Dots will show or not",
+            "description":"do you want to show or not in slider dots",
+            "default":"false"
+        }
+    ,   "instagramApi.infinite":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"boolean",
+            "title":"Slider Loop",
+            "description":"Slider is contineous looping or not",
+            "default":"true"
+        }
+    ,   "instagramApi.arrow":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"boolean",
+            "title":"Slider Show Arrow Mark",
+            "description":"Slider Show Arrow Mark or not",
+            "default":"false"
+        }
+    ,   "instagramApi.adaptiveHeight":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"boolean",
+            "title":"Slider Addoptive height",
+            "description":"Slider Addoptive height",
+            "default":"true"
+        }
+    ,   "instagramApi.autoplay":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"boolean",
+            "title":"Slider Auto Play",
+            "description":"Slider Auto play or not",
+            "default":"true"
+        }
+    ,   "instagramApi.slidesToShow":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"integer",
+            "title":"Slider slide to show",
+            "description":"how many image you want to show",
+            "default":8
+        }
+    ,   "instagramApi.slidesToScroll":{
+            "group":"extensions",
+            "subtab":"instagramApi",
+            "type":"integer",
+            "title":"Slider slide to scroll",
+            "description":"how many image you want to scroll",
+            "default":2
+        }
+    
+        ,   "Resopnsiveness": {
+            "group": "extensions",
+            "subtab": "instagramApi",
+            "type": "array",
+            "title": "Responsiveness Slider",
+            "description": "here we can set the responsiveness of slider as per the value",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "breakpoint": {
+                        "type": "integer",
+                        "title": "breakpoint",
+                        "description": "here we can set the breakpoint of the screen width"
+                    },
+                    "slidesToShow": {
+                        "type": "integer",
+                        "title": "slidesToShow",
+                        "description": "how many image you want to show in slider"
+                    },
+                    "slidesToScroll": {
+                        "type": "integer",
+                        "title": "description",
+                        "description": "how many image you want to scroll in slider"
+                    }
+                }
+            },
+    
+            "default": [
+                {
+                    "breakpoint":700,
+                    "slidesToShow": 2,
+                    "slidesToScroll": 2
+                },
+                {
+                    "breakpoint": 1024,
+                    "slidesToShow":3,
+                    "slidesToScroll":3
+                }
+                
+            ]
+        }
+    }
+}

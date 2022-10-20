@@ -1,0 +1,40 @@
+.sc-item-comparison-widget-container {
+  .sc-widget-desktop {
+    .sc-widget-placeholders-container {
+      .sc-comparison-selection-wrapper {
+        @extend .container;
+        padding-bottom: $sc-padding-lv2;
+        padding-left: $sc-padding-base;
+        padding-right: $sc-padding-base;
+      }
+    }
+  }
+
+  .sc-widget-non-desktop {
+    .sc-widget-placeholders-container {
+      .sc-comparison-selection-wrapper {
+        @extend .container;
+        margin-top: $sc-margin-lv2;
+        padding-left: $sc-padding-base;
+        padding-right: $sc-padding-base;
+      }
+    }
+  }
+
+  .sc-widget-desktop,
+  .sc-widget-non-desktop {
+    .sc-widget-placeholders-container {
+      max-height: 800px;
+      overflow: hidden;
+
+      &.hide-placeholders {
+        max-height: 0;
+      }
+    }
+  }
+}
+
+
+
+
+

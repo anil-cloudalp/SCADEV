@@ -1,0 +1,27 @@
+$comparison-page-specification-columns-bg-color: $sc-color-theme-100; /* editable({"type": "color", "label": "Field Label Column Background Color"}) */
+$comparison-page-specification-columns-font-color: $sc-color-copy-light; /* editable({"type": "color", "label": "Field Label Column Font Color"}) */
+$comparison-page-odd-rows-bg-color: $sc-color-body-background; /* editable({"type": "color", "label": "Even Rows Background color"}) */
+$comparison-page-even-rows-bg-color: $sc-color-theme-100; /* editable({"type": "color", "label": "Odd Rows Background color"}) */
+$comparison-page-columns-border-color: $sc-color-body-background; /* editable({"type": "color", "label": " Columns Border Color"}) */
+$comparison-page-search-results-hover: $sc-color-theme-100; /* editable({"type": "color", "label": "Search Results Hover"}) */
+$comparison-table-background-color: $sc-color-body-background; /* editable({"type": "color", "label": "Comparison Table Background"}) */
+$comparison-search-container-background-color: $comparison-page-even-rows-bg-color; /* editable({"type": "color", "label": "Search Container Background"}) */
+
+/*
+group({
+ "id": "comparison-page",
+ "label": "Landing Page",
+ "description": "",
+ "children": [
+ "$comparison-page-specification-columns-bg-color",
+ "$comparison-page-specification-columns-font-color",
+ "$comparison-page-odd-rows-bg-color",
+ "$comparison-page-even-rows-bg-color",
+ "$comparison-page-columns-border-color",
+ "$comparison-page-search-results-hover",
+ "$comparison-search-container-background",
+ "$comparison-search-container-background-color",
+ "$comparison-table-background-color"
+ ]
+})
+*/

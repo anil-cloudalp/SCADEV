@@ -1,0 +1,20 @@
+$comparison-search-results-font-family: $sc-font-family; /* editable({"type": "string", "label": "Font Family"}) */
+$comparison-search-results-mobile-size: $sc-font-size-m; /* editable({"type": "string", "label": "Mobile Size"}) */
+$comparison-search-results-desktop-size: $sc-font-size-m; /* editable({"type": "string", "label": "Desktop Size"}) */
+$comparison-search-results-line-height: 1.2em; /* editable({"type": "string", "label": "Line Height"}) */
+$comparison-search-results-text-color: $sc-color-link; /* editable({"type": "color", "label": "Color"}) */
+
+/*
+group({
+ "id": "search-results-text",
+ "label": "Search Results Text",
+ "description": "",
+ "children": [
+ "$comparison-search-results-font-family",
+ "$comparison-search-results-mobile-size",
+ "$comparison-search-results-desktop-size",
+ "$comparison-search-results-line-height",
+ "$comparison-search-results-text-color"
+ ]
+})
+*/

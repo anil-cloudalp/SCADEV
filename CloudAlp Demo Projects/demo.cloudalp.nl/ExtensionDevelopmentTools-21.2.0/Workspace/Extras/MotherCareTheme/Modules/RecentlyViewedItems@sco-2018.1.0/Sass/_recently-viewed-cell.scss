@@ -1,0 +1,32 @@
+/* Edited for Threads Theme */
+
+.recently-viewed-cell-item{
+	@extend .xsmall-title-navigable;
+	.wishlist{
+		position: absolute;
+		right: 15px;
+		top:330px;
+
+	@media(max-width: $screen-xs-max){
+		right: 15px;
+		top: 250px; //280px
+		}
+	@media(max-width: $screen-xs-min){
+		right: 10px;
+		top: 250px;
+		}
+	}	
+	.wishlist-pink{
+		position: absolute;
+		right: 15px;
+		top: 330px;
+	@media(max-width: $screen-xs-max){
+		right: 15px;
+		top:250px; // 280px;
+		}
+	@media(max-width: $screen-xs-min){
+		right: 10px;
+		top: 250px;
+		}
+	}
+}

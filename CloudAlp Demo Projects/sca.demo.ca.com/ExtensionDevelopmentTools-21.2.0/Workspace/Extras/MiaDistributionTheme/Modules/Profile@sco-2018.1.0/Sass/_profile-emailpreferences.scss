@@ -1,0 +1,59 @@
+.profile-emailpreferences {
+	@extend .box-column-bordered
+}
+
+.profile-emailpreferences-form {
+	margin-top: $sc-margin-lv4;
+}
+
+.profile-emailpreferences-subtitle {
+	margin-bottom: $sc-margin-lv2;
+	font-weight: $sc-font-weight-semibold;
+	font-size: 16px;
+	font-family: $sc-font-family2;
+}
+
+.profile-emailpreferences-button-back {
+	@extend .button-back
+}
+
+.profile-emailpreferences-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.profile-emailpreferences-controls-group {
+	margin-top: $sc-margin-lv2;
+}
+
+.profile-emailpreferences-controls-submit {
+	margin-top: $sc-margin-lv6;
+}
+
+.profile-emailpreferences-divider {
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.profile-emailpreferences-submit {
+	@extend .button-primary;
+	@extend .button-medium;
+	font-family: $sc-font-family2;
+}
+
+.profile-emailpreferences-reset {
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-positioning-stack2next;
+	font-family: $sc-font-family2;
+}
+
+.profile-emailpreferences-title {
+	font-family: $sc-font-family2;
+}
+
+.profile-emailpreferences-alert-placeholder {}
+
+.profile-emailpreferences-label {
+	font-size: 16px;
+	font-family: $sc-font-family2;
+}

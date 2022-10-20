@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ImagesGridSlideShow.config": {
+            "group": "extensions",
+            "subtab": "ImagesGridSlideShow_subtab",
+            "type": "string",
+            "title": "ImagesGridSlideShow_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

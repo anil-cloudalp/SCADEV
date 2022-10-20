@@ -1,0 +1,93 @@
+{
+	"name": "customAddresses",
+	"fantasyName": "customAddress",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCS,SCA",
+	"target_version": {
+		"SCS": ">=20.1.0",
+		"SCA": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "to remove addresses which are only specific to that transaction only",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/customAddress.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/customAddress/Configuration/customAddress.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/customAddress/Templates/ca_customaddresses_customaddress.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/customAddress/Templates/ca_customaddresses_customaddress.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/customAddress/Sass/_customaddresses-customaddress.scss",
+			"checkout": "Modules/customAddress/Sass/_customaddresses-customaddress.scss"
+		},
+		"files": [
+			"Modules/customAddress/Sass/_customaddresses-customaddress.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/customAddress/JavaScript/CA.customAddresses.customAddress.js",
+			"checkout": "Modules/customAddress/JavaScript/CA.customAddresses.customAddress.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/customAddress/JavaScript/CA.customAddresses.customAddress.js",
+					"Modules/customAddress/JavaScript/customAddress.View.js",
+					"Modules/customAddress/JavaScript/CA.customAddresses.customAddress.Model.js",
+					"Modules/customAddress/JavaScript/CA.customAddresses.customAddress.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/customAddress/JavaScript/CA.customAddresses.customAddress.js",
+					"Modules/customAddress/JavaScript/customAddress.View.js",
+					"Modules/customAddress/JavaScript/CA.customAddresses.customAddress.Model.js",
+					"Modules/customAddress/JavaScript/CA.customAddresses.customAddress.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/customAddress/SuiteScript/CA.customAddresses.customAddress.js",
+		"files": [
+			"Modules/customAddress/SuiteScript/CA.customAddresses.customAddress.js",
+			"Modules/customAddress/SuiteScript/customAddress.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/customAddress/SuiteScript2/customAddress.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/customAddresses@1.0.0",
+	"activation_id": "18",
+	"extension_id": "17912"
+}

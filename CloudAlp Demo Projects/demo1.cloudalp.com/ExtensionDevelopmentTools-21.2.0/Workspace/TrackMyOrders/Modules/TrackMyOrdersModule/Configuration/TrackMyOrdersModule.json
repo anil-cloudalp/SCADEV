@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "TrackMyOrdersModule.config": {
+            "group": "extensions",
+            "subtab": "TrackMyOrdersModule_subtab",
+            "type": "string",
+            "title": "TrackMyOrdersModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

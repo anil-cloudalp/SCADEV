@@ -1,0 +1,124 @@
+.transaction-history-list-button-back {
+	@extend .button-back;
+}
+
+.transaction-history-list-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.transaction-history-list-header {
+	border-top: 1px solid $sc-color-theme-border-light;
+	padding: $sc-padding-lv3 0;
+	h2{
+		font-family: $sc-font-family2;
+	}
+}
+
+.transaction-history-list-headers {
+	@extend .recordviews-table;
+	@extend .recordviews-row;
+	display: none;
+	font-family: $sc-font-family2;
+
+	&:hover {
+		background-color: transparent;
+	}
+
+	th {
+		height: 44px;
+		vertical-align: middle;
+		font-size: 16px;
+		color:$sc-color-link;
+	}
+
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+	}
+}
+
+.transaction-history-list-headers-number {
+	@extend .recordviews-header !optional;
+	width: 25%;
+}
+
+.transaction-history-list-headers-date {
+	@extend .recordviews-date-header;
+	width: 25%;
+}
+
+.transaction-history-list-headers-amount {
+	@extend .recordviews-currency-header;
+	width: 25%;
+}
+
+.transaction-history-list-headers-status {
+	@extend .recordviews-header !optional;
+	width: 25%;
+	text-align: right;
+}
+
+.transaction-history-list-results-container {
+
+	.recordviews-status {
+		padding-bottom:$sc-padding-lv3;
+	}
+
+	@media (min-width: $screen-md-min) {
+		.recordviews-title {
+			width: 25%;
+		}
+
+		.recordviews-currency {
+			width: 25%;
+		}
+
+		.recordviews-status {
+			width: 25%;
+			text-align: right;
+			padding-bottom:0;
+		}
+
+		.recordviews-date {
+			width: 25%;
+		}
+	}
+}
+
+.transaction-history-list-paginator {
+	margin-top: $sc-margin-lv3;
+}
+.transaction-history-list-empty {
+	@extend .list-empty;
+}
+
+.transaction-history-list-results-table{
+	@extend .table-flex-record-navigable;
+
+	.recordviews-status {
+		.recordviews-value {
+			color:$sc-color-primary;
+		}
+	}
+	.recordviews-row{
+		font-family: $sc-font-family2
+	}
+	.recordviews-title-anchor{
+		font-size: 16px;
+	}
+	.recordviews-label{
+		font-size: 16px;
+		font-family: $sc-font-family2;
+		font-weight: $sc-font-weight-normal;
+		color: $sc-color-link;
+	}
+	.recordviews-value{
+		font-size: 16px;
+		font-family: $sc-font-family2;
+		font-weight: $sc-font-weight-light;
+	}
+}
+
+.transaction-history-list-empty-section {
+	padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+ 	text-align:center;
+ }

@@ -1,0 +1,92 @@
+{
+    "name": "ShippingAndBillingAddress",
+    "fantasyName": "Shipping and billing address changes.",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": " Shipping address can add remove and edit,billing address can't be edit ,billing can only add  if  user has no single  address is available.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ShippingAndBillingAddress.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ShippingAndBillingAddress/Configuration/ShippingAndBillingAddress.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/ShippingAndBillingAddress/Sass/_shippingandbillingaddress-shippingandbillingaddress.scss",
+            "checkout": "Modules/ShippingAndBillingAddress/Sass/_shippingandbillingaddress-shippingandbillingaddress.scss"
+        },
+        "files": [
+            "Modules/ShippingAndBillingAddress/Sass/_shippingandbillingaddress-shippingandbillingaddress.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ShippingAndBillingAddress/Templates/cloudalp_shippingandbillingaddress_shippingandbillingaddress.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ShippingAndBillingAddress/Templates/cloudalp_shippingandbillingaddress_shippingandbillingaddress.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.js",
+            "checkout": "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.js",
+                    "Modules/ShippingAndBillingAddress/JavaScript/ShippingAndBillingAddress.View.js",
+                    "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.Model.js",
+                    "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.js",
+                    "Modules/ShippingAndBillingAddress/JavaScript/ShippingAndBillingAddress.View.js",
+                    "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.Model.js",
+                    "Modules/ShippingAndBillingAddress/JavaScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ShippingAndBillingAddress/SuiteScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.js",
+        "files": [
+            "Modules/ShippingAndBillingAddress/SuiteScript/CloudAlp.ShippingAndBillingAddress.ShippingAndBillingAddress.js",
+            "Modules/ShippingAndBillingAddress/SuiteScript/ShippingAndBillingAddress.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\ShippingAndBillingAddress",
+    "suitescript2": {
+        "files": [
+            "Modules/ShippingAndBillingAddress/SuiteScript2/ShippingAndBillingAddress.Service.ss"
+        ]
+    }
+}

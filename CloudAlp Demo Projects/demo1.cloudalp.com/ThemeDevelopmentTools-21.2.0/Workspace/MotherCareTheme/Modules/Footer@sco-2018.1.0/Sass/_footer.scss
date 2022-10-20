@@ -1,0 +1,352 @@
+/* Edited for Threads Theme */
+
+footer {
+    border-top: 1px solid $sc-footer-border-color;
+    color: $sc-footer-text-color;
+
+    p {
+        color: $sc-footer-text-color;
+    }
+
+    a {
+        color: $sc-footer-link-color;
+
+        &:hover {
+            color: $sc-footer-link-color-hover;
+        }
+
+        &:active {
+            color: $sc-footer-link-color-active;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $sc-footer-headings-color;
+    }
+
+    input {
+        background: $sc-footer-fields-background-color;
+        border: 1px solid $sc-footer-fields-border-color;
+        color: $sc-footer-fields-text-color;
+    }
+}
+
+.footer-content {}
+
+.footer-content-upper-section-container {
+    background-color: $sc-footer-upper-section-background-color;
+}
+
+.footer-content-upper-section {
+    @extend .container;
+    padding-top: $sc-padding-lv6;
+    padding-bottom: $sc-padding-lv6;
+    text-align: center;
+}
+
+.footer-content-upper-section-title {
+    color: $sc-footer-upper-section-title-color;
+    text-transform: $sc-footer-upper-section-title-text-transform;
+}
+
+.footer-content-newsletter-container {
+    margin: 0 auto;
+    //width: 100%;
+
+    // @media (min-width: $screen-sm-min) {
+    //     width: 50%;
+    // }
+
+    .newsletter-subscription-form-button-subscribe {
+        background: $sc-footer-buttons-background-color;
+        color: $sc-footer-buttons-text-color;
+        border: 1px solid $sc-footer-buttons-border-color;
+        height: 45px;
+        font-family: $sc-mc-thin-font-family;
+        border-radius: 0 10px 10px 0;
+        width: 20% !important;
+    }
+
+    .newsletter-subscription-form-label {
+        color: $sc-color-primary;
+        font-size: 15px;
+        text-transform: lowercase;
+        font-style: normal;
+        margin: 0 $sc-margin-lv1 $sc-margin-lv2 0;
+        letter-spacing: 1px;
+        text-align: left;
+
+        @media(max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+            text-align: center;
+        }
+
+        @media(max-width: $screen-xs-max) {
+            margin-left: 0;
+            margin: 0 $sc-margin-lv1 $sc-margin-lv2 0;
+        }
+    }
+
+    .newsletter-subscription-form-para {
+        margin-bottom: $sc-margin-lv2;
+        max-width: 285px;
+        text-transform: none;
+
+        @media(max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto $sc-margin-lv2 auto;
+        }
+    }
+
+    .newsletter-suscription-form-input {
+        height: 45px !important;
+        width: 80% !important;
+        font-family: $sc-mc-thin-font-family;
+        border: 1px solid #D9D9D6 !important;
+        text-transform: none;
+    }
+}
+
+/* SEE _newsletter.scss FOR NEWSLETTER STYLES */
+
+.footer-content-middle-section-container {
+    background-color: $sc-footer-middle-section-background-color;
+    padding: 0 $sc-padding-lv6;
+
+    h4 {
+
+        color: $sc-color-primary;
+    }
+
+    @media(max-width: 767px) {
+        padding: 0;
+    }
+}
+
+.footer-content-middle-section {
+    @extend .container;
+    @include site-max-width-container;
+    padding-top: $sc-padding-lv8;
+    padding-bottom: $sc-padding-lv10;
+
+    // @media (min-width: $screen-sm-min) {
+    //     display: flex;
+    // }
+}
+
+.footer-logo-view-container {
+    text-align: center;
+
+    .header-logo {
+        height: auto;
+        line-height: 1;
+        margin-bottom: $sc-margin-lv4;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+            .header-logo-image {
+                width: 75%;
+            }
+        }
+    }
+}
+
+.footer-content-social {
+    margin-bottom: $sc-margin-lv4;
+    @extend .col-sm-3;
+    // @media (min-width: $screen-sm-min) {
+    //     flex: 1;
+    //     margin-bottom: 0;
+    //     padding-right: $sc-padding-lv2;
+    // }
+    padding: 0 $sc-padding-lv5 0 0;
+
+    @media (max-width: 767px) {
+        padding: $sc-padding-lv2 $sc-padding-lv3;
+        margin-bottom: 0;
+    }
+}
+
+.footer-content-social-list {
+    display: flex;
+    //justify-content: center;
+
+    li {
+        margin-right: $sc-margin-lv2;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer-content-social-link {
+    color: $sc-mc-color;
+}
+
+.footer-content-social-icon {
+    font-size: 20px;
+    margin-right: $sc-margin-lv3;
+}
+
+.footer-columns {
+    //  display: flex;
+    // flex-wrap: wrap;
+    //  flex: 0 1 50%;
+
+    // @media (min-width: $screen-sm-min) {
+    //     flex: 3;
+    // }
+    @extend .col-md-8;
+    padding: 0;
+}
+
+.footer-content-newsletter-cust {
+    @extend .col-md-4;
+    padding: 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 60%;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    @media(max-width: $screen-xs-max) {
+        padding: $sc-padding-lv2 $sc-padding-lv3;
+        margin-top: $sc-margin-lv3;
+    }
+}
+
+.footer-column-links {
+    //  flex: 0 1 50%;
+    padding: 0 $sc-padding-lv5 $sc-padding-lv5 0;
+    @extend .col-sm-3;
+
+    // @media (min-width: $screen-sm-min) {
+    //     flex: 1;
+    //     padding: 0 $sc-padding-lv1 0 0;
+    // }
+
+    // @media (min-width: $screen-md-min) {
+    //     padding-right: $sc-padding-lv2;
+    // }
+
+    @media (max-width: 767px) {
+        padding: 0 0 0 0;
+        border-bottom: 2px solid #F2F1ED;
+    }
+
+    .footer-column-link-listitem {
+        @media (max-width: 767px) {
+            padding: 0 $sc-padding-lv3 6px $sc-padding-lv6;
+            display: none;
+            background-color: #D9D9D6;
+        }
+
+        .footer-column-link {
+            font-family: $sc-mc-thin-font-family;
+        }
+    }
+
+    .footer-column-link-listitem:nth-child(2) {
+        @media (max-width: 767px) {
+            padding-top: $sc-padding-lv4;
+        }
+    }
+
+    .footer-column-link-listitem:last-of-type {
+        @media (max-width: 767px) {
+            padding-bottom: $sc-padding-lv4;
+        }
+    }
+
+    .footer-column-heading-listitem {
+        @media (max-width: 767px) {
+            padding: $sc-padding-lv2 $sc-padding-lv3;
+        }
+    }
+}
+
+.footer-column-heading {
+    font-size: 15px;
+    font-weight: $sc-footer-headings-font-weight;
+    text-transform: $sc-footer-column-link-heading-text-transform;
+    margin-bottom: $sc-margin-lv2;
+    .footer-column-heading-icon{
+        display: none ;
+    }
+    @media(max-width: $screen-xs-max) {
+        margin-bottom: 0;
+
+        .footer-column-heading-icon {
+            display: inline;
+            float: right;
+            @extend .icon-angle-down;
+        }
+
+        .footer-column-heading-icon.down-angle {
+            @extend .icon-angle-up;
+        }
+    }
+
+    // color:$sc-mc-color;
+}
+
+.footer-content-social-heading {
+    @extend .footer-column-heading;
+
+    @media(max-width: $screen-xs-max) {
+        margin-bottom: $sc-margin-lv1;
+    }
+}
+
+.footer-column-links {
+    font-size: 14px;
+}
+
+.footer-content-bottom-section-container {
+    background-color: #D9D9D6; //$sc-footer-bottom-section-background-color;
+    position: relative;
+    padding: $sc-padding-lv2 0;
+
+    .global-views-back-to-top {
+        background: inherit;
+        border-bottom: none;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 30px;
+        border: 1px solid #165c7d;
+        border-radius: 100%;
+        top: 5px;
+        display: block;
+
+        .global-views-back-to-top-icon {
+            color: #000 !important;
+            padding: 7px 0 0;
+        }
+
+        @media(max-width: $screen-xs-max) {
+            right: 15px;
+        }
+    }
+}
+
+.footer-content-bottom-section {
+    @extend .container;
+    @include site-max-width-container;
+    font-size: $sc-font-size-s;
+    padding: $sc-padding-lv1 $sc-padding-lv3;
+    width: 90%;
+    margin: 0 !important;
+}
+
+.footer-content-copyright {
+    font-size: 12px;
+    color: #3B3A3A; //$sc-footer-bottom-section-text-color;
+    font-family: $sc-mc-thin-font-family;
+}

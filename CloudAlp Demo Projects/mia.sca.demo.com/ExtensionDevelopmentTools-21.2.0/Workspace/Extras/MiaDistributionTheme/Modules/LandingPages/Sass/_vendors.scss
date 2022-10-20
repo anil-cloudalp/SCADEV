@@ -1,0 +1,617 @@
+@media (max-width:$screen-sm-max){
+    .vendors-cms-area{
+      padding: 15px;
+    }
+    .find-the-location-content-vendors{padding:15px;}
+  }
+
+  .find-the-location-content-vendors  .location-heading-text-content-component-home{
+    p{color: #222222;
+     font-size: 18px;
+     padding-right: 5%;
+     font-weight:bold;}
+  }
+.vendors-cms-area{
+
+  .choose-a-channel-content{
+   
+    @media (min-width:$screen-sm-min){
+    
+      margin-bottom: $sc-margin-lv2*2;
+      margin-top: $sc-margin-lv2*4;
+    }
+   
+    }
+
+
+
+    .vendors-yealink-us-cms-area-6 p{
+            font-weight: 300;
+            font-size: 16px;
+        }
+        
+    .brand-image{
+        margin-top: 0;
+    }
+    
+   .home-main-hr1, .home-main-hr2 {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+    
+    
+    .vendors-yealink-us-cms-area-6 {
+        margin-top: 10%;
+    }
+    
+    }
+    
+      .choose-a-channel-text-vendors{
+        // @extend .heading-1;
+        @extend .col-sm-12;
+        
+      }
+      .desktop-visible{
+          @media(min-width:$screen-sm-min){
+            .choose-a-channel-text-vendors{
+                font-size:40px;
+                font-weight: bold;
+            
+                color: #333333;
+            }
+          }
+          @media(max-width:767px){
+              display: none;
+          }
+      }
+      .moblie-visible{
+           @media(max-width:767px){
+               .choose-a-channel-text-vendors{
+                font-size:38px;
+                font-weight:700;
+                color: #333333;
+            
+               }
+           }
+           @media(min-width:$screen-sm-min){
+               display: none;
+           }
+      }
+    
+     
+    .vendors-btn{
+    @media (max-width:767px){
+       display: none;
+    }
+    }
+    
+    .find-the-location-content-vendors{
+        @media(min-width:$screen-md-min){
+            margin-top: 40px;
+        }
+     .about-us-button12-vendors{
+         @extend .col-sm-6;
+          @media (min-width:$screen-sm-min)and (max-width:$screen-md-min){
+        
+        width: 203px;
+        height: 43.02px;
+      }
+      @media (min-width:$screen-md-min){
+        
+        width: 203px;
+        height: 43.02px;
+      }
+        //  height:50px;
+         border:0.3px solid #F58331;
+         border-radius: 9px;
+         float:left;
+         text-align:center;
+         cursor:pointer; 
+         position:relative;
+         box-sizing:border-box;
+         overflow:hidden;
+         margin:20px auto;
+         background:#F58331;
+         a{
+           color: #F58331;
+       }
+       }
+        
+       .about-us-button12-vendors a{
+         color:#fff;
+         text-decoration:none;
+       @media (max-width:767px){
+         line-height:50px;
+    
+       }
+         transition:all .4s ease;
+         z-index:2;
+         position:relative;
+         width: 100%;
+         display: inline-block;
+     
+      @media(min-width:$screen-sm-min){
+        font-size: 20.04px;
+     
+        padding: 2%;
+        font-weight: lighter;
+      }
+    }
+    
+       
+       .about-us-eff-12-vendors{
+         width: 100%;
+         height:50px;
+         left: -100%;
+         background:#fff;
+         position:absolute;
+         transition:all .4s ease;
+         z-index:1;
+       }
+       .about-us-button12-vendors:hover .about-us-eff-12-vendors{
+         left:0;
+       }
+       .about-us-button12-vendors .anchor12-vendors{
+         color:#fff;
+     }
+       .about-us-button12-vendors:hover a{
+         color:#F58331;
+       }
+     
+       @media (max-width: 767px) {
+         
+         .about-us-button12-vendors{
+             width: 100%;
+             box-sizing: border-box;
+             float: none;
+             display: none;
+         }
+         .about-us-eff-12-vendors{
+             width: 100%;
+             left: -100%;
+         }
+     }
+    }
+    .location-heading-text-content-component-vendors{
+
+        height: 500px;
+        @media(max-width:$screen-sm-min){
+           height: auto;
+           margin-bottom: $sc-margin-lv2*2;
+           p{
+          
+           color: #222222;
+             margin-bottom: 20px;
+             font-size: 18px;
+             padding-right: 5%;
+           }
+        }
+        @media (min-width:$screen-sm-min){
+         height: 600px;
+         margin-bottom: $sc-margin-lv2*2;
+         p{
+    
+         color: #222222;
+           margin-bottom: 20px;
+           font-size: 18px;
+           padding-right: 5%;
+         font-weight: lighter;
+         }
+        }
+    }
+    .location-heading-content-component-vendors{
+        margin-bottom: $sc-margin-lv2+5;
+        @media(min-width:$screen-sm-min)and(max-width:$screen-md-min){
+          .heading-1-location-vendors{
+          color: #222222;
+           font-size: 28px;
+           font-weight: bold;
+        
+          }
+          .heading-2-location-vendors{
+           font-size: 28px;
+         color: #222222;
+           font-weight: 400;
+          
+          }
+         
+        }
+        @media (max-width:767px){
+          .heading-1-location-vendors{
+          color: #222222;
+           font-size: 35px;
+           font-weight: bold;
+    
+          }
+          .heading-2-location-vendors{
+          color: #222222;
+           font-size: 35px;
+           font-weight:bold;
+        
+          }
+        }
+        @media (min-width:$screen-md-min){
+          h2{
+           font-size: 40px;
+           font-weight: bold;
+        
+          }
+       
+        }
+       
+    }
+    .sydney-office-content1-vendors{
+     
+     p{
+      color: #222222;
+     
+         font-size: 13px;
+         margin-top: $sc-margin-lv2*2;
+         margin-bottom: $sc-margin-lv2*2;
+     }
+     @media (max-width:767px){
+       p{
+        color: #222222;
+         font-weight: lighter;
+      
+         font-size: 16px;
+         padding-right: 45%;
+       }
+     }
+     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+           p{
+          color: #222222;
+             font-size: 18px;
+        
+             font-weight: lighter;
+             padding-right: 40%;
+           }
+     }
+     @media (min-width:$screen-md-min){
+        p{
+        color: #222222;
+          font-size: 18px;
+          font-weight: lighter;
+       
+          padding-right: 43%;
+        margin-top: $sc-margin-lv2*2;
+        margin-bottom: $sc-margin-lv2*2;
+        }
+    }
+    }
+    .sydney-office-text-content-vendors{
+      @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+        .sydney-heading-location-vendors{
+         font-size: 24px;
+         font-weight: lighter;
+      
+        }
+        .highlited-span-content-vendors{
+         font-weight: bold;
+    
+         color: #F58331;
+        }
+        .component-vendors{
+          font-size: 23px;
+          font-weight: lighter;
+       
+        }
+      }
+      @media (max-width:$screen-sm-min){
+        h2{
+         font-size: 30px;
+         font-weight: lighter;
+      
+        }
+        .highlited-span-content-vendors{
+         font-weight: bold;
+         color: #F58331;
+    
+        }
+      }
+      @media (min-width:$screen-md-min){
+       .sydney-heading-location-vendors{
+         font-size: 30px;
+         font-weight: lighter;
+      
+        }
+        .highlited-span-content-vendors{
+         font-weight: bold;
+         color: #F58331;
+    
+        }
+        .component-vendors{
+          font-size: 30px;
+          font-weight: lighter;
+       
+        }
+      }
+    }
+    .highlited-span-content-vendors{
+        font-weight: bold;
+        color: #dd7e43;
+    
+    }
+    .sydney-map-content1-vendors{
+     position: relative;
+     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+       width: 230px;
+       height: 220px; 
+       img{
+         width: 100%;
+         height: 100%;
+       }
+     }
+     @media (min-width:993px)and (max-width:1199px){
+      width: 300px;
+      height: 200px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media (min-width:1200px){
+    width: 369px;
+    height: 221px;
+    img{
+    height: 100%;
+    width: 100%;
+    }
+    }
+    
+    @media (max-width:767px){
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+    }
+    .mailborney-office-content1-vendors{
+   
+     p{
+      
+         font-size: 13px;
+         margin-top: $sc-margin-lv2*2;
+       color: #222222;
+      
+       font-weight: lighter;
+         margin-bottom: $sc-margin-lv2*2;
+     }
+     @media (max-width:767px){
+       p{
+         font-weight: lighter;
+         font-size: 16px;
+         padding-right: 45%;
+      
+       }
+     }
+     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+       p{
+         font-size: 18px;
+       color: #222222;
+         font-weight: lighter;
+         padding-right: 40%;
+      
+       }
+    }
+    @media (min-width:$screen-md-min){
+        p{
+        color: #222222;
+          font-size: 18px;
+          font-weight: lighter;
+          padding-right: 43%;
+       
+        margin-top: $sc-margin-lv2*2;
+        margin-bottom: $sc-margin-lv2*2;
+        }
+     }
+    }
+    .mailborney-office-text-content-vendors{
+     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+      .melborney-heading-content-1-vendors{
+       font-size: 23px;
+       font-weight: lighter;
+      
+      }
+      .highlited-span-content-vendors{
+       font-weight: bold;
+       color: #F58331;
+    
+      }
+      .melborney-heading-content-2-vendors{
+       font-size: 22px;
+       font-weight: lighter;
+      
+      }
+     }
+    @media (max-width:767px){
+        .melborney-heading-content-1-vendors{
+       font-size: 30px;
+       font-weight: lighter;
+      
+     }
+     .melborney-heading-content-2-vendors{
+         font-size: 30px;
+         font-weight: lighter;
+      
+        }
+        .highlited-span-content-vendors{
+         font-weight: bold;
+         color: #F58331;
+    
+        }
+    }
+     
+    @media (min-width:$screen-md-min){
+        .melborney-heading-content-1-vendors{
+       font-size: 30px;
+       font-weight: lighter;
+      
+      }
+      .highlited-span-content-vendors{
+       font-weight: bold;
+       color: #F58331;
+    
+      }
+      .melborney-heading-content-2-vendors{
+        font-size: 30px;
+        font-weight: lighter;
+     
+      }
+    }
+      
+    }
+    .mailborney-map-content1-vendors{
+     position: relative;
+     overflow: hidden;
+    
+     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+       width: 230px;
+       height: 220px; 
+       img{
+         width: 100%;
+         height: 100%;
+       }
+     }
+    @media (min-width:993px)and (max-width:1199px){
+      width: 300px;
+      height: 200px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media (min-width:1200px){
+   
+    width: 369px;
+    height: 221px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    }
+    @media (max-width:767px){
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    }
+    
+    .vendors-btn{
+        @media (max-width:767px){
+           display: none;
+        }
+        
+        .submit-button-content-vendors{
+            margin-top: $sc-margin-lv2;
+            @extend .col-sm-12;
+            @media(min-width:$screen-sm-min){
+                a{
+                   
+                   color: #f58331;
+                   text-align: center;
+                   padding: 10px 20px 10px 20px;
+                   text-align: center;
+                   background: white;
+                   
+                     border-radius: 9px;
+                     font-size: 17.09px;
+               
+                   height: auto;
+                   font-weight: 400;
+                   width: 100%;
+                   border: 0.3px solid #f58331;
+                   display: inline-block;
+                   transition: ease-out 0.3s;
+                   &:hover{
+                     background:#f58331 ;
+                     color: white;
+                     transition: ease-in 0.3s;
+                     
+                   }
+                  }
+            }
+            
+          }
+          .signup-button-content-vendors{
+            margin-top: $sc-margin-lv2;
+            text-align: center;
+            @extend .col-sm-12;
+            @media (min-width:$screen-sm-min){
+              
+                
+                    a{
+                       
+                       color: white;
+                       text-align: center;
+                       padding: 10px 20px 10px 20px;
+                       text-align: center;
+                       background: #f58331;
+                      
+                         border-radius: 9px;
+                         font-size: 17.09px;
+                 
+                       height: auto;
+                       font-weight: 400;
+                       width: 100%;
+                       border: 0.3px solid #f58331;
+                       display: inline-block;
+                       transition: ease-out 0.3s;
+                       &:hover{
+                         background:white ;
+                         color: #f58331;
+                         transition: ease-in 0.3s;
+                       
+                       }
+                      }
+             
+             
+            
+             }
+            
+          }
+        
+        }
+        
+        
+    
+    // for mobile view 
+    @media (min-width:320px) and (max-width:374px){
+        .vendors-cms-area{
+            .moblie-visible .choose-a-channel-text-vendors {font-size: 27px;}
+            .vendors-yealink-btn1{margin: 0;}
+            .vendors-yealink-btn{ margin: 20px auto 10px auto;}
+             .home-main-hr2{display: none;}
+            
+    
+        }
+    
+        .mailborney-office-content1-vendors {
+            padding: 2%;
+            margin-top: 20px;
+        }
+    }
+    
+    @media (min-width:375px) and (max-width:450px){
+        .vendors-cms-area{
+            .moblie-visible .choose-a-channel-text-vendors {font-size:35px;}
+            .vendors-yealink-btn1{margin: 0;}
+            .vendors-yealink-btn{ margin: 20px auto 10px auto;}
+            .home-main-hr2{display: none;}
+    
+            
+    
+        }
+    
+        .mailborney-office-content1-vendors {
+            padding: 2%;
+            margin-top: 20px;
+        }
+    }
+    
+    
+    

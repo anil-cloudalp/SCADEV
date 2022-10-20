@@ -1,0 +1,72 @@
+.field-value-container {
+  .swatch-type {
+    text-align: center;
+    label {
+      min-width: 35px;
+      min-height: 35px;
+      margin-right: $sc-margin-base;
+      margin-top: $sc-margin-base;
+      margin-bottom: 0;
+      &.picker {
+        padding: $sc-padding-base;
+        border: 2px solid $sc-neutral-shade-300;
+        color: $sc-neutral-shade-300;
+        text-align: center;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      &.color-box {
+        border: 1px solid $comparison-page-columns-border-color;
+      }
+    }
+  }
+  .check-type {
+    text-align: center;
+    i {
+      &.check-icon {
+        @extend .check-mark;
+      }
+      &.cross-icon {
+        @extend .times;
+      }
+    }
+  }
+  .image-type {
+    text-align: center;
+  }
+  .date-type {
+    text-align: center;
+  }
+  .link-type {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .text-type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    ul, ol, li {
+      list-style: inherit;
+    }
+
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    ol {
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
+    ul ul, ol ul {
+      list-style-type: circle;
+      list-style-position: inside;
+      margin-left: $sc-margin-lv3;
+    }
+    ol ol, ul ol {
+      list-style-type: lower-latin;
+      list-style-position: inside;
+      margin-left: $sc-margin-lv3;
+    }
+  }
+}

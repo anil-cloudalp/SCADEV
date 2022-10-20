@@ -1,0 +1,74 @@
+{
+	"name": "MyAccountCustomization",
+	"fantasyName": "My account customization for mia site",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My account customization for mia site",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/MyAccountCustomization.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/MyAccountCustomization/Templates/rudracustomization_myaccountcustomization_myaccountcustomization.tpl",
+					"Modules/MyAccountCustomization/Templates/MyAccount_reports.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/MyAccountCustomization/Sass/_myaccountcustomization-myaccountcustomization.scss"
+		},
+		"files": [
+			"Modules/MyAccountCustomization/Sass/_myaccountcustomization-myaccountcustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/MyAccountCustomization/JavaScript/RudraCustomization.MyAccountCustomization.MyAccountCustomization.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/MyAccountCustomization/JavaScript/RudraCustomization.MyAccountCustomization.MyAccountCustomization.js",
+					"Modules/MyAccountCustomization/JavaScript/MyAccountCustomization.View.js",
+					"Modules/MyAccountCustomization/JavaScript/RudraCustomization.MyAccountCustomization.MyAccountCustomization.Model.js",
+					"Modules/MyAccountCustomization/JavaScript/Reports.View.js",
+					"Modules/MyAccountCustomization/GoogleChart/JavaScript/GoogleChart.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/MyAccountCustomization/SuiteScript/RudraCustomization.MyAccountCustomization.MyAccountCustomization.js",
+		"files": [
+			"Modules/MyAccountCustomization/SuiteScript/RudraCustomization.MyAccountCustomization.MyAccountCustomization.js",
+			"Modules/MyAccountCustomization/SuiteScript/MyAccountCustomization.ServiceController.js",
+			"Modules/MyAccountCustomization/SuiteScript/RudraCustomization.MyAccountCustomization.Model.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/MyAccountCustomization@1.0.0",
+	"activation_id": "30",
+	"extension_id": "24012"
+}

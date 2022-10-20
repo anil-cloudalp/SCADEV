@@ -1,0 +1,94 @@
+// Edited for Horizon Theme
+
+.print-statement-button-back{
+	@extend .button-back;
+}
+
+.print-statement-back-icon{
+	@extend .button-back-icon;
+}
+
+.print-statement{
+	@extend .box-column-bordered
+}
+
+.print-statement-form{
+	margin-top: $sc-margin-lv4;
+}
+
+.print-statement-form-group-label {
+    font-weight: $sc-font-weight-semibold;
+		font-size: 16px;
+		font-family: $sc-font-family2;
+}
+
+.print-statement-form-group-input{
+	@extend .input-large
+}
+
+.print-statement-form-label-required{
+	@extend .input-required;
+	font-size: 16px;
+	font-family: $sc-font-family2;
+}
+
+.print-statement-form-group,
+.print-statement-form-actions{
+	margin-top: $sc-margin-lv4;
+}
+
+.print-statement-form-checkbox-label{
+	margin-bottom: $sc-margin-lv2;
+	display: block;
+	font-size: 16px;
+	font-family: $sc-font-family2;
+}
+.print-statement-form-label{
+	font-size: 16px;
+	font-family: $sc-font-family2;
+}
+
+.print-statement-form-actions-print{
+	@extend .button-primary;
+	@extend .button-medium;
+	font-family: $sc-font-family2;
+}
+
+.print-statement-form-actions-email{
+	@extend .button-secondary;
+	@extend .button-medium;
+	@extend .button-positioning-stack2next;
+	font-family: $sc-font-family2;
+}
+
+.print-statement-form-input-icon {
+	@extend .fa;
+	@extend %fa-calendar;
+
+	display: none;
+	cursor: pointer;
+	color: $sc-color-theme;
+
+  	@media (min-width: $screen-md-min) {
+  		display: inline-block;
+		position: absolute;
+		right: 25px;
+		left: 315px;
+		margin-top: -37px;
+	  	width: 20px;
+	}
+}
+
+.print-statement-form-group-label-optional {
+	@extend .input-optional;
+    display: inline;
+    color: $sc-color-secondary;
+		font-size: 16px;
+		font-family: $sc-font-family2;
+}
+
+.print-statement-title{
+	font-family: $sc-font-family2;
+}
+.print-statement-alert-placeholder{}
+.print-statement-form-controls{}

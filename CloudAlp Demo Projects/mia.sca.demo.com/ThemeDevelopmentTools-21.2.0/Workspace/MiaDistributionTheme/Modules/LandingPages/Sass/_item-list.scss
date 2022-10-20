@@ -1,0 +1,110 @@
+.inventory-list{
+	
+	margin-bottom: $sc-margin-lv6;
+}
+.grap_all_items_container{text-align:right;}
+[name="grap_all_items"]{
+	@extend .button-secondary;
+	@extend .button-medium;
+}
+.navCats-lv1-links [name="grap_all_items"]{
+
+	@media (min-width: 600px){
+		position: absolute;
+		top: 10px;
+		right: 80px;
+		width:auto;
+	}
+		
+}
+.item-list-table{
+	border:1px solid rgba(0, 0, 0, 0.3);
+	table-layout:fixed;
+	width:100%;
+	tr{border-bottom:1px solid rgba(0, 0, 0, 0.3);}
+	td,th{
+		padding:$sc-padding-lv2;
+		font-family:$sc-font-family2;
+		vertical-align:middle;
+		a{color:$sc-color-primary;}
+	}
+	th{
+		font-size:15px;
+		color:$sc-color-link;
+	}
+	.label-xs{display:none;}
+	@media (max-width: $screen-xs-max){
+		td,col{display:block;}
+		th{display:none;}
+		.label-xs{display:block;}
+		
+		position: static;
+    box-shadow: none;
+	}
+}
+.items-list-page{
+	margin-bottom:5%;
+	.list-of-categories{
+		margin: 0 5%;
+	}
+	.facets-facet-browse-facets{
+		@media (max-width: $screen-sm-max){	
+		position: static;
+		box-shadow: none;
+		}
+	}
+	.facets-browse-category-heading-main-image .row{
+		margin-bottom: 10%;
+		padding-top: 10%;
+	}
+	.categories-section-heading{
+		margin-top: $sc-margin-lv6;
+		h3{padding-bottom:0;}
+	}
+	.login-url{color:$sc-color-primary;}
+}
+.facets-facet-browse-navCats{
+
+	.navCats-lv1-links{
+		.navCats-lv2-content,.navCats-lv3-content{display:none;}
+	}
+	a.active{background-color:#f4f4f4;}
+	.navCats-lv1-links>a,.navCats-lv2-links>a,.navCats-lv3-content>a{
+		display:block;
+		clear:both;
+		padding:$sc-padding-lv4;
+		color:$sc-color-primary;
+		font-size:15px;
+		font-family:$sc-font-family2;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+		&:hover{
+			background-color:#f9f9f9;
+		}
+	}
+	.navCats-lv3-content>a{
+		padding-left:$sc-padding-lv7;
+	}
+	.expand-icon{
+		position:relative;
+		>a{padding-right: 26px;}
+		.expanded{
+			@extend .icon-minus;
+			font-size: 16px;
+			line-height: 64px;
+		}
+		i{
+			position:absolute;
+			right:0;
+			top:0;
+			cursor:pointer;
+			@extend .icon-plus;
+			font-size: 16px;
+			line-height: 64px;
+			padding: 0 $sc-padding-lv6;
+			color: $sc-color-primary;
+			background-color: $sc-color-link;
+		}
+	}
+	.expand-icon{clear:both;}
+	.navCats-lv2-links i{background-color:transparent;}
+}

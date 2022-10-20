@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "becomeadealer"
+    ,   "title": "BecomeaDealer"
+    ,   "description": "BecomeaDealer form fields"
+    ,   "group": "extensions"
+    },
+
+    "properties": {
+        "ShoppingCustomization.config": {
+            "group": "extensions",
+            "subtab": "ShoppingCustomization_subtab",
+            "type": "string",
+            "title": "ShoppingCustomization_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        },
+        "BecomeaDealer.eAuthor": {
+            "group": "extensions",
+            "subtab": "becomeadealer",
+            "type": "integer",
+            "title": "Email Author",
+            "mandatory":true,
+            "description": "give the internalid of employee",
+            "default": 4943066
+        },
+        "BecomeaDealer.eRecipient": {
+            "group": "extensions",
+            "subtab": "becomeadealer",
+            "type": "string",
+            "title": "Email Recipient",
+            "description": "Email Recipient ",
+            "mandatory":true,
+            "default": "hello@logitail.com"
+        },
+        "BecomeaDealer.msg": {
+            "group": "extensions",
+            "subtab": "becomeadealer",
+            "type": "string",
+            "title": "Submit form message",
+            "mandatory":true,
+            "description": "success form message ",
+            "default": "Thank you for being our dealership."
+        },
+        "BecomeaDealer.subject": {
+            "group": "extensions",
+            "subtab": "becomeadealer",
+            "type": "string",
+            "title": "Email subject",
+            "mandatory":true,
+            "description": "email subject ",
+            "default": "Become a dealer form"
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@function getExtensionAssetsPath($asset){
+@return '../extensions/MIA/PrincipalRegistration/1.0.0/' + $asset;
+}
+
+@function getThemeAssetsPath($asset){
+@return '../extensions/CloudAlp/Gozney/3.3.0/' + $asset;
+}
+
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.principalregistrationmodule-info-card {
+    @extend .info-card;
+
+	.principalregistration-link-para{
+		font-size: 16px;
+		@media (min-width: $screen-md-min){
+			font-size: 20px;	
+		}
+	}
+	
+}
+.sign-label{
+   font-size: 20px;
+   margin-top: $sc-margin-lv3;
+}
+#terms-and-condition{
+	width: 100%;
+	@media (min-width: 768px){
+		width: 70%;
+		 margin: auto;
+	}
+
+	.input-agree-checkbox{
+		margin: $sc-margin-lv4 0 0 0;
+        font-size: 16px;
+		display: flex;
+		@media (min-width: $screen-sm-min){
+			max-width: 400px;
+		}
+		input{
+			height: 20px !important;
+			width: 40px !important;
+		}
+		label{
+			font-size: 16px !important;
+		}
+	}
+	.submit-btn-container{
+		text-align: center;
+		.btn11-submit{
+			@extend .button-large;
+			@extend .button-primary;
+		}
+	}
+
+}
+.form-html{
+	// height:450px ;
+	// overflow-x: auto;
+	margin: $sc-margin-lv2 0;
+}
+
+.principalregistrationmodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.principalregistration-header{
+	text-align: center;
+	margin: $sc-margin-lv2 0;
+}
+.kbw-signature {
+	display: inline-block;
+	border: 1px solid #a0a0a0;
+	-ms-touch-action: none;
+}
+.kbw-signature-disabled {
+	opacity: 0.35;
+}
+.reset-signature{
+	@extend .button-small;
+	@extend .button-primary;
+}

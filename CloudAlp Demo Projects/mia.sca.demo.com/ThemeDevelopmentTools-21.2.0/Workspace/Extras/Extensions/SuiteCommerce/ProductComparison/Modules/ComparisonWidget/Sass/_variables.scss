@@ -1,0 +1,20 @@
+$comparison-widget-container-bg-color: $sc-color-theme-100; /* editable({"type": "color", "label": "Widget Background Color"}) */
+$comparison-widget-container-border-color: $sc-color-theme-500; /* editable({"type": "color", "label": "Widget Border Color"}) */
+$comparison-widget-container-font-color: $sc-neutral-shade; /* editable({"type": "color", "label": "Font Color"}) */
+$comparison-widget-items-and-header-bg-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Facets Background Color"}) */
+$comparison-widget-items-border-color: #E0E0E0; /* editable({"type": "color", "label": "Facets Border Color"}) */
+
+/*
+group({
+ "id": "comparison-quick-view",
+ "label": "Comparison Widget",
+ "description": "",
+ "children": [
+   "$comparison-widget-container-bg-color",
+   "$comparison-widget-container-border-color",
+   "$comparison-widget-container-font-color",
+   "$comparison-widget-items-and-header-bg-color",
+   "$comparison-widget-items-border-color"
+ ]
+})
+*/

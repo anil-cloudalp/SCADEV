@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "AddToCartModule.config": {
+            "group": "extensions",
+            "subtab": "AddToCartModule_subtab",
+            "type": "string",
+            "title": "AddToCartModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

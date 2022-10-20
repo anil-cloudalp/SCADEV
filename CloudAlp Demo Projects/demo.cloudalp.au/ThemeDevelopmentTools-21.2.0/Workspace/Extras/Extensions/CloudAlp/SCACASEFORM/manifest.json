@@ -1,0 +1,78 @@
+{
+	"name": "SCACASEFORM",
+	"fantasyName": "SCACASEFORM",
+	"vendor": "CloudAlp",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "adding addtional fileds to the case form",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SCACASEFORM.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/SCACASEFORM/Configuration/SCACASEFORM.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/SCACASEFORM/Templates/cloudalp_scacaseform_scacaseform.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/SCACASEFORM/Sass/_scacaseform-scacaseform.scss"
+		},
+		"files": [
+			"Modules/SCACASEFORM/Sass/_scacaseform-scacaseform.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.js",
+					"Modules/SCACASEFORM/JavaScript/SCACASEFORM.View.js",
+					"Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.Model.js",
+					"Modules/SCACASEFORM/JavaScript/CloudAlp.SCACASEFORM.SCACASEFORM.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SCACASEFORM/SuiteScript/CloudAlp.SCACASEFORM.SCACASEFORM.js",
+		"files": [
+			"Modules/SCACASEFORM/SuiteScript/CloudAlp.SCACASEFORM.SCACASEFORM.js",
+			"Modules/SCACASEFORM/SuiteScript/SCACASEFORM.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/SCACASEFORM/SuiteScript2/SCACASEFORM.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/cloudalp/SCACASEFORM@1.0.0",
+	"activation_id": "20",
+	"extension_id": "24412"
+}

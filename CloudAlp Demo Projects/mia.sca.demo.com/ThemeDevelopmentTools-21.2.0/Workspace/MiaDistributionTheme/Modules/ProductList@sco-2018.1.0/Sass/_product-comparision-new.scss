@@ -1,0 +1,35 @@
+.facets-item-cell-addtocompare{
+    // float: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.facets-item-cell-addtocompare-ckbox{
+	margin-bottom: 0 !important;
+	width: 18px !important;
+	height: 18px !important;
+	-webkit-appearance: none;
+  	appearance: none;
+ 	display: grid !important;
+	place-content: center !important;
+
+	&::before{
+		content: "" !important;
+		width: 13px !important;
+		height: 13px !important;
+		transform: scale(0) !important;
+		transition: 120ms transform ease-in-out !important;
+		box-shadow: inset 1em 1em $sc-color-primary !important;
+		clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	}
+
+}
+
+.facets-item-cell-addtocompare-ckbox:checked::before {
+	transform: scale(1) !important;
+}
+.product-Comparision-text{
+    margin-bottom: 0;
+}

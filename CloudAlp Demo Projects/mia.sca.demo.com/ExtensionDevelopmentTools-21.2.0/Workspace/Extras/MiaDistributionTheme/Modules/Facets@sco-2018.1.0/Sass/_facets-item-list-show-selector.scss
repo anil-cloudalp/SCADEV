@@ -1,0 +1,25 @@
+// Edited for Horizon Theme
+
+.facets-item-list-show-label {
+    @media (min-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+.facets-item-list-show-selector {
+    @extend .list-header-filter-input;
+    border: none;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.16);
+    margin-top: 8px;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 0;
+        margin-right: $sc-margin-lv2;
+    }
+
+    @media (max-width: $screen-md-min) {
+        margin-bottom: $sc-margin-lv2;
+    }
+}

@@ -1,0 +1,241 @@
+.become-a-partner-main-content{
+    @extend .container;
+     
+
+
+}
+.become_a_partner_form{
+    @extend .container;
+}
+.become-a-partner-form-field .submit-button-content a {
+    font-size: 20.7px;
+    border-radius: 9px;
+    height: 52.01px;
+   
+    font-weight: 300;
+}
+
+
+// for  ipad 
+@media (min-width:$screen-sm-min) and (max-width:$screen-md-min){
+    .become-a-partner-main-content{
+    .become-btn{
+        width: 40%;
+        .anchor3-become{
+            font-size: 16px;
+            line-height: 2.5;
+        }
+    }
+    
+
+    .become-btn1{
+        width: 52%;
+        margin-left: 5px;
+      .anchor4-become{
+        font-size: 16px;
+        line-height: 2.5;
+      }  
+    }
+
+}
+}
+
+.become-a-partner-form-field{
+   .submit-button-content{
+     padding: 0;
+    //  a{
+    //     border-radius: 12px;
+    //  }
+   }
+}
+
+
+.become-a-partner-top-content-row{
+    @extend .row;
+    @media (min-width:$screen-sm-min){
+        // background-color: #d66243;
+        margin-top: $sc-margin-lv4*2;
+        margin-bottom: $sc-margin-lv4*2;
+     }
+}
+.become-a-partner-form-field {
+    padding: 2%;
+}
+.become-a-partner-text-top-content{
+    @extend .col-sm-6;
+
+    padding: 2%;
+    padding-right: 3%;
+    
+        @media (min-width:$screen-sm-min)and (max-width:$screen-md-min){
+        //    width: 47%;
+           .home-service-button2{
+            width: 47%;
+
+        }
+        }
+        @media (min-width:992px)and (max-width:1199px){
+            .home-service-button2{
+                width: 45%;
+
+            }
+        }
+        @media (min-width:1200px){
+            .home-service-button2{
+              width: 35%;
+            // width: 45%;
+
+        }
+        }
+    
+
+    .have-a-question-content{
+        color: #f58331;
+       
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+   
+    .heading-chat-to-head-content{
+    @media (min-width: $screen-md-min){
+    //    font-size: 40px;
+      //  line-height: 1rem;
+       letter-spacing: 0.5px;
+       word-spacing: 1.5px;
+       font-size: 40px;
+      
+       font-weight:bold;
+       color: #222;
+       line-height: 60px;
+    }
+    @media (min-width: $screen-sm-min)and(max-width: $screen-md-min){
+       font-size: 30px;
+       color: #222;
+       line-height: 1.3em;
+       font-weight: 700;
+    }
+      font-weight: 700;
+      // font-size: 28px;
+      @media (max-width: $screen-sm-min){
+        
+        // line-height: 4em;
+        font-size: 30px;
+        // letter-spacing: 1px;
+        line-height: 1.5em;
+      
+    }
+  }
+    .content-p-component {
+        @media (min-width:993px){
+            font-size: 16px;
+           
+            color: #222;
+        }
+        @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
+           margin-top: $sc-margin-lv2;
+           margin-bottom: $sc-margin-lv2;
+           font-size: 17px;
+        }
+        @media (max-width:767px){
+          display: none;
+        }
+       
+    }
+}
+.become-a-partner-img-top-content{
+    @extend .col-sm-6;
+    @media (max-width:767px){
+        display: none;
+    }
+    @media (min-width:$screen-sm-min){
+     padding: 1%;
+    }
+    .become-a-partner-image-container{
+        padding: 1%;
+    }
+}
+
+$orange:#F58331;
+.become-a-partner-company-details {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.become-a-partner-h1{
+    font-size: 35px;
+   
+    font-weight: bold;
+    color: $orange;
+    margin-bottom: 10px;
+}
+.input-area{height: 96px;}
+.become-a-partner-input-box{
+    input[type="text"],input[type="email"]  {
+    border: 1px solid #333333;
+    background-color: #F4F4F4;
+    outline: none;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    }
+}
+ 
+.become-a-partner-lable{
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+
+// become-a-partner-company-address
+.become-a-partner-company-address{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+//become-a-partner-company-Contact Details
+.become-a-partner-company-Contact-Details{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+// become-a-partner-Partner-Information
+.become-a-partner-Partner-Information{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.same-select-field{
+    width: 100%;
+    border: 1px solid #333333;
+    background-color: #F4F4F4;
+    outline: none;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.vendors-mobile-button{display:none;}
+
+
+// for mobile view 
+@media (min-width:320px) and (max-width:450px) {
+    .become-a-partner-text-top-content .vendors-mobile-button{display:block;}
+    .become-a-partner-text-top-content .vendors-desktop-button{display:none;}
+
+}
+
+
+ 
+
+
+@media (min-width:320px) and (max-width:375px){
+    .become-a-partner-text-top-content .become-btn1{margin:0;}
+    .become-a-partner-text-top-content .become-btn{margin-bottom:10px;}
+    .become-a-partner-h1{font-size: 30px;}
+    .heading-chat-to-head-content{font-size: 30px;}
+}
+
+
+@media (min-width:375px) and (max-width:450px){
+    .heading-chat-to-head-content{font-size: 30px;}
+    .become-a-partner-text-top-content .become-btn1{margin:0;}
+    .become-a-partner-text-top-content .become-btn{margin-bottom:10px;}
+}

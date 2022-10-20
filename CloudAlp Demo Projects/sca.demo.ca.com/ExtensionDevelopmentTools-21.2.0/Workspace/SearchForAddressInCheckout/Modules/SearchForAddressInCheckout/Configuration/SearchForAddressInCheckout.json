@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "SearchForAddressInCheckout.config": {
+            "group": "extensions",
+            "subtab": "SearchForAddressInCheckout_subtab",
+            "type": "string",
+            "title": "SearchForAddressInCheckout_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

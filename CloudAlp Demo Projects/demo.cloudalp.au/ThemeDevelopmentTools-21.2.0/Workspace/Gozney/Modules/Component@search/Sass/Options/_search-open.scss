@@ -1,0 +1,40 @@
+@if $theme-selection-search == search-open {
+
+  #site-header {
+
+    @media (min-width: $screen-md-min) {
+      .header-menu-search {
+        min-width: 100%;
+        float: none;
+        clear: both;
+        display: block;
+        margin-top: 12px; //this is for resolve a weird behavior: the menu items was jumping a little bit when the search oppens.
+
+        .header-site-search {
+          display: block !important; //overriding an inline style (it happens in SMT also)
+          .site-search-content {
+            &:before,
+            &:after { //the small pick is not needed for this option
+              display: none;
+            }
+            max-width: 100%;
+            width: auto;
+          }
+        }
+
+      }
+
+      .header-menu-search-link {
+        display: none; //Without the button
+      }
+
+      .header-site-search {
+        &.search-mobile {
+          display: none !important; //overriding an inline style.
+        }
+      }
+    }
+
+  }
+
+}

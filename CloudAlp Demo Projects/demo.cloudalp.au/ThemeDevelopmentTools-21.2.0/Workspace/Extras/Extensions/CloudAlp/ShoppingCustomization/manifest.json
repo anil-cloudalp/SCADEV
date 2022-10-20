@@ -1,0 +1,83 @@
+{
+	"name": "ShoppingCustomization",
+	"fantasyName": "ShoppingCustomization",
+	"vendor": "CloudAlp",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "add to cart,become a dealer form ,customizations are done in this.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ShoppingCustomization.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ShoppingCustomization/Configuration/ShoppingCustomization.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShoppingCustomization/Templates/cloudalp_shoppingcustomization_shoppingcustomization.tpl",
+					"Modules/ShoppingCustomization/Templates/cloudalp_shoppingcustomization_productquickview.tpl",
+					"Modules/ShoppingCustomization/Templates/cloudalp_shoppingcustomization_become_a_dealer.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ShoppingCustomization/Sass/_shoppingcustomization-shoppingcustomization.scss"
+		},
+		"files": [
+			"Modules/ShoppingCustomization/Sass/_shoppingcustomization-shoppingcustomization.scss",
+			"Modules/ShoppingCustomization/Sass/_shoppingcustomization-become-a-dealer.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+					"Modules/ShoppingCustomization/JavaScript/ShoppingCustomization.View.js",
+					"Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.Model.js",
+					"Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.SS2Model.js",
+					"Modules/ShoppingCustomization/JavaScript/ShoppingCustomizationProductsQuick.View.js",
+					"Modules/ShoppingCustomization/JavaScript/BecomeaDealer.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ShoppingCustomization/SuiteScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+		"files": [
+			"Modules/ShoppingCustomization/SuiteScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+			"Modules/ShoppingCustomization/SuiteScript/ShoppingCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ShoppingCustomization/SuiteScript2/ShoppingCustomization.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/cloudalp/ShoppingCustomization@1.0.0",
+	"activation_id": "20",
+	"extension_id": "23812"
+}

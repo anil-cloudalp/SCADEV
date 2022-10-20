@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ShowCaseFields.config": {
+            "group": "extensions",
+            "subtab": "ShowCaseFields_subtab",
+            "type": "string",
+            "title": "ShowCaseFields_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

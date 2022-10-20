@@ -1,0 +1,15 @@
+{
+    "type": "SCIS",
+    "version": "22.1.6",
+    "application": [
+        "instore"
+    ],
+    "extensible_resources": [
+        "javascript",
+        "ssp-libraries",
+        "services",
+        "assets",
+        "suitescript2",
+        "translations"
+    ]
+}

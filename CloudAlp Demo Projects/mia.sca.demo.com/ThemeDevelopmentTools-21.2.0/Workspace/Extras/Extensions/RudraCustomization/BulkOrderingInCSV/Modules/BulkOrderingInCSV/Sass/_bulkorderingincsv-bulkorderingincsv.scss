@@ -1,0 +1,98 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.csv-quick-add-box{
+	@extend .quick-add-box;
+}
+.csv-quick-add-box-left{
+	@extend .quick-add-box-left;
+}
+.csv-quick-add-box-right{
+	@extend .quick-add-box-right;
+}
+.csv-quick-add-box-left-input{
+	@extend .quick-add-box-input;
+	background: #FFF;
+}
+.csv-quick-add-box-right-main{
+	@extend .quick-add-box-right-main;
+}
+.csv-quick-add-box-button{
+	position: relative;
+	@extend .quick-add-box-button;
+}
+.csv-quick-add-box-sample-link{
+	text-transform: capitalize;
+	// font-family:$sc-mc-reg-ext-family;
+	font-family:$sc-font-family;
+	a{
+		text-transform: capitalize;
+		font-family: inherit;
+	}
+	// font-family: $sc-font-family;
+}
+.csv-quick-add-remove-all-items{
+	@extend .quick-add-box-button;
+	@media (max-width:394px) {
+		margin-left: $sc-margin-lv1 - $sc-margin-lv1;
+		margin-top:$sc-margin-lv2+$sc-margin-lv1 ;
+		
+	}
+	margin-left: $sc-margin-lv2+$sc-margin-lv1;
+}
+
+
+
+.global-views-confirmation-footer {
+    margin-top: $sc-margin-lv3;
+}
+
+.global-views-confirmation-confirm-button {
+    @extend .quick-add-box-button;
+
+}
+
+.global-views-confirmation-cancel-button {
+	@extend .quick-add-box-button;
+	margin-left: $sc-margin-lv2+$sc-margin-lv1;
+}
+.global-views-modal-content-body{
+	display: inline-block;
+}
+.global-views-modal-content-header-title{
+	text-transform: capitalize;
+}
+.global-views-modal-content-body{
+	text-transform: capitalize;
+}
+.button--loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+

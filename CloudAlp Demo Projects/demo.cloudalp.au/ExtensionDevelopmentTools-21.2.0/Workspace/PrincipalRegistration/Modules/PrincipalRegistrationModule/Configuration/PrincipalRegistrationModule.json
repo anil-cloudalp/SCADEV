@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "PrincipalRegistrationModule.config": {
+            "group": "extensions",
+            "subtab": "PrincipalRegistrationModule_subtab",
+            "type": "string",
+            "title": "PrincipalRegistrationModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

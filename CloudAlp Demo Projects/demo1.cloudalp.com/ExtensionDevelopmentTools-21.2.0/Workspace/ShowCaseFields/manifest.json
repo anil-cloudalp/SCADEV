@@ -1,0 +1,78 @@
+{
+	"name": "ShowCaseFields",
+	"fantasyName": "ShowCaseFields",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Get new fields from case record",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ShowCaseFields.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ShowCaseFields/Configuration/ShowCaseFields.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ShowCaseFields/Templates/ca_showcasefields_showcasefields.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ShowCaseFields/Sass/_showcasefields-showcasefields.scss"
+		},
+		"files": [
+			"Modules/ShowCaseFields/Sass/_showcasefields-showcasefields.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ShowCaseFields/JavaScript/CA.ShowCaseFields.ShowCaseFields.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ShowCaseFields/JavaScript/CA.ShowCaseFields.ShowCaseFields.js",
+					"Modules/ShowCaseFields/JavaScript/ShowCaseFields.View.js",
+					"Modules/ShowCaseFields/JavaScript/CA.ShowCaseFields.ShowCaseFields.Model.js",
+					"Modules/ShowCaseFields/JavaScript/CA.ShowCaseFields.ShowCaseFields.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ShowCaseFields/SuiteScript/CA.ShowCaseFields.ShowCaseFields.js",
+		"files": [
+			"Modules/ShowCaseFields/SuiteScript/CA.ShowCaseFields.ShowCaseFields.js",
+			"Modules/ShowCaseFields/SuiteScript/ShowCaseFields.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ShowCaseFields/SuiteScript2/ShowCaseFields.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ca/ShowCaseFields@1.0.0",
+	"activation_id": "27",
+	"extension_id": "24512"
+}

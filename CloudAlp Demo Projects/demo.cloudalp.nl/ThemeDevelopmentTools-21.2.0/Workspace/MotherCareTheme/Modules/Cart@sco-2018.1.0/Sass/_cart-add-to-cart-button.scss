@@ -1,0 +1,56 @@
+// Edited for Threads
+
+.cart-add-to-cart-button-button{
+	@extend .button-primary;
+	@extend .button-large;
+	width: auto; //100%;
+	border-radius:0.5rem;
+ 	font-weight: $sc-font-weight-semibold;
+	 font-size: large;
+	 font-weight: normal;
+ 	// margin-top: $sc-margin-lv3;
+	//  background-color: $sc-mc-color;
+	@media (max-width: $screen-md-min) {
+		width: 100%;
+	}
+	@media (max-width: $screen-lg-min) {
+		font-size: x-large;
+	}
+}
+
+.cart-add-to-cart-button {
+	position: static;
+	// margin-bottom: $sc-margin-lv3 * 2;
+
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+}
+
+.cart-add-to-cart-button-container {
+	@extend .col-sm-6;
+}
+.related-items-cart-btn{
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    min-width: 100px;
+		text-transform: capitalize;
+	.quickshopcart{
+		margin:0px $sc-margin-lv1;
+		@media(min-width:480px) and (max-width:767px){
+			margin: 0px 5px 0px 0px;
+		}
+	}
+	font-size: small;
+
+
+}
+.quickshopcart{
+	@extend .fa;
+	@extend %fa-shopping-cart;
+
+}
+
+

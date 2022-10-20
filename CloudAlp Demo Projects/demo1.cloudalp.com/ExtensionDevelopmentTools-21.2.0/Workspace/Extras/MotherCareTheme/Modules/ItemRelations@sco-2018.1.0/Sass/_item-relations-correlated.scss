@@ -1,0 +1,50 @@
+/* Edited for Threads Theme */
+
+.item-relations-correlated {
+	position: relative;
+}
+
+.item-relations-correlated .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-relations-correlated h3 {
+    @extend .product-slider-title;
+}
+
+.item-relations-correlated .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+.item-relations-correlated-row{
+    @media (min-width: $screen-sm-min){
+               display: flex;
+            justify-content: center;            }
+    .bx-wrapper{
+        width: 100% !important;
+        .bx-pager{
+            a{
+                display: block;
+                width:10px;
+                height: 10px;
+                border-radius:100%;
+                opacity: 0.5;
+                color: #FFFFFF !important;
+                background-color: #FFFFFF !important;
+                margin: 0 $sc-margin-lv1;
+                border:2px solid $sc-color-primary !important;
+                content-visibility:hidden !important;
+            }
+            a.active{
+                opacity: 1;
+                background-color: $sc-color-primary !important;
+                }	
+        }
+    }
+    // .bx-viewport{
+    //     @media (min-width: $screen-sm-min){
+    //         width: 80% !important;
+    //     }
+    // }
+}

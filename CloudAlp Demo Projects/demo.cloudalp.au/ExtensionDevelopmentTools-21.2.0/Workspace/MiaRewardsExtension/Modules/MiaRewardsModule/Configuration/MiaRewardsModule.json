@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": { 
+        "MiaRewardsModule.invoiceFolderID": {
+            "group": "extensions",
+            "subtab": "MiaRewardsModule_subtab",
+            "type": "string",
+            "title": "Mia Rewards Invoices folder ID",
+            "description": "Enter the folder ID of the uploaded invoices through submit claim  folder",
+            "default": ""
+        },
+        "MiaRewardsModule.termsandconditionFolderID": {
+            "group": "extensions",
+            "subtab": "MiaRewardsModule_subtab",
+            "type": "string",
+            "title": "MIA Terms and condition folder ID",
+            "description": "Enter the folder ID of the terms and condition documents folder",
+            "default": ""
+        }
+
+    }
+}

@@ -1,0 +1,116 @@
+{
+	"name": "instafeed",
+	"fantasyName": "instafeed using extension",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "instafeed using extension",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/instafeedExt.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/instafeedExt/Configuration/instafeedExt.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/instafeedExt/Templates/mia_instafeed_instafeedext.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/instafeedExt/Templates/mia_instafeed_instafeedext.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/instafeedExt/Templates/mia_instafeed_instafeedext.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/instafeedExt/Sass/_instafeed-instafeedext.scss",
+			"myaccount": "Modules/instafeedExt/Sass/_instafeed-instafeedext.scss",
+			"checkout": "Modules/instafeedExt/Sass/_instafeed-instafeedext.scss"
+		},
+		"files": [
+			"Modules/instafeedExt/Sass/_instafeed-instafeedext.scss",
+			"Modules/instafeedExt/Sass/_slick-theme.scss",
+			"Modules/instafeedExt/Sass/_slick.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.js",
+			"myaccount": "Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.js",
+			"checkout": "Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.js",
+					"Modules/instafeedExt/JavaScript/instafeedExt.View.js",
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.Model.js",
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.SS2Model.js",
+					"Modules/jQuery.instafeed/JavaScript/Instafeed.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.js",
+					"Modules/instafeedExt/JavaScript/instafeedExt.View.js",
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.Model.js",
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.SS2Model.js",
+					"Modules/jQuery.instafeed/JavaScript/Instafeed.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.js",
+					"Modules/instafeedExt/JavaScript/instafeedExt.View.js",
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.Model.js",
+					"Modules/instafeedExt/JavaScript/mia.instafeed.instafeedExt.SS2Model.js",
+					"Modules/jQuery.instafeed/JavaScript/Instafeed.js",
+					"Modules/jquery.slick/Javascript/jquery.slick.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/instafeedExt/SuiteScript/mia.instafeed.instafeedExt.js",
+		"files": [
+			"Modules/instafeedExt/SuiteScript/mia.instafeed.instafeedExt.js",
+			"Modules/instafeedExt/SuiteScript/instafeedExt.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/instafeedExt/SuiteScript2/instafeedExt.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/instafeed@1.0.0",
+	"activation_id": "26",
+	"extension_id": "22412"
+}

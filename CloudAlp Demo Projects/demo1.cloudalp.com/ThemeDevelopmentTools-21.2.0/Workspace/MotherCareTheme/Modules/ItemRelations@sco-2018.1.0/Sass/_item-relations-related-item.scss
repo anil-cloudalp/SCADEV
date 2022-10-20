@@ -1,0 +1,53 @@
+/* Edited for Threads Theme */
+
+.item-relations-related-item{
+	//height:250px;
+	//width:228px;
+}
+
+.img-container{
+	height: 360px !important;
+	margin-bottom: 10px;
+	@media(max-width: $screen-xs-max){
+	height: 280px !important;
+	}
+
+}
+
+.item-relations-related-item-thumbnail{
+	width:100%;
+	margin-bottom:$sc-margin-lv2;
+	overflow:hidden;
+	display: block;
+	min-height: $img-large !important;
+}
+
+.item-relations-related-item-price{
+	@extend .middle-price;
+}
+
+.item-relations-related-item-rate{
+	margin-bottom:$sc-margin-lv2;
+	display: inline-block;
+	text-align:center;
+	.global-views-star-rating{
+		width:92px;
+		margin:auto;
+	}
+}
+
+.related-item-title{
+	text-transform: none;
+    font-family: 'Mothercare-RegularExtended';
+    font-size: 1.25rem;
+}
+
+.related-item-info{
+	display: grid;
+	place-items:center;
+	clear: both;
+	div, a{
+		margin:3px;
+		color: $sc-color-secondary;
+	}
+}	

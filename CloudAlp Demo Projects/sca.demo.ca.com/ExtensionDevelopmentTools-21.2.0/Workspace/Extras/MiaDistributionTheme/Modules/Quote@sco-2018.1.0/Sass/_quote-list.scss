@@ -1,0 +1,143 @@
+.quote-list-button-back {
+  @extend .button-back;
+}
+
+.quote-list-button-back-icon {
+  @extend .button-back-icon;
+}
+
+.quote-list-header {
+  border-top: 1px solid $sc-color-theme-border-light;
+  padding: $sc-padding-lv3 0;
+  h2{
+    font-family: $sc-font-family2;
+  }
+}
+
+.quote-list-content-table {
+  @extend .recordviews-row-header;
+}
+
+.quote-list-content-table-header-row {
+  @extend .recordviews-table;
+  th{
+    font-family: $sc-font-family2;
+    color: $sc-color-link;
+    font-size: 16px;
+  }
+}
+
+.quote-list-content-table-header-row-title {
+  @extend .recordviews-header !optional;
+  width: 20%;
+}
+
+.quote-list-content-table-header-row-request-date {
+  @extend .recordviews-date-header;
+  width: 20%;
+  @media(min-width: $screen-md-min){
+    text-align: left !important;
+  }
+
+}
+
+.quote-list-content-table-header-row-expiration-date {
+  @extend .recordviews-date-header;
+  width: 15%;
+  @media(min-width: $screen-md-min){
+    text-align: left !important;
+  }
+}
+
+.quote-list-content-table-header-row-currency {
+  @extend .recordviews-currency-header;
+  width: 25%;
+}
+
+.quote-list-content-table-header-row-track {
+  @extend .recordviews-status-header;
+  width: 20%;
+}
+
+.quote-list-results-container {
+
+   .recordviews-status {
+      padding-bottom:$sc-padding-lv3;
+    }
+  @media (min-width: $screen-md-min) {
+    .recordviews-title {
+      width: 20%;
+    }
+
+    .recordviews-exp-date {
+      width: 20%;
+      text-align: right;
+    }
+
+    .recordviews-date {
+      width: 15%;
+    }
+
+    .recordviews-currency {
+      width: 25%;
+    }
+
+    .recordviews-status {
+      width: 20%;
+      padding-bottom:0;
+      .recordviews-value {
+        color: $sc-color-primary;
+      }
+    }
+  }
+  .recordviews-title{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+  }
+  .recordviews-request-date{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+    font-weight: $sc-font-weight-light;
+  }
+  .recordviews-currency{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+    font-weight: $sc-font-weight-light;
+  }
+  .recordviews-expiration-date{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+    font-weight: $sc-font-weight-light;
+  }
+  .recordviews-status{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+    font-weight: $sc-font-weight-light;
+  }
+  .recordviews-label{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+    font-weight: $sc-font-weight-normal;
+    color: $sc-color-link;
+  }
+  .recordviews-value{
+    font-family: $sc-font-family2;
+    font-size: 16px;
+    font-weight: $sc-font-weight-light;
+  }
+}
+
+.quote-list-empty {
+  @extend .list-empty;
+}
+
+.quote-list-empty-section {
+  padding:$sc-padding-lv8 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+  text-align:center;
+}
+
+.quote-list-quotes-table {
+  @extend .table-flex-record-navigable;
+}
+
+.quote-list-content-table-header-row-status {}

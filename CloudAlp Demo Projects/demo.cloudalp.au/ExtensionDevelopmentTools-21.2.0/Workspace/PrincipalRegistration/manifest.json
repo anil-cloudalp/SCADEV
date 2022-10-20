@@ -1,0 +1,97 @@
+{
+    "name": "PrincipalRegistration",
+    "fantasyName": "Principal Registration",
+    "vendor": "MIA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">= 21.1.0",
+        "SCS": ">= 21.1.0"
+    },
+    "description": "Opens pdf when terms and condition is signed else open page with terms and condition to sign",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/PrincipalRegistrationModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/PrincipalRegistrationModule/Configuration/PrincipalRegistrationModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PrincipalRegistrationModule/Sass/_principalregistration-principalregistrationmodule.scss",
+            "myaccount": "Modules/PrincipalRegistrationModule/Sass/_principalregistration-principalregistrationmodule.scss"
+        },
+        "files": [
+            "Modules/PrincipalRegistrationModule/Sass/_principalregistration-principalregistrationmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PrincipalRegistrationModule/Templates/mia_principalregistration_principalregistrationmodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/PrincipalRegistrationModule/Templates/mia_principalregistration_principalregistrationmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.js",
+            "myaccount": "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/PrincipalRegistrationModule.View.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.Model.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.SS2Model.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/jquery.signature.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/html2Canvas.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/PrincipalRegistrationModule.View.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.Model.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.SS2Model.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/jquery.signature.js",
+                    "Modules/PrincipalRegistrationModule/JavaScript/html2Canvas.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/PrincipalRegistrationModule/SuiteScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.js",
+        "files": [
+            "Modules/PrincipalRegistrationModule/SuiteScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.js",
+            "Modules/PrincipalRegistrationModule/SuiteScript/PrincipalRegistrationModule.ServiceController.js",
+            "Modules/PrincipalRegistrationModule/SuiteScript/MIA.PrincipalRegistration.PrincipalRegistrationModule.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\PrincipalRegistration",
+    "suitescript2": {
+        "files": [
+            "Modules/PrincipalRegistrationModule/SuiteScript2/PrincipalRegistrationModule.Service.ss"
+        ]
+    }
+}

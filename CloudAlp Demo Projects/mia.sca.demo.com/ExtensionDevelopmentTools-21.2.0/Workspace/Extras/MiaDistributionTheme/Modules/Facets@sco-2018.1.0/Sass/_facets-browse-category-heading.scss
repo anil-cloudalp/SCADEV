@@ -1,0 +1,78 @@
+// Edited for Horizon Theme
+
+.facets-browse-category-heading-list-header
+{
+	display: table;
+	padding-bottom: $sc-padding-lv4;
+	margin: 0 5%;
+	margin-top: $sc-margin-lv6;
+}
+
+.facets-browse-category-heading-main-description
+{
+	width: auto;
+	margin: $sc-margin-lv2;
+
+	@media (min-width: $screen-md-min)
+	{
+		margin-left: $sc-margin-lv4;
+    }
+
+    & h1 {
+		
+	}
+
+}
+
+.facets-browse-category-heading-main-description h3
+{
+	text-transform: none;
+	font-weight: normal;
+}
+
+.facets-browse-category-heading-main-image
+{
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	background-size: cover;
+	background-attachment:fixed;
+	position:relative;
+	&:after{
+		content: '';
+		background-color:$sc-color-link;
+		opacity:0.3;
+		position:absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+	}
+	>.row{
+		margin: 0 5%;
+		padding-top: 5%;
+		position:relative;
+		z-index:2;
+		text-align:center;
+		h1{
+			text-transform:uppercase;
+			text-align:center;
+			color:#fff;
+			margin-bottom:$sc-margin-lv6;
+		}
+	}
+	svg{
+		margin-bottom:-6px;
+		margin-top:-50px;
+		position:relative;
+		z-index:1;
+	}
+	.back-to-shop{
+		@extend .button-primary;
+		@extend .button-medium;
+		background-color:transparent;
+		border-color:#fff;
+		
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"name": "BulkOrderingInCSV",
+	"fantasyName": "BulkOrdering Using Extensions in Cart",
+	"vendor": "RudraCustomization",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "BulkOrdering Added to Cart Using CSV import",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/BulkOrderingInCSV.Service.ss",
+				"services/RemoveAllItemsCart.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/BulkOrderingInCSV/Configuration/BulkOrderingInCSV.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BulkOrderingInCSV/Templates/ca_bulkorderingincsv_bulkorderingincsv.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/BulkOrderingInCSV/Sass/_bulkorderingincsv-bulkorderingincsv.scss"
+		},
+		"files": [
+			"Modules/BulkOrderingInCSV/Sass/_bulkorderingincsv-bulkorderingincsv.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/BulkOrderingInCSV/JavaScript/CA.BulkOrderingInCSV.BulkOrderingInCSV.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BulkOrderingInCSV/JavaScript/CA.BulkOrderingInCSV.BulkOrderingInCSV.js",
+					"Modules/BulkOrderingInCSV/JavaScript/BulkOrderingInCSV.View.js",
+					"Modules/BulkOrderingInCSV/JavaScript/CA.BulkOrderingInCSV.BulkOrderingInCSV.Model.js",
+					"Modules/BulkOrderingInCSV/JavaScript/CA.BulkOrderingInCSV.BulkOrderingInCSV.SS2Model.js",
+					"Modules/BulkOrderingInCSV/JavaScript/CA.BulkOrderingInCSV.RemoveItemsCart.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/BulkOrderingInCSV/SuiteScript/CA.BulkOrderingInCSV.BulkOrderingInCSV.js",
+		"files": [
+			"Modules/BulkOrderingInCSV/SuiteScript/CA.BulkOrderingInCSV.BulkOrderingInCSV.js",
+			"Modules/BulkOrderingInCSV/SuiteScript/BulkOrderingInCSV.ServiceController.js",
+			"Modules/BulkOrderingInCSV/SuiteScript/RemoveItemsToCart.serviceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/BulkOrderingInCSV/SuiteScript2/BulkOrderingInCSV.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/RudraCustomization/BulkOrderingInCSV@1.0.0",
+	"activation_id": "30",
+	"extension_id": "22312"
+}

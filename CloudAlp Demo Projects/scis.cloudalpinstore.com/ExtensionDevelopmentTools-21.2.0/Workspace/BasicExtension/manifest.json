@@ -1,0 +1,56 @@
+{
+	"name": "BasicExtension",
+	"fantasyName": "BasicExtension",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCA,SCS,SCIS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0",
+		"SCIS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "BasicExtension for deploying SCIS",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/BasicScIsExtension.Service.ss"
+			]
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"instore": "Modules/BasicScIsExtension/JavaScript/Acme.BasicExtension.BasicScIsExtension.js"
+		},
+		"application": {
+			"instore": {
+				"files": [
+					"Modules/BasicScIsExtension/JavaScript/Acme.BasicExtension.BasicScIsExtension.js",
+					"Modules/BasicScIsExtension/JavaScript/Acme.BasicExtension.BasicScIsExtension.Model.js",
+					"Modules/BasicScIsExtension/JavaScript/Acme.BasicExtension.BasicScIsExtension.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/BasicScIsExtension/SuiteScript/Acme.BasicExtension.BasicScIsExtension.js",
+		"files": [
+			"Modules/BasicScIsExtension/SuiteScript/Acme.BasicExtension.BasicScIsExtension.js",
+			"Modules/BasicScIsExtension/SuiteScript/BasicScIsExtension.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/BasicScIsExtension/SuiteScript2/BasicScIsExtension.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/BasicExtension@1.0.0",
+	"activation_id": "23",
+	"extension_id": "20212"
+}

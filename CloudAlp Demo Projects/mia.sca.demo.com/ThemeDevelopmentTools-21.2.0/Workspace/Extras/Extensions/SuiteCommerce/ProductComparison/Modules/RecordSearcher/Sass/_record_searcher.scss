@@ -1,0 +1,23 @@
+.record-searcher-suggestion-wrapper {
+  position: absolute;
+  @extend .container;
+  z-index: 1001;
+  width: 100%;
+  left: 0;
+  right: auto;
+  top: 72px;
+  overflow: hidden;
+
+  .record-searcher-suggestions-container {
+    background: $sc-neutral-shade-0;
+    border-bottom: 1px solid $sc-color-theme-border-light;
+    border-right: 1px solid $sc-color-theme-border-light;
+    border-left: 1px solid $sc-color-theme-border-light;
+    box-shadow: 0 8px 12px rgba(77, 82, 86, 0.175);
+    -webkit-box-shadow: 0 8px 12px rgba(77, 82, 86, 0.175);
+    @media (min-width: $screen-md-min){
+      padding: $sc-padding-lv2 0;
+      border-top: 0;
+    }
+  }
+}

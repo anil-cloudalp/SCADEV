@@ -1,0 +1,79 @@
+{
+	"name": "TrackMyOrders",
+	"fantasyName": "Track My Orders",
+	"vendor": "Demo",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "this extension is used to track the orders of the customer",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/TrackMyOrdersModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/TrackMyOrdersModule/Configuration/TrackMyOrdersModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/TrackMyOrdersModule/Templates/demo_trackmyorders_trackmyordersmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/TrackMyOrdersModule/Sass/_trackmyorders-trackmyordersmodule.scss"
+		},
+		"files": [
+			"Modules/TrackMyOrdersModule/Sass/_trackmyorders-trackmyordersmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/TrackMyOrdersModule/JavaScript/Demo.TrackMyOrders.TrackMyOrdersModule.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/TrackMyOrdersModule/JavaScript/Demo.TrackMyOrders.TrackMyOrdersModule.js",
+					"Modules/TrackMyOrdersModule/JavaScript/TrackMyOrdersModule.View.js",
+					"Modules/TrackMyOrdersModule/JavaScript/Demo.TrackMyOrders.TrackMyOrdersModule.Model.js",
+					"Modules/TrackMyOrdersModule/JavaScript/Demo.TrackMyOrders.TrackMyOrdersModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/TrackMyOrdersModule/SuiteScript/Demo.TrackMyOrders.TrackMyOrdersModule.js",
+		"files": [
+			"Modules/TrackMyOrdersModule/SuiteScript/Demo.TrackMyOrders.TrackMyOrdersModule.js",
+			"Modules/TrackMyOrdersModule/SuiteScript/TrackMyOrdersModule.ServiceController.js",
+			"Modules/TrackMyOrdersModule/SuiteScript/Demo.TrackMyOrders.Model.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/TrackMyOrdersModule/SuiteScript2/TrackMyOrdersModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Demo/TrackMyOrders@1.0.0",
+	"activation_id": "27",
+	"extension_id": "19613"
+}

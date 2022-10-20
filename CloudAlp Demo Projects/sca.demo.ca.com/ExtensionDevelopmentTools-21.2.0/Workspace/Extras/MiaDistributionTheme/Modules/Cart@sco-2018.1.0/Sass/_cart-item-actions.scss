@@ -1,0 +1,48 @@
+/* Edited for Horizon Theme */
+
+.cart-item-actions-links {
+
+	display: table;
+	width: auto;
+
+	a {
+		display: table-cell;
+		height: $sc-target-size;
+		vertical-align: middle;
+
+	}
+
+	@media (max-width: $screen-md-max) {
+		margin-top: 0;
+	}
+}
+
+.cart-item-actions-item-list-actionable-edit-button-edit {
+	margin-right: $sc-margin-lv2;
+	padding: 13px;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-saveforlater {
+	margin-right: $sc-margin-lv2;
+}
+
+.cart-item-actions-item-list-actionable-edit-content-remove {
+	font-size: 24px;
+	padding: 0px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px !important;
+	color: rgba(0,0,0,0.7);
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-align: center;
+	border-radius: 50%;
+	&:hover{
+		background-color: #de853e!important;
+		color: #fff;
+	}
+	@media (max-width: ($screen-sm-min)-1px) {
+	   background-color: #de853e!important;
+		 color: #fff;
+	}
+}

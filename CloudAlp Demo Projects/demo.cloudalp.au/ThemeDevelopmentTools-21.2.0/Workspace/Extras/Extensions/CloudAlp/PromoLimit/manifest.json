@@ -1,0 +1,78 @@
+{
+	"name": "PromoLimit",
+	"fantasyName": "PromoLimit",
+	"vendor": "CloudAlp",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "when promo is applied set the ship  date in SO.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PromoLimit.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/PromoLimit/Configuration/PromoLimit.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/PromoLimit/Templates/cloudalp_promolimit_promolimit.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/PromoLimit/Sass/_promolimit-promolimit.scss"
+		},
+		"files": [
+			"Modules/PromoLimit/Sass/_promolimit-promolimit.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/PromoLimit/JavaScript/CloudAlp.PromoLimit.PromoLimit.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/PromoLimit/JavaScript/CloudAlp.PromoLimit.PromoLimit.js",
+					"Modules/PromoLimit/JavaScript/PromoLimit.View.js",
+					"Modules/PromoLimit/JavaScript/CloudAlp.PromoLimit.PromoLimit.Model.js",
+					"Modules/PromoLimit/JavaScript/CloudAlp.PromoLimit.PromoLimit.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PromoLimit/SuiteScript/CloudAlp.PromoLimit.PromoLimit.js",
+		"files": [
+			"Modules/PromoLimit/SuiteScript/CloudAlp.PromoLimit.PromoLimit.js",
+			"Modules/PromoLimit/SuiteScript/PromoLimit.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/PromoLimit/SuiteScript2/PromoLimit.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/cloudalp/PromoLimit@1.0.0",
+	"activation_id": "20",
+	"extension_id": "23612"
+}

@@ -1,0 +1,96 @@
+.sc-item-comparison-widget-container {
+  .sc-widget-header {
+    @extend .container;
+    display: table;
+    padding-top: $sc-padding-lv2;
+    padding-bottom: $sc-padding-lv2;
+    background-color: $comparison-widget-container-bg-color;
+    text-align: center;
+    user-select: none;
+    padding-left: 0;
+
+    @media (min-width: $screen-sm-min) {
+      padding-left: $sc-padding-lv2;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+
+    .sc-header-allowed-items-message {
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+      .sc-allowed-items-message-container {
+        @extend .col-sm-6;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 0;
+        display: none;
+        font-size: $sc-font-size-xs;
+        font-weight: $sc-font-weight-light;
+        width: 100%;
+        @media (min-width: $screen-sm-min) {
+          display: block;
+        }
+      }
+    }
+
+    .sc-icon-toggle-container {
+      @extend .col-xs-1;
+      @extend .col-sm-3;
+      @extend .col-md-3;
+      @extend .col-lg-3;
+      cursor: pointer;
+      text-align: right;
+      padding-left: $sc-padding-lv2;
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+      button {
+        &:focus {
+          outline: none;
+        }
+        background-color: transparent;
+        vertical-align: middle;
+      }
+
+      .sc-icon-toggle {
+        @extend .double-angle-up;
+        color: $comparison-widget-container-font-color;
+        font-size: $sc-font-size-xxxl;
+        font-weight: bold;
+
+        &.active {
+          -ms-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+        span {
+          font-size: 0;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        padding-left: $sc-padding-lv3;
+      }
+    }
+
+    .sc-compare-item-buttons-container {
+      @extend .col-xs-11;
+      @extend .col-sm-3;
+      @extend .col-md-3;
+      @extend .col-lg-3;
+      padding-right: 0;
+      display: table-cell;
+      float: none;
+      .sc-addedfromcomparison-compare-button {
+        @extend .button-medium;
+        @extend .button-primary;
+        width: 100%;
+        margin: 0;
+        z-index: 9999;
+      }
+    }
+  }
+}
+

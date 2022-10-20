@@ -1,0 +1,1 @@
+<div data-view="Cart.QuickAddToCart"></div>

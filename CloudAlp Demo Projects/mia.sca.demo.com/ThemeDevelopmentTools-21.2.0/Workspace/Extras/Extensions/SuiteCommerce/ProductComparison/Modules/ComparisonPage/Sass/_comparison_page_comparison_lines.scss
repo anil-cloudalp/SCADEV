@@ -1,0 +1,275 @@
+
+.comparison-page-layout-container {
+  .items-container {
+    background-color: $comparison-table-background-color;
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: $sc-margin-lv4 * 2;
+
+    .items-table {
+      @extend .table;
+      overflow-x: scroll;
+      table-layout: fixed;
+
+      &.table-for-4-items {
+        width: 250%;
+        max-width: 250%;
+      }
+
+      &.table-for-3-items {
+        width: 200%;
+        max-width: 200%;
+      }
+
+      &.table-for-2-items {
+        width: 150%;
+        max-width: 150%;
+      }
+
+      tr {
+        td {
+          width: 22%;
+
+          &.specifications-column {
+            width: 12%;
+          }
+        }
+      }
+
+      @media (min-width: $screen-md-min) {
+        &.table-for-4-items {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        &.table-for-3-items {
+          width: 75%;
+          max-width: 75%;
+        }
+
+        &.table-for-2-items {
+          width: 55%;
+          max-width: 55%;
+        }
+
+        &.table-for-1-items {
+          width: 35%;
+          max-width: 35%;
+        }
+
+        tr {
+          td {
+            width: 21.25%;
+
+            &.specifications-column {
+              width: 15%;
+            }
+          }
+        }
+
+        .small-label {
+          font-size: $sc-font-size-xs;
+        }
+      }
+
+      .upper-text {
+        text-transform: uppercase;
+      }
+
+      .small-label {
+        font-size: $sc-font-size-xxs
+      }
+
+      thead {
+        tr {
+          &:last-child {
+            td {
+              &:not(.specifications-column) {
+                border-bottom: 1px solid $comparison-page-columns-border-color;
+              }
+            }
+          }
+
+          &:first-child {
+            td {
+              &:not(.specifications-column) {
+                border-top: 1px solid $comparison-page-columns-border-color;
+              }
+            }
+          }
+
+          td {
+            border-top: 0;
+            border-left: 0;
+            border-bottom: 0;
+            border-right: 1px solid $comparison-page-columns-border-color;
+            @media (min-width: $screen-md-min) {
+              padding-left: $sc-padding-lv4;
+              padding-right: $sc-padding-lv4;
+            }
+
+            &.comparison-item-header {
+              padding-top: $sc-padding-lv3;
+              border-top: 1px solid $comparison-page-columns-border-color;
+            }
+          }
+
+          &.item-name-row {
+            .item-remover {
+              position: relative;
+
+              .item-remover-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: transparent;
+
+                .item-remover-button-icon {
+                  @extend .times-circle
+                }
+              }
+            }
+
+            .name-container {
+              width: 80%;
+
+              &:hover {
+                h4 {
+                  color: $sc-color-link-hover;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          &.item-review-row {
+            .quick-view-rating {
+              .rating-label {
+                line-height: $sc-margin-lv2;
+              }
+
+              .global-views-star-rating {
+                position: $sc-margin-lv4;
+                clear: both;
+                float: left;
+                min-width: 90px;
+              }
+
+              .star-rating-area {
+                position: relative;
+                float: left;
+              }
+
+              .star-rating-filled,
+              .star-rating-empty {
+                @extend .icon-star;
+              }
+
+              .star-rating-filled {
+                @extend .icon-star-filled;
+              }
+
+              .star-rating-area-fill {
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+              }
+
+              .star-rating-area-filled {
+                width: 257px;
+                text-align: left;
+              }
+            }
+          }
+
+          &.item-thumbnail-row {
+            padding-top: $sc-padding-lv4;
+
+            .thumbnail-container {
+              width: 100%;
+              text-align: center;
+            }
+          }
+
+          &.item-actions-row {
+            .add-to-cart-button-container {
+              width: 100%;
+              margin-bottom: $sc-margin-lv3;
+
+              .add-to-cart-button {
+                @extend .button-medium;
+                @extend .button-primary;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &:first-child {
+            td {
+              &:first-child {
+                border-top: 1px solid $comparison-page-columns-border-color;
+              }
+            }
+          }
+
+          @media (min-width: $screen-md-min) {
+            &.row-odd {
+              td {
+                background-color: $comparison-page-odd-rows-bg-color;
+              }
+            }
+            &.row-even {
+              td {
+                background-color: $comparison-page-even-rows-bg-color;
+              }
+            }
+          }
+
+          &:last-child {
+            border-bottom: 1px solid $comparison-page-columns-border-color;
+          }
+
+          td {
+            @media (min-width: $screen-md-min) {
+              border-top: 0;
+            }
+            vertical-align: middle;
+
+            border-left: 1px solid $comparison-page-columns-border-color;
+            border-top: 0;
+            border-right: 1px solid $comparison-page-columns-border-color;
+
+            &.specifications-column {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              background-color: $comparison-page-specification-columns-bg-color;
+              color: $comparison-page-specification-columns-font-color;
+            }
+
+            &.item-value {
+              &.field-type-Text {
+                vertical-align: top;
+              }
+            }
+
+            @media (max-width: $screen-md-min) {
+              &:nth-child(odd) {
+                background-color: $comparison-page-even-rows-bg-color;
+              }
+              &:nth-child(even) {
+                background-color: $comparison-page-odd-rows-bg-color;
+              }
+              &:not(.specifications-column) {
+                border-bottom: 1px solid $comparison-page-columns-border-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

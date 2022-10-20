@@ -1,0 +1,237 @@
+@function getExtensionAssetsPath($asset){
+@return '../extensions/MIA/MiaRewardsExtension/1.0.0/' + $asset;
+}
+
+@function getThemeAssetsPath($asset){
+@return '../extensions/CloudAlp/Gozney/3.3.0/' + $asset;
+}
+
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+@import "miarewardsextension-submitclaim.scss";
+
+.mia-rewards-section-top-menu{
+	border-bottom: 1px solid #ccc;
+}
+
+.mia-rewards-section-logo {
+	p {
+		text-align: center;
+		padding: $sc-padding-lv4;
+	}
+
+	img {
+		max-height: 60px;
+	}
+
+	border-bottom: 1px solid #CCC;
+}
+
+.mia-rewards-section-menu-wrapper {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #F1F1F1;
+
+	a {
+		color: #000;
+		padding: $sc-padding-lv2 $sc-padding-lv4;
+	}
+
+	a.active {
+		color: $sc-color-primary;
+		border-top: 2px solid $sc-color-primary;
+	}
+
+}
+
+.mia-rewards-section-content-wrapper {
+	background-color: #F1F1F1;
+	padding: $sc-padding-lv2;
+	
+.mia-rewards-section-content-wrapper-sections{
+	display:none;
+}
+	.tab-active{
+		display: block !important;
+	}
+
+	p {
+		line-height: 1.2;
+	}
+
+	.mia-rewards-section-content-wrapper-logo-image {
+		text-align: center;
+		margin: $sc-margin-lv4 0 $sc-margin-lv6 0;
+
+		@media (min-width:425px) {
+			img {
+				max-width: 300px;
+			}
+		}
+	}
+
+	.mia-rewards-section-content-wrapper-logo-text {
+		@media (min-width:425px) {
+			width: 50%;
+			margin: auto;
+		}
+
+		.welcome-text {
+			color: $sc-color-primary;
+
+		}
+
+		.user-name-text {
+			color: rgb(18, 18, 245);
+			font-size: 22px;
+		}
+
+		span {
+			color: rgb(18, 18, 245);
+		}
+
+		.mia-rewards-section-text-wrapper {
+			display: flex;
+			align-items: baseline;
+		}
+	}
+
+	.mia-rewards-section-content-wrapper-container {
+		margin: $sc-margin-lv6 0 $sc-margin-lv3 0;
+
+		.mia-rewards-section-main-div-first {
+			background-color: #000;
+			padding: $sc-padding-lv2;
+			border-radius: 10px;
+
+			.mia-rewards-section-sub-div-first {
+				padding: $sc-padding-lv4 $sc-padding-lv2;
+				background-color: #fff;
+				display: flex;
+				justify-content: space-between;
+
+				.sub-div1 {
+					.small-text {
+						small{
+							color: rgb(18, 18, 245) !important;
+						}
+						
+					}
+
+					.other-text {
+						font-weight: 700;
+					}
+				}
+
+				.sub-div3 {
+					.sub-div3-text1 {
+						font-size: 22px;
+						font-weight: 700;
+						text-align: center;
+					}
+
+					.sub-div3-text2 {
+						text-align: center;
+						color: rgb(18, 18, 245);
+					}
+				}
+			}
+		}
+
+		.mia-rewards-section-main-div-second{
+			margin: $sc-margin-lv4 0;
+			@media (min-width: $screen-md-min) {
+				display: flex;
+				justify-content: space-between;
+			}
+			.sub-div-second-text{
+				color: #fff;
+				padding-bottom: $sc-padding-lv1;
+			}
+			.mia-rewards-section-sub-div-second{
+				background-color: black;
+				padding: 10px;
+				border-radius: 10px;
+				width: 30%;
+				@media (max-width: $screen-sm-max) {
+					width: 100%;
+					margin: $sc-margin-lv2 0;
+				}
+			}
+			.mia-rewards-section-sub-div-second-box{
+				padding: $sc-padding-lv3 $sc-padding-lv1;
+				text-align: center;
+				border-radius: 10px;
+				background-color: #fff;
+				p{
+					color: $sc-color-primary;
+					font-weight: 700;
+				}
+			}
+		}
+		.mia-rewards-section-main-div-third{
+			margin: $sc-margin-lv4 0;
+			@media (min-width: $screen-md-min) {
+				display: flex;
+				justify-content: space-between;
+			}
+			.sub-div-second-text{
+				color: #fff;
+				padding-bottom: $sc-padding-lv1;
+			}
+			.mia-rewards-section-sub-div-third1{
+				background-color: black;
+				padding: 10px;
+				border-radius: 10px;
+				width: 65%;
+				height: 100%;
+				@media (max-width: $screen-sm-max) {
+					width: 100%;
+					margin: $sc-margin-lv2 0;
+				}
+			}
+			.mia-rewards-section-sub-div-third2{
+				background-color: black;
+				padding: 10px;
+				border-radius: 10px;
+				width: 30%;
+				height: 100%;
+				@media (max-width: $screen-sm-max) {
+					width: 100%;
+					margin: $sc-margin-lv2 0;
+				}
+			}
+			.mia-rewards-section-sub-div-third2-box{
+				a{
+					display: block;
+					padding: $sc-padding-lv2 $sc-padding-lv1;
+					border-bottom: 1px solid #F1F1F1;
+					color: rgb(18, 18, 245);			
+					
+				}
+				a:last-child{
+					border-bottom: none;
+				}
+			}
+			.mia-rewards-section-sub-div-third1-box,.mia-rewards-section-sub-div-third2-box{
+				padding: $sc-padding-lv3 $sc-padding-lv1;
+				text-align: center;
+				border-radius: 10px;
+				background-color: #fff;
+				p{
+					color: $sc-color-primary;
+					font-weight: 700;
+				}
+			}
+
+		}
+		
+	}
+
+}
