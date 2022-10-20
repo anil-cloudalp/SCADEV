@@ -1,0 +1,81 @@
+{
+    "name": "KDCustomFacets",
+    "fantasyName": "KDCustomFacets",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Shows a different PLP if the page is News or Case Studies ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/case-study-banner.jpg",
+                "img/read-more-left.jpg",
+                "img/read-more-right.jpg"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDCustomFacets.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDCustomFacets/Configuration/KDCustomFacets.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/KDCustomFacets/Sass/_kdcustomfacets-kdcustomfacets.scss"
+        },
+        "files": [
+            "Modules/KDCustomFacets/Sass/_kdcustomfacets-kdcustomfacets.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/KDCustomFacets/Templates/kodella_kdcustomfacets_kdcustomfacets.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/KDCustomFacets/JavaScript/Kodella.KDCustomFacets.KDCustomFacets.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/KDCustomFacets/JavaScript/Kodella.KDCustomFacets.KDCustomFacets.js",
+                    "Modules/KDCustomFacets/JavaScript/KDCustomFacets.View.js",
+                    "Modules/KDCustomFacets/JavaScript/Kodella.KDCustomFacets.KDCustomFacets.Model.js",
+                    "Modules/KDCustomFacets/JavaScript/Kodella.KDCustomFacets.KDCustomFacets.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDCustomFacets/SuiteScript/Kodella.KDCustomFacets.KDCustomFacets.js",
+        "files": [
+            "Modules/KDCustomFacets/SuiteScript/Kodella.KDCustomFacets.KDCustomFacets.js",
+            "Modules/KDCustomFacets/SuiteScript/KDCustomFacets.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDCustomFacets",
+    "suitescript2": {
+        "files": [
+            "Modules/KDCustomFacets/SuiteScript2/KDCustomFacets.Service.ss"
+        ]
+    }
+}

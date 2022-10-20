@@ -1,0 +1,113 @@
+.newslettercct-horizontal {
+  @media (min-width: $screen-sm-min) {
+    .newslettercct-input {
+      margin-right: $sc-margin-lv2;
+      width: 100%;
+    }
+
+    .newslettercct-input-group {
+      width: 25%;
+      display: inline-block;
+      padding-right: $sc-padding-lv2;
+      vertical-align: top;
+    }
+
+    .newslettercct-button-container {
+      display: inline;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-min - 1px) {
+    .newslettercct-input {
+      width: 100%;
+    }
+  }
+}
+
+.newslettercct-vertical {
+  .newslettercct-button-container {
+    display: block;
+  }
+
+  @media screen and (max-width: $screen-sm-min - 1px) {
+    .newslettercct-input {
+      width: 100%;
+    }
+  }
+}
+
+.newslettercct-left {
+  @media (min-width: $screen-sm-min) {
+    .newslettercct-container {
+      max-width: 32.5%;
+      margin-left: 7.5%;
+      float: left;
+    }
+
+    .newslettercct-input {
+      margin-right: $sc-margin-lv2;
+      width: 100%;
+    }
+
+    .newslettercct-input-group {
+      padding-right: $sc-padding-lv2;
+      vertical-align: top;
+    }
+
+    .newslettercct-button-container {
+      padding-right: $sc-padding-lv2;
+      display: block;
+      text-align: left;
+    }
+
+    .newslettercct-header {
+      text-align: left;
+    }
+
+    .newslettercct-subheader {
+      text-align: left;
+    }
+
+    .newslettercct-submit {
+      width: 100%;
+    }
+  }
+}
+
+.newslettercct-right {
+  @media (min-width: $screen-sm-min) {
+    .newslettercct-container {
+      max-width: 32.5%;
+      margin-right: 7.5%;
+      float: right;
+    }
+
+    .newslettercct-input {
+      margin-right: $sc-margin-lv2;
+      width: 100%;
+    }
+
+    .newslettercct-input-group {
+      padding-right: $sc-padding-lv2;
+      vertical-align: top;
+    }
+
+    .newslettercct-button-container {
+      padding-right: $sc-padding-lv2;
+      display: block;
+      text-align: left;
+    }
+
+    .newslettercct-header {
+      text-align: left;
+    }
+
+    .newslettercct-subheader {
+      text-align: left;
+    }
+
+    .newslettercct-submit {
+      width: 100%;
+    }
+  }
+}

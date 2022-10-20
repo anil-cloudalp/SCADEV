@@ -1,0 +1,128 @@
+.cart-lines-name{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-name-link{
+	@extend .medium-title-navigable;
+}
+
+.cart-lines-name-viewonly{
+	@extend .medium-title-viewonly;
+}
+
+.cart-lines-thumbnail{
+	img{
+		width:$img-larger;
+		@media(max-width: 768px){
+			width: 100%;
+		}
+	}
+}
+
+.cart-lines-price{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-price .transaction-line-views-price-lead{
+	@extend .middle-price;
+}
+
+.cart-lines-options{
+	.cart-option{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.cart-lines-row {
+	@extend .row;
+	margin: 0px;
+	padding: $sc-padding-lv4 0px;
+	border-top: 1px solid #e4e4e4; // change for variable
+	@media(max-width: 768px){
+		padding-bottom: 0px;
+	}
+}
+
+.cart-lines-table-first {
+	@extend .col-xs-4;
+	@extend .col-lg-3;
+	@media(max-width: 768px){
+		width: 100%;
+	}
+}
+
+.cart-lines-table-middle {
+	@extend .col-xs-8;
+	@extend .col-lg-5;
+	@media(max-width: 768px){
+		width: 100%;
+	}
+}
+
+@media(max-width: 768px){
+.cart-item-summary-item-list-actionable-qty form label[data-validation="control"]{
+	width: 100%;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.cart-item-summary-item-list-actionable-input-qty{
+	float: right;
+	button input[data-type="cart-item-quantity-input"]{
+		font-size: 13px;
+	}
+}
+
+.cart-item-summary-item-list-actionable-label-qty{
+
+	line-height: 40px;
+}
+
+.cart-item-summary-item-list-actionable-input-qty button{
+
+	background-color: transparent;
+    color: black;
+}
+
+.cart-item-actions-links{
+	margin: 0 auto;
+}
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+	.cart-item-actions-links {
+		margin: 0 auto;
+		margin-top: 10px;
+
+		}
+}
+
+.cart-lines-table-last {
+	@extend .col-xs-12;
+	@extend .col-lg-4;
+}
+
+.cart-lines-alert-placeholder {
+	margin:$sc-margin-lv2 0;
+}
+
+.cart-lines-shipping-method {
+	margin-top: $sc-margin-lv3;
+}
+
+.cart-lines-item-actions-desktop {
+	@media (max-width: $screen-md-max) {
+		display: none;
+	}
+}
+
+.cart-lines-item-actions-mobile {
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}
+
+
+

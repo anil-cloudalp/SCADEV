@@ -1,0 +1,73 @@
+{
+	"name": "checkoutCustomization",
+	"fantasyName": "checkoutCustomization",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "This extension is used to display website features based on profile roles.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/RoleBasedCheckout.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/RoleBasedCheckout/Templates/ca_checkoutcustomization_rolebasedcheckout.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/RoleBasedCheckout/Sass/_checkoutcustomization-rolebasedcheckout.scss"
+		},
+		"files": [
+			"Modules/RoleBasedCheckout/Sass/_checkoutcustomization-rolebasedcheckout.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/RoleBasedCheckout/JavaScript/CA.checkoutCustomization.RoleBasedCheckout.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/RoleBasedCheckout/JavaScript/CA.checkoutCustomization.RoleBasedCheckout.js",
+					"Modules/RoleBasedCheckout/JavaScript/RoleBasedCheckout.View.js",
+					"Modules/RoleBasedCheckout/JavaScript/CA.checkoutCustomization.RoleBasedCheckout.Model.js",
+					"Modules/RoleBasedCheckout/JavaScript/CA.checkoutCustomization.RoleBasedCheckout.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/RoleBasedCheckout/SuiteScript/CA.checkoutCustomization.RoleBasedCheckout.js",
+		"files": [
+			"Modules/RoleBasedCheckout/SuiteScript/CA.checkoutCustomization.RoleBasedCheckout.js",
+			"Modules/RoleBasedCheckout/SuiteScript/RoleBasedCheckout.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/RoleBasedCheckout/SuiteScript2/RoleBasedCheckout.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/checkoutCustomization@1.0.0",
+	"activation_id": "2",
+	"extension_id": "2601"
+}

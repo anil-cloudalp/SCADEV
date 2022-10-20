@@ -1,0 +1,78 @@
+{
+	"name": "ShoppingCustomization",
+	"fantasyName": "Shopping Customization",
+	"vendor": "CloudAlp",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "This extension is used for new home page layout and shopping ssp.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ShoppingCustomization.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ShoppingCustomization/Configuration/ShoppingCustomization.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShoppingCustomization/Templates/cloudalp_shoppingcustomization_shoppingcustomization.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ShoppingCustomization/Sass/_shoppingcustomization-shoppingcustomization.scss"
+		},
+		"files": [
+			"Modules/ShoppingCustomization/Sass/_shoppingcustomization-shoppingcustomization.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+					"Modules/ShoppingCustomization/JavaScript/ShoppingCustomization.View.js",
+					"Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.Model.js",
+					"Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ShoppingCustomization/SuiteScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+		"files": [
+			"Modules/ShoppingCustomization/SuiteScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+			"Modules/ShoppingCustomization/SuiteScript/ShoppingCustomization.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ShoppingCustomization/SuiteScript2/ShoppingCustomization.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CloudAlp/ShoppingCustomization@1.0.0",
+	"activation_id": "2",
+	"extension_id": "3301"
+}

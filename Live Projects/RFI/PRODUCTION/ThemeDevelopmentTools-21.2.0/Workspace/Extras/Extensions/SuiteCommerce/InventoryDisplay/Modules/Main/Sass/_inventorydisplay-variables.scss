@@ -1,0 +1,386 @@
+/*
+group({
+   "id": "inventory-display",
+   "label": "SC Inventory Display",
+   "description": "",
+   "children": [
+      "invetory-display-typography",
+      "in-stock-messages",
+      "back-order-messages",
+      "always-in-stock-messages",
+      "low-stock-messages"
+   ]
+})
+*/
+
+$inventory-display-messages-font-family: $sc-body-font-family; /* editable({
+  "type": "string",
+  "label": "Messages Font Family"
+})*/
+
+$inventory-display-messages-font-size: $sc-font-size-s; /* editable({
+  "type": "string",
+  "label": "Messages Font Size"
+}) */
+
+$inventory-display-messages-mobile-font-size: $sc-font-size-s; /* editable({
+  "type": "string",
+  "label": "Messages Mobile Font Size"
+}) */
+
+$inventory-display-quantity-font-size: $sc-font-size-s; /* editable({
+  "type": "string",
+  "label": "Quantity Font Size"
+}) */
+
+$inventory-display-quantity-mobile-font-size:  $sc-font-size-s; /* editable({
+  "type": "string",
+  "label": "Quantity Mobile Font Size"
+}) */
+
+$inventory-display-quantity-font-color: $sc-color-copy-light; /* editable({
+  "type": "color",
+  "label": "Quantity Font Color"
+}) */
+
+/*
+group({
+   "id": "invetory-display-typography",
+   "label": "Typography",
+   "description": "",
+   "children": [
+      "$inventory-display-messages-font-family",
+      "$inventory-display-messages-font-size",
+      "$inventory-display-messages-mobile-font-size",
+      "$inventory-display-quantity-font-size",
+      "$inventory-display-quantity-mobile-font-size",
+      "$inventory-display-quantity-font-color"
+    ]
+})
+*/
+
+$inventory-display-stock-information-in-stock-background: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Regular Item"
+})*/
+
+$inventory-display-stock-information-in-stock-border-color: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Regular Item"
+})*/
+
+$inventory-display-stock-information-in-stock-text: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Regular Item"
+})*/
+
+$inventory-display-stock-information-in-stock-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Regular Item",
+	"options": [
+    {"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+
+$inventory-display-stock-information-in-stock-background-special-order: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Special Order"
+})*/
+
+$inventory-display-stock-information-in-stock-border-color-special-order: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Special Order"
+})*/
+
+$inventory-display-stock-information-in-stock-text-special-order: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Special Order"
+})*/
+
+$inventory-display-stock-information-in-stock-special-order-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Special Order Item",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+
+$inventory-display-stock-information-in-stock-background-dropship: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Drop Ship"
+})*/
+
+$inventory-display-stock-information-in-stock-border-color-dropship: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Drop Ship"
+})*/
+
+$inventory-display-stock-information-in-stock-text-dropship: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Drop Ship"
+})*/
+
+$inventory-display-stock-information-in-stock-dropship-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Drop Ship Item",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+
+
+/*
+group({
+   "id": "in-stock-messages",
+   "label": "In Stock Messages",
+   "description": "",
+   "children": [
+      "$inventory-display-stock-information-in-stock-background",
+      "$inventory-display-stock-information-in-stock-border-color",
+      "$inventory-display-stock-information-in-stock-text",
+      "$inventory-display-stock-information-in-stock-icon",
+      "$inventory-display-stock-information-in-stock-background-special-order",
+      "$inventory-display-stock-information-in-stock-border-color-special-order",
+      "$inventory-display-stock-information-in-stock-text-special-order",
+      "$inventory-display-stock-information-in-stock-special-order-icon",
+      "$inventory-display-stock-information-in-stock-background-dropship",
+      "$inventory-display-stock-information-in-stock-border-color-dropship",
+      "$inventory-display-stock-information-in-stock-text-dropship",
+      "$inventory-display-stock-information-in-stock-dropship-icon"
+    ]
+})
+*/
+
+$inventory-display-stock-information-back-order-background: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Regular Item"
+})*/
+$inventory-display-stock-information-back-order-border-color: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Regular Item"
+})*/
+$inventory-display-stock-information-back-order-text: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Regular Item"
+})*/
+$inventory-display-stock-information-back-order-icon: "fa-info"; /* editable({
+	"type": "string",
+	"label": "Icon - Regular Item",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+$inventory-display-stock-information-back-order-background-special-order: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Special Order"
+})*/
+$inventory-display-stock-information-back-order-border-color-special-order: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Special Order"
+})*/
+$inventory-display-stock-information-back-order-text-special-order: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Special Order"
+})*/
+
+$inventory-display-stock-information-back-order-special-order-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Special Order",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+$inventory-display-stock-information-back-order-background-dropship: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Drop Ship"
+})*/
+$inventory-display-stock-information-back-order-border-color-dropship: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Drop Ship"
+})*/
+$inventory-display-stock-information-back-order-text-dropship: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Drop Ship"
+})*/
+
+$inventory-display-stock-information-back-order-dropship-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Drop Ship",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+/*
+group({
+   "id": "back-order-messages",
+   "label": "Back Order Messages",
+   "description": "",
+   "children": [
+      "$inventory-display-stock-information-back-order-background",
+      "$inventory-display-stock-information-back-order-border-color",
+      "$inventory-display-stock-information-back-order-text",
+      "$inventory-display-stock-information-back-order-icon",
+      "$inventory-display-stock-information-back-order-background-special-order",
+      "$inventory-display-stock-information-back-order-border-color-special-order",
+      "$inventory-display-stock-information-back-order-text-special-order",
+      "$inventory-display-stock-information-back-order-special-order-icon",
+      "$inventory-display-stock-information-back-order-background-dropship",
+      "$inventory-display-stock-information-back-order-border-color-dropship",
+      "$inventory-display-stock-information-back-order-text-dropship",
+      "$inventory-display-stock-information-back-order-dropship-icon"
+    ]
+})
+*/
+
+$inventory-display-stock-information-always-in-stock-background-special-order: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Special Order"
+})*/
+
+$inventory-display-stock-information-always-in-stock-border-color-special-order: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Special Order"
+})*/
+
+$inventory-display-stock-information-always-in-stock-text-special-order: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Special Order"
+})*/
+
+$inventory-display-stock-information-always-in-stock-special-order-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Special Order",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+$inventory-display-stock-information-always-in-stock-background-dropship: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background - Drop Ship"
+})*/
+
+$inventory-display-stock-information-always-in-stock-border-color-dropship: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border - Drop Ship"
+})*/
+
+$inventory-display-stock-information-always-in-stock-text-dropship: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color - Drop Ship"
+})*/
+
+$inventory-display-stock-information-always-in-stock-dropship-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Drop Ship",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+/*
+group({
+   "id": "always-in-stock-messages",
+   "label": "Always In Stock Messages",
+   "description": "",
+   "children": [
+      "$inventory-display-stock-information-always-in-stock-background-special-order",
+      "$inventory-display-stock-information-always-in-stock-border-color-special-order",
+      "$inventory-display-stock-information-always-in-stock-text-special-order",
+      "$inventory-display-stock-information-always-in-stock-special-order-icon",
+      "$inventory-display-stock-information-always-in-stock-background-dropship",
+      "$inventory-display-stock-information-always-in-stock-border-color-dropship",
+      "$inventory-display-stock-information-always-in-stock-text-dropship",
+      "$inventory-display-stock-information-always-in-stock-dropship-icon"
+    ]
+})
+*/
+
+$inventory-display-stock-information-low-stock-background: $sc-color-success-background; /* editable({
+  "type": "color",
+  "label": "Background"
+})*/
+
+$inventory-display-stock-information-low-stock-border-color: $sc-color-success-border; /* editable({
+  "type": "color",
+  "label": "Border"
+})*/
+
+$inventory-display-stock-information-low-stock-text: $sc-color-success; /* editable({
+  "type": "color",
+  "label": "Font Color"
+})*/
+
+$inventory-display-stock-information-low-stock-icon: "fa-check"; /* editable({
+	"type": "string",
+	"label": "Icon - Regular Item",
+	"options": [
+		{"value": "fa-check", "text": "Check"},
+		{"value": "none-icon", "text": "None"},
+		{"value": "fa-ext-cross", "text": "Cross"},
+		{"value": "fa-info", "text": "Information"},
+		{"value": "fa-truck", "text": "Delivery Truck"},
+		{"value": "fa-box", "text": "Package"}
+	]
+}) */
+
+/*
+group({
+   "id": "low-stock-messages",
+   "label": "Low Stock Messages",
+   "description": "",
+   "children": [
+      "$inventory-display-stock-information-low-stock-background",
+      "$inventory-display-stock-information-low-stock-border-color",
+      "$inventory-display-stock-information-low-stock-text",
+      "$inventory-display-stock-information-low-stock-icon"
+    ]
+})
+*/
+

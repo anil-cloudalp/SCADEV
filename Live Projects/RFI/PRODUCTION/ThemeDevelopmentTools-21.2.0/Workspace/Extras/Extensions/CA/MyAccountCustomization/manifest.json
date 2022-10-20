@@ -1,0 +1,103 @@
+{
+	"name": "MyAccountCustomization",
+	"fantasyName": "MyAccountCustomization",
+	"vendor": "CA",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "This extension is used to hide website features based on profile roles in Shopping and MyAccount.",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/RoleBasedMyAccount.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RoleBasedMyAccount/Templates/ca_myaccountcustomization_rolebasedmyaccount.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/RoleBasedMyAccount/Templates/ca_myaccountcustomization_rolebasedmyaccount.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/RoleBasedMyAccount/Templates/ca_myaccountcustomization_rolebasedmyaccount.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/RoleBasedMyAccount/Sass/_myaccountcustomization-rolebasedmyaccount.scss",
+			"myaccount": "Modules/RoleBasedMyAccount/Sass/_myaccountcustomization-rolebasedmyaccount.scss",
+			"checkout": "Modules/RoleBasedMyAccount/Sass/_myaccountcustomization-rolebasedmyaccount.scss"
+		},
+		"files": [
+			"Modules/RoleBasedMyAccount/Sass/_myaccountcustomization-rolebasedmyaccount.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+			"myaccount": "Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+			"checkout": "Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+					"Modules/RoleBasedMyAccount/JavaScript/RoleBasedMyAccount.View.js",
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.Model.js",
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+					"Modules/RoleBasedMyAccount/JavaScript/RoleBasedMyAccount.View.js",
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.Model.js",
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+					"Modules/RoleBasedMyAccount/JavaScript/RoleBasedMyAccount.View.js",
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.Model.js",
+					"Modules/RoleBasedMyAccount/JavaScript/CA.MyAccountCustomization.RoleBasedMyAccount.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/RoleBasedMyAccount/SuiteScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+		"files": [
+			"Modules/RoleBasedMyAccount/SuiteScript/CA.MyAccountCustomization.RoleBasedMyAccount.js",
+			"Modules/RoleBasedMyAccount/SuiteScript/RoleBasedMyAccount.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/RoleBasedMyAccount/SuiteScript2/RoleBasedMyAccount.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CA/MyAccountCustomization@1.0.0",
+	"activation_id": "2",
+	"extension_id": "2701"
+}

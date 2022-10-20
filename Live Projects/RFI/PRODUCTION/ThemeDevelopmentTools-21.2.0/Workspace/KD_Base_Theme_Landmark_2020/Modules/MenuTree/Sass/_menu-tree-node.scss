@@ -1,0 +1,113 @@
+.menu-tree > .menu-tree-node {
+	border: 1px solid $sc-color-theme-border;
+	border-top: none;
+}
+.menu-tree-node-item-submenu {
+	display:none;
+}
+.menu-tree-node-item-anchor {
+	@extend .medium-title-navigable;
+	display:block;
+	line-height:1em;
+	padding: $sc-padding-lv4;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: normal;
+
+	&:hover {
+		color: $sc-color-primary;
+		background-color: $sc-color-theme-background;
+	}
+}
+
+.menu-tree-node-item-icon{
+	@extend .icon-base;
+	@extend %fa-angle-down;
+	@include transition-transform(300ms ease);
+	float: right;
+	margin-top: -1px;
+}
+
+.menu-tree-node-item-anchor.active,
+.open > .menu-tree-node-item-anchor {
+	
+	color: $sc-color-copy-dark;
+	font-weight: $sc-font-weight-semibold;
+	background-color: $sc-color-theme-background;
+}
+
+.open .menu-tree-node-item-icon{
+	@include rotate(180deg);
+}
+
+.menu-tree-node-submenu-wrapper{
+	padding-top: 1px;
+	// border-top: 1px solid $sc-color-theme-border;
+	background-color: $sc-neutral-shade-0;
+
+	.menu-tree-node-item-anchor{
+		background-color: $sc-neutral-shade-0;
+		padding: $sc-padding-lv2;
+		font-size: $sc-font-size-m;
+		text-transform: none;
+		padding: $sc-padding-lv2 $sc-padding-lv4;
+		border-bottom: none;
+
+		&.active, &:hover {
+			background-color: $sc-color-theme-background;
+			color: $sc-color-primary;
+			text-decoration: underline;
+		}
+	}
+}
+
+
+///custom for my account side nav
+
+.myaccount-layout-side-nav{
+	.menu-tree-node-item-anchor {
+		color: $theme-primary-color !important;
+	}
+
+	.menu-tree-node-item-anchor.active,
+	.open > .menu-tree-node-item-anchor {
+		color: $theme-primary-color !important;
+		font-weight: $sc-font-weight-semibold;
+		background-color: $sc-color-theme-background;
+	}
+
+	.menu-tree-node-submenu-wrapper .menu-tree-node-item-anchor {
+		background-color: white;
+		padding: 10px;
+		font-size: 15px;
+		text-transform: none;
+		padding: 10px 20px;
+		border-bottom: none;
+	}
+
+	.menu-tree-node-submenu-wrapper{
+		padding-top: 1px;
+		// border-top: 1px solid $sc-color-theme-border;
+		background-color: $sc-neutral-shade-0;
+	
+		.menu-tree-node-item-anchor{
+			background-color: $sc-neutral-shade-0;
+			padding: $sc-padding-lv2;
+			font-size: $sc-font-size-m;
+			text-transform: none;
+			padding: $sc-padding-lv2 $sc-padding-lv4;
+			border-bottom: none;
+	
+			&.active, &:hover {
+				background-color: $theme-border-colors-light;
+				color: $theme-primary-color;
+				text-decoration: none !important;
+			}
+		}
+	}
+	.menu-tree-node-item-icon:before{
+		color: $theme-primary-color !important;
+		font-weight: $sc-font-weight-semibold;
+	}
+
+} 

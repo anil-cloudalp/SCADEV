@@ -1,0 +1,78 @@
+{
+	"name": "KDValidateFieldsLoginRegister",
+	"fantasyName": "KDValidateFieldsLoginRegister",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDValidateFieldsLoginRegister.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/KDValidateFieldsLoginRegister/Configuration/KDValidateFieldsLoginRegister.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/KDValidateFieldsLoginRegister/Templates/kodella_kdvalidatefieldsloginregister_kdvalidatefieldsloginregister.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/KDValidateFieldsLoginRegister/Sass/_kdvalidatefieldsloginregister-kdvalidatefieldsloginregister.scss"
+		},
+		"files": [
+			"Modules/KDValidateFieldsLoginRegister/Sass/_kdvalidatefieldsloginregister-kdvalidatefieldsloginregister.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/KDValidateFieldsLoginRegister/JavaScript/Kodella.KDValidateFieldsLoginRegister.KDValidateFieldsLoginRegister.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/KDValidateFieldsLoginRegister/JavaScript/Kodella.KDValidateFieldsLoginRegister.KDValidateFieldsLoginRegister.js",
+					"Modules/KDValidateFieldsLoginRegister/JavaScript/KDValidateFieldsLoginRegister.View.js",
+					"Modules/KDValidateFieldsLoginRegister/JavaScript/Kodella.KDValidateFieldsLoginRegister.KDValidateFieldsLoginRegister.Model.js",
+					"Modules/KDValidateFieldsLoginRegister/JavaScript/Kodella.KDValidateFieldsLoginRegister.KDValidateFieldsLoginRegister.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDValidateFieldsLoginRegister/SuiteScript/Kodella.KDValidateFieldsLoginRegister.KDValidateFieldsLoginRegister.js",
+		"files": [
+			"Modules/KDValidateFieldsLoginRegister/SuiteScript/Kodella.KDValidateFieldsLoginRegister.KDValidateFieldsLoginRegister.js",
+			"Modules/KDValidateFieldsLoginRegister/SuiteScript/KDValidateFieldsLoginRegister.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/KDValidateFieldsLoginRegister/SuiteScript2/KDValidateFieldsLoginRegister.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDValidateFieldsLoginRegister@1.0.0",
+	"activation_id": "2",
+	"extension_id": "1901"
+}

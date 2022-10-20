@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDValidateFieldsLoginRegister.config": {
+            "group": "extensions",
+            "subtab": "KDValidateFieldsLoginRegister_subtab",
+            "type": "string",
+            "title": "KDValidateFieldsLoginRegister_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

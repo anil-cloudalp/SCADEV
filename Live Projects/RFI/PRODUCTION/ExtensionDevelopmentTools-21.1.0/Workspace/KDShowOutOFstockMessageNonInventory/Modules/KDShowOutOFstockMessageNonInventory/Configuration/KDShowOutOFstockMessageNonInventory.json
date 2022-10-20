@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDShowOutOFstockMessageNonInventory.config": {
+            "group": "extensions",
+            "subtab": "KDShowOutOFstockMessageNonInventory_subtab",
+            "type": "string",
+            "title": "KDShowOutOFstockMessageNonInventory_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

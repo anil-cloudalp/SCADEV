@@ -1,0 +1,87 @@
+{
+	"name": "KDChangeStoreLocations",
+	"fantasyName": "Kodella Change Store Locations",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Changes store locator service to use custom records for locations",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDChangeStoreLocations.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/KDChangeStoreLocations/Configuration/KDChangeStoreLocations.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/KDChangeStoreLocations/Templates/kodella_kdchangestorelocations_kdchangestorelocations.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/KDChangeStoreLocations/Sass/_kdchangestorelocations-kdchangestorelocations.scss"
+		},
+		"files": [
+			"Modules/KDChangeStoreLocations/Sass/_kdchangestorelocations-kdchangestorelocations.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.js",
+			"shopping": "Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.js",
+					"Modules/KDChangeStoreLocations/JavaScript/KDChangeStoreLocations.View.js",
+					"Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.Model.js",
+					"Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.SS2Model.js"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.js",
+					"Modules/KDChangeStoreLocations/JavaScript/KDChangeStoreLocations.View.js",
+					"Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.Model.js",
+					"Modules/KDChangeStoreLocations/JavaScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDChangeStoreLocations/SuiteScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.js",
+		"files": [
+			"Modules/KDChangeStoreLocations/SuiteScript/Kodella.KDChangeStoreLocations.KDChangeStoreLocations.js",
+			"Modules/KDChangeStoreLocations/SuiteScript/KDChangeStoreLocations.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/KDChangeStoreLocations/SuiteScript2/KDChangeStoreLocations.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDChangeStoreLocations@1.0.0",
+	"activation_id": "2",
+	"extension_id": "503"
+}

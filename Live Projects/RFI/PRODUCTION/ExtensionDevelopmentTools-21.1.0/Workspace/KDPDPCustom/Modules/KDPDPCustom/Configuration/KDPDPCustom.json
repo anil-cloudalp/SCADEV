@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDPDPCustom.config": {
+            "group": "extensions",
+            "subtab": "KDPDPCustom_subtab",
+            "type": "string",
+            "title": "KDPDPCustom_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+	"name": "whislistexport",
+	"fantasyName": "whislist export",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "exporting whislist",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/whislistexport.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/whislistexport/Configuration/whislistexport.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/whislistexport/Templates/acme_whislistexport_whislistexport.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/whislistexport/Sass/_whislistexport-whislistexport.scss"
+		},
+		"files": [
+			"Modules/whislistexport/Sass/_whislistexport-whislistexport.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/whislistexport/JavaScript/Acme.whislistexport.whislistexport.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/whislistexport/JavaScript/Acme.whislistexport.whislistexport.js",
+					"Modules/whislistexport/JavaScript/whislistexport.View.js",
+					"Modules/whislistexport/JavaScript/Acme.whislistexport.whislistexport.Model.js",
+					"Modules/whislistexport/JavaScript/Acme.whislistexport.whislistexport.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/whislistexport/SuiteScript/Acme.whislistexport.whislistexport.js",
+		"files": [
+			"Modules/whislistexport/SuiteScript/Acme.whislistexport.whislistexport.js",
+			"Modules/whislistexport/SuiteScript/whislistexport.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/whislistexport/SuiteScript2/whislistexport.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/whislistexport@1.0.0",
+	"activation_id": "2",
+	"extension_id": "2901"
+}

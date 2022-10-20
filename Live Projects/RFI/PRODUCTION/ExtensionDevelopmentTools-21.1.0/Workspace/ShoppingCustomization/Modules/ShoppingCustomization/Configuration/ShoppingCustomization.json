@@ -1,0 +1,162 @@
+{
+    "type": "object",
+	"subtab": {
+        "id": "HomeSliderSettings"
+    ,   "title": "Home Slider Settings"
+    ,   "description": "Home Slider settings"
+    ,   "group": "extensions"
+    },
+    "properties": {
+        "ShoppingCustomization.desktop": {
+            "group": "extensions",
+            "subtab": "HomeSliderSettings",
+            "type": "array",
+            "title": "Home Page Slider Desktop",
+            "description": "Slider details for desktop resolution",
+            "items": {
+                "type":"object",
+                "properties":{
+                     "image":{
+                              "type": "string",
+                              "title": "Image URL",
+                              "mandatory":true
+                            },
+                     "url":{
+                              "type": "string",
+                              "title": "Redirect Url"
+                            }
+
+            }
+            }
+            ,"default":[{
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI_Homepage banner_5G antenna_1600x450px-100-min.jpg",
+                "url":" https://products.rfi.com.au/8100-series-antennas"
+
+            },
+            {
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI_Homepage banner_Coverage covered_1600x450px-100-min.jpg",
+                "url":"#"
+            },
+             {
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI_Homepage banner_Innovation_1600x450px-100-min.jpg",
+                "url":"https://news.rfi.com.au/listing/underground-communication"
+            },
+             {
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI_Homepage banner_Services_1600x450px-100-min.jpg",
+                "url":"https://www.rfi.com.au/Services"
+            }
+        ]
+        },
+		"ShoppingCustomization.mobile": {
+            "group": "extensions",
+            "subtab": "HomeSliderSettings",
+            "type": "array",
+            "title": "Home Page Slider Mobile",
+            "description": "Slider details for mobile resolution",
+            "items": {
+                "type":"object",
+                "properties":{
+                     "image":{
+                              "type": "string",
+                              "title": "Image URL",
+                              "mandatory":true
+                            },
+                     "url":{
+                              "type": "string",
+                              "title": "Redirect Url"
+                            }
+            }
+            }
+            ,"default":[{
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI Product Homepage_Main Banner_5G antenna_1880x1013px-min.jpg",
+                "url":" https://products.rfi.com.au/8100-series-antennas"
+            },
+            {
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI Product Homepage_Main Banner_Coverage Covered_1880x1013px-min.jpg",
+                "url":"#"
+            },
+             {
+                "image":"/site/Landing-Pages/landings/home-page-main-banner/RFI Product Homepage_Main Banner_RFI innovation_1880x1013px-min.jpg",
+                "url":"https://news.rfi.com.au/listing/underground-communication"
+            }
+        ]
+        },
+		"OurProducts.config": {
+            "group": "extensions",
+            "subtab": "ShoppingCustomization_subtab",
+            "type": "array",
+            "title": "Our Products",
+            "description": "level two categories are shown ",
+            "items": {
+                "type":"object",
+                "properties":{
+                     "image":{
+                              "type": "string",
+                              "title": "Image Url",
+                              "mandatory":true
+                            },
+                     "url":{
+                              "type": "string",
+                              "title": "Category Url"
+                            }
+
+            }
+            }
+            ,"default":[{
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Antennas_162x162px.jpg",
+                "url":"/comms-products/antennas"
+            },
+            {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Installation Components_162x162px.jpg",
+                "url":"/comms-products/installation-components"
+            },
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Solar modules_162x162px.jpg",
+                "url":"/module-solutions"
+            },
+
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Regulators_162x162px.jpg",
+                "url":"/regulator-solutions"
+            },
+
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_RF Components_162x162px.jpg",
+                "url":"/comms-products/rf-components"
+            },
+
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Data Access_162x162px.jpg",
+                "url":"/comms-products/data-acess-iot"
+            },
+
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Inverters_162x162px.jpg",
+                "url":"/inverter-solutions"
+            },
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Balance of system_162x162px.jpg",
+                "url":"/balance-of-system-solutions"
+            },
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Coverage Enhancements_162x162px.jpg",
+                "url":"/comms-products/coverage-enhancement"
+            },
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Multicoupling_162x162px.jpg",
+                "url":"/en-au/en-au/multicoupling-monitoring"
+            },
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Energy Storage_162x162px.jpg",
+                "url":"/energy-storage-solutions"
+            },
+             {
+                "image":"site/Landing-Pages/landings/product-categories/New Images/RFI Product Categories_Communication_162x162px.jpg",
+                "url":"/energy-communications-solutions"
+            }
+
+			]
+        }
+
+    }
+}

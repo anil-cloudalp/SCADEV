@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDSmartFreight.config": {
+            "group": "extensions",
+            "subtab": "KDSmartFreight_subtab",
+            "type": "string",
+            "title": "Smart Freight Percent",
+            "description": "Percent % to set into the cost calculation",
+            "default": "2"
+        },
+        "KDSmartFreight.totalOrder": {
+            "group": "extensions",
+            "subtab": "KDSmartFreight_subtab",
+            "type": "string",
+            "title": "Smart Freight total of order to set in 0",
+            "description": "Total of the order to set cost in 0, to be shipping free",
+            "default": "749.99"
+        }
+    }
+}

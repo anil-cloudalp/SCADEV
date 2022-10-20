@@ -1,0 +1,77 @@
+{
+    "name": "KDFeeCreditCard",
+    "fantasyName": "KDFeeCreditCard",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Apply fee to purchases depending on credit card used ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDFeeCreditCard.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDFeeCreditCard/Configuration/KDFeeCreditCard.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/KDFeeCreditCard/Sass/_kdfeecreditcard-kdfeecreditcard.scss"
+        },
+        "files": [
+            "Modules/KDFeeCreditCard/Sass/_kdfeecreditcard-kdfeecreditcard.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDFeeCreditCard/Templates/kodella_kdfeecreditcard_kdfeecreditcard.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/KDFeeCreditCard/JavaScript/Kodella.KDFeeCreditCard.KDFeeCreditCard.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDFeeCreditCard/JavaScript/Kodella.KDFeeCreditCard.KDFeeCreditCard.js",
+                    "Modules/KDFeeCreditCard/JavaScript/KDFeeCreditCard.View.js",
+                    "Modules/KDFeeCreditCard/JavaScript/Kodella.KDFeeCreditCard.KDFeeCreditCard.Model.js",
+                    "Modules/KDFeeCreditCard/JavaScript/Kodella.KDFeeCreditCard.KDFeeCreditCard.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDFeeCreditCard/SuiteScript/Kodella.KDFeeCreditCard.KDFeeCreditCard.js",
+        "files": [
+            "Modules/KDFeeCreditCard/SuiteScript/Kodella.KDFeeCreditCard.KDFeeCreditCard.js",
+            "Modules/KDFeeCreditCard/SuiteScript/KDFeeCreditCard.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDFeeCreditCard",
+    "suitescript2": {
+        "files": [
+            "Modules/KDFeeCreditCard/SuiteScript2/KDFeeCreditCard.Service.ss"
+        ]
+    }
+}

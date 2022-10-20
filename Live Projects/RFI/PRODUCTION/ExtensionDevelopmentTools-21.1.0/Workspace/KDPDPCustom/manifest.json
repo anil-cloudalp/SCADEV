@@ -1,0 +1,77 @@
+{
+    "name": "KDPDPCustom",
+    "fantasyName": "KDPDPCustom",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Shows a different PDP if the item is on News or Case Studies category",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDPDPCustom.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDPDPCustom/Configuration/KDPDPCustom.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/KDPDPCustom/Sass/_kdpdpcustom-kdpdpcustom.scss"
+        },
+        "files": [
+            "Modules/KDPDPCustom/Sass/_kdpdpcustom-kdpdpcustom.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/KDPDPCustom/Templates/kodella_kdpdpcustom_kdpdpcustom.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/KDPDPCustom/JavaScript/Kodella.KDPDPCustom.KDPDPCustom.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/KDPDPCustom/JavaScript/Kodella.KDPDPCustom.KDPDPCustom.js",
+                    "Modules/KDPDPCustom/JavaScript/KDPDPCustom.View.js",
+                    "Modules/KDPDPCustom/JavaScript/Kodella.KDPDPCustom.KDPDPCustom.Model.js",
+                    "Modules/KDPDPCustom/JavaScript/Kodella.KDPDPCustom.KDPDPCustom.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDPDPCustom/SuiteScript/Kodella.KDPDPCustom.KDPDPCustom.js",
+        "files": [
+            "Modules/KDPDPCustom/SuiteScript/Kodella.KDPDPCustom.KDPDPCustom.js",
+            "Modules/KDPDPCustom/SuiteScript/KDPDPCustom.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDPDPCustom",
+    "suitescript2": {
+        "files": [
+            "Modules/KDPDPCustom/SuiteScript2/KDPDPCustom.Service.ss"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "whislistexport.config": {
+            "group": "extensions",
+            "subtab": "whislistexport_subtab",
+            "type": "string",
+            "title": "whislistexport_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

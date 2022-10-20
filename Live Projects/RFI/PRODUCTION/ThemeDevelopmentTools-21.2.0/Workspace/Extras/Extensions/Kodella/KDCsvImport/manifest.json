@@ -1,0 +1,71 @@
+{
+	"name": "KDCsvImport",
+	"fantasyName": "Kodella CSV",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Kodella extension to parse csv files",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDCsvParser.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/KDCsvParser/Templates/kodella_kdcsvimport_kdcsvparser.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/KDCsvParser/Sass/_kdcsvimport-kdcsvparser.scss"
+		},
+		"files": [
+			"Modules/KDCsvParser/Sass/_kdcsvimport-kdcsvparser.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/KDCsvParser/JavaScript/Kodella.KDCsvImport.KDCsvParser.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/KDCsvParser/JavaScript/Kodella.KDCsvImport.KDCsvParser.js",
+					"Modules/KDCsvParser/JavaScript/KDCsvParser.View.js",
+					"Modules/KDCsvParser/JavaScript/Kodella.KDCsvImport.KDCsvParser.Model.js",
+					"Modules/KDCsvParser/JavaScript/papaparse.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDCsvParser/SuiteScript/Kodella.KDCsvImport.KDCsvParser.js",
+		"files": [
+			"Modules/KDCsvParser/SuiteScript/Kodella.KDCsvImport.KDCsvParser.js",
+			"Modules/KDCsvParser/SuiteScript/KDCsvParser.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDCsvImport@1.0.0",
+	"activation_id": "2",
+	"extension_id": "504"
+}

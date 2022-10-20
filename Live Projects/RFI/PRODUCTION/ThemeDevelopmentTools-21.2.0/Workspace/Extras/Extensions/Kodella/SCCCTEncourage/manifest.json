@@ -1,0 +1,62 @@
+{
+	"name": "SCCCTEncourage",
+	"vendor": "Kodella",
+	"type": "extension",
+	"cct": {
+		"icon": "img/cct_example_sccctencourage_icon.svg",
+		"settings_record": "customrecordcct_example_sccctencou",
+		"registercct_id": "cct_example_sccctencourage"
+	},
+	"target": "SCS",
+	"version": "2.1.1",
+	"description": "Encourages shoppers to buy products of a certain color",
+	"assets": {
+		"img": {
+			"files": [
+				"img/cct_example_sccctencourage_icon.svg",
+				"img/buyorange.png",
+				"img/cct_example_sccctencourage_icon.png",
+				"img/youtube.png"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Example.SCCCTEncourage.Encourage/Templates/example_sccctencourage_encourage.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Example.SCCCTEncourage.Encourage/Sass/_sccctencourage-encourage.scss"
+		},
+		"files": [
+			"Modules/Example.SCCCTEncourage.Encourage/Sass/_sccctencourage-encourage.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Example.SCCCTEncourage.Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Example.SCCCTEncourage.Encourage/JavaScript/Example.SCCCTEncourage.Encourage.js",
+					"Modules/Example.SCCCTEncourage.Encourage/JavaScript/Example.SCCCTEncourage.Encourage.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/SCCCTEncourage@2.1.1",
+	"activation_id": "2",
+	"extension_id": "511"
+}

@@ -1,0 +1,70 @@
+{
+    "name": "KDCsvImport",
+    "fantasyName": "Kodella CSV",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Kodella extension to parse csv files",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDCsvParser.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/KDCsvParser/Sass/_kdcsvimport-kdcsvparser.scss"
+        },
+        "files": [
+            "Modules/KDCsvParser/Sass/_kdcsvimport-kdcsvparser.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/KDCsvParser/Templates/kodella_kdcsvimport_kdcsvparser.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/KDCsvParser/JavaScript/Kodella.KDCsvImport.KDCsvParser.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/KDCsvParser/JavaScript/Kodella.KDCsvImport.KDCsvParser.js",
+                    "Modules/KDCsvParser/JavaScript/KDCsvParser.View.js",
+                    "Modules/KDCsvParser/JavaScript/Kodella.KDCsvImport.KDCsvParser.Model.js",
+                    "Modules/KDCsvParser/JavaScript/papaparse.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDCsvParser/SuiteScript/Kodella.KDCsvImport.KDCsvParser.js",
+        "files": [
+            "Modules/KDCsvParser/SuiteScript/Kodella.KDCsvImport.KDCsvParser.js",
+            "Modules/KDCsvParser/SuiteScript/KDCsvParser.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDCsvImport",
+    "suitescript2": {
+        "files": []
+    }
+}

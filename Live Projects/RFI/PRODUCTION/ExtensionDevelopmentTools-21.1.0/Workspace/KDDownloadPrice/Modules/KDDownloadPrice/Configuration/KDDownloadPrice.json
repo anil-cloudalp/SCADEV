@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDDownloadPrice.config": {
+            "group": "extensions",
+            "subtab": "KDDownloadPrice_subtab",
+            "type": "string",
+            "title": "KDDownloadPrice_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

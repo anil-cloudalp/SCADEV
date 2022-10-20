@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDGlobalExtension.config": {
+            "group": "extensions",
+            "subtab": "KDGlobalExtension_subtab",
+            "type": "string",
+            "title": "KDGlobalExtension_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

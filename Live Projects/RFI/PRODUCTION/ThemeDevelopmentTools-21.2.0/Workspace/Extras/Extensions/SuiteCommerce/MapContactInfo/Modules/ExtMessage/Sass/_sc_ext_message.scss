@@ -1,0 +1,23 @@
+.ext-message {
+
+  &-info {
+    @extend .message-info;
+  }
+
+  &-success {
+    @extend .message-success;
+  }
+
+  &-warning {
+    @extend .message-warning;
+  }
+
+  &-error {
+    @extend .message-error;
+  }
+
+  &-button {
+    @extend .message-icon-close;
+  }
+
+}

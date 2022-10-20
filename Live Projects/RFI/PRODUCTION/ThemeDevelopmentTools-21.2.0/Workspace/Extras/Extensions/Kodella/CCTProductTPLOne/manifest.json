@@ -1,0 +1,64 @@
+{
+	"name": "CCTProductTPLOne",
+	"fantasyName": "CCTProductTPLOne",
+	"vendor": "Kodella",
+	"type": "extension",
+	"cct": {
+		"icon": "",
+		"settings_record": "customrecordcct_product_template_one",
+		"registercct_id": "cct_product_templateone"
+	},
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Template one for Products",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CCTProductTPLOne.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CCTProductTPLOne/Templates/kodella_cctproducttplone_cctproducttplone.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CCTProductTPLOne/Sass/_cctproducttplone-cctproducttplone.scss"
+		},
+		"files": [
+			"Modules/CCTProductTPLOne/Sass/_cctproducttplone-cctproducttplone.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CCTProductTPLOne/JavaScript/Kodella.CCTProductTPLOne.CCTProductTPLOne.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CCTProductTPLOne/JavaScript/Kodella.CCTProductTPLOne.CCTProductTPLOne.js",
+					"Modules/CCTProductTPLOne/JavaScript/CCTProductTPLOne.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/CCTProductTPLOne@1.0.0",
+	"activation_id": "2",
+	"extension_id": "501"
+}

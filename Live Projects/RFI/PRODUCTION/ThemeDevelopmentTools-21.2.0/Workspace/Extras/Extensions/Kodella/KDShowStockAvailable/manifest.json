@@ -1,0 +1,78 @@
+{
+	"name": "KDShowStockAvailable",
+	"fantasyName": "KDShowStockAvailable",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.1",
+	"description": "",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDShowStockAvailable.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/KDShowStockAvailable/Configuration/KDShowStockAvailable.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/KDShowStockAvailable/Templates/kodella_kdshowstockavailable_kdshowstockavailable.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/KDShowStockAvailable/Sass/_kdshowstockavailable-kdshowstockavailable.scss"
+		},
+		"files": [
+			"Modules/KDShowStockAvailable/Sass/_kdshowstockavailable-kdshowstockavailable.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/KDShowStockAvailable/JavaScript/Kodella.KDShowStockAvailable.KDShowStockAvailable.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/KDShowStockAvailable/JavaScript/Kodella.KDShowStockAvailable.KDShowStockAvailable.js",
+					"Modules/KDShowStockAvailable/JavaScript/KDShowStockAvailable.View.js",
+					"Modules/KDShowStockAvailable/JavaScript/Kodella.KDShowStockAvailable.KDShowStockAvailable.Model.js",
+					"Modules/KDShowStockAvailable/JavaScript/Kodella.KDShowStockAvailable.KDShowStockAvailable.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDShowStockAvailable/SuiteScript/Kodella.KDShowStockAvailable.KDShowStockAvailable.js",
+		"files": [
+			"Modules/KDShowStockAvailable/SuiteScript/Kodella.KDShowStockAvailable.KDShowStockAvailable.js",
+			"Modules/KDShowStockAvailable/SuiteScript/KDShowStockAvailable.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/KDShowStockAvailable/SuiteScript2/KDShowStockAvailable.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDShowStockAvailable@1.0.1",
+	"activation_id": "2",
+	"extension_id": "1601"
+}

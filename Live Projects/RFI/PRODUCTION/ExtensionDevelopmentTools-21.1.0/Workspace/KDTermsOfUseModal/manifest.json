@@ -1,0 +1,77 @@
+{
+    "name": "KDTermsOfUseModal",
+    "fantasyName": "KD Terms of Use Modal",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Shows terms of use and terms of sale for new customers to accept",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDTermsOfUseModal.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDTermsOfUseModal/Configuration/KDTermsOfUseModal.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/KDTermsOfUseModal/Sass/_kdtermsofusemodal-kdtermsofusemodal.scss"
+        },
+        "files": [
+            "Modules/KDTermsOfUseModal/Sass/_kdtermsofusemodal-kdtermsofusemodal.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/KDTermsOfUseModal/Templates/kodella_kdtermsofusemodal_kdtermsofusemodal.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/KDTermsOfUseModal/JavaScript/Kodella.KDTermsOfUseModal.KDTermsOfUseModal.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/KDTermsOfUseModal/JavaScript/Kodella.KDTermsOfUseModal.KDTermsOfUseModal.js",
+                    "Modules/KDTermsOfUseModal/JavaScript/KDTermsOfUseModal.View.js",
+                    "Modules/KDTermsOfUseModal/JavaScript/Kodella.KDTermsOfUseModal.KDTermsOfUseModal.Model.js",
+                    "Modules/KDTermsOfUseModal/JavaScript/Kodella.KDTermsOfUseModal.KDTermsOfUseModal.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDTermsOfUseModal/SuiteScript/Kodella.KDTermsOfUseModal.KDTermsOfUseModal.js",
+        "files": [
+            "Modules/KDTermsOfUseModal/SuiteScript/Kodella.KDTermsOfUseModal.KDTermsOfUseModal.js",
+            "Modules/KDTermsOfUseModal/SuiteScript/KDTermsOfUseModal.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDTermsOfUseModal",
+    "suitescript2": {
+        "files": [
+            "Modules/KDTermsOfUseModal/SuiteScript2/KDTermsOfUseModal.Service.ss"
+        ]
+    }
+}

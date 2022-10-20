@@ -1,0 +1,25 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.kddownloadprice-info-card {
+  @extend .info-card;
+}
+
+.kddownloadprice-info-card-content {
+  @extend .info-card-content;
+  color: $sc-color-secondary;
+  font-weight: bold;
+}
+[data-id="manage-users-list2"] {
+  line-height: 25px;
+}
+[data-id="cases"] {
+  display: none
+}
+

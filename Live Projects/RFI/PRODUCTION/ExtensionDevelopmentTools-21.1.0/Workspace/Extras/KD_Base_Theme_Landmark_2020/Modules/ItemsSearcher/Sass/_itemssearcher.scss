@@ -1,0 +1,21 @@
+.itemssearcher-input {
+  @extend .nav-search-input;
+  width: 80%;
+}
+.twitter-typeahead {
+  height: 100%;
+}
+.custom-search-input {
+  // border: none;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 0px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.custom-search-input:focus {
+  outline: none;
+}
+.tt-menu.tt-open {
+  margin-top: 0px;
+}

@@ -1,0 +1,77 @@
+{
+    "name": "ShoppingCustomization",
+    "fantasyName": "Shopping Customization",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "This extension is used for new home page layout and shopping ssp.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ShoppingCustomization.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ShoppingCustomization/Configuration/ShoppingCustomization.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ShoppingCustomization/Sass/_shoppingcustomization-shoppingcustomization.scss"
+        },
+        "files": [
+            "Modules/ShoppingCustomization/Sass/_shoppingcustomization-shoppingcustomization.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ShoppingCustomization/Templates/cloudalp_shoppingcustomization_shoppingcustomization.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+                    "Modules/ShoppingCustomization/JavaScript/ShoppingCustomization.View.js",
+                    "Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.Model.js",
+                    "Modules/ShoppingCustomization/JavaScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ShoppingCustomization/SuiteScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+        "files": [
+            "Modules/ShoppingCustomization/SuiteScript/CloudAlp.ShoppingCustomization.ShoppingCustomization.js",
+            "Modules/ShoppingCustomization/SuiteScript/ShoppingCustomization.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\ShoppingCustomization",
+    "suitescript2": {
+        "files": [
+            "Modules/ShoppingCustomization/SuiteScript2/ShoppingCustomization.Service.ss"
+        ]
+    }
+}

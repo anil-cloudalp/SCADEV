@@ -1,0 +1,54 @@
+.product-views-price-lead{
+	@extend .middle-price;
+	margin-bottom: 0;
+}
+
+.product-views-price-old{
+	@extend .old-price;
+}
+
+.product-views-price-login-to-see-prices-highlighted {
+	margin-top: $sc-margin-lv2;
+	margin-bottom: $sc-margin-lv2;
+	display: flex;
+    align-items: center;
+}
+.product-views-price-login-to-see-prices {
+	@extend .message;
+	//*custom without padding-left
+	padding-left: 0px !important;
+}
+
+.product-views-price-message {
+	font-weight: normal;
+	
+	a{
+		color: $theme-primary-color;
+	}
+}
+
+//*custom for item page
+.product-details-full-main-content-right .product-views-price-message {
+	font-weight: bold;
+}
+
+.custom-i {
+	font-style: italic;
+}
+
+.custom-button-request-quote {
+	background-color: rgb(253, 203, 18);
+	padding: .3rem 1.6rem;
+	font-weight: 700;
+	margin-left: 1.5rem;
+  }
+
+.product-views-price {
+	margin-right: 1rem;
+}
+
+@media (max-width: 740px) {
+	.product-views-price-lead {
+		margin-bottom: 10px !important;
+	}
+}

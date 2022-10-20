@@ -1,0 +1,32 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.csv-quick-add-box {
+    @extend .quick-add-box;
+}
+
+.csv-quick-add-box-left {
+    @extend .quick-add-box-left;
+}
+
+.csv-quick-add-box-left-input {
+    background: #FFF;
+}
+
+.csv-quick-add-box-right {
+    @extend .quick-add-box-right;
+}
+
+.csv-quick-add-box-right-main {
+    @extend .quick-add-box-right-main;
+}
+
+.csv-quick-add-box-button {
+    @extend .quick-add-box-button;
+}

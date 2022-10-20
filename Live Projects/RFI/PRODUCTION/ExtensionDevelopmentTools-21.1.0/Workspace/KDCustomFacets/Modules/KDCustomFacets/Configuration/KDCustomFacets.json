@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDCustomFacets.config": {
+            "group": "extensions",
+            "subtab": "KDCustomFacets_subtab",
+            "type": "string",
+            "title": "KDCustomFacets_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

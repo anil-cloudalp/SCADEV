@@ -1,0 +1,26 @@
+.cart-add-to-cart-button-button {
+	@extend .button-primary;
+	@extend .button-large;
+	width: 100%;
+ 	font-weight: $sc-font-weight-semibold;
+ 	margin-top: $sc-margin-lv3;
+}
+
+.cart-add-to-cart-button {
+	position: static;
+}
+
+.cart-add-to-cart-button-container {
+	@extend .col-sm-6;
+}
+
+.custom-button-item-page-add-to-cart {
+	background-color: $theme-button-primary-background-color !important;
+    font-weight: 700 !important;
+    margin-left: 1.5rem !important;
+    width: 326px!important;
+	height: 33px!important;
+	color: white!important;
+	
+}
+

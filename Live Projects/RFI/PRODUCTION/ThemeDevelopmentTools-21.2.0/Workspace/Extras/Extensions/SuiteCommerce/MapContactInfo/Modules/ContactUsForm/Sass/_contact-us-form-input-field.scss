@@ -1,0 +1,26 @@
+.contact-us-form-input-field {
+	&-container {
+		margin-bottom: $sc-margin-lv4;
+
+		textarea {
+			width: 100%;
+		}
+	}
+
+	&-checkbox {
+		margin-bottom: 0;
+
+		input[type="checkbox"] {
+			margin-bottom: 0;
+		}
+	}
+
+	&-subtitle {
+		@extend h4;
+		margin-bottom: $sc-margin-lv4;
+	}
+
+	&-required {
+		@extend .input-required;
+	}
+}

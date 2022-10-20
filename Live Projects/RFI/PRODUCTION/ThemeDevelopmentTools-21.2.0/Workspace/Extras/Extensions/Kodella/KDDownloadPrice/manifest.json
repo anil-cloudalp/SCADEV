@@ -1,0 +1,80 @@
+{
+	"name": "KDDownloadPrice",
+	"fantasyName": "KDDownloadPrice",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Downlaod list for my account page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDDownloadPrice.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/KDDownloadPrice/Configuration/KDDownloadPrice.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/KDDownloadPrice/Templates/kodella_kddownloadprice_kddownloadprice.tpl",
+					"Modules/KDDownloadPrice/Templates/kodella_kddownloadprice_kddownloadprice2.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/KDDownloadPrice/Sass/_kddownloadprice-kddownloadprice.scss"
+		},
+		"files": [
+			"Modules/KDDownloadPrice/Sass/_kddownloadprice-kddownloadprice.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/KDDownloadPrice/JavaScript/Kodella.KDDownloadPrice.KDDownloadPrice.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/KDDownloadPrice/JavaScript/Kodella.KDDownloadPrice.KDDownloadPrice.js",
+					"Modules/KDDownloadPrice/JavaScript/KDDownloadPrice.View.js",
+					"Modules/KDDownloadPrice/JavaScript/Kodella.KDDownloadPrice.KDDownloadPrice.Model.js",
+					"Modules/KDDownloadPrice/JavaScript/Kodella.KDDownloadPrice.KDDownloadPrice.SS2Model.js",
+					"Modules/KDDownloadPrice/JavaScript/KDDownloadPrice2.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDDownloadPrice/SuiteScript/Kodella.KDDownloadPrice.KDDownloadPrice.js",
+		"files": [
+			"Modules/KDDownloadPrice/SuiteScript/Kodella.KDDownloadPrice.KDDownloadPrice.js",
+			"Modules/KDDownloadPrice/SuiteScript/KDDownloadPrice.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/KDDownloadPrice/SuiteScript2/KDDownloadPrice.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDDownloadPrice@1.0.0",
+	"activation_id": "2",
+	"extension_id": "601"
+}

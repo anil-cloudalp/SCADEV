@@ -1,0 +1,83 @@
+{
+	"name": "ProductSalesTemplate2",
+	"fantasyName": "ProductSalesTemplate2",
+	"vendor": "Kodella",
+	"type": "extension",
+	"cct": {
+		"icon": "",
+		"settings_record": "customrecord_cct_product_sales_page_2",
+		"registercct_id": "cct_product_sales_page_2"
+	},
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Creates CCT for the Product Sales Page 2",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ProductSalesPage2.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ProductSalesPage2/Configuration/ProductSalesPage2.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductSalesPage2/Templates/kodella_productsalestemplate2_productsalespage2.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ProductSalesPage2/Sass/_productsalestemplate2-productsalespage2.scss"
+		},
+		"files": [
+			"Modules/ProductSalesPage2/Sass/_productsalestemplate2-productsalespage2.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ProductSalesPage2/JavaScript/Kodella.ProductSalesTemplate2.ProductSalesPage2.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ProductSalesPage2/JavaScript/Kodella.ProductSalesTemplate2.ProductSalesPage2.js",
+					"Modules/ProductSalesPage2/JavaScript/ProductSalesPage2.View.js",
+					"Modules/ProductSalesPage2/JavaScript/Kodella.ProductSalesTemplate2.ProductSalesPage2.Model.js",
+					"Modules/ProductSalesPage2/JavaScript/Kodella.ProductSalesTemplate2.ProductSalesPage2.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ProductSalesPage2/SuiteScript/Kodella.ProductSalesTemplate2.ProductSalesPage2.js",
+		"files": [
+			"Modules/ProductSalesPage2/SuiteScript/Kodella.ProductSalesTemplate2.ProductSalesPage2.js",
+			"Modules/ProductSalesPage2/SuiteScript/ProductSalesPage2.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ProductSalesPage2/SuiteScript2/ProductSalesPage2.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/ProductSalesTemplate2@1.0.0",
+	"activation_id": "2",
+	"extension_id": "510"
+}

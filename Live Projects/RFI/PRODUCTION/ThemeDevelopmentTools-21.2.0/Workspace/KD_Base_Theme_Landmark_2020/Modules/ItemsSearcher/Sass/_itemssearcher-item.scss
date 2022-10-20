@@ -1,0 +1,42 @@
+.itemssearcher-item-results {
+  @extend .item-results;
+}
+
+.itemssearcher-item-results-image {
+  @extend .item-results-image;
+}
+
+.itemssearcher-item-results-content {
+  @extend .item-results-content;
+  @media(max-width: 560px){
+    width: calc(100% - 10px);
+    float: left;
+    padding-left: 25px;
+  }
+}
+
+.itemssearcher-item-results-title {
+  @extend .item-results-title;
+  @media(max-width: 560px){  
+    font-size: 11px;
+  }
+}
+.itemssearcher-item-all-results {
+  @extend .all-results;
+  @media(max-width: 560px){  
+    font-size: 11px;
+    margin: 14px 20px 0 25px;
+  }
+}
+.itemssearcher-item-no-results {
+  @extend .no-results;
+  @media(max-width: 560px){  
+    font-size: 11px;
+  }
+}
+.itemssearcher-item-searching {
+  @extend .searching;
+}
+.itemssearcher-item-shadow {
+  @extend .sdb-dropdown-menu-shadow-fix;
+}

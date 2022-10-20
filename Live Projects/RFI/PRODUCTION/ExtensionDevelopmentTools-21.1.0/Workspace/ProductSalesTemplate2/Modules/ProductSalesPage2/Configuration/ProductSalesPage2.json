@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ProductSalesPage2.config": {
+            "group": "extensions",
+            "subtab": "ProductSalesPage2_subtab",
+            "type": "string",
+            "title": "ProductSalesPage2_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDTermsOfUseModal.config": {
+            "group": "extensions",
+            "subtab": "KDTermsOfUseModal_subtab",
+            "type": "string",
+            "title": "KDTermsOfUseModal_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

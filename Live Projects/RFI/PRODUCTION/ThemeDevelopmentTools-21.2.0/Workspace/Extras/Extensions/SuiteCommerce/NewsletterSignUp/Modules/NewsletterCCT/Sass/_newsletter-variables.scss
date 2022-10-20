@@ -1,0 +1,98 @@
+// Heading Text variables group
+$newsletter-heading-font-family: $sc-font-family; /* editable({"type": "string", "label": "Font Family"}) */
+$newsletter-heading-mobile-font-size: $sc-h3-font-size; /* editable({"type": "string", "label": "Mobile Size"}) */
+$newsletter-heading-desktop-font-size: $sc-h3-desktop-font-size; /* editable({"type": "string", "label": "Desktop Size"}) */
+$newsletter-heading-line-height: $sc-h3-line-height; /* editable({"type": "string", "label": "Line Height"}) */
+$newsletter-heading-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Text Color"}) */
+
+// Subtitle Text variables group
+$newsletter-subtitle-font-family: $sc-font-family; /* editable({"type": "string", "label": "Font Family"}) */
+$newsletter-subtitle-mobile-font-size: $sc-body-font-size; /* editable({"type": "string", "label": "Mobile Size"}) */
+$newsletter-subtitle-desktop-font-size: $sc-body-font-size-desktop; /* editable({"type": "string", "label": "Desktop Size"}) */
+$newsletter-subtitle-line-height: $sc-body-line-height; /* editable({"type": "string", "label": "Line Height"}) */
+$newsletter-subtitle-text-color: $sc-color-copy-dark; /* editable({"type": "color", "label": "Text Color"}) */
+
+// Group Container variables group
+$newsletter-container-button: secondary; /* editable({"type": "string", "label": "Button style", "options": [{"value": "primary", "text": "Primary"},{"value": "secondary", "text": "Secondary"},{"value": "tertiary", "text": "Tertiary"}]}) */
+$newsletter-container-link-color: $sc-color-link; /* editable({"type": "color", "label": "Link Color"}) */
+$newsletter-container-border-style: solid; /* editable({"type": "string", "label": "Border"}) */
+$newsletter-container-border-width: 0px; /* editable({"type": "string", "label": "Border"}) */
+$newsletter-container-border-color: $sc-color-theme-border; /* editable({"type": "color", "label": "Border Color"}) */
+$newsletter-container-border-radius: $sc-border-radius; /* editable({"type": "string", "label": "Border Radius"}) */
+$newsletter-container-background: $sc-color-theme-background; /* editable({"type": "color", "label": "Background"}) */
+$newsletter-container-overlay-color: #ffffff; /* editable({"type": "color", "label": "Overlay"}) */
+$newsletter-container-overlay-opacity: 0; /* editable({"type": "string", "label": "Overlay opacity"}) */
+$newsletter-container-cont-height-mob: auto; /* editable({"type": "string", "label": "Container Height - Mobile"}) */
+$newsletter-container-cont-height-desk: auto; /* editable({"type": "string", "label": "Container Height - Desktop"}) */
+$newsletter-container-padding-top: $sc-padding-lv6; /* editable({"type": "string", "label": "Padding - Top"}) */
+$newsletter-container-padding-right: $sc-padding-lv1; /* editable({"type": "string", "label": "Padding - Right"}) */
+$newsletter-container-padding-bottom: $sc-padding-lv6; /* editable({"type": "string", "label": "Padding - Bottom"}) */
+$newsletter-container-padding-left: $sc-padding-lv1; /* editable({"type": "string", "label": "Padding - Left"}) */
+
+/*
+group({
+  "id": "newslettercct",
+  "label": "SC Newsletter CCT",
+  "description": "",
+  "children": [
+    "newslettercct-heading",
+    "newslettercct-subtitle",
+    "newslettercct-container"
+  ]
+})
+*/
+
+/*
+group({
+  "id": "newslettercct-heading",
+  "label": "Heading",
+  "description": "",
+  "children": [
+    "$newsletter-heading-font-family",
+    "$newsletter-heading-mobile-font-size",
+    "$newsletter-heading-desktop-font-size",
+    "$newsletter-heading-line-height",
+    "$newsletter-heading-text-color"
+  ]
+})
+*/
+
+/*
+group({
+  "id": "newslettercct-subtitle",
+  "label": "Subtitle",
+  "description": "",
+  "children": [
+    "$newsletter-subtitle-font-family",
+    "$newsletter-subtitle-mobile-font-size",
+    "$newsletter-subtitle-desktop-font-size",
+    "$newsletter-subtitle-line-height",
+    "$newsletter-subtitle-text-color"
+  ]
+})
+*/
+
+/*
+group({
+  "id": "newslettercct-container",
+  "label": "Container",
+  "description": "",
+  "children": [
+    "$newsletter-container-button",
+    "$newsletter-container-link-color",
+    "$newsletter-container-border-style",
+    "$newsletter-container-border-width",
+    "$newsletter-container-border-color",
+    "$newsletter-container-border-radius",
+    "$newsletter-container-background",
+    "$newsletter-container-overlay-color",
+    "$newsletter-container-overlay-opacity",
+    "$newsletter-container-cont-height-mob",
+    "$newsletter-container-cont-height-desk",
+    "$newsletter-container-padding-top",
+    "$newsletter-container-padding-right",
+    "$newsletter-container-padding-bottom",
+    "$newsletter-container-padding-left"
+  ]
+})
+*/

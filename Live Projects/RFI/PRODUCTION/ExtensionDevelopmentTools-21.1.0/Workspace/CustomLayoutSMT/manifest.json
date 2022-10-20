@@ -1,0 +1,88 @@
+{
+    "name": "CustomLayoutSMT",
+    "fantasyName": "CustomLayoutSMT",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Custom Layout for SMT",
+    "page": {
+        "types": [
+            {
+                "name": "NewCustomPageType",
+                "displayName": "NewCustomPageType",
+                "description": "This is a Custom Page Type",
+                "baseUrlPath": "",
+                "settingsRecord": "custrec_page_type_test"
+            }
+        ]
+    },
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CustomLayoutSMT.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CustomLayoutSMT/Configuration/CustomLayoutSMT.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/CustomLayoutSMT/Sass/_customlayoutsmt-customlayoutsmt.scss"
+        },
+        "files": [
+            "Modules/CustomLayoutSMT/Sass/_customlayoutsmt-customlayoutsmt.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CustomLayoutSMT/Templates/kodella_customlayoutsmt_customlayoutsmt.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/CustomLayoutSMT/JavaScript/Kodella.CustomLayoutSMT.CustomLayoutSMT.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CustomLayoutSMT/JavaScript/Kodella.CustomLayoutSMT.CustomLayoutSMT.js",
+                    "Modules/CustomLayoutSMT/JavaScript/CustomLayoutSMT.View.js",
+                    "Modules/CustomLayoutSMT/JavaScript/Kodella.CustomLayoutSMT.CustomLayoutSMT.Model.js",
+                    "Modules/CustomLayoutSMT/JavaScript/Kodella.CustomLayoutSMT.CustomLayoutSMT.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CustomLayoutSMT/SuiteScript/Kodella.CustomLayoutSMT.CustomLayoutSMT.js",
+        "files": [
+            "Modules/CustomLayoutSMT/SuiteScript/Kodella.CustomLayoutSMT.CustomLayoutSMT.js",
+            "Modules/CustomLayoutSMT/SuiteScript/CustomLayoutSMT.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CustomLayoutSMT",
+    "suitescript2": {
+        "files": [
+            "Modules/CustomLayoutSMT/SuiteScript2/CustomLayoutSMT.Service.ss"
+        ]
+    }
+}

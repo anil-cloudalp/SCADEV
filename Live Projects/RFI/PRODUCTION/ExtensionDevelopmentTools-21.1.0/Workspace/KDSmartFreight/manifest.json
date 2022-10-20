@@ -1,0 +1,77 @@
+{
+    "name": "KDSmartFreight",
+    "fantasyName": "KDSmartFreight",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "Smart Freight Integration",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDSmartFreight.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDSmartFreight/Configuration/KDSmartFreight.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/KDSmartFreight/Sass/_kdsmartfreight-kdsmartfreight.scss"
+        },
+        "files": [
+            "Modules/KDSmartFreight/Sass/_kdsmartfreight-kdsmartfreight.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDSmartFreight/Templates/kodella_kdsmartfreight_kdsmartfreight.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/KDSmartFreight/JavaScript/Kodella.KDSmartFreight.KDSmartFreight.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDSmartFreight/JavaScript/Kodella.KDSmartFreight.KDSmartFreight.js",
+                    "Modules/KDSmartFreight/JavaScript/KDSmartFreight.View.js",
+                    "Modules/KDSmartFreight/JavaScript/Kodella.KDSmartFreight.KDSmartFreight.Model.js",
+                    "Modules/KDSmartFreight/JavaScript/Kodella.KDSmartFreight.KDSmartFreight.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDSmartFreight/SuiteScript/Kodella.KDSmartFreight.KDSmartFreight.js",
+        "files": [
+            "Modules/KDSmartFreight/SuiteScript/Kodella.KDSmartFreight.KDSmartFreight.js",
+            "Modules/KDSmartFreight/SuiteScript/KDSmartFreight.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDSmartFreight",
+    "suitescript2": {
+        "files": [
+            "Modules/KDSmartFreight/SuiteScript2/KDSmartFreight.Service.ss"
+        ]
+    }
+}

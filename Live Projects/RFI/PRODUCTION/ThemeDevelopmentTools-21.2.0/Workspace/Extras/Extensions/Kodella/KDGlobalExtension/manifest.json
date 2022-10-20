@@ -1,0 +1,108 @@
+{
+	"name": "KDGlobalExtension",
+	"fantasyName": "KDGlobalExtension",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1.0",
+		"SCS": ">=20.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Glboal Extension for RFI",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDGlobalExtension.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/KDGlobalExtension/Configuration/KDGlobalExtension.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/KDGlobalExtension/Templates/kodella_kdglobalextension_kdglobalextension.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/KDGlobalExtension/Templates/kodella_kdglobalextension_kdglobalextension.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/KDGlobalExtension/Templates/kodella_kdglobalextension_kdglobalextension.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/KDGlobalExtension/Sass/_kdglobalextension-kdglobalextension.scss",
+			"myaccount": "Modules/KDGlobalExtension/Sass/_kdglobalextension-kdglobalextension.scss",
+			"checkout": "Modules/KDGlobalExtension/Sass/_kdglobalextension-kdglobalextension.scss"
+		},
+		"files": [
+			"Modules/KDGlobalExtension/Sass/_kdglobalextension-kdglobalextension.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+			"myaccount": "Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+			"checkout": "Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+					"Modules/KDGlobalExtension/JavaScript/KDGlobalExtension.View.js",
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.Model.js",
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+					"Modules/KDGlobalExtension/JavaScript/KDGlobalExtension.View.js",
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.Model.js",
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+					"Modules/KDGlobalExtension/JavaScript/KDGlobalExtension.View.js",
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.Model.js",
+					"Modules/KDGlobalExtension/JavaScript/Kodella.KDGlobalExtension.KDGlobalExtension.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDGlobalExtension/SuiteScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+		"files": [
+			"Modules/KDGlobalExtension/SuiteScript/Kodella.KDGlobalExtension.KDGlobalExtension.js",
+			"Modules/KDGlobalExtension/SuiteScript/KDGlobalExtension.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/KDGlobalExtension/SuiteScript2/KDGlobalExtension.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDGlobalExtension@1.0.0",
+	"activation_id": "2",
+	"extension_id": "701"
+}

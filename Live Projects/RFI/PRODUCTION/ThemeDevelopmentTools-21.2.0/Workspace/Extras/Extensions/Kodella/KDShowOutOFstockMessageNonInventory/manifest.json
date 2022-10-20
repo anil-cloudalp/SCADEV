@@ -1,0 +1,78 @@
+{
+	"name": "KDShowOutOFstockMessageNonInventory",
+	"fantasyName": "KDShowOutOFstockMessageNonInventory",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Shows the out of stock message in non inventory items",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/KDShowOutOFstockMessageNonInventory.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/KDShowOutOFstockMessageNonInventory/Configuration/KDShowOutOFstockMessageNonInventory.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/KDShowOutOFstockMessageNonInventory/Templates/kodella_kdshowoutofstockmessagenoninventory_kdshowoutofstockmessagenoninventory.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/KDShowOutOFstockMessageNonInventory/Sass/_kdshowoutofstockmessagenoninventory-kdshowoutofstockmessagenoninventory.scss"
+		},
+		"files": [
+			"Modules/KDShowOutOFstockMessageNonInventory/Sass/_kdshowoutofstockmessagenoninventory-kdshowoutofstockmessagenoninventory.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/KDShowOutOFstockMessageNonInventory/JavaScript/Kodella.KDShowOutOFstockMessageNonInventory.KDShowOutOFstockMessageNonInventory.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/KDShowOutOFstockMessageNonInventory/JavaScript/Kodella.KDShowOutOFstockMessageNonInventory.KDShowOutOFstockMessageNonInventory.js",
+					"Modules/KDShowOutOFstockMessageNonInventory/JavaScript/KDShowOutOFstockMessageNonInventory.View.js",
+					"Modules/KDShowOutOFstockMessageNonInventory/JavaScript/Kodella.KDShowOutOFstockMessageNonInventory.KDShowOutOFstockMessageNonInventory.Model.js",
+					"Modules/KDShowOutOFstockMessageNonInventory/JavaScript/Kodella.KDShowOutOFstockMessageNonInventory.KDShowOutOFstockMessageNonInventory.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/KDShowOutOFstockMessageNonInventory/SuiteScript/Kodella.KDShowOutOFstockMessageNonInventory.KDShowOutOFstockMessageNonInventory.js",
+		"files": [
+			"Modules/KDShowOutOFstockMessageNonInventory/SuiteScript/Kodella.KDShowOutOFstockMessageNonInventory.KDShowOutOFstockMessageNonInventory.js",
+			"Modules/KDShowOutOFstockMessageNonInventory/SuiteScript/KDShowOutOFstockMessageNonInventory.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/KDShowOutOFstockMessageNonInventory/SuiteScript2/KDShowOutOFstockMessageNonInventory.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/KDShowOutOFstockMessageNonInventory@1.0.0",
+	"activation_id": "2",
+	"extension_id": "1701"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDShowStockAvailable.config": {
+            "group": "extensions",
+            "subtab": "KDShowStockAvailable_subtab",
+            "type": "string",
+            "title": "KDShowStockAvailable_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

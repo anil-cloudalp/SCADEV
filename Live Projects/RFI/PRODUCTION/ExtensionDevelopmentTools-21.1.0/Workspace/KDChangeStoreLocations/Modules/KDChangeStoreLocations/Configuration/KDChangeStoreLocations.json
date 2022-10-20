@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDChangeStoreLocations.config": {
+            "group": "extensions",
+            "subtab": "KDChangeStoreLocations_subtab",
+            "type": "string",
+            "title": "KDChangeStoreLocations_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

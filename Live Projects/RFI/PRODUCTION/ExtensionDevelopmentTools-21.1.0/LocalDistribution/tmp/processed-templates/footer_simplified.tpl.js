@@ -1,0 +1,9 @@
+define('footer_simplified.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
+
+  return "<div class=\"footer-simplified-content\">\r\n	<div class=\"footer-bottom-section\">\r\n\r\n		<div class=\"footer-content-copyright\">"
+    + ((stack1 = ((helper = (helper = compilerNameLookup(helpers,"copyright") || (depth0 != null ? compilerNameLookup(depth0,"copyright") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"copyright","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + " "
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"actualYear") || (depth0 != null ? compilerNameLookup(depth0,"actualYear") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"actualYear","hash":{},"data":data}) : helper)))
+    + "</div>\r\n		<div data-cms-area=\"sdb-landmark_footer_content-payment-cards\" data-cms-area-filters=\"global\"></div>\r\n		\r\n	</div>\r\n</div>\r\n<div data-view=\"Global.BackToTop\"></div>\r\n\r\n\r\n\r\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Kodella/KD_Base_Theme_Landmark_2020/0.0.1/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Kodella/KD_Base_Theme_Landmark_2020/0.0.1/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'footer_simplified'; return template;});

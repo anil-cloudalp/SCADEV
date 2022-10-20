@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDExtraRegisterValidation.config": {
+            "group": "extensions",
+            "subtab": "KDExtraRegisterValidation_subtab",
+            "type": "string",
+            "title": "KDExtraRegisterValidation_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

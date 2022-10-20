@@ -1,0 +1,77 @@
+{
+    "name": "KDExtraRegisterValidation",
+    "fantasyName": "KDExtraRegisterValidation",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "Validate custom fields as mandatory",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDExtraRegisterValidation.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDExtraRegisterValidation/Configuration/KDExtraRegisterValidation.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/KDExtraRegisterValidation/Sass/_kdextraregistervalidation-kdextraregistervalidation.scss"
+        },
+        "files": [
+            "Modules/KDExtraRegisterValidation/Sass/_kdextraregistervalidation-kdextraregistervalidation.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDExtraRegisterValidation/Templates/kodella_kdextraregistervalidation_kdextraregistervalidation.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/KDExtraRegisterValidation/JavaScript/Kodella.KDExtraRegisterValidation.KDExtraRegisterValidation.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDExtraRegisterValidation/JavaScript/Kodella.KDExtraRegisterValidation.KDExtraRegisterValidation.js",
+                    "Modules/KDExtraRegisterValidation/JavaScript/KDExtraRegisterValidation.View.js",
+                    "Modules/KDExtraRegisterValidation/JavaScript/Kodella.KDExtraRegisterValidation.KDExtraRegisterValidation.Model.js",
+                    "Modules/KDExtraRegisterValidation/JavaScript/Kodella.KDExtraRegisterValidation.KDExtraRegisterValidation.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDExtraRegisterValidation/SuiteScript/Kodella.KDExtraRegisterValidation.KDExtraRegisterValidation.js",
+        "files": [
+            "Modules/KDExtraRegisterValidation/SuiteScript/Kodella.KDExtraRegisterValidation.KDExtraRegisterValidation.js",
+            "Modules/KDExtraRegisterValidation/SuiteScript/KDExtraRegisterValidation.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\KDExtraRegisterValidation",
+    "suitescript2": {
+        "files": [
+            "Modules/KDExtraRegisterValidation/SuiteScript2/KDExtraRegisterValidation.Service.ss"
+        ]
+    }
+}

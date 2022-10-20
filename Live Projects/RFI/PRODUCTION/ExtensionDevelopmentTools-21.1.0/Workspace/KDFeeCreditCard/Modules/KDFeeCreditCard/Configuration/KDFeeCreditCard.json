@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDFeeCreditCard.config": {
+            "group": "extensions",
+            "subtab": "KDFeeCreditCard_subtab",
+            "type": "string",
+            "title": "KDFeeCreditCard_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}
