@@ -1,0 +1,22 @@
+.deliverynotesmodule-info-card {
+    @extend .info-card;
+}
+
+.deliverynotesmodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.preferreddelivery-title {
+	@extend .order-wizard-title;
+}
+
+.preferreddelivery-container {
+	 @extend .box-column;
+}
+.preferreddelivery-input {
+	width:100%;
+	@extend .input-large;
+	//	@extend .box-column;
+}

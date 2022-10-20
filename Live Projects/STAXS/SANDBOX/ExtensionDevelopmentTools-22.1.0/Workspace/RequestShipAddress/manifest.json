@@ -1,0 +1,92 @@
+{
+    "name": "RequestShipAddress",
+    "fantasyName": "Request Ship Address",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "This extension is used to Request a shipping address",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/RequestShipAddressModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/RequestShipAddressModule/Configuration/RequestShipAddressModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/RequestShipAddressModule/Sass/_requestshipaddress-requestshipaddressmodule.scss",
+            "checkout": "Modules/RequestShipAddressModule/Sass/_requestshipaddress-requestshipaddressmodule.scss"
+        },
+        "files": [
+            "Modules/RequestShipAddressModule/Sass/_requestshipaddress-requestshipaddressmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/RequestShipAddressModule/Templates/staxs_requestshipaddress_requestshipaddressmodule.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/RequestShipAddressModule/Templates/staxs_requestshipaddress_requestshipaddressmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.js",
+            "checkout": "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.js",
+                    "Modules/RequestShipAddressModule/JavaScript/RequestShipAddressModule.View.js",
+                    "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.Model.js",
+                    "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.js",
+                    "Modules/RequestShipAddressModule/JavaScript/RequestShipAddressModule.View.js",
+                    "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.Model.js",
+                    "Modules/RequestShipAddressModule/JavaScript/STAXS.RequestShipAddress.RequestShipAddressModule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/RequestShipAddressModule/SuiteScript/STAXS.RequestShipAddress.RequestShipAddressModule.js",
+        "files": [
+            "Modules/RequestShipAddressModule/SuiteScript/STAXS.RequestShipAddress.RequestShipAddressModule.js",
+            "Modules/RequestShipAddressModule/SuiteScript/RequestShipAddressModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\RequestShipAddress",
+    "suitescript2": {
+        "files": [
+            "Modules/RequestShipAddressModule/SuiteScript2/RequestShipAddressModule.Service.ss"
+        ]
+    }
+}

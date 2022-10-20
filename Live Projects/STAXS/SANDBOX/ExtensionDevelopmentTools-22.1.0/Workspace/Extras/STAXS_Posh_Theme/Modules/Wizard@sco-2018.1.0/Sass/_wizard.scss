@@ -1,0 +1,111 @@
+.wizard-header{
+	@extend .full-width-column;
+
+	// border-bottom: 1px solid $sc-color-theme-border-light;
+	padding-bottom: $sc-margin-lv1;
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv6;
+	}
+	// custom sticky header changes layout
+
+// 	@media screen and (max-width:350px) {
+// 		padding-top: 41%;
+// 		// background: transparent; 
+// }
+// @media (min-width:350px) and (max-width:508px) {
+// 		// padding-top:13% ;
+// 		padding-top:30% ;
+// }
+// 	@media  (min-width:508px) and (max-width:992px) {
+// 		// padding-top: 9%;
+// 		padding-top:20%;
+// 	}
+
+// 	@media (min-width:992px) and (max-width:1100px) {
+		
+// 		padding-top:  20%;
+// 	}
+// 	@media (min-width:1100px) and (max-width:1200px) {
+		
+// 		padding-top:  18%;
+// 	}
+// 	@media (min-width:1200px) and (max-width:1300px) {
+		
+// 		padding-top:  21%;
+// 	}
+// 	@media (min-width:1300px) and (max-width:1337px) {
+		
+// 		padding-top:  19%;
+// 	}
+// 	@media (min-width:1337px) and (max-width:1390px) {
+		
+// 		padding-top:  16%;
+// 	}
+// 	@media (min-width:1390px) and (max-width:1414px) {
+		
+// 		padding-top:  15%;
+// 	}
+// 	@media (min-width:1414px) and (max-width:1700px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 14%;
+// 	}
+// 	@media (min-width:1700px) and (max-width:2200px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 11%;
+// 	}
+// 	@media screen and (min-width:2200px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 9.5%;
+// 	}
+}
+
+.wizard-header-title{
+	margin-bottom: $sc-margin-lv2;
+}
+
+.wizard-content{}
+.wizard-step-title{}
+.wizard-step-content-main{}
+.wizard-step-actions{}
+@media(min-width:$screen-md-min){
+	.wizard-header {
+    padding-left:120px;
+}
+#wizard-content {
+	padding-left:124px;
+	padding-right: 90px;
+}
+}
+// laptop screens
+@media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+	#wizard-content {
+		padding-left:60px;
+		padding-right:50px;
+	}
+	#wizard-header {
+		padding-left:20px;
+	}
+	.wizard-header {
+    padding-left: 61px;
+}
+}
+
+@media(max-width:$screen-xs){
+	#wizard-content {
+    padding: 10px;
+}
+.wizard-header {
+	margin-left: 16px;
+	margin-right: 14px;
+}
+}
+
+
+
+
+

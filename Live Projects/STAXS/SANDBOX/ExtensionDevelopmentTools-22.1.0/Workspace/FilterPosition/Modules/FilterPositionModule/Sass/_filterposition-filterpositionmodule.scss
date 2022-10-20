@@ -1,0 +1,159 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.filterpositionmodule-info-card {
+    @extend .info-card;
+}
+
+.filterpositionmodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.incrwidth {
+    width: 100% !important;
+}
+
+.rotate {
+    //  -moz-transition: all .2s linear;
+    //  -webkit-transition: all .2s linear;
+    //  transition: all .2s linear;
+    //  transform: rotate(180deg);
+    @include rotate(180deg);
+}
+
+.rotate.down {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    @include rotate(0deg);
+}
+
+//commerce category product filter
+
+.facets-facet-browse-facets {
+    //   display: flex;
+}
+
+
+.product-catagories-filters-container {
+    @media (min-width: $screen-md-min) {
+        margin-right: 0px !important;
+        position: absolute;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        margin-right: 0px !important;
+        margin: 5px;
+    }
+
+}
+
+.facets-faceted-navigation-item-category-facet-group-expander {
+    padding: 10px 5px 0px 5px;
+    border-bottom: 1px solid $sc-color-secondary;
+    min-width: max-content;
+
+    .facets-faceted-navigation-item-category-title,
+    .facets-faceted-navigation-item-category-facet-group-expander-icon {
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        margin: 0px !important;
+    }
+}
+
+.product-filters-options-bg {
+    @media (min-width: $screen-md-min) {
+        padding-left: 10px;
+        position: absolute;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 0px 13px;
+    }
+}
+
+.facets-faceted-navigation-item-category-title {
+    color: #303A4C;
+    font-family: "PT Sans", sans-serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+}
+
+//product filter icon rotate
+.productfiltericon {
+    transform: rotate(180deg);
+}
+
+// filter products count in mobile view
+
+// filter products count in mobile view
+
+// .filter-products-count{
+//     @media (max-width: $screen-sm-max) {
+//         width: 100%;
+//         position: absolute;
+//         top: 30px;
+//         left:10px;
+//         display: flex;
+//         align-items: center;
+//     }
+// }
+.facets-faceted-navigation-results{
+    @media (max-width: $screen-sm-max) {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 1rem;
+        margin-bottom: 0px;
+        width: 50%;
+    }
+}
+
+.facets-faceted-navigation-facets-clear{
+    @media (max-width: $screen-sm-max) {
+        margin-left: 15px;
+        float: right;
+        position: relative; 
+        right: 0px;
+        max-width: 50%;
+    }
+}
+.clearall{
+    @media (min-width: $screen-md-min) {
+       position: absolute;
+       left: 350px;
+       top: 222px;
+       z-index: 9999;
+    }
+
+    @media (min-width: 1200px) {
+       position: absolute;
+       left: 500px;
+       top: 230px;
+    }
+    @media (min-width: 1600px) {
+       position: absolute;
+       left: 600px;
+       top: 232px;
+    }
+    @media (min-width: 1900px) {
+       position: absolute;
+       left: 800px;
+       top: 232px;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "credentials": {
+        "user_agent": "sc-theme-devtools/2022.1.0",
+        "authID": "staxs_sandbox",
+        "key": "446765bc51e70086cf582d32f0486fc0a764354ffec6c983b94e63af331346c4",
+        "secret": "97fda39654d2f0cf3f0f9011d97616f96a3136e2c7659b867e57a1e1bbbcc566",
+        "account": "7094562-SB1",
+        "hostname": "7094562-SB1.restlets.api.netsuite.com",
+        "website": 2,
+        "domain": "store-sb.staxs.eu",
+        "webapp_id": "2778",
+        "ssp_folder": "2778",
+        "is_scis": false
+    }
+}

@@ -1,0 +1,78 @@
+{
+	"name": "PDPCustomizations",
+	"fantasyName": "PDP CUSTOMIZATIONS",
+	"vendor": "STAXS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "PDP customizations,show quntity box only to customer item level",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PDPCustomizations.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/PDPCustomizations/Configuration/PDPCustomizations.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDPCustomizations/Templates/staxs_pdpcustomizations_pdpcustomizations.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/PDPCustomizations/Sass/_pdpcustomizations-pdpcustomizations.scss"
+		},
+		"files": [
+			"Modules/PDPCustomizations/Sass/_pdpcustomizations-pdpcustomizations.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/PDPCustomizations/JavaScript/STAXS.PDPCustomizations.PDPCustomizations.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PDPCustomizations/JavaScript/STAXS.PDPCustomizations.PDPCustomizations.js",
+					"Modules/PDPCustomizations/JavaScript/PDPCustomizations.View.js",
+					"Modules/PDPCustomizations/JavaScript/STAXS.PDPCustomizations.PDPCustomizations.Model.js",
+					"Modules/PDPCustomizations/JavaScript/STAXS.PDPCustomizations.PDPCustomizations.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PDPCustomizations/SuiteScript/STAXS.PDPCustomizations.PDPCustomizations.js",
+		"files": [
+			"Modules/PDPCustomizations/SuiteScript/STAXS.PDPCustomizations.PDPCustomizations.js",
+			"Modules/PDPCustomizations/SuiteScript/PDPCustomizations.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/PDPCustomizations/SuiteScript2/PDPCustomizations.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/STAXS/PDPCustomizations@1.0.0",
+	"activation_id": "1",
+	"extension_id": "1301"
+}

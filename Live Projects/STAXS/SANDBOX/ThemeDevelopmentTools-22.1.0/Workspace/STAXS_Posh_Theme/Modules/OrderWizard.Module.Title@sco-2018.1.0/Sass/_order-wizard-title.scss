@@ -1,0 +1,16 @@
+.order-wizard-title{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.order-wizard-title-container{
+	display: flex;
+	justify-content: space-between;
+}
+@media(max-width:$screen-xs){
+	.order-wizard-title{
+		font-size: 13px;
+	}
+.order-wizard-title-container {
+	align-items: end;
+}
+}

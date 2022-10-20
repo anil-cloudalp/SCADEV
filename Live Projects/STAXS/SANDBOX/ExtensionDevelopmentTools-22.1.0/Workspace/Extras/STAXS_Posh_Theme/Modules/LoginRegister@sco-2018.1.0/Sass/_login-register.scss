@@ -1,0 +1,266 @@
+// /* Edited for Posh Theme */
+// .header-logo-image {
+//     width: auto;
+//     max-width: 250px !important;
+//     margin-top: 25px;
+//     margin-left: 50px;
+// }
+
+// .header-content-logo {
+//     text-align: center;
+//     @media (min-width: $screen-md-min) {
+//         text-align: left;
+//     }
+// }
+
+// .login-register{
+// 	background:	linear-gradient(0deg, rgba(81, 95, 116, 0.5),rgba(71, 83, 101, 0.5)) , url(getThemeAssetsPath('img/login-page-women.png'))  no-repeat scroll 0 0;
+// 	background-color: rgba(48, 59, 76, 0.5);
+// 	color: #fff;
+//     // margin-top: 100px;
+// 	@media (min-width: $screen-sm-min) {
+// 		height: 810px;
+// 	}
+// 	@media (max-width: $screen-xs-max) {
+// 		background-position: center;
+// 		height: 100vh;
+// 	}
+// }
+// .login-register-header{
+// 	@extend .row;
+// 	// background: url(getThemeAssetsPath('img/logo-staxs.png'))  no-repeat scroll 0 0;
+// 	// background-size: contain;
+// 	margin-bottom: $sc-margin-lv4;
+// 	margin-left: 0;
+// 	margin-right: 0;
+// }
+
+// .login-register-title{
+// 	@extend .col-xs-12;
+// }
+
+// .login-register-title-noregister{
+// 	text-align: center;
+// }
+
+// .login-register-body{
+// 	@media (min-width: $screen-sm-min) {
+
+// 	}	display: grid !important;
+//     place-items: end !important;
+// 	// @media (max-width: $screen-sm-min) {
+// 	// display: grid !important;
+//     // place-items: center !important;
+// 	// }
+// 	@extend .row;
+// 	margin-left: 0;
+// 	margin-right: 0;
+// }
+
+// .login-register-body-colored{
+// 	@extend .login-register-body;
+
+// 	& .login-register-wrapper-column-login {
+// 		@extend .col-sm-push-3;
+// 	}
+// }
+
+// .login-register-wrapper-column-login,
+// .login-register-wrapper-column-register{
+// 	// display: grid !important;
+//     // place-items: center !important;
+// 	// width: 70%;
+// 	// @media (max-width: $screen-xs-min) {
+// 	// 	width: 100%;
+// 	// 	}
+// 	@extend .col-xs-12;
+// 	@extend .col-sm-6;
+// }
+
+// .login-register-wrapper-login,
+// .login-register-wrapper-register{
+// 	@media (max-width: $screen-sm-min) {
+// 	width: 100%;
+// 	}
+// 	@media (min-width: $screen-sm-min) {
+// 		right: 200px;	
+// 		width: 425px;
+// 	}
+
+// 	@extend .box-column;	
+
+
+//     // top: 100px;
+//     position: absolute;
+//     height: auto;
+//   	background-color:$sc-color-primary;
+// 	border-radius: 10px;
+// }
+
+// .login-register-wrapper-guest{}
+// .login-register-title-register{}
+
+
+// new layout css
+
+/* Edited for Posh Theme */
+
+
+.login-register{
+	background: linear-gradient(0deg, rgba(81, 95, 116, 0.5),rgba(71, 83, 101, 0.5)) , url(getThemeAssetsPath('img/login-page-women.png'))  no-repeat scroll 0 0;
+	background-color: rgba(48, 59, 76, 0.5);
+	color: #fff;
+
+	@media (max-width: $screen-xs-max) {
+			background-position: center;
+			height: 100vh;
+	}
+
+	@media (max-width: 768px) {
+			height: 1300px !important;
+
+	}
+	@media (min-width: 992px) {
+			height: 1300px !important;
+			background-size: contain !important;
+	}
+	@media (max-width: 1300px) {
+			height: 1370px !important;
+			background-size: cover !important;
+			background-position: bottom !important;
+	}
+	@media (max-width: 992px) {
+			background-position: center;
+	}
+	@media (min-width: 1601px) {
+		min-height: 1150px;
+			height: 100vh !important;
+	}
+
+	
+label {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-family: $sc-font-family;
+	letter-spacing: 0;
+	}
+	input {
+	padding: 0px;
+	display: block;
+	font-size: 14px;
+	// border: 1px solid #303A4C ;
+	width: 100%;
+	margin-bottom: 10px;
+	font-family: $sc-font-family;
+	}
+	h2 {
+			font-family: $sc-font-family-PTSans;
+			font-size: 1.1rem;
+	}
+
+}
+.login-register-header{
+	@extend .row;
+	// background: url(getThemeAssetsPath('img/logo-staxs.png'))  no-repeat scroll 0 0;
+	// background-size: contain;
+	margin-bottom: $sc-margin-lv4;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.login-register-title{
+	@extend .col-xs-12;
+}
+
+.login-register-title-noregister{
+	text-align: center;
+}
+
+.login-register-body{
+	@media (max-width: $screen-md-min) {
+			position: relative;
+			top: 300px;
+			margin-left: 40px;
+			margin-right: 40px;
+	}   
+	@media (max-width: 320px) {
+
+			margin-left: 0px;
+			margin-right: 0px;
+	}   
+	
+	display: grid !important;
+	place-items: end !important;
+
+	@extend .row;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.login-register-body-colored{
+	@extend .login-register-body;
+
+	& .login-register-wrapper-column-login {
+			@extend .col-sm-push-3;
+	}
+}
+
+.login-register-wrapper-column-login,
+.login-register-wrapper-column-register{
+@media (max-width: $screen-md-min) {
+			width: 100%;
+			}
+
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.login-register-wrapper-login,
+.login-register-wrapper-register{
+	margin:0px !important;
+	@media (max-width: $screen-md-min) {
+	width: 100% !important;
+	top: 300px;
+	}
+
+	@media (min-width: 992px) {
+			// width: 100% !important;
+			position: absolute !important;
+			top: 100px !important;
+			right: initial !important;
+			// background-color: #E50570;
+			width: auto !important;
+			border-radius: 6px !important;
+			margin-right: 20px !important;
+			}
+
+			@media (min-width:1900px){
+					width:50% !important;
+					height: 700px;
+			}
+
+	@extend .box-column;    
+
+	height: auto;
+	background-color:$sc-color-primary;
+	border-radius: 6px;
+}
+
+
+
+
+
+
+.login-register-wrapper-guest{}
+.login-register-title-register{}
+
+.header-logo-image-login {
+	width: auto;
+	max-width: 250px !important;
+	margin-top: 25px;
+	margin-left: 50px;
+	@media (max-width: $screen-xs-min){
+			margin-left:10px;
+	}
+}

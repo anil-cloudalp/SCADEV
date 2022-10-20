@@ -1,0 +1,444 @@
+// .myaccount-layout {
+// 	@extend %sc-layout;
+// }
+
+// .myaccount-layout-container{
+// 	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+// 	@extend .container;
+// 	// @include site-max-width-container;
+//     // padding-left: $sc-content-padding;
+//     // padding-right: $sc-content-padding;
+
+// }
+
+// .myaccount-layout-header {
+// 	// @include common-header;
+// 	@media(min-width:$screen-md-min){
+// 		margin-top: 0px;
+// 		margin-bottom: 0px;
+// 	}
+
+// }
+
+// .myaccount-layout-row{
+// 	@extend .row;
+// }
+
+// .myaccount-layout-main{
+// 	@extend .col-xs-12;
+// 	@extend .col-sm-9;
+
+// 	@media (min-width: $screen-sm-min){
+// 		margin-bottom: 50px;
+// 	}
+// 	.page-not-found {
+// 		overflow: hidden;
+// 	}
+// }
+
+// .myaccount-layout-footer {
+// 	@extend %sc-footer !optional;
+// }
+
+// .myaccount-layout-title{
+// 	margin-bottom: $sc-margin-lv4;
+// 	display:none;
+
+// 	@media (min-width: $screen-sm-min){
+// 		display: block;
+// 	}
+// 	@media (min-width: $screen-md-min){
+// 		padding-left: 72px;
+// 		margin-top:$sc-margin-lv2;
+// 	}
+// }
+
+// .myaccount-layout-no-javascript-msg {
+// 	@extend .message-warning;
+// 	width: 100%;
+// }
+
+// .myaccount-layout-side-nav{
+
+// 	@extend .col-sm-3;
+// 	display: none;
+
+// 	@media (min-width: $screen-sm-min){
+// 		display: block;
+// 	}
+// }
+
+// .force-hide-side-nav{
+
+// 	.myaccount-layout-side-nav{
+// 		display: none;
+// 	}
+
+// 	.myaccount-layout-title{
+// 		display: none;
+// 	}
+
+// 	.myaccount-layout-main{
+// 		@extend .col-sm-12;
+// 	}
+// }
+
+// .myaccount-layout-footer .footer-banner-wrapper {
+// 	@extend .container;
+// 	display: block;
+
+// 	.banner-footerFull {
+// 		@extend .col-sm-12;
+// 	}
+// 	.footer-banner-1 {
+// 		@extend .col-sm-8;
+// 	}
+// 	.footer-banner-5 {
+// 		@extend .col-sm-4;
+// 	}
+// }
+
+// .myaccount-bottom-banner {
+// 	@extend .row;
+// 	margin-bottom: $sc-margin-lv4;
+// }
+
+// .myaccount-layout-breadcrumb{}
+// .myaccount-layout-notifications{}
+// .myaccount-layout-error-placeholder{}
+// .myaccount-layout-breadcrumb {
+// 	@media(min-width:$screen-md-min){
+		
+// 		padding-left: 76px;
+// 	}
+// 	background:$sc-color-new-gray;
+// }
+// .myaccount-layout-row {
+// 	@media(min-width:$screen-md-min){
+// 		padding-right: 85px;
+// 		padding-left: 76px;
+// 	}
+
+// }
+
+// // laptop screen 
+// @media(min-width:$screen-md-min){
+// 	.myaccount-layout-container {
+// 		width: 100%;
+// 		margin: -1px auto;
+// 		padding: 0px;
+// 	}
+// 	.header-horzintal-line {
+//     margin: 20px 0px 0px 0px !important;
+// }
+// .myaccount-layout-breadcrumb {
+// 	padding-left: 40px;
+// }
+// .myaccount-layout-title {
+// 	padding-left: 39px;
+// }
+// .myaccount-layout-row {
+// 	padding-left: 36px;
+// }
+// .myaccount-layout-header{
+// 	.header-main-nav {
+// 		padding: 0 20px;
+	 
+// 	}
+// }
+
+// }
+ 
+// // large screen 
+// @media(min-width:2000px){
+// 	.myaccount-layout-container {
+// 		width: 100%;
+// 		margin: -1px auto;
+// 		padding: 0px;
+// 	}
+// }
+// new layout 
+.myaccount-layout {
+	@extend %sc-layout;
+}
+
+.myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+	@extend .container;
+	// @include site-max-width-container;
+    // padding-left: $sc-content-padding;
+    // padding-right: $sc-content-padding;
+
+}
+
+
+.myaccount-layout-header {
+	// @include common-header;
+	@media(min-width:$screen-md-min){
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+}
+
+.myaccount-layout-row{
+	@extend .row;
+}
+
+.myaccount-layout-main{
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 50px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	margin-bottom: $sc-margin-lv4;
+	display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+	@media (min-width: $screen-md-min){
+		padding-left: 72px;
+		margin-top:$sc-margin-lv2;
+		margin-top:$sc-margin-lv2+8;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+
+	@extend .col-sm-3;
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		display: none;
+	}
+
+	.myaccount-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+.myaccount-layout-footer .footer-banner-wrapper {
+	@extend .container;
+	display: block;
+
+	.banner-footerFull {
+		@extend .col-sm-12;
+	}
+	.footer-banner-1 {
+		@extend .col-sm-8;
+	}
+	.footer-banner-5 {
+		@extend .col-sm-4;
+	}
+}
+
+.myaccount-bottom-banner {
+	@extend .row;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.myaccount-layout-breadcrumb{}
+.myaccount-layout-notifications{}
+.myaccount-layout-error-placeholder{}
+.myaccount-layout-breadcrumb {
+	@media(min-width:$screen-md-min){
+		
+		padding-left: 76px;
+	}
+	background:$sc-color-new-gray;
+}
+.myaccount-layout-row {
+	@media(min-width:$screen-md-min){
+		padding-right: 85px;
+		padding-left: 76px;
+	}
+
+}
+
+// laptop screen 
+@media(min-width:$screen-md-min){
+	.myaccount-layout-container {
+		width: 100%;
+		margin: -1px auto;
+		// padding: 0px;
+	}
+	.header-horzintal-line {
+    margin: 20px 0px 0px 0px !important;
+}
+.myaccount-layout-breadcrumb {
+	padding-left: 40px;
+}
+.myaccount-layout-title {
+	padding-left: 39px;
+}
+.myaccount-layout-row {
+	padding-left: 36px;
+}
+.myaccount-layout-header{
+	.header-main-nav {
+		padding: 0 20px;
+	 
+	}
+}
+
+}
+ 
+// large screen 
+@media(min-width:2000px){
+	.myaccount-layout-container {
+		width: 100%;
+		margin: -1px auto;
+		padding: 0px;
+	}
+}
+
+
+// my account header 
+
+.header-logo-nav-container{
+	@media (min-width: 992px){
+		padding-bottom: 14px !important; 
+	}
+}
+
+
+
+.affix-top {
+	@media screen and (min-width:992px) {
+		
+	
+	-webkit-box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	background-color: inherit;
+	-webkit-transform: translate(0, 81px);
+	transform: translate(0, 81px);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	top: -82px !important;
+}
+@media screen and (max-width:992px) {
+	.header-main-nav{
+		position: relative;
+		-webkit-box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	top: -82px;
+	}
+}
+}
+
+[data-spy="affix"]{
+	@media screen and (min-width:992px) {
+
+			background-color: inherit !important;
+		 z-index: 1002;
+		 position: relative;
+		 right: 0;
+		 left: 0;
+		 top: 0;
+	}
+	@media screen and (max-width:992px) {
+		.header-main-nav{
+			position: relative;
+			z-index: 600;
+			background-color: white;
+			right: 0;
+			top: 0;
+			left: 0;
+			padding: 15px 0;
+		}
+	}
+}
+
+
+
+// custom sticky header changes layout
+// #main-container{
+// 	@media screen and (max-width:350px) {
+// 		padding-top: 41%;
+// 		// background: transparent; 
+// }
+// @media (min-width:350px) and (max-width:508px) {
+// 		// padding-top:13% ;
+// 		padding-top:23% ;
+// }
+// 	@media  (min-width:508px) and (max-width:992px) {
+// 		// padding-top: 9%;
+// 		padding-top: 20%;
+// 	}
+
+// 	@media (min-width:992px) and (max-width:1100px) {
+		
+// 		padding-top:  20%;
+// 	}
+// 	@media (min-width:1100px) and (max-width:1200px) {
+		
+// 		padding-top:  18%;
+// 	}
+// 	@media (min-width:1200px) and (max-width:1300px) {
+		
+// 		padding-top:  21%;
+// 	}
+// 	@media (min-width:1300px) and (max-width:1337px) {
+		
+// 		padding-top:  19%;
+// 	}
+// 	@media (min-width:1337px) and (max-width:1390px) {
+		
+// 		padding-top:  16%;
+// 	}
+// 	@media (min-width:1390px) and (max-width:1414px) {
+		
+// 		padding-top:  15%;
+// 	}
+// 	@media (min-width:1414px) and (max-width:1700px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 14%;
+// 	}
+// 	@media (min-width:1700px) and (max-width:2200px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 11%;
+// 	}
+// 	@media screen and (min-width:2200px){
+		
+// 		// padding-top: 17%;
+// 		padding-top: 9.5%;
+// 	}
+// }
+.myaccount_breadcrumb{
+	margin-top: -2px;
+}
+.myaccount-layout-header{
+	.header-logo-nav-wrapper{
+		 padding: 0 $sc-content-right-padding-desktop 0 0;
+	}
+}

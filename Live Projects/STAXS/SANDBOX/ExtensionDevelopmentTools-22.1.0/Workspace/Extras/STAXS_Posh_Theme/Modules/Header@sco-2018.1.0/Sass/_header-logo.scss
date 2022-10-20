@@ -1,0 +1,57 @@
+// Edited for Posh Theme
+
+.header-logo-wrapper {
+    flex: 0 0 $sc-mobile-header-logo-width;
+    padding-left: $sc-mobile-header-logo-left-padding;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        flex: 0 0 $sc-tablet-header-logo-width;
+        margin-top: 10px;
+    }
+
+    @media(min-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+.header-logo-image {
+    display: block;
+
+    max-width: $sc-mobile-header-logo-width - $sc-mobile-header-logo-left-padding; // for IE, see #106
+    
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        max-width: $sc-tablet-header-logo-width - $sc-mobile-header-logo-left-padding; // for IE, see #106
+    
+    }
+
+	@media(min-width: $screen-md-min) {
+        width: auto;
+        max-width: 200px;
+        // max-width: $sc-desktop-header-logo-width; // for IE, see #106
+    }
+    
+}
+.header-logo {
+    display: inline-block;
+    cursor: auto;
+}
+.header-logo-sitename {}
+@media(max-width:$screen-xs){
+    .checkout-layout{
+
+        .checkout-layout-header{
+            .header-main-nav{
+                .header-logo-image {
+                    max-width:169px !important;
+                    // margin-top: 25px;
+                    margin-left:0px;
+                }
+            }
+            
+        }
+    }
+}
+.header-main-wrapper {
+    background-color: transparent !important;
+}

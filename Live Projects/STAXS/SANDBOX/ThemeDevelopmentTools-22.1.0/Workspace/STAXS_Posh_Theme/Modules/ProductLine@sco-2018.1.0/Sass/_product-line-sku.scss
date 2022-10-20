@@ -1,0 +1,13 @@
+.product-line-sku-container {
+	margin-bottom: $sc-margin-lv1;
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+	color: $sc-color-primary;
+}
+.product-line-sku-label {
+	@extend .sc-sku-label;
+	sup{
+		font-size: 13px;
+	  }
+}

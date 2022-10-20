@@ -1,0 +1,207 @@
+// /* Edited for Posh Theme */
+
+// .shopping-layout {
+// 	@extend %sc-layout;
+// }
+
+// .shopping-layout-header {
+// 	// @include common-header;
+// 	@media(min-width:$screen-md-min){
+// 		margin-bottom: 0px !important;
+// 	}
+// }
+
+// .shopping-layout-footer {
+// 	@extend %sc-footer !optional;
+// }
+
+// .shopping-layout-breadcrumb, .shopping-layout-notifications {
+//     @extend .container;
+//     // @include site-max-width-container;
+//     padding-left: $sc-content-padding;
+//     padding-right: $sc-content-padding;
+// }
+
+// .shopping-layout-breadcrumb {
+
+// 	@media(min-width:$screen-md-min){
+// 		padding:20px 78px;
+// 		background-color: $sc-color-new-gray;
+// 		margin-top: -30px;
+// 	}
+// }
+
+// .shopping-layout-no-javascript-msg {
+// 	@extend .message-warning;
+// 	width: 100%;
+// }
+
+// .shopping-layout-content{}
+// @media(min-width:$screen-lg-min){
+// 	.shopping-layout-breadcrumb{
+// 		width:100%
+// 	}
+// }
+// @media (min-width:$screen-md-min){
+// 	.shopping-layout-breadcrumb{
+//     width: 100%;
+// }
+// }
+
+// new layout css
+/* Edited for Posh Theme */
+
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+.shopping-layout-header {
+	// @include common-header;
+	@media(min-width:$screen-md-min){
+		margin-bottom: 0px !important;
+	}
+}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb, .shopping-layout-notifications {
+    @extend .container;
+    // @include site-max-width-container;
+    padding-left: $sc-content-padding;
+    padding-right: $sc-content-padding;
+}
+
+.shopping-layout-breadcrumb {
+
+	@media(min-width:$screen-md-min){
+		// padding:20px 78px;
+		padding: 5px 78px;
+		background-color: $sc-color-new-gray;
+		margin-top: -30px;
+	}
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.shopping-layout-content{}
+@media(min-width:$screen-lg-min){
+	.shopping-layout-breadcrumb{
+		width:100%
+	}
+}
+@media (min-width:$screen-md-min){
+	.shopping-layout-breadcrumb{
+    width: 100%;
+}
+}
+
+
+
+// custom sticky header changes 
+// #main-container{
+// 	// @media screen and (max-width:508px) {
+// 	// 	padding-top:13% ;
+// 	// }
+// 	@media screen and (max-width:350px) {
+// 		padding-top: 41%;
+// 		// background: transparent; 
+// }
+// @media (min-width:350px) and (max-width:508px) {
+// 		// padding-top:13% ;
+// 		padding-top:23% ;
+// }
+// 	@media  (min-width:508px) and (max-width:992px) {
+// 		padding-top:20%;
+// 	}
+
+// 	@media (min-width:992px) and (max-width:1100px) {
+		
+// 		padding-top:  20%;
+// 	}
+// 	@media (min-width:1100px) and (max-width:1200px) {
+		
+// 		padding-top:  18%;
+// 	}
+// 	@media (min-width:1200px) and (max-width:1300px) {
+		
+// 		padding-top:  21%;
+// 	}
+// 	@media (min-width:1300px) and (max-width:1337px) {
+		
+// 		padding-top:  19%;
+// 	}
+// 	@media (min-width:1337px) and (max-width:1390px) {
+		
+// 		padding-top:  16%;
+// 	}
+// 	@media (min-width:1390px) and (max-width:1414px) {
+		
+// 		padding-top:  15%;
+// 	}
+// 	@media (min-width:1414px) and (max-width:1700px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 14%;
+// 	}
+// 	@media (min-width:1700px) and (max-width:2200px) {
+		
+// 		// padding-top: 17%;
+// 		padding-top: 11%;
+// 	}
+// 	@media screen and (min-width:2200px){
+		
+// 		// padding-top: 17%;
+// 		padding-top: 9.5%;
+// 	}
+// }
+
+.affix-top {
+	@media screen and (min-width:992px) {
+		
+	
+	-webkit-box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	background-color: inherit;
+	-webkit-transform: translate(0, 81px);
+	transform: translate(0, 81px);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	top: -82px !important;
+}
+@media screen and (max-width:992px) {
+	.header-main-nav{
+		position: relative;
+		-webkit-box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	box-shadow: 0px 7px 39px -19px rgba(0, 58, 120, 0.64) !important;
+	top: -82px;
+	}
+}
+}
+
+[data-spy="affix"]{
+	@media screen and (min-width:992px) {
+
+		 background-color: inherit !important;
+		 z-index: 1002;
+		 position: relative;
+		 right: 0;
+		 left: 0;
+		 top: 0;
+	}
+	@media screen and (max-width:992px) {
+		.header-main-nav{
+			position: relative;
+			z-index:600;
+			background-color: white;
+			right: 0;
+			top: 0;
+			left: 0;
+			padding: 15px 0;
+		}
+	}
+}

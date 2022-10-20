@@ -1,0 +1,95 @@
+/* Edited for Posh Theme */
+
+.facets-item-cell-grid {
+	@extend .item-cell;
+	.cart-add-to-cart-button-container {
+		width:100%;
+	}
+	.cart-add-to-cart-button-button {
+		padding:20px 20px;
+	}
+
+	.cart-quickaddtocart-price {
+		// margin-bottom:$sc-margin-lv2;
+	}
+}
+.facets-item-cell-grid-sku-value{
+	color: $sc-color-primary;
+}
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-image-wrapper {
+	position:relative;
+	text-align:left;
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {}
+
+
+.facets-item-cell-grid-details {
+	text-align:left;
+	.product-line-stock {
+		// text-align:left;
+	}
+	.cart-add-to-cart-button-container {
+		padding: 0 0 $sc-padding-lv3 0;
+	}
+}
+
+.facets-item-cell-grid-image {
+	@extend .item-cell-image;
+	width:auto;
+	height:auto;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+	text-align: left;
+	text-transform: capitalize !important;
+	font-weight: 300 !important;
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+	// margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-grid-rating {
+	text-align:left;
+	display: inline-block;
+}
+
+.facets-item-cell-grid {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-stock-message {
+	// text-align:left;
+}
+
+.facets-item-cell-grid-sku{
+	padding: $sc-padding-lv1 + 3 0px;
+  }
+	.facets-item-cell-grid-image-wrapper{
+		border: 1px solid #EEEEEE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 175px;
+	}
+	.grid-price {
+    margin-top: 10px;
+		padding: 8px 0px;
+}

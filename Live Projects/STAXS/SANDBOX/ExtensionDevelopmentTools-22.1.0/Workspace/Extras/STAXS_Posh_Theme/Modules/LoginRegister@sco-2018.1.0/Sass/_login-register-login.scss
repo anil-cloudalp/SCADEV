@@ -1,0 +1,133 @@
+.login-register-login-description{
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-login-form-controls-group{
+	margin-top: $sc-margin-lv4;
+}
+
+.login-register-login-form-label {
+	color: $sc-neutral-shade-0;
+}
+
+.login-register-login-form-required {
+	@extend .input-required;
+	color: $sc-neutral-shade-0;
+}
+
+.login-register-login-form-input {
+	@extend .input-large;
+// 	@media (min-width: $screen-sm-min){
+// 		min-width: 340px !important;
+// }
+color: $sc-neutral-shade-0;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid $sc-neutral-shade-0;
+width: 100% !important;
+}
+.login-register-login-form-input:active {
+	@extend .input-large;
+// 	@media (min-width: $screen-sm-min){
+// 		min-width: 340px !important;
+// }
+color: $sc-neutral-shade-0;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid $sc-neutral-shade-0;
+outline: none;
+}
+
+.login-register-login-form-input:focus {
+	@extend .input-large;
+// 	@media (min-width: $screen-sm-min){
+// 		min-width: 340px !important;
+// }
+color: $sc-neutral-shade-0;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid $sc-neutral-shade-0;
+outline: none;
+}
+
+.login-register-login-submit {
+	@extend .button-large;
+	@extend .button-primary;
+	width: 100%;
+	border-radius: 10px;
+	background-color:$sc-neutral-shade-0;
+	outline: none;
+	color: $sc-color-secondary;
+}
+
+.login-register-login-forgot {
+
+	display:inline-block;
+	margin-top: $sc-margin-lv4;
+	color: $sc-neutral-shade-0;
+	@media (min-width: $screen-sm-min) {
+		// margin-top: 0;
+		// margin-left: $sc-margin-lv2;
+	}
+}
+
+.login-register-login-form-messages {
+	margin-top: $sc-margin-lv4;
+
+	.global-views-message-error {
+		@extend .message-error;
+		max-width: fit-content !important;
+		margin-bottom: 0;
+	}
+
+	.global-views-message-button {
+		display: none;
+	}
+}
+
+.login-register-login-form-messages-timeout {
+	@extend .global-views-message;
+	@extend .global-views-message-error;
+}
+
+.login-register-login-form-controls-group {
+	@extend .login-register-register-form-controls-group;
+}
+
+
+.login-register-login-form-controls {
+	@extend .login-register-register-form-controls !optional;
+}
+
+.login-register-login-register-now{}
+.login-register-login-title{
+	color: $sc-neutral-shade-0;
+}
+.login-register-login-required{}
+.login-register-login-form-fieldset{}
+
+
+/////////////
+ .no-staxs-click-here{
+	color: $sc-neutral-shade-0;
+	text-decoration: underline;
+ }
+.no-staxs-account{
+	padding:10px 0px;
+	margin-top: 40px;
+}
+section.login-reg-login-section {
+	/* width: 100%; */
+	padding: 20px;
+
+}
+.registered-sign{
+	font-size: 10px;
+    position: relative;
+    top: -5px;
+    left: -3px;
+}
+.registered-sign::after{
+	content: ' \00AE';
+}

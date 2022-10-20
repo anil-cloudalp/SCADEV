@@ -1,0 +1,93 @@
+{
+    "name": "Certificates",
+    "fantasyName": "Certificates",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "certificates",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/certificates.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/certificates/Configuration/certificates.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/certificates/Sass/_certificates-certificates.scss",
+            "myaccount": "Modules/certificates/Sass/_certificates-certificates.scss",
+            "checkout": "Modules/certificates/Sass/_certificates-certificates.scss"
+        },
+        "files": [
+            "Modules/certificates/Sass/_certificates-certificates.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/certificates/Templates/staxs_certificates_certificates.tpl",
+                    "Modules/certificates/Templates/staxs_certificates_historicalcertificates.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/certificates/Templates/staxs_certificates_certificates.tpl",
+                    "Modules/certificates/Templates/staxs_certificates_historicalcertificates.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/certificates/Templates/staxs_certificates_certificates.tpl",
+                    "Modules/certificates/Templates/staxs_certificates_historicalcertificates.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/certificates/JavaScript/STAXS.Certificates.certificates.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/certificates/JavaScript/STAXS.Certificates.certificates.js",
+                    "Modules/certificates/JavaScript/certificates.View.js",
+                    "Modules/certificates/JavaScript/STAXS.Certificates.certificates.Model.js",
+                    "Modules/certificates/JavaScript/STAXS.Certificates.certificates.SS2Model.js",
+                    "Modules/certificates/JavaScript/historicalcertificates.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/certificates/SuiteScript/STAXS.Certificates.certificates.js",
+        "files": [
+            "Modules/certificates/SuiteScript/STAXS.Certificates.certificates.js",
+            "Modules/certificates/SuiteScript/certificates.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\Certificates",
+    "suitescript2": {
+        "files": [
+            "Modules/certificates/SuiteScript2/certificates.Service.ss"
+        ]
+    }
+}

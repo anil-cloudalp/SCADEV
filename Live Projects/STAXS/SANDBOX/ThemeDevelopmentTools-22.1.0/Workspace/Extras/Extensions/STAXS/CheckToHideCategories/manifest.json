@@ -1,0 +1,108 @@
+{
+	"name": "CheckToHideCategories",
+	"fantasyName": "Hide Categories",
+	"vendor": "STAXS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "check the checkbox in category which customer do not need",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CheckToHideCategories.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CheckToHideCategories/Configuration/CheckToHideCategories.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CheckToHideCategories/Templates/staxs_checktohidecategories_checktohidecategories.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CheckToHideCategories/Templates/staxs_checktohidecategories_checktohidecategories.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CheckToHideCategories/Templates/staxs_checktohidecategories_checktohidecategories.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CheckToHideCategories/Sass/_checktohidecategories-checktohidecategories.scss",
+			"myaccount": "Modules/CheckToHideCategories/Sass/_checktohidecategories-checktohidecategories.scss",
+			"checkout": "Modules/CheckToHideCategories/Sass/_checktohidecategories-checktohidecategories.scss"
+		},
+		"files": [
+			"Modules/CheckToHideCategories/Sass/_checktohidecategories-checktohidecategories.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+			"myaccount": "Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+			"checkout": "Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+					"Modules/CheckToHideCategories/JavaScript/CheckToHideCategories.View.js",
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.Model.js",
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+					"Modules/CheckToHideCategories/JavaScript/CheckToHideCategories.View.js",
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.Model.js",
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+					"Modules/CheckToHideCategories/JavaScript/CheckToHideCategories.View.js",
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.Model.js",
+					"Modules/CheckToHideCategories/JavaScript/STAXS.CheckToHideCategories.CheckToHideCategories.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CheckToHideCategories/SuiteScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+		"files": [
+			"Modules/CheckToHideCategories/SuiteScript/STAXS.CheckToHideCategories.CheckToHideCategories.js",
+			"Modules/CheckToHideCategories/SuiteScript/CheckToHideCategories.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CheckToHideCategories/SuiteScript2/CheckToHideCategories.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/STAXS/CheckToHideCategories@1.0.0",
+	"activation_id": "1",
+	"extension_id": "1601"
+}

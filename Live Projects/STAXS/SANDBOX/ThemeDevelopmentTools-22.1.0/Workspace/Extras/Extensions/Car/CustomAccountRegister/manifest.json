@@ -1,0 +1,85 @@
+{
+	"name": "CustomAccountRegister",
+	"fantasyName": "Custom Account Register",
+	"vendor": "Car",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CustomAccountRegisterModule.Service.ss"
+			]
+		},
+		"images": {
+			"files": [
+				"images/Man_mouthmask-login.jpg",
+				"images/login-page-women.png"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/CustomAccountRegisterModule/Configuration/CustomAccountRegisterModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/CustomAccountRegisterModule/Templates/car_customaccountregister_customaccountregistermodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/CustomAccountRegisterModule/Sass/_customaccountregister-customaccountregistermodule.scss"
+		},
+		"files": [
+			"Modules/CustomAccountRegisterModule/Sass/_customaccountregister-customaccountregistermodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/CustomAccountRegisterModule/JavaScript/Car.CustomAccountRegister.CustomAccountRegisterModule.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/CustomAccountRegisterModule/JavaScript/Car.CustomAccountRegister.CustomAccountRegisterModule.js",
+					"Modules/CustomAccountRegisterModule/JavaScript/CustomAccountRegisterModule.View.js",
+					"Modules/CustomAccountRegisterModule/JavaScript/Car.CustomAccountRegister.CustomAccountRegisterModule.Model.js",
+					"Modules/CustomAccountRegisterModule/JavaScript/Car.CustomAccountRegister.CustomAccountRegisterModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CustomAccountRegisterModule/SuiteScript/Car.CustomAccountRegister.CustomAccountRegisterModule.js",
+		"files": [
+			"Modules/CustomAccountRegisterModule/SuiteScript/Car.CustomAccountRegister.CustomAccountRegisterModule.js",
+			"Modules/CustomAccountRegisterModule/SuiteScript/CustomAccountRegisterModule.ServiceController.js",
+			"Modules/CustomAccountRegisterModule/SuiteScript/Car.model.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/CustomAccountRegisterModule/SuiteScript2/CustomAccountRegisterModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Car/CustomAccountRegister@1.0.0",
+	"activation_id": "1",
+	"extension_id": "301"
+}

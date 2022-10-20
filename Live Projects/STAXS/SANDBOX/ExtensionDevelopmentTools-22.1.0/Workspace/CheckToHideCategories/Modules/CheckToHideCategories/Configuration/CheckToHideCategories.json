@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "CheckToHideCategories.config": {
+            "group": "extensions",
+            "subtab": "CheckToHideCategories_subtab",
+            "type": "string",
+            "title": "CheckToHideCategories_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

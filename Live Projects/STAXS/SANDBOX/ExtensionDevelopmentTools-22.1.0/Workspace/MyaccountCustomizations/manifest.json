@@ -1,0 +1,102 @@
+{
+    "name": "MyaccountCustomizations",
+    "fantasyName": "Myaccount Customizations",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=22.1.0",
+        "SCS": ">=22.1.0"
+    },
+    "description": "this extension works based on contact role login,if sales rep login myaccount will hide,if contact with view only certificates role have means he can only see certificates.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/HideMyaccountAndCertificatesOnlyAccess.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/HideMyaccountAndCertificatesOnlyAccess/Configuration/HideMyaccountAndCertificatesOnlyAccess.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/HideMyaccountAndCertificatesOnlyAccess/Sass/_myaccountcustomizations-hidemyaccountandcertificatesonlyaccess.scss",
+            "myaccount": "Modules/HideMyaccountAndCertificatesOnlyAccess/Sass/_myaccountcustomizations-hidemyaccountandcertificatesonlyaccess.scss",
+            "checkout": "Modules/HideMyaccountAndCertificatesOnlyAccess/Sass/_myaccountcustomizations-hidemyaccountandcertificatesonlyaccess.scss"
+        },
+        "files": [
+            "Modules/HideMyaccountAndCertificatesOnlyAccess/Sass/_myaccountcustomizations-hidemyaccountandcertificatesonlyaccess.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/Templates/staxs_myaccountcustomizations_hidemyaccountandcertificatesonlyaccess.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/Templates/staxs_myaccountcustomizations_hidemyaccountandcertificatesonlyaccess.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/Templates/staxs_myaccountcustomizations_hidemyaccountandcertificatesonlyaccess.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+            "myaccount": "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+            "checkout": "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/HideMyaccountAndCertificatesOnlyAccess.View.js",
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/HideMyaccountAndCertificatesOnlyAccess.View.js",
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/HideMyaccountAndCertificatesOnlyAccess.View.js",
+                    "Modules/HideMyaccountAndCertificatesOnlyAccess/JavaScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/HideMyaccountAndCertificatesOnlyAccess/SuiteScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+        "files": [
+            "Modules/HideMyaccountAndCertificatesOnlyAccess/SuiteScript/STAXS.MyaccountCustomizations.HideMyaccountAndCertificatesOnlyAccess.js",
+            "Modules/HideMyaccountAndCertificatesOnlyAccess/SuiteScript/HideMyaccountAndCertificatesOnlyAccess.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\MyaccountCustomizations",
+    "suitescript2": {
+        "files": []
+    }
+}

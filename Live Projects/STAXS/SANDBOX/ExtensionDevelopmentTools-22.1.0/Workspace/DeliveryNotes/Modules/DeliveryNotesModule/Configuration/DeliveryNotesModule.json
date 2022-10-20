@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "DeliveryNotesModule.config": {
+            "group": "extensions",
+            "subtab": "DeliveryNotesModule_subtab",
+            "type": "string",
+            "title": "DeliveryNotesModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

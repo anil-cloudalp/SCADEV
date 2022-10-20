@@ -1,0 +1,78 @@
+{
+	"name": "DeliveryNotes",
+	"fantasyName": "Delivery Notes",
+	"vendor": "STAXS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "this extension can be used to store users notes during the checkout",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/DeliveryNotesModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/DeliveryNotesModule/Configuration/DeliveryNotesModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/DeliveryNotesModule/Templates/staxs_deliverynotes_deliverynotesmodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/DeliveryNotesModule/Sass/_deliverynotes-deliverynotesmodule.scss"
+		},
+		"files": [
+			"Modules/DeliveryNotesModule/Sass/_deliverynotes-deliverynotesmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/DeliveryNotesModule/JavaScript/STAXS.DeliveryNotes.DeliveryNotesModule.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/DeliveryNotesModule/JavaScript/STAXS.DeliveryNotes.DeliveryNotesModule.js",
+					"Modules/DeliveryNotesModule/JavaScript/DeliveryNotesModule.View.js",
+					"Modules/DeliveryNotesModule/JavaScript/STAXS.DeliveryNotes.DeliveryNotesModule.Model.js",
+					"Modules/DeliveryNotesModule/JavaScript/STAXS.DeliveryNotes.DeliveryNotesModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/DeliveryNotesModule/SuiteScript/STAXS.DeliveryNotes.DeliveryNotesModule.js",
+		"files": [
+			"Modules/DeliveryNotesModule/SuiteScript/STAXS.DeliveryNotes.DeliveryNotesModule.js",
+			"Modules/DeliveryNotesModule/SuiteScript/DeliveryNotesModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/DeliveryNotesModule/SuiteScript2/DeliveryNotesModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/STAXS/DeliveryNotes@1.0.0",
+	"activation_id": "1",
+	"extension_id": "1501"
+}

@@ -1,0 +1,92 @@
+{
+    "name": "RestrictOrderAndPrice",
+    "fantasyName": "Restrict Order And Price",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "ON THE BASIS OF ROLES RESTRICT PRICE VIEWING AND MAKE ORDER.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/RestrictOrderAndPriceModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/RestrictOrderAndPriceModule/Configuration/RestrictOrderAndPriceModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/RestrictOrderAndPriceModule/Sass/_restrictorderandprice-restrictorderandpricemodule.scss",
+            "myaccount": "Modules/RestrictOrderAndPriceModule/Sass/_restrictorderandprice-restrictorderandpricemodule.scss"
+        },
+        "files": [
+            "Modules/RestrictOrderAndPriceModule/Sass/_restrictorderandprice-restrictorderandpricemodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/RestrictOrderAndPriceModule/Templates/staxs_restrictorderandprice_restrictorderandpricemodule.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/RestrictOrderAndPriceModule/Templates/staxs_restrictorderandprice_restrictorderandpricemodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.js",
+            "myaccount": "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.js",
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/RestrictOrderAndPriceModule.View.js",
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.Model.js",
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.js",
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/RestrictOrderAndPriceModule.View.js",
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.Model.js",
+                    "Modules/RestrictOrderAndPriceModule/JavaScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/RestrictOrderAndPriceModule/SuiteScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.js",
+        "files": [
+            "Modules/RestrictOrderAndPriceModule/SuiteScript/STAXS.RestrictOrderAndPrice.RestrictOrderAndPriceModule.js",
+            "Modules/RestrictOrderAndPriceModule/SuiteScript/RestrictOrderAndPriceModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\RestrictOrderAndPrice",
+    "suitescript2": {
+        "files": [
+            "Modules/RestrictOrderAndPriceModule/SuiteScript2/RestrictOrderAndPriceModule.Service.ss"
+        ]
+    }
+}

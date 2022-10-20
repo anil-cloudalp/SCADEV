@@ -1,0 +1,77 @@
+{
+    "name": "CheckoutCustomizations",
+    "fantasyName": "Checkout Customizations",
+    "vendor": "STAXS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "THIS EXTENSION WILL CONTAIN THE CHECKOUT CHANGES",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CheckoutCustomizationsModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CheckoutCustomizationsModule/Configuration/CheckoutCustomizationsModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutCustomizationsModule/Sass/_checkoutcustomizations-checkoutcustomizationsmodule.scss"
+        },
+        "files": [
+            "Modules/CheckoutCustomizationsModule/Sass/_checkoutcustomizations-checkoutcustomizationsmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutCustomizationsModule/Templates/staxs_checkoutcustomizations_checkoutcustomizationsmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutCustomizationsModule/JavaScript/STAXS.CheckoutCustomizations.CheckoutCustomizationsModule.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutCustomizationsModule/JavaScript/STAXS.CheckoutCustomizations.CheckoutCustomizationsModule.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/CheckoutCustomizationsModule.View.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/STAXS.CheckoutCustomizations.CheckoutCustomizationsModule.Model.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/STAXS.CheckoutCustomizations.CheckoutCustomizationsModule.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CheckoutCustomizationsModule/SuiteScript/STAXS.CheckoutCustomizations.CheckoutCustomizationsModule.js",
+        "files": [
+            "Modules/CheckoutCustomizationsModule/SuiteScript/STAXS.CheckoutCustomizations.CheckoutCustomizationsModule.js",
+            "Modules/CheckoutCustomizationsModule/SuiteScript/CheckoutCustomizationsModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CheckoutCustomizations",
+    "suitescript2": {
+        "files": [
+            "Modules/CheckoutCustomizationsModule/SuiteScript2/CheckoutCustomizationsModule.Service.ss"
+        ]
+    }
+}

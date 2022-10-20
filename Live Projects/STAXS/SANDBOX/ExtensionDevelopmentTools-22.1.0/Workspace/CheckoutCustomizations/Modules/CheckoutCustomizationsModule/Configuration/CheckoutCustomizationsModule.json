@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "CheckoutCustomizationsModule.config": {
+            "group": "extensions",
+            "subtab": "CheckoutCustomizationsModule_subtab",
+            "type": "string",
+            "title": "CheckoutCustomizationsModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

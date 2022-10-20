@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "filtersid",
+        "title": "Filters Id",
+        "description": "Enter the filters id which will view to the customer only no sale reps",
+        "group": "extensions"
+    },
+    "properties": { 
+        "RestrictOrderAndPriceModule.config": {
+            "group": "extensions",
+            "subtab": "RestrictOrderAndPriceModule_subtab",
+            "type": "string",
+            "title": "RestrictOrderAndPriceModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        },
+        "filtersid.filtersIdValues": {
+			"group": "extensions",
+            "type": "array",
+            "title": "Fiters Id Values",
+            "description": "Enter filters id's.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "filterId": {
+                        "type": "string",
+                        "title": "Filter Id",
+                        "description": "Enter Filter ID that will be visible to the customer only"
+                    },
+                    "listId": {
+                        "type": "string",
+                        "title": "List Id",
+                        "description": "Enter list id related to the filter"
+                    }
+                }
+            },
+            "default": []
+		}
+    }
+}

@@ -1,0 +1,47 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.requestshipaddressmodule-info-card {
+    @extend .info-card;
+}
+
+.requestshipaddressmodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.change-status, .create-status{
+	text-align: center;
+    padding: 2px;
+}
+.modal-header{
+	display: flex;
+	 h5{
+		width: 95%;
+	}
+}
+.rqstshpaddr{
+	@extend .button-proceed-checkout;
+	font-size:1rem !important;
+	// display: block !important;
+}
+.address-details{
+	//max-width: 330px;
+    max-height: 283px;
+}
+
+.btn{
+	@extend .button-large;
+}
+.sbmit-btn{
+@extend .button-primary;
+}
+
+	

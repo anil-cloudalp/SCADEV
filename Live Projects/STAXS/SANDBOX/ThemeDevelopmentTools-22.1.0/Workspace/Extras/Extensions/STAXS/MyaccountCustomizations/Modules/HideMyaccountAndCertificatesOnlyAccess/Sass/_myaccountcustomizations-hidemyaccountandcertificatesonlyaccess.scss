@@ -1,0 +1,25 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.hidemyaccountandcertificatesonlyaccess-info-card {
+    @extend .info-card;
+}
+
+.hidemyaccountandcertificatesonlyaccess-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+#hide-profile-menu{
+	padding: 10px 35px;
+	.header-menu-myaccount-overview{
+		margin-bottom:0;
+		border-bottom:0;
+	}
+}

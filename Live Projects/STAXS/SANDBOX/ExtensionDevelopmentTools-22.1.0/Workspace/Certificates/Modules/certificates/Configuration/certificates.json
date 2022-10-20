@@ -1,0 +1,14 @@
+{
+    "type": "object",
+        "properties": { 
+            "certificates.savedsearchId": {
+                "group": "extensions",
+                "subtab": "certificates_subtab",
+                "type": "string",
+                "title": "Certificates Search ID",
+                "description": "certificates saved search internalid",
+                "default": "1726"
+            }
+        }
+    
+}

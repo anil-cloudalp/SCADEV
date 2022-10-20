@@ -1,0 +1,85 @@
+/* Edited for Manor Theme */
+
+.facets-facet-browse-category-cells-container {
+		display: flex;
+    margin: $sc-margin-lv4;
+    flex-wrap: wrap;
+		justify-content: center;
+}
+
+.facets-category-cell {
+    text-align: center;
+    width: $sc-subcategory-width;
+    flex-basis: $sc-subcategory-width;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: $sc-subcategory-margin-right;
+    border: 1px solid $sc-color-new-gray;
+    @media (min-width: $screen-lg-min){
+        flex-basis:18%;
+    }
+    @media (min-width: $screen-sm-min) {
+        width: $sc-subcategory-desktop-width;
+        // flex-basis: $sc-subcategory-desktop-width;
+        margin-bottom: 40px;
+        margin-left: $sc-subcategory-desktop-margin-left;
+        margin-right: $sc-subcategory-desktop-margin-right;
+    }
+    @media (min-width: $screen-sm-min) and (max-width:$screen-sm-max){
+            flex-basis:22%;
+        }
+    @media (min-width: $screen-md-min) and (max-width:$screen-md-max){
+            flex-basis:22%;
+        }
+
+        //new changes
+text-align: center;
+width: 48%;
+flex-basis: 48%;
+text-align: center;
+margin-bottom: 30px;
+margin-right: 2%;
+border: 1px solid #EEEEEE;
+}
+
+.facets-category-cell-image {
+	// width: 100%;
+	// height: auto;
+}
+
+.facets-category-cell-image:hover,
+.facets-category-cell-anchor:hover .facets-category-cell-image {
+    opacity: 0.8;
+    //transition: opacity 0.75s;
+	//-webkit-transition: opacity 0.75s;
+}
+
+.facets-category-cell-title { /*caption*/
+    width: 100%;
+    text-align: center;
+    // font-family: $sc-theme-secondary-font;
+    font-family:$sc-body-font-family;
+    // font-size: $sc-font-size-xl;
+    text-transform: uppercase;
+    color: $sc-color-copy-dark;
+    // font-weight: $sc-font-weight-normal;
+    font-size: 20px;
+    font-weight: bold;
+
+    a:hover & {
+        color: $sc-color-copy;
+    }
+    @media (min-width: $screen-sm-min) and (max-width:$screen-sm-max){
+        font-size:15px;
+    
+    }
+    //new changes
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: "Archivo Narrow",sans-serif;
+    text-transform: uppercase;
+    color: #303A4C;
+    font-size: 16px;
+    font-weight: bold;
+}

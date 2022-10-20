@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": { 
+        "PDPCustomizations.config": {
+            "group": "extensions",
+            "subtab": "PDPCustomizations_subtab",
+            "type": "string",
+            "title": "PDPCustomizations_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        },
+        "PDPCustomizations.pdfSpecifications": {
+            "group": "extensions",
+            "subtab": "PDPCustomizations_subtab",
+            "type": "string",
+            "title": "pdfSpecifications",
+            "description": "folder for item pdfs",
+            "default": "9018"
+        }
+    }
+}

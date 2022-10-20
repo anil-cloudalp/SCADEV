@@ -1,0 +1,63 @@
+{
+	"name": "FilterPosition",
+	"fantasyName": "Filter Position Customization",
+	"vendor": "Fp",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.1.0",
+		"SCS": ">=22.1.0"
+	},
+	"version": "1.0.0",
+	"description": "My cool extension does magic!",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FilterPositionModule/Templates/fp_filterposition_filterpositionmodule.tpl",
+					"Modules/FilterPositionModule/Templates/fp_filterposition_productsfiltermodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/FilterPositionModule/Sass/_filterposition-filterpositionmodule.scss"
+		},
+		"files": [
+			"Modules/FilterPositionModule/Sass/_filterposition-filterpositionmodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FilterPositionModule/JavaScript/Fp.FilterPosition.FilterPositionModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FilterPositionModule/JavaScript/Fp.FilterPosition.FilterPositionModule.js",
+					"Modules/FilterPositionModule/JavaScript/FilterPositionModule.View.js",
+					"Modules/FilterPositionModule/JavaScript/Fp.FilterPosition.FilterPositionModule.Model.js",
+					"Modules/FilterPositionModule/JavaScript/ProductsFilterModule.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Fp/FilterPosition@1.0.0",
+	"activation_id": "1",
+	"extension_id": "401"
+}

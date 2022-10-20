@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": { 
+        "HideMyaccountAndCertificatesOnlyAccess.config": {
+            "group": "extensions",
+            "subtab": "HideMyaccountAndCertificatesOnlyAccess_subtab",
+            "type": "string",
+            "title": "CertificatesRoleId",
+            "description": "if contact have this this certificatesrole he can only see certificates in myaccount",
+            "default":"1088"
+        },
+        "HideMyaccountAndCertificatesOnlyAccess.salesRepCustomer": {
+            "group": "extensions",
+            "subtab": "HideMyaccountAndCertificatesOnlyAccess_subtab",
+            "type": "integer",
+            "title": "C9999-CUSTOMER-INTERNALID",
+            "description": "Give the internalid of SalesRepCustomer",
+            "default":858
+
+        }
+    }
+}
