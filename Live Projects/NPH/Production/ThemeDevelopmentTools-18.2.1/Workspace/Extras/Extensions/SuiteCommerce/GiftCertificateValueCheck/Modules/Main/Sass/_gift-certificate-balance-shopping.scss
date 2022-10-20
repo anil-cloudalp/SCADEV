@@ -1,0 +1,12 @@
+/*
+	Sass Shopping Application Entry Point
+	Link all your sass dependencies in order
+*/
+
+@import "variables";
+@import "../../Common/Sass/common";
+@import "../../ValueCheck/Sass/value_check";
+@import "../../ValueCheck/Sass/value_check-form";
+@import "../../ValueCheck/Sass/value_check-result";
+@import "../../OptionTiles/Sass/option_tiles";
+@import "../../LandingPage/Sass/landing-page";

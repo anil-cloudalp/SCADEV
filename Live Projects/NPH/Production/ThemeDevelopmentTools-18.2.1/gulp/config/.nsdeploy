@@ -1,0 +1,13 @@
+{
+    "credentials": {
+        "user_agent": "sc-theme-devtools/2018.2.1",
+        "authID": "nph_prod",
+        "account": "5331432",
+        "hostname": "5331432.restlets.api.netsuite.com",
+        "website": "2",
+        "domain": "online.nph.net",
+        "webapp_id": "14283",
+        "target_folder": "14283",
+        "is_scis": false
+    }
+}

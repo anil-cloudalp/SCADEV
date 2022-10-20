@@ -1,0 +1,28 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in order
+*/
+@import "variables";
+
+@mixin available-balance-amount() {
+  color: $sc-gift-certificate-vc-remaining-text-color;
+  font-size: $sc-gift-certificate-text-size-mobile * 1.2;
+  @media(min-width: $screen-md-min) {
+    font-size: $sc-gift-certificate-text-size * 1.2;
+  }
+  font-weight: $sc-font-weight-bold;
+
+  &.balance-zero span {
+    color: $sc-gift-certificate-vc-nobalance-text-color;
+  }
+}
+
+@import "../../Common/Sass/common";
+@import "../../ValueCheck/Sass/value_check";
+@import "../../ValueCheck/Sass/value_check-form";
+@import "../../ValueCheck/Sass/value_check-result";
+@import "../../ManagementPage/Sass/management_page";
+@import "../../GiftCertificatesList/Sass/gift_certificates_list";
+@import "../../GiftCertificatesList/Sass/gift_certificates_list_row";
+@import "../../AvailableBalance/Sass/available-balance";
+@import "../../AvailableBalance/Sass/available-balance-currency-line";

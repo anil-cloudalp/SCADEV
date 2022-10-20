@@ -1,0 +1,122 @@
+.gift-certificates-list-row {
+  &-column-code {
+    span.gift-certificate-code{
+      font-size: $sc-gift-certificate-text-size-mobile * 1.2;
+      margin-right: $sc-margin-lv2;
+      @media(min-width: $screen-md-min) {
+        font-size: $sc-gift-certificate-text-size * 1.2;
+      }
+    }
+
+    &-copy-button {
+      @extend .button-link;
+      padding: 0;
+      margin: 0;
+
+      i {
+        @extend .ic-clone;
+      }
+    }
+  }
+
+  &-column-remaining-balance {
+    span {
+      color: $sc-gift-certificate-vc-remaining-text-color;
+    }
+    @include available-balance-amount();
+    text-align: right;
+
+    &-expired {
+      color: $sc-gift-certificate-vc-expired-text-color;
+    }
+
+    @media(min-width: $screen-md-min) {
+      text-align: left;
+    }
+  }
+
+  &-column-expiration-date,
+  &-column-sent-by,
+  &-column-amount,
+  &-column-sent-on-date,
+  &-column-remove {
+    display: none;
+    @media(min-width: $screen-md-min) {
+      display: table-cell;
+    }
+  }
+
+  &-summary {
+    display: block;
+    margin-top: $sc-margin-lv2;
+
+    &-label {
+      font-weight: bold;
+      font-size: $sc-font-size-xs;
+      margin-right: $sc-margin-lv1;
+    }
+
+    &-collapse-button {
+      @extend .button-link;
+      font-size: $sc-font-size-xs;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-collapse-button-icon {
+      i {
+        @extend .ic-chevron-down;
+        color: $sc-color-link;
+        font-size: $sc-font-size-xs;
+        line-height: $sc-body-line-height;
+      }
+
+      display: inline-block;
+      margin-left: 0;
+      transition: .4s;
+      -ms-transition: .4s;
+      -webkit-transition: .4s;
+
+      &.collapsed {
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+        transform: rotate(-90deg);
+      }
+
+      &.open {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari 3-8 */
+        transform: rotate(0deg);
+      }
+    }
+
+    &-sent-by-value {
+      word-break: break-word;
+    }
+
+    &-accordion {
+      margin-top: $sc-margin-lv2;
+    }
+
+    @media(min-width: $screen-md-min) {
+      display: none;
+    }
+
+  }
+
+  &-remove-button-mobile {
+    @extend .button-link;
+    font-size: $sc-font-size-xs;
+    padding: 0;
+    margin: 0;
+
+    @media(min-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  &-column-code-container {
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}

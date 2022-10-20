@@ -1,0 +1,100 @@
+/*
+group({
+ "id": "sc-gift-certificate-typography",
+ "label": "Typography",
+ "description": "",
+ "children": [
+    "$sc-gift-certificate-font-family",
+    "$sc-gift-certificate-h1-size",
+    "$sc-gift-certificate-h2-size",
+    "$sc-gift-certificate-h3-size",
+    "$sc-gift-certificate-text-size",
+    "$sc-gift-certificate-h1-size-mobile",
+    "$sc-gift-certificate-h2-size-mobile",
+    "$sc-gift-certificate-h3-size-mobile",
+    "$sc-gift-certificate-text-size-mobile",
+    "$sc-gift-certificate-line-height",
+    "$sc-gift-certificate-text-color"
+ ]
+})
+*/
+$sc-gift-certificate-font-family: $sc-body-font-family; // editable({"type": "string", "label": "Font family"})
+$sc-gift-certificate-h1-size: $sc-h1-desktop-font-size; // editable({"type": "string", "label": "H1 font size"})
+$sc-gift-certificate-h2-size: $sc-h2-desktop-font-size; // editable({"type": "string", "label": "H2 font size"})
+$sc-gift-certificate-h3-size: $sc-h3-desktop-font-size; // editable({"type": "string", "label": "H3 font size"})
+$sc-gift-certificate-text-size: $sc-body-font-size-desktop; // editable({"type": "string", "label": "Text font size"})
+$sc-gift-certificate-h1-size-mobile: $sc-h1-font-size; // editable({"type": "string", "label": "H1 font size (mobile)"})
+$sc-gift-certificate-h2-size-mobile: $sc-h2-font-size; // editable({"type": "string", "label": "H2 font size (mobile)"})
+$sc-gift-certificate-h3-size-mobile: $sc-h3-font-size; // editable({"type": "string", "label": "H3 font size (mobile)"})
+$sc-gift-certificate-text-size-mobile: $sc-body-font-size; // editable({"type": "string", "label": "Text font size (mobile)"})
+$sc-gift-certificate-line-height: $sc-body-line-height; // editable({"type": "string", "label": "Line height"})
+$sc-gift-certificate-text-color: $sc-color-paragraph; // editable({"type": "color", "label": "Text color"})
+
+/*
+group({
+ "id": "sc-gift-certificate-value-check",
+ "label": "Value Check",
+ "description": "",
+ "children": [
+  "$sc-gift-certificate-vc-remaining-title-size",
+  "$sc-gift-certificate-vc-remaining-title-size-mobile",
+  "$sc-gift-certificate-vc-bg-color",
+  "$sc-gift-certificate-vc-border-color",
+  "$sc-gift-certificate-vc-remaining-text-color",
+  "$sc-gift-certificate-vc-nobalance-text-color",
+  "$sc-gift-certificate-vc-expired-text-color"
+ ]
+})
+*/
+$sc-gift-certificate-vc-remaining-title-size: $sc-font-size-xxl; // editable({"type": "string", "label": "Remaining balance text size"})
+$sc-gift-certificate-vc-remaining-title-size-mobile: $sc-font-size-xxl; // editable({"type": "string", "label": "Remaining balance text size (mobile)"})
+$sc-gift-certificate-vc-bg-color: $sc-color-theme-background; // editable({"type": "color", "label": "Background color"})
+$sc-gift-certificate-vc-border-color: $sc-color-theme-border-light; // editable({"type": "color", "label": "Border color"})
+$sc-gift-certificate-vc-remaining-text-color: $sc-color-success; // editable({"type": "color", "label": "Remaining balance color"})
+$sc-gift-certificate-vc-nobalance-text-color: $sc-color-warning; // editable({"type": "color", "label": "No balance color"})
+$sc-gift-certificate-vc-expired-text-color: $sc-neutral-shade-700; // editable({"type": "color", "label": "Expired text color"})
+
+/*
+group({
+ "id": "sc-gift-certificate-product-page",
+ "label": "Product Page",
+ "description": "",
+ "children": [
+  "$sc-gift-certificate-pp-options-title-color",
+  "$sc-gift-certificate-pp-btn-txt-color",
+  "$sc-gift-certificate-pp-btn-border-color",
+  "$sc-gift-certificate-pp-btn-bg-color"
+ ]
+})
+*/
+
+$sc-gift-certificate-pp-options-title-color: $sc-color-copy-dark; // editable({"type": "color", "label": "Options title color"})
+$sc-gift-certificate-pp-btn-txt-color: $sc-color-copy-dark; // editable({"type": "color", "label": "Buttons text color"})
+$sc-gift-certificate-pp-btn-border-color: $sc-neutral-shade-700; // editable({"type": "color", "label": "Buttons border color"})
+$sc-gift-certificate-pp-btn-bg-color: "transparent"; // editable({"type": "color", "label": "Buttons background color"})
+
+/*
+group({
+ "id": "sc-gift-certificate-my-account",
+ "label": "My Account",
+ "description": "",
+ "children": [
+  "$sc-gift-certificate-ma-code-table-lines-color"
+ ]
+})
+*/
+$sc-gift-certificate-ma-code-table-lines-color: $sc-color-theme-300; // editable({"type": "color", "label": "Table lines color"})
+
+/*
+group({
+ "id": "sc-gift-certificate-management",
+ "label": "Gift Certificate Management",
+ "description": "",
+ "children": [
+  "sc-gift-certificate-typography",
+  "sc-gift-certificate-value-check",
+  "sc-gift-certificate-product-page",
+  "sc-gift-certificate-my-account"
+ ]
+})
+*/

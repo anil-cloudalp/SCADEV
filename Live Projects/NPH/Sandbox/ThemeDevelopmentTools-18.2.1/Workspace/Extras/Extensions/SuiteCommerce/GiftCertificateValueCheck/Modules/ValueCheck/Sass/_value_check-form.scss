@@ -1,0 +1,103 @@
+.gift-certificate-balance-main-form {
+  * {
+    font-size: $sc-gift-certificate-text-size-mobile;
+    @media(min-width: $screen-md-min) {
+      font-size: $sc-gift-certificate-text-size;
+    }
+  }
+  label {
+    color: $sc-gift-certificate-text-color;
+  }
+
+  > div {
+    background-color: $sc-gift-certificate-vc-bg-color;
+    padding: $sc-padding-lv4;
+    margin-bottom: $sc-margin-lv7;
+    border: 1px solid $sc-gift-certificate-vc-border-color;
+  }
+
+  &-button {
+    @extend .button-secondary;
+    @extend .button-medium;
+    margin-bottom: $sc-margin-lv3;
+    margin-right: $sc-margin-base;
+  }
+
+  &-save-button {
+    @extend .button-primary;
+    @extend .button-medium;
+  }
+
+  &-label-row {
+    width: 100%;
+  }
+
+  &-input-field-code {
+    margin-bottom: 0;
+
+    @media (min-width: $screen-sm-min) {
+      width: 300px;
+    }
+
+    @include placeholder {
+      color: lighten($sc-color-copy-light, 15);
+      font-style: italic;
+    }
+  }
+
+  &-row {
+    display: block;
+
+    @media (min-width: $screen-md-min) {
+      display: table-row;
+    }
+  }
+  &-input-field-column  {
+    display: block;
+    width: 100%;
+    margin-bottom: $sc-margin-lv3;
+    position: relative;
+
+    @media (min-width: $screen-md-min) {
+      display: table-cell;
+      padding-right: $sc-padding-lv3;
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+
+  &-button-column {
+    display: block;
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+      display: table-cell;
+      vertical-align: top;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &-help-text {
+    @extend .sc-tooltip;
+    line-height: 1.6rem;
+    margin-left: $sc-margin-base;
+  }
+
+  &-alert-placeholder {
+    @extend .help-text;
+    margin-top:$sc-margin-base;
+    margin-bottom: 0;
+    color: $sc-color-error;
+
+    @media (min-width: $screen-md-min) {
+      min-height: 1.6rem;
+    }
+  }
+}
+
+div.gift-certificate-balance-main-form-input-field-column {
+  @media (min-width: $screen-md-min) {
+    width: auto;
+  }
+}

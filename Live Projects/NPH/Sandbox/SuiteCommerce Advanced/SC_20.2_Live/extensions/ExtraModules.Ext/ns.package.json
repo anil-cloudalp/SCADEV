@@ -1,0 +1,53 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+		"ssp-libraries": [
+            "SuiteScript/*.js"
+        ],
+		"configuration": [
+            "Configuration/*.json"
+        ]
+    },
+	"overrides": 
+    {
+		
+		"Commons/Address/JavaScript/Address.Edit.Fields.View.ts": "JavaScript/Address.Edit.Fields.View.ts",
+		"Commons/GlobalViews/JavaScript/GlobalViews.StarRating.View.ts": "JavaScript/GlobalViews.StarRating.View.ts",
+		"Commons/ListHeader/JavaScript/ListHeader.View.ts": "JavaScript/ListHeader.View.ts",
+		
+		"Commons/ProductViews/JavaScript/ProductViews.Price.View.ts": "JavaScript/ProductViews.Price.View.ts",
+		"Commons/Product/JavaScript/Product.Model.ts": "JavaScript/Product.Model.ts",
+		"Commons/Profile/JavaScript/Profile.Information.View.ts": "JavaScript/Profile.Information.View.ts",
+		"Commons/RecentlyViewedItems/JavaScript/RecentlyViewedItems.View.ts": "JavaScript/RecentlyViewedItems.View.ts",
+		"Commons/Transaction/JavaScript/Transaction.List.View.ts": "JavaScript/Transaction.List.View.ts",
+		"Commons/ProductList/JavaScript/ProductList.ControlItem.View.ts": "JavaScript/ProductList.ControlItem.View.ts",
+		"Commons/Utilities/JavaScript/Utils.ts": "JavaScript/Utils.ts",
+		
+		"Advanced/ItemsSearcher/JavaScript/ItemsSearcher.View.ts": "JavaScript/ItemsSearcher.View.ts",
+		
+		"Advanced/OrderWizard.Module.CartItems/JavaScript/OrderWizard.Module.CartItems.Ship.ts": "JavaScript/OrderWizard.Module.CartItems.Ship.ts",
+		"Advanced/OrderWizard.Module.CartSummary/JavaScript/OrderWizard.Module.CartSummary.ts": "JavaScript/OrderWizard.Module.CartSummary.ts",
+		"Advanced/OrderWizard.Module.NonShippableItems/JavaScript/OrderWizard.Module.NonShippableItems.ts": "JavaScript/OrderWizard.Module.NonShippableItems.ts",
+		"Advanced/OrderWizard/JavaScript/OrderWizard.Step.ts": "JavaScript/OrderWizard.Step.ts",
+		"Advanced/Overview/JavaScript/Overview.Home.View.ts": "JavaScript/Overview.Home.View.ts",
+		
+		"Advanced/PaymentWizard/JavaScript/PaymentWizard.Step.ts": "JavaScript/PaymentWizard.Step.ts",
+		"Advanced/QuantityPricing/JavaScript/QuantityPricing.Utils.ts": "JavaScript/QuantityPricing.Utils.ts",
+		"Advanced/RecordViews/JavaScript/RecordViews.Actionable.View.ts": "JavaScript/RecordViews.Actionable.View.ts",
+		"Advanced/ReorderItems/JavaScript/ReorderItems.List.View.ts": "JavaScript/ReorderItems.List.View.ts",
+		"Advanced/SiteSearch/JavaScript/SiteSearch.View.ts": "JavaScript/SiteSearch.View.ts",
+		"Advanced/CheckoutApplication/JavaScript/SC.Checkout.Configuration.Steps.OPC.ts": "JavaScript/SC.Checkout.Configuration.Steps.OPC.ts",
+		"Advanced/ProductListOnline/JavaScript/ProductList.CartSaveForLater.View.ts": "JavaScript/ProductList.CartSaveForLater.View.ts",
+		
+		
+		"Commons/Transaction/SuiteScript/Transaction.Model.js":"SuiteScript/Transaction.Model.js",
+		"Commons/LiveOrder/SuiteScript/LiveOrder.Model.js":"SuiteScript/LiveOrder.Model.js",
+		"Advanced/ReorderItems/SuiteScript/ReorderItems.Model.js":"SuiteScript/ReorderItems.Model.js",
+		"Advanced/ReorderItems/JavaScript/ReorderItems.Collection.ts": "JavaScript/ReorderItems.Collection.ts",
+		"Advanced/ReorderItems/SuiteScript/ReorderItems.ServiceController.js":"SuiteScript/ReorderItems.ServiceController.js",
+		"Advanced/Footer/JavaScript/Footer.View.ts": "JavaScript/Footer.View.ts"
+
+    }
+}

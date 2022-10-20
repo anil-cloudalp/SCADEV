@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ]
+    },
+	"overrides": 
+    {
+		"Commons/Transaction.Line.Views/JavaScript/Transaction.Line.Views.Price.View.ts":"JavaScript/Transaction.Line.Views.Price.View.ts",
+		"Commons/Transaction.Line.Views/JavaScript/Transaction.Line.Views.Cell.Navigable.View.ts":"JavaScript/Transaction.Line.Views.Cell.Navigable.View.ts",
+		"Commons/Transaction.Line.Views/JavaScript/Transaction.Line.Views.Option.View.ts":"JavaScript/Transaction.Line.Views.Option.View.ts",
+		"Commons/Transaction.Line.Views/JavaScript/Transaction.Line.Views.Options.Selected.View.ts":"JavaScript/Transaction.Line.Views.Options.Selected.View.ts",
+		"Commons/Transaction.Line.Views/JavaScript/Transaction.Line.Views.QuantityAmount.View.ts":"JavaScript/Transaction.Line.Views.QuantityAmount.View.ts"
+		
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ]
+    },
+	"overrides": 
+    {
+		"Commons/Facets/JavaScript/Facets.Model.ts": "JavaScript/Facets.Model.ts",
+		"Commons/Facets/JavaScript/Facets.ItemCell.View.ts": "JavaScript/Facets.ItemCell.View.ts",
+		"Commons/Facets/JavaScript/Facets.FacetedNavigationItem.View.ts": "JavaScript/Facets.FacetedNavigationItem.View.ts",
+		"Commons/Facets/JavaScript/Facets.ItemListDisplaySelector.View.ts": "JavaScript/Facets.ItemListDisplaySelector.View.ts",
+		"Commons/Facets/JavaScript/Facets.ItemListShowSelector.View.ts": "JavaScript/Facets.ItemListShowSelector.View.ts",
+		"Commons/Facets/JavaScript/Facets.ItemListSortSelector.View.ts": "JavaScript/Facets.ItemListSortSelector.View.ts"
+    }
+}

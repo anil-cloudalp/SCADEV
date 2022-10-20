@@ -1,0 +1,50 @@
+.gift-certificates-list {
+  &-title {
+    margin-bottom: $sc-margin-lv4;
+  }
+
+  &-description {
+    margin-bottom: $sc-margin-lv6;
+  }
+
+  &-table {
+    @extend .table;
+    border-top: 1px solid $sc-gift-certificate-ma-code-table-lines-color;
+    border-bottom: 1px solid $sc-gift-certificate-ma-code-table-lines-color;
+
+    > thead > tr > th {
+      border-bottom: 1px solid $sc-gift-certificate-ma-code-table-lines-color;
+      padding: $sc-padding-lv4 $sc-padding-lv1;
+      color: $sc-gift-certificate-text-color;
+
+      &.gift-certificates-list-table-head-remaining-amount {
+        text-align: right;
+        @media(min-width: $screen-md-min) {
+          text-align: left;
+        }
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    > tbody > tr > td {
+      border-top: 1px solid $sc-gift-certificate-ma-code-table-lines-color;
+      padding: $sc-padding-lv4 $sc-padding-lv1;
+      vertical-align: middle;
+      color: $sc-gift-certificate-text-color;
+    }
+
+    &-head-expiry-date,
+    &-head-sent-by,
+    &-head-amount,
+    &-head-sent-on-date,
+    &-head-remove {
+      display: none;
+      @media(min-width: $screen-md-min) {
+        display: table-cell;
+      }
+    }
+  }
+}

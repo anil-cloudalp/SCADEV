@@ -1,0 +1,136 @@
+@import "box";
+@import "check";
+@import "times";
+@import "truck";
+@import "info";
+@import "inventorydisplay-variables";
+
+.inventory-display-message-text {
+  @extend .message-success;
+  span {
+    vertical-align: middle;
+    font-family: $inventory-display-messages-font-family;
+    font-size: $inventory-display-messages-font-size;
+    @media (max-width: $screen-sm-min) {
+      font-size: $inventory-display-messages-mobile-font-size;
+    }
+  }
+}
+
+.none-icon{
+  display: none;
+}
+
+.inventory-display {
+  &-quantity-available {
+    @extend .sc-label;
+    font-size: $inventory-display-quantity-font-size;
+    @media (max-width: $screen-sm-min) {
+      font-size: $inventory-display-quantity-mobile-font-size;
+    }
+    color: $inventory-display-quantity-font-color;
+  }
+
+	&-stock-information-back-order {
+    margin: $sc-margin-lv1 0;
+    background: $inventory-display-stock-information-back-order-background;
+    border-color: $inventory-display-stock-information-back-order-border-color;
+    color: $inventory-display-stock-information-back-order-text;
+
+    &.special-order {
+      margin: $sc-margin-lv1 0;
+      background: $inventory-display-stock-information-back-order-background-special-order;
+      border-color: $inventory-display-stock-information-back-order-border-color-special-order;
+      color: $inventory-display-stock-information-back-order-text-special-order;
+      &.icon i{
+        @extend .#{$inventory-display-stock-information-back-order-special-order-icon};
+        margin-right: $sc-margin-lv1;
+      }
+    }
+
+    &.dropship {
+      margin: $sc-margin-lv1 0;
+      background: $inventory-display-stock-information-back-order-background-dropship;
+      border-color: $inventory-display-stock-information-back-order-border-color-dropship;
+      color: $inventory-display-stock-information-back-order-text-dropship;
+      &.icon i{
+        @extend .#{$inventory-display-stock-information-back-order-dropship-icon};
+        margin-right: $sc-margin-lv1;
+      }
+    }
+
+		&.icon i{
+      margin-right: $sc-margin-lv1;
+      @extend .#{$inventory-display-stock-information-back-order-icon};
+		}
+  }
+
+  &-stock-information-low-stock {
+    margin: $sc-margin-lv1 0;
+    background: $inventory-display-stock-information-low-stock-background;
+    border-color: $inventory-display-stock-information-low-stock-border-color;
+    color: $inventory-display-stock-information-low-stock-text;
+		&.icon i{
+			@extend .#{$inventory-display-stock-information-low-stock-icon};
+			margin-right: $sc-margin-lv1;
+		}
+  }
+
+  &-stock-information-in-stock {
+		margin: $sc-margin-lv1 0;
+    background: $inventory-display-stock-information-in-stock-background;
+    border-color: $inventory-display-stock-information-in-stock-border-color;
+    color: $inventory-display-stock-information-in-stock-text;
+    &.special-order {
+      margin: $sc-margin-lv1 0;
+      background: $inventory-display-stock-information-in-stock-background-special-order;
+      border-color: $inventory-display-stock-information-in-stock-border-color-special-order;
+      color: $inventory-display-stock-information-in-stock-text-special-order;
+      &.icon i{
+        @extend .#{$inventory-display-stock-information-in-stock-special-order-icon};
+        margin-right: $sc-margin-lv1;
+      }
+    }
+    &.dropship {
+      margin: $sc-margin-lv1 0;
+      background: $inventory-display-stock-information-in-stock-background-dropship;
+      border-color: $inventory-display-stock-information-in-stock-border-color-dropship;
+      color: $inventory-display-stock-information-in-stock-text-dropship;
+      &.icon i{
+        @extend .#{$inventory-display-stock-information-in-stock-dropship-icon};
+        margin-right: $sc-margin-lv1;
+      }
+    }
+
+		&.icon i{
+      @extend .#{$inventory-display-stock-information-in-stock-icon};
+			margin-right: $sc-margin-lv1;
+		}
+  }
+
+  &-stock-information-always-in-stock {
+		margin: $sc-margin-lv1 0;
+    &.special-order {
+      margin: $sc-margin-lv1 0;
+      background: $inventory-display-stock-information-always-in-stock-background-special-order;
+      border-color: $inventory-display-stock-information-always-in-stock-border-color-special-order;
+      color: $inventory-display-stock-information-always-in-stock-text-special-order;
+      &.icon i{
+        @extend .#{$inventory-display-stock-information-always-in-stock-special-order-icon};
+        margin-right: $sc-margin-lv1;
+      }
+    }
+
+    &.dropship {
+      margin: $sc-margin-lv1 0;
+      background: $inventory-display-stock-information-always-in-stock-background-dropship;
+      border-color: $inventory-display-stock-information-always-in-stock-border-color-dropship;
+      color: $inventory-display-stock-information-always-in-stock-text-dropship;
+      &.icon i{
+        @extend .#{$inventory-display-stock-information-always-in-stock-dropship-icon};
+        margin-right: $sc-margin-lv1;
+      }
+	}
+}
+
+}

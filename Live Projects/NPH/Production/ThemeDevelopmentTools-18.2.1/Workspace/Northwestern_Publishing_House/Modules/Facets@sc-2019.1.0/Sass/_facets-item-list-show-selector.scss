@@ -1,0 +1,13 @@
+.facets-item-list-show-selector {
+	@extend .list-header-filter-input;
+	display: inline-block;
+    font-size: 12px;
+    height: auto;
+}
+.facets-item-list-show-selector-label{
+	font-size:13.2px;
+	margin:0 $sc-margin-lv1;
+	@media (max-width: $screen-sm-max) {
+		display: none;
+	}
+}

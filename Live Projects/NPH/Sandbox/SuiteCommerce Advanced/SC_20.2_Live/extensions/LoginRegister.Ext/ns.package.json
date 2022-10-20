@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+		"configuration": [
+            "Configuration/*.json"
+        ]
+    },
+	"overrides": 
+    {
+		"Advanced/LoginRegister/JavaScript/LoginRegister.Login.View.ts": "JavaScript/LoginRegister.Login.View.ts",
+		"Advanced/LoginRegister/JavaScript/LoginRegister.Register.View.ts": "JavaScript/LoginRegister.Register.View.ts",
+		"Advanced/LoginRegister/JavaScript/LoginRegister.View.ts": "JavaScript/LoginRegister.View.ts"
+    }
+}

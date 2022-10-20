@@ -1,0 +1,46 @@
+.gift-certificate-balance-main {
+  font-family: $sc-gift-certificate-font-family;
+  font-size: $sc-gift-certificate-text-size-mobile;
+  line-height: $sc-gift-certificate-line-height;
+  color: $sc-gift-certificate-text-color;
+
+  h1, h2, h3, p {
+    font-family: $sc-gift-certificate-font-family;
+    line-height: $sc-gift-certificate-line-height;
+    color: $sc-gift-certificate-text-color;
+  }
+  h1 {
+    font-size: $sc-gift-certificate-h1-size-mobile;
+  }
+  h2 {
+    font-size: $sc-gift-certificate-h2-size-mobile;
+  }
+  h3 {
+    font-size: $sc-gift-certificate-h3-size-mobile;
+  }
+  p {
+    font-size: $sc-gift-certificate-text-size-mobile;
+    color: $sc-gift-certificate-text-color;
+  }
+
+  @media(min-width: $screen-md-min) {
+    font-size: $sc-gift-certificate-text-size;
+    h1 {
+      font-size: $sc-gift-certificate-h1-size;
+    }
+    h2 {
+      font-size: $sc-gift-certificate-h2-size;
+    }
+    h3 {
+      font-size: $sc-gift-certificate-h3-size;
+    }
+    p {
+      font-size: $sc-gift-certificate-text-size;
+    }
+  }
+  &-value-check-feedback {
+    .global-views-message {
+      margin-bottom: $sc-margin-lv4;
+    }
+  }
+}

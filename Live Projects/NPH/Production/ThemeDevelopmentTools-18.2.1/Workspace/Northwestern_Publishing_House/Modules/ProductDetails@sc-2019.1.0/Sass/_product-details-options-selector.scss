@@ -1,0 +1,66 @@
+.gift-item-options,.subscription-item-options{
+	background-color:$sc-color-theme-background;
+		padding: 0 $sc-padding-lv3;
+		border: 1px solid #e4e4e4;
+		border-bottom-width: 0;
+}
+.product-views-option-tile-input-picker{width: auto !important;}
+.product-details-options-selector-reference-container {
+	padding:$sc-padding-lv3 0;
+}
+.product-details-options-selector-reference {
+	@extend .input-required;
+}
+
+.product-details-options-selector-content {
+	height: 100%;
+	margin-top:0;
+	background: $sc-color-theme-background;
+
+	.pdp-detail-options-content-wrapper{
+		padding: $sc-padding-lv4;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		background: transparent;
+		padding-bottom: 0;
+		overflow:hidden;
+	}
+
+	.item-view-lead-price {
+		@extend .large-price;
+	}
+}
+
+.product-details-options-selector-content-price,
+.product-details-options-selector-content-stock {
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+}
+.product-details-options-selector-option-container{
+	[data-validation="control"]{
+		padding:$sc-padding-lv1 $sc-padding-lv2 $sc-padding-lv3 $sc-padding-lv2;
+		border-bottom:1px solid #e4e4e4;
+		margin-bottom:$sc-margin-lv1;
+	}
+	.last{border:none;margin:0;padding-bottom:0;}
+	label{
+		font-family:$sc-font-family-verdana;
+		font-size:12px;
+		line-height:15px;
+		font-weight:bold;
+		margin:0;
+		.input-required{font-weight:normal;}
+	}
+	input,select{
+		width:100%;
+		font-family:$sc-font-family-verdana;
+		font-size:12px;
+		padding:2px;
+		margin:0;
+	}
+	input[type="checkbox"]{width:auto;}
+	[data-cart-option-id="custcol_appf_imprint_name"],[data-cart-option-id="custcol_appf_imprint_date"],[data-cart-option-id="custcolcustcol_appf_imprint_pers_loc"],[data-cart-option-id="custcol_appf_imprint_item_details"],[data-cart-option-id="custcol_appf_imprint_cross"],[data-cart-option-id="custcol_appf_holy_bible"]{display:none;}
+}
+

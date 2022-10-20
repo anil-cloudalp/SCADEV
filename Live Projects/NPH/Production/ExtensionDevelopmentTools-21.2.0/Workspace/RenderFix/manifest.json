@@ -1,0 +1,48 @@
+{
+	"name": "RenderFix",
+	"fantasyName": "Render fix",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": " ",
+		"SCS": " "
+	},
+	"version": "1.0.0",
+	"description": "Render Fix",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/RenderFix/JavaScript/RenderFix.js",
+			"checkout": "Modules/RenderFix/JavaScript/RenderFix.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/RenderFix/JavaScript/RenderFix.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/RenderFix/JavaScript/RenderFix.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/RenderFix@1.0.0",
+	"activation_id": "6",
+	"extension_id": "2101"
+}

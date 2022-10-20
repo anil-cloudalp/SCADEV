@@ -1,0 +1,55 @@
+{
+	"type": "object"
+,	"subtab": {
+		"id": "Musicianresourcepage"
+	,	"group": "advancedSettings"
+	,	"title": "Musician Resource page Settings"
+	}
+,	"properties": {
+		"Musicianresourcepage.musicianresourceid": {
+            "group": "advancedSettings",
+            "subtab": "Musicianresourcepage",
+			"type": "string",
+			"title": "Musician Resources Category ID",
+			"description": "Musician Resources Category ID",
+			"default": "300"
+		},
+		"Musicianresourcepage.musicianpageurl": {
+			"group": "advancedSettings"
+		,	"subtab": "Musicianresourcepage"
+		,	"type": "string"
+		,	"title": "MusicianResource Page Header Image/text"
+		,	"description": "Enter  image url/ text  to show in the musicianresource page header."
+		},
+		"Musicianresourcepage.musicianresourcehelp": {
+            "group": "advancedSettings",
+            "subtab": "Musicianresourcepage",
+			"type": "array",
+			"title": "Musician Resource Field help",
+			"docRef": "",
+			"description": "Musician resource fields help",
+			"items": {
+                "type": "object",
+                "properties": {
+                    "fieldid": {
+                        "type": "string",
+                        "title": "field name"
+                    },
+                    "fieldhelp": {
+                        "type": "string",
+                        "title": "field help"
+                    }
+                }
+            }
+		},
+		"Musicianresourcepage.headersubtext": {
+            "group": "advancedSettings",
+            "subtab": "Musicianresourcepage",
+            "type": "string",
+			"nsType": "textarea",
+            "title": "Musician Resource Form Subtext",
+            "description": "enter text here to display title on musician resource form page",
+            "default": "Fill out as many fields as possible to help narrow your Search."
+        }
+	}
+}

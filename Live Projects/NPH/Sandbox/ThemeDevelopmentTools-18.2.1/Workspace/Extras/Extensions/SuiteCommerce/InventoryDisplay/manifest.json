@@ -1,0 +1,75 @@
+{
+	"name": "InventoryDisplay",
+	"fantasyName": "Inventory Display",
+	"vendor": "SuiteCommerce",
+	"version": "1.1.2",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Inventory Display extension allows customers to show inventory status and quantity on the item's Product Detail Page.",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/InventoryDisplay/Configuration/InventoryDisplay.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_inventorydisplay.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_inventorydisplay.scss",
+			"Modules/Main/Sass/_inventorydisplay-variables.scss",
+			"Modules/Main/Sass/_box.scss",
+			"Modules/Main/Sass/_check.scss",
+			"Modules/Main/Sass/_info.scss",
+			"Modules/Main/Sass/_times.scss",
+			"Modules/Main/Sass/_truck.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/InventoryDisplay/Templates/suitecommerce_inventorydisplay.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.InventoryDisplay.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.InventoryDisplay.Main.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.DropShipItem.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.RegularItem.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.SpecialOrderItem.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Message.View.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Website.Model.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/InventoryDisplay/JavaScript/InventoryDisplay.Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace\\InventoryDisplay",
+	"path": "SuiteScripts/extensions/SuiteCommerce/InventoryDisplay@1.1.2",
+	"activation_id": "6",
+	"extension_id": "1001"
+}

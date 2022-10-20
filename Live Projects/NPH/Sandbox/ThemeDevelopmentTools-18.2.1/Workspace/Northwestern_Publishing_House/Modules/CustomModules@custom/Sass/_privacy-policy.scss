@@ -1,0 +1,38 @@
+.privacy-policy-content{
+	@extend .container;
+	a{
+		text-decoration:underline;
+		&:hover{text-decoration:none;}
+	 }
+	.privacy-policy-heading{
+		h1{
+			text-align:center;
+			margin:$sc-margin-lv4 0;
+		}
+		p{margin-bottom:$sc-margin-lv4;}
+	}
+	.privacy-policies{
+		padding-bottom:$sc-padding-lv8;
+		border-bottom:2px solid #d0d0d0;
+		h4{
+			font-family: "Candara", sans-serif;
+			margin-top:$sc-margin-lv6;
+		}
+		p{
+			margin-top:$sc-margin-lv1;
+			margin-bottom:$sc-margin-lv3;
+		}
+		ul{
+			margin:	$sc-margin-lv1 0 $sc-margin-lv3 5%;
+			li{list-style-type:disc;}
+		}
+	}
+	.privacy-policy-questions{
+		margin: $sc-margin-lv8 0 10% 0;
+		h2{text-align:center;}
+		p{
+			text-align:center;
+			margin-top:$sc-margin-lv3;
+		}
+	}
+}

@@ -1,0 +1,74 @@
+.promote-nph-content{
+	@extend .container;
+	margin-top:$sc-margin-lv6;
+	h1{
+		text-align:center;
+		margin:$sc-margin-lv2 0;
+	}
+	h3{
+		font-family: $sc-font-family-candara;
+		text-align:center;
+		margin-bottom: 5%;
+	}
+	.promote-nph-row{
+		@extend .row;
+		margin:0;
+		.col-4{
+			@extend .col-md-4;
+			@extend .col-sm-6;
+			padding:$sc-margin-lv2;
+			.col-container{
+				padding:$sc-padding-lv6;
+				border: 1px solid #d0d0d0;
+				border-radius: 5px;
+				min-height: 580px;
+				max-width: 376px;
+				margin: auto;
+				position:relative;
+				
+				h4{
+					font-family: $sc-font-family-candara;
+					margin:$sc-margin-lv6 -30px 0 -30px;
+					text-align:center;
+				}
+				p{
+					margin:$sc-margin-lv3 0;
+					text-align:justify;
+					height: 190px;
+					overflow-y: auto;
+				}
+				.download-btn{
+					text-align:center;
+					position: absolute;
+					width: 100%;
+					bottom: 30px;
+					left: 0;
+					a{
+						@extend .button-primary;
+						@extend .button-medium;
+						padding: $sc-padding-lv1 $sc-padding-lv3;
+						font-family:$sc-font-family;
+						font-size: 18px;
+						font-weight: $sc-font-weight-bold;
+						width:auto;
+						@media (min-width: $screen-lg-min){
+							min-width:240px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.promote-nph-questions{
+		margin: $sc-margin-lv8 0 10% 0;
+		h2{text-align:center;}
+		p{
+			text-align:center;
+			margin-top:$sc-margin-lv3;
+		}
+		a{
+		text-decoration:underline;
+		&:hover{text-decoration:none;}
+		}
+	}
+}

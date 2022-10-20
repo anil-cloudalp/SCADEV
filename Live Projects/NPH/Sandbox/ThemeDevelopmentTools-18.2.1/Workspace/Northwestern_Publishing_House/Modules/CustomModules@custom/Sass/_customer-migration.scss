@@ -1,0 +1,96 @@
+.customer-migration-form-content{
+	@extend .container;
+	.customer-migration-form-container{max-width:900px;}
+	a{
+		text-decoration:underline;
+		&:hover{text-decoration:none;}
+	 }
+	h1{
+		font-size: 30px;
+		color: #000;
+		border-bottom: 1px solid #ddd;
+		line-height: 53px;
+		margin:$sc-margin-lv2 0;
+	}
+	.customer-migration-form{
+		padding-bottom:5%;
+		.fieldset{
+			background-color:#f4f4f4;
+			border:1px solid #ddd;
+			padding: $sc-padding-lv5 5%;
+			margin:$sc-margin-lv6 0;
+			.row{
+				margin:0;
+				padding-bottom:$sc-padding-lv4;
+				border-bottom: 1px solid #ddd;
+				margin-bottom: $sc-margin-lv4;
+				.col-sm-6{padding:0;}
+			}
+			.legend{
+				background: #fff;
+				color:#333;
+				border:1px solid #ddd;
+				font-weight: normal;
+				font-size: 15px;
+				font-family:$sc-font-family-verdana;
+				margin: -34px 0 10px -25px;
+				@media (max-width: $screen-xs-max) {
+				margin: -34px 0 10px -10px;
+				}
+				text-align:center;
+				max-width:120px;
+			}
+			label{margin:0;}
+			span.required{color:#eb340a;}
+			input,select,textarea{
+			display: block;
+			width: 100%;
+			max-width: 300px;
+			@media (max-width: $screen-xs-max) {
+				//max-width: 525px;
+			}
+			&:focus{background-color:#fafafa;}
+			}
+			.step-heading{
+				max-width: 300px;
+				b{
+					display:block;
+					margin-bottom:$sc-margin-lv1;
+				}
+				margin-bottom: $sc-margin-lv2;
+				min-height: 53px;
+			}
+			p{
+				font-size: 12px;
+				line-height:16px;
+				color: #000;
+				font-family:$sc-font-family-verdana;
+			}
+			[data-toggle="tooltip"]{
+				&:before{
+					@extend .fa;
+					@extend %fa-question-circle;
+					font-size: 19px;
+					padding-left: $sc-padding-lv1;
+					color:#000;
+				}
+			}
+			.migration-help-text{margin:$sc-margin-lv4 0;}
+		}
+		.required-text{
+			font-size: 10px;
+			text-align: right;
+			color: #f00;
+			font-family:$sc-font-family-verdana;
+		}
+		.submit-btn{
+			text-align:right;
+			
+			#customer-migration-submit{
+				@extend .button-secondary;
+				@extend .button-medium;
+				font-weight: bold;
+			}
+		}
+	}
+}

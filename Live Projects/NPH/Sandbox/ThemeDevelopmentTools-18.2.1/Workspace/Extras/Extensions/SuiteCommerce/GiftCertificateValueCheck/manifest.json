@@ -1,0 +1,200 @@
+{
+	"name": "GiftCertificateValueCheck",
+	"fantasyName": "Gift Certificate Management",
+	"vendor": "SuiteCommerce",
+	"version": "1.2.4",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Gift Certificate Management extension lets you customize how to display gift certificates on your site. It also lets users check the remaining value of their gift certificates and store them together on the My Account page.",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Common/Configuration/GiftCertAdvancedSubtab.Configuration.json",
+			"Modules/Common/Configuration/GiftCertSubtab.Configuration.json",
+			"Modules/ValueCheck/Configuration/ValueCheck.Configuration.json",
+			"Modules/OptionTiles/Configuration/OptionTiles.Configuration.json",
+			"Modules/AvailableBalance/Configuration/AvailableBalance.Configuration.json",
+			"Modules/GiftCertificatesList/Configuration/GiftCertificatesList.Configuration.json",
+			"Modules/Main/Configuration/Main.Configuration.json",
+			"Modules/LandingPage/Configuration/LandingPage.Configuration.json",
+			"Modules/ManagementPage/Configuration/ManagementPage.Configuration.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_gift-certificate-balance-shopping.scss",
+			"myaccount": "Modules/Main/Sass/_gift-certificate-balance-myaccount.scss"
+		},
+		"files": [
+			"Modules/Common/Sass/_chevron_down_icon.scss",
+			"Modules/Common/Sass/_clone_icon.scss",
+			"Modules/Common/Sass/_common.scss",
+			"Modules/ValueCheck/Sass/_value_check-form.scss",
+			"Modules/ValueCheck/Sass/_value_check-result.scss",
+			"Modules/ValueCheck/Sass/_value_check.scss",
+			"Modules/OptionTiles/Sass/_option_tiles.scss",
+			"Modules/OptionTiles/Sass/_tile.scss",
+			"Modules/AvailableBalance/Sass/_available-balance-currency-line.scss",
+			"Modules/AvailableBalance/Sass/_available-balance.scss",
+			"Modules/GiftCertificatesList/Sass/_gift_certificates_list_row.scss",
+			"Modules/GiftCertificatesList/Sass/_gift_certificates_list.scss",
+			"Modules/LandingPage/Sass/_landing-page.scss",
+			"Modules/Main/Sass/_gift-certificate-balance-myaccount.scss",
+			"Modules/Main/Sass/_gift-certificate-balance-shopping.scss",
+			"Modules/ManagementPage/Sass/_management_page.scss",
+			"Modules/Main/Sass/variables.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ValueCheck/Templates/value_check_form.tpl",
+					"Modules/ValueCheck/Templates/value_check_result.tpl",
+					"Modules/ValueCheck/Templates/value_check.tpl",
+					"Modules/OptionTiles/Templates/option_tiles_container.tpl",
+					"Modules/OptionTiles/Templates/option_tile_label.tpl",
+					"Modules/OptionTiles/Templates/option_tile_thumbnail.tpl",
+					"Modules/LandingPage/Templates/giftcertificate_landing_page.tpl",
+					"Modules/GiftCertificatesList/Templates/gift_certificates_list_row_button.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ValueCheck/Templates/value_check_form.tpl",
+					"Modules/ValueCheck/Templates/value_check_result.tpl",
+					"Modules/ValueCheck/Templates/value_check.tpl",
+					"Modules/GiftCertificatesList/Templates/gift_certificates_list_row.tpl",
+					"Modules/GiftCertificatesList/Templates/gift_certificates_list.tpl",
+					"Modules/AvailableBalance/Templates/available_balance.tpl",
+					"Modules/AvailableBalance/Templates/available_balance_currency_line.tpl",
+					"Modules/ManagementPage/Templates/management_page.tpl",
+					"Modules/GiftCertificatesList/Templates/gift_certificates_list_row_button.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.GiftCertificate.Shopping.js",
+			"myaccount": "Modules/Main/JavaScript/SuiteCommerce.GiftCertificate.MyAccount.js",
+			"checkout": "Modules/Main/JavaScript/SuiteCommerce.GiftCertificate.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.GiftCertificate.Shopping.js",
+					"Modules/Main/JavaScript/Main.Configuration.js",
+					"Modules/Common/JavaScript/GiftCertificate.Collection.js",
+					"Modules/Common/JavaScript/GiftCertificate.Model.js",
+					"Modules/Common/JavaScript/Customer.Model.js",
+					"Modules/Common/JavaScript/Currency.Model.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Common/JavaScript/FeedbackMessageManager.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Form.View.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Model.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Result.View.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.View.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Configuration.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.Tile.Collection.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.Tile.Model.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.Tile.View.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.TilesContainer.View.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.Tile.CollectionView.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/LandingPage/JavaScript/LandingPage.Configuration.js",
+					"Modules/LandingPage/JavaScript/LandingPage.Router.js",
+					"Modules/LandingPage/JavaScript/LandingPage.View.js",
+					"Modules/PDP/JavaScript/PDP.js",
+					"Modules/PLP/JavaScript/PLP.js",
+					"Modules/Group/JavaScript/Group.Collection.js",
+					"Modules/Group/JavaScript/Group.Model.js",
+					"Modules/PLP/JavaScript/PLP.Group.View.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/GiftCertificatesList/JavaScript/GiftCertificatesList.Button.View.js",
+					"Modules/Main/JavaScript/Utils.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.GiftCertificate.MyAccount.js",
+					"Modules/Main/JavaScript/Main.Configuration.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Configuration.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Form.View.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Model.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.Result.View.js",
+					"Modules/ValueCheck/JavaScript/ValueCheck.View.js",
+					"Modules/OptionTiles/JavaScript/OptionTiles.Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Common/JavaScript/GiftCertificate.Collection.js",
+					"Modules/Common/JavaScript/GiftCertificate.Model.js",
+					"Modules/Common/JavaScript/Customer.Model.js",
+					"Modules/Common/JavaScript/Currency.Model.js",
+					"Modules/Common/JavaScript/FeedbackMessageManager.js",
+					"Modules/GiftCertificatesList/JavaScript/GiftCertificatesList.Row.View.js",
+					"Modules/GiftCertificatesList/JavaScript/GiftCertificatesList.View.js",
+					"Modules/GiftCertificatesList/JavaScript/GiftCertificatesList.Configuration.js",
+					"Modules/AvailableBalance/JavaScript/AvailableBalance.Model.js",
+					"Modules/AvailableBalance/JavaScript/AvailableBalance.View.js",
+					"Modules/AvailableBalance/JavaScript/AvailableBalance.CurrencyLine.Collection.js",
+					"Modules/AvailableBalance/JavaScript/AvailableBalance.CurrencyLine.Model.js",
+					"Modules/AvailableBalance/JavaScript/AvailableBalance.CurrencyLine.View.js",
+					"Modules/AvailableBalance/JavaScript/AvailableBalance.Configuration.js",
+					"Modules/ManagementPage/JavaScript/ManagementPage.Configuration.js",
+					"Modules/ManagementPage/JavaScript/ManagementPage.Router.js",
+					"Modules/ManagementPage/JavaScript/ManagementPage.Setup.js",
+					"Modules/ManagementPage/JavaScript/ManagementPage.View.js",
+					"Modules/PLP/JavaScript/PLP.js",
+					"Modules/Group/JavaScript/Group.Collection.js",
+					"Modules/Group/JavaScript/Group.Model.js",
+					"Modules/PLP/JavaScript/PLP.Group.View.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/GiftCertificatesList/JavaScript/GiftCertificatesList.Button.View.js",
+					"Modules/Main/JavaScript/Utils.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.GiftCertificate.Checkout.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace\\GiftCertificateValueCheck",
+	"path": "SuiteScripts/extensions/SuiteCommerce/GiftCertificateValueCheck@1.2.4",
+	"activation_id": "6",
+	"extension_id": "801"
+}

@@ -1,0 +1,16 @@
+.available-balance-currency-line{
+  @include available-balance-amount();
+
+  > span {
+    font-size: $sc-gift-certificate-h3-size-mobile;
+    color: $sc-gift-certificate-vc-remaining-text-color;
+  }
+  &.balance-zero > span {
+    color: $sc-gift-certificate-vc-nobalance-text-color;
+  }
+}
+@media(min-width: $screen-md-min) {
+  .available-balance-currency-line > span {
+    font-size: $sc-gift-certificate-h3-size;
+  }
+}

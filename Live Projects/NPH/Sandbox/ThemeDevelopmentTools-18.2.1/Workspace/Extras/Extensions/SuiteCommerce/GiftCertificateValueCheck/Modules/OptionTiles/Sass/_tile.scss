@@ -1,0 +1,54 @@
+button {
+  &.gift-certificate-tile {
+    .button-label {
+      padding: 0 $sc-padding-lv2;
+    }
+
+    &:hover {
+      border-color: $sc-neutral-shade-500;
+      .button-label {
+        color: $sc-color-copy;
+      }
+    }
+
+    &:disabled {
+      border-color: $sc-neutral-shade-300;
+      .button-label {
+        color: $sc-color-copy-light;
+      }
+      opacity: 0.4;
+    }
+
+    &.enabled {
+      border-color: rgba($sc-gift-certificate-pp-btn-border-color, 0.75);
+      .button-label {
+        color: rgba($sc-gift-certificate-pp-btn-txt-color, 0.75);
+      }
+    }
+
+    &.active, &.active:hover {
+      .button-label {
+        color: $sc-gift-certificate-pp-btn-txt-color;
+      }
+      border-color: $sc-gift-certificate-pp-btn-border-color;
+      cursor: default;
+    }
+
+    &.picker-with-image {
+      img {
+        float: left;
+        max-height: 40px;
+        max-width: 40px;
+        padding: $sc-padding-base 0 $sc-padding-base $sc-padding-base;
+      }
+    }
+
+    border: 2px solid;
+    background-color: $sc-gift-certificate-pp-btn-bg-color;
+    margin: 0 $sc-margin-lv2 $sc-margin-base 0;
+    font-weight: $sc-font-weight-semibold;
+    line-height: 40px;
+  }
+}
+
+

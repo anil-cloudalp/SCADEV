@@ -1,0 +1,15 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+        "templates": [
+            "Templates/*"
+        ]
+    },
+	"overrides": 
+    {
+		"Advanced/GlobalViewsOnline/JavaScript/GlobalViews.Breadcrumb.View.ts": "JavaScript/GlobalViews.Breadcrumb.View.ts",
+        "Advanced/GlobalViewsOnline/JavaScript/GlobalViews.Modal.View.ts": "JavaScript/GlobalViews.Modal.View.ts"
+    }
+}

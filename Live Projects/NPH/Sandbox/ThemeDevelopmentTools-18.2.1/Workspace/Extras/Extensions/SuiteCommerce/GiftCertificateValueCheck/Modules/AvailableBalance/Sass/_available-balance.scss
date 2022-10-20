@@ -1,0 +1,20 @@
+.available-balance {
+  padding-top: $sc-padding-lv3;
+  margin-bottom: $sc-padding-lv6;
+
+  &-title {
+    display: inline-block;
+    margin-right: $sc-margin-lv3;
+    color: $sc-gift-certificate-text-color;
+    vertical-align: top;
+    line-height: 1.6;
+  }
+
+  &-list {
+    display: inline-block;
+  }
+
+  &.hide {
+    display: none;
+  }
+}

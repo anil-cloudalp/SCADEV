@@ -1,0 +1,155 @@
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+	@extend .container;
+	.open{
+	//position:relative; 
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+	float: right;
+}
+
+.header-menu-searchmobile-link {
+	margin-right: 0;
+	cursor: pointer;
+	background: none;
+
+	@media (min-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.header-menu-searchmobile-link.active {
+	background: $sc-color-theme-background;
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+	margin-left: - ($sc-padding-lv2);
+	position: relative;
+}
+
+.header-menu-level1 > li {
+	float: left;
+}
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	font-size: 17px;
+    font-family: 'Candara',sans-serif;
+	padding: 7px 8px;
+	margin-right: $sc-main-navigation-link-margin-right;
+
+	color: $sc-main-navigation-link-color;
+    background-color: $sc-main-navigation-link-background-color;
+    font-weight: normal;
+    text-transform: $sc-main-navigation-link-text-transform;
+    letter-spacing: $sc-main-navigation-link-letter-spacing;
+	line-height: normal;
+
+    
+	&:after{
+		@extend .fa;
+		content:'\f0d7';
+		font-size:13px;
+	}
+}
+
+.open .header-menu-level1-anchor{
+	color: $sc-main-navigation-link-active-color;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+	@extend .header-menu-level1-anchor;
+}
+
+//maxi menu level 2
+.header-menu-back {
+	display: none;
+}
+
+.header-menu-level2 > li {
+	float: left;
+	width: 20%;
+	//display:table-cell;
+	min-width:210px;
+	//padding-right: $sc-padding-lv6;
+	&:hover{
+		.header-menu-level2-anchor{
+			background-color: $sc-color-primary;
+			color:#fff;
+		}
+	}
+}
+
+.header-menu-level2-anchor {
+	text-decoration: $sc-main-navigation-submenu-heading-text-decoration;
+	font-weight: $sc-font-weight-bold;
+	font-size:13px;
+	color: $sc-color-secondary;
+	padding: $sc-padding-lv1 $sc-padding-lv3;
+	display: block;
+
+	&:hover {
+		background-color: $sc-color-primary;
+		color:#fff;
+	}
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+	display: block;
+	padding: $sc-padding-lv1 $sc-padding-lv5;
+	font-size:13px;
+	color: $sc-color-secondary;
+
+	&:hover, &:focus {
+		background-color: $sc-color-primary;
+		color:#fff;
+	}
+
+	&:active, &.active {
+		background-color: $sc-color-primary;
+		color:#fff;
+	}
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+	display: none;
+}
+
+.header-menu-level-container {
+	background-color: $sc-main-navigation-submenu-background-color;
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 90%;
+	min-height: 150px;
+	z-index: 1003;
+	//padding: $sc-padding-lv1 0;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	border-top: 1px solid $sc-color-theme-border-light;
+	@include box-shadow(0 6px 12px transparentize($sc-neutral-shade-500, 1-0.175));
+
+	> li {
+		@extend .container;
+		width:100%;
+		padding:0;
+	}
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+	display: block;
+}
+

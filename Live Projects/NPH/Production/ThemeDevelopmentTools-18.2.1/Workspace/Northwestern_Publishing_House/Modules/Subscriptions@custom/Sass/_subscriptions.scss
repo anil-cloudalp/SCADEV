@@ -1,0 +1,222 @@
+.subscription-content{
+
+	header{
+		h1{
+			padding-bottom: $sc-padding-lv6;
+			border-bottom: 2px solid #d0d0d0;
+			text-align: center;
+		}
+	}
+	.subscription-content-manage{
+		padding:$sc-padding-lv3 0;
+		button{
+			@extend .button-primary;
+			@extend .button-medium;
+			margin-bottom: $sc-margin-lv2;
+			margin-right: $sc-margin-lv2;
+			a {
+				color: #fff;
+			}
+		}
+	}
+	.subscription-content-manage button:hover a {
+		color: #294684;
+	}
+	.subscription-content-links{
+		padding:$sc-padding-lv3 0;
+	}
+	.subscription-calender-row1{
+		@extend .row;
+		background-color:$sc-color-primary;
+		padding:$sc-padding-lv2 $sc-padding-lv3;
+		margin:0;
+		margin-top:$sc-margin-lv4;
+		color:#fff;
+		font-weight:500;
+		font-size:30px;
+		.calender-month{
+			float:right;
+		}
+		.calender-year{
+			float:left;
+		}
+		#prev-mo,#prev-yr,#next-mo,#next-yr{
+			@extend .fa;
+			cursor:pointer;
+		}
+		#prev-mo,#prev-yr{
+			@extend %fa-angle-left;
+			margin-right:$sc-margin-lv3;
+		}
+		#next-mo,#next-yr{
+			@extend %fa-angle-right;
+			margin-left:$sc-margin-lv3;
+		}
+	}
+	.subscription-calender-row2{
+		max-height:100px;
+		overflow:hidden;
+		border-bottom: 1px solid #d0d0d0;
+		#calender-dates{
+			position:relative;
+			margin:0 43px;
+			
+			p.bg-info{
+				opacity:1;
+			}
+			p{
+				
+				height:100px;
+				border-bottom: 1px solid #d0d0d0;
+				border-left: 1px solid #d0d0d0;
+				text-align:center;
+				font-family: auto;
+				opacity: 0.5;
+				cursor: pointer;
+				.date{
+					font-size: 40px;
+					line-height: 55px;
+					font-weight: 500;
+					
+				}
+			}
+			p:last-child {
+				border-right: 1px solid #d0d0d0;
+			}
+			.bx-prev,.bx-next{
+				position:absolute;
+				top:0;
+				height:100px;
+				background-color:#fff;
+				border:1px solid #d0d0d0;
+			}
+			.bx-controls{margin:0;}
+			.bx-prev{left:-43px;}
+			.bx-next{right:-43px;}
+		}
+		#prev-dt,#next-dt{
+			@extend .fa;
+			cursor:pointer;
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 100px;
+			padding: 0 15px;
+		}
+		#prev-dt{
+			@extend %fa-angle-left;
+		}
+		#next-dt{
+			@extend %fa-angle-right;
+		}
+	}
+	.wels-connection-row{
+	
+		.wels-connection{
+			@extend .row;
+			margin: 0;
+			padding: $sc-padding-lv4 $sc-padding-lv1;
+			border: 1px solid #d0d0d0;
+			.image-container,.text-container{
+				@extend .col-md-6;
+			}
+			.btn-container a{
+				@extend .button-primary;
+				@extend .button-medium;
+				margin-right: $sc-margin-lv2;
+				margin-bottom: $sc-margin-lv2;
+			}
+			p{
+			margin-top: $sc-margin-lv2;
+			margin-bottom: $sc-margin-lv4;
+			}
+		}
+		
+	}
+	
+}
+.subscription-content.wels-connection-container{
+	h1{border:none;}
+}
+.subscription-content.bsw-subscription{
+	
+	@media (min-width: $screen-sm-min){
+		 h1{
+			text-align:right;
+		 }
+	}
+	 .bsw-subscription-filters{
+		margin: $sc-margin-lv4 0;
+		input{
+			max-width:200px;
+			display:inline-block;
+		}
+		button{
+			@extend .button-primary;
+			@extend .button-medium;
+			margin-right: $sc-margin-lv3;
+			margin-bottom: $sc-margin-lv2;
+		}
+	 }
+	.bsw-subscription-row{
+		.bsw-subscription-content{
+			background-color: $sc-color-theme-background;
+			border-bottom: 1px solid $sc-color-theme-border-light;		
+			padding: $sc-padding-lv3;
+			border-radius: $sc-padding-lv3;
+			margin: $sc-margin-lv2 0;
+			
+			.btn-container{ 
+				margin-top:$sc-margin-lv4;
+				a{
+					@extend .button-primary;
+					@extend .button-medium;
+					min-width: 160px;
+					margin-right: $sc-margin-lv2;
+					margin-bottom: $sc-margin-lv2;
+				}
+			}
+			h2{color: #666;margin-bottom: $sc-margin-lv2;}
+		}
+	}
+}
+#daily-meditations,#efic-subscriptions{
+	border: 1px solid #d0d0d0;
+    border-top: 0;
+    padding: $sc-padding-lv4;
+	h2{
+		text-align: center;
+    text-transform: uppercase;
+    margin-bottom: $sc-margin-lv4;
+    color: $sc-color-secondary;
+	}
+	.emeds-content,.efic-content{
+		ul,li{list-style-type:disc;}
+		ul{
+			margin-left: $sc-margin-lv6;
+			margin-top: $sc-margin-lv2;
+			margin-bottom: $sc-margin-lv2;
+		}
+	}
+}
+#efic-subscriptions{
+	@extend .row;
+	margin:0;
+	.col-sm-5{padding:0;}
+	@media (max-width: $screen-xs-max){
+		.btn-container {
+			margin-bottom:$sc-margin-lv4;
+			a{
+				max-width:300px;
+				margin: auto;
+			}
+		}
+		.img-container{text-align:center;}
+	}
+	.btn-container a{
+		@extend .button-primary;
+		@extend .button-large;
+		display:block;
+		padding: $sc-padding-lv2 0;
+		margin-top: $sc-margin-lv2;
+	}
+}

@@ -1,0 +1,110 @@
+.extra-rewards-content{
+	@extend .container;
+	.extra-rewards-heading{
+		h1{
+			text-align:center;
+			margin:$sc-margin-lv2 0;
+		}
+		h3{
+			font-family: $sc-font-family-candara;
+			text-align:center;
+			color:#555;
+		}
+		p{
+			margin:$sc-margin-lv3 0;
+			text-align:center;
+		}
+	}
+	.extra-rewards-content-faq{
+		border: 1px solid #d0d0d0;
+		border-radius: 5px;
+		padding: 0 $sc-padding-lv6 $sc-padding-lv6 $sc-padding-lv6;
+		h4{
+			font-family: "Candara", sans-serif;
+			margin-top:$sc-margin-lv6;
+		}
+		p{
+			margin-top:$sc-margin-lv1;
+			a{
+				text-decoration:underline;
+				&:hover{text-decoration:none;}
+			}
+		}
+		ul{
+			margin:	$sc-margin-lv1 0 $sc-margin-lv3 5%;
+			li{list-style-type:disc;}
+		}
+	}
+	.extra-rewards-content-faq-heading{
+		border-top: 2px solid #d0d0d0;
+		margin-top:5%;
+		h2{
+		font-size:45px;
+		line-height:60px;
+		margin:$sc-margin-lv4 0;
+		text-align:center;
+		}
+	}
+	.extra-rewards-content-questions{
+		margin: $sc-margin-lv8 0 10% 0;
+		h2{text-align:center;}
+		p{
+			text-align:center;
+			margin-top:$sc-margin-lv3;
+			a{
+				text-decoration:underline;
+				&:hover{text-decoration:none;}
+			}
+		}
+	}
+	.extra-rewards-content-row{
+		@extend .row;
+		margin:$sc-margin-lv8 5%;
+		.col-4{
+			@extend .col-md-4;
+			@extend .col-sm-6;
+			padding:$sc-margin-lv2;
+			.col-container{
+				padding:$sc-padding-lv6;
+				border: 1px solid #d0d0d0;
+				border-radius: 5px;
+				max-width: 337px;
+				margin: auto;
+				text-align:center;
+				.img-container:hover{
+					opacity:0.8;
+					img{opacity:0.8;}
+				}
+				.primary-btn{
+					text-align:center;
+					padding-top:$sc-padding-lv6;
+					a{
+						@extend .button-primary;
+						@extend .button-medium;
+						font-size: 16px;
+						font-weight: $sc-font-weight-bold;
+						font-family: "Candara", sans-serif;
+						padding: $sc-padding-lv1 $sc-padding-lv3;
+						width:auto;
+					}
+				}
+			}
+		}
+	}
+	.extra-rewards-content-signup{
+		p{
+			margin:$sc-margin-lv3 0;
+			text-align:center;
+		}
+		.large-btn a{
+			@extend .button-primary;
+			@extend .button-medium;
+			font-size: 25px;
+			font-weight: $sc-font-weight-bold;
+			padding:$sc-padding-lv2 0;
+			font-family: "Candara", sans-serif;
+			display:block;
+			margin:$sc-margin-lv6 0;
+		}
+	}
+}

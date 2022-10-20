@@ -1,0 +1,22 @@
+.recently-viewed-items {
+	position:relative;
+	@extend .border-angle-down;
+	.bx-wrapper{margin:auto;}
+	h3{
+		 margin-bottom: $sc-margin-lv8;
+		margin-top: $sc-margin-lv3;
+		text-transform:none;
+		font-family:$sc-font-family-candara;
+		font-size:30px;
+		text-align: center;
+		color:#333;
+	}
+	.bx-controls-direction{
+		text-align:right;
+		margin-bottom:$sc-margin-lv8;
+	}
+}
+
+ul.recently-viewed-row-cell li{
+	display:inline-block;
+}

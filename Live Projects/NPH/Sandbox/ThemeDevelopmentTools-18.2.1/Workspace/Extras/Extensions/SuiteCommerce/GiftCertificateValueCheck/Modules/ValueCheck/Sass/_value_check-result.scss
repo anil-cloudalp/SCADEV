@@ -1,0 +1,54 @@
+.gift-certificate-balance-main-result {
+  p.gift-certificate-balance-main-result-remaining-balance{
+    font-size: $sc-gift-certificate-vc-remaining-title-size-mobile;
+    @media(min-width: $screen-md-min) {
+      font-size: $sc-gift-certificate-vc-remaining-title-size;
+    }
+  }
+
+	padding-bottom: $sc-padding-lv6;
+
+  &.hide {
+    display: none;
+  }
+
+	&-remaining-balance {
+    color: $sc-gift-certificate-vc-expired-text-color;
+		font-size: $sc-gift-certificate-vc-remaining-title-size-mobile;
+		line-height: $sc-font-size-xxxl;
+		margin-bottom: $sc-margin-lv2;
+    @media(min-width: $screen-md-min) {
+      font-size: $sc-gift-certificate-vc-remaining-title-size;
+    }
+
+		&-gt0 {
+			color: $sc-gift-certificate-vc-remaining-text-color;
+			font-weight: $sc-font-weight-bold;
+		}
+
+		&-zero {
+			color: $sc-gift-certificate-vc-nobalance-text-color;
+			font-weight: $sc-font-weight-bold;
+		}
+	}
+
+	&-code {
+		margin-bottom: $sc-margin-lv2;
+
+		span {
+			font-weight: $sc-font-weight-bold;
+		}
+	}
+
+	&-expiration-date {
+		margin-bottom: $sc-margin-lv2;
+
+		span {
+			font-weight: $sc-font-weight-bold;
+		}
+	}
+
+	&-return-link-container {
+		margin-top: $sc-margin-lv4;
+	}
+}

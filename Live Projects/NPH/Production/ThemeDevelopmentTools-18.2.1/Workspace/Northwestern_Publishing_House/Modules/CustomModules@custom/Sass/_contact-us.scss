@@ -1,0 +1,56 @@
+.contact-us-content{
+	@extend .container;
+	a:hover{opacity:0.8;}
+	.contact-us-heading{
+		border-bottom: 2px solid #d0d0d0;
+		margin-bottom: $sc-margin-lv4;
+		padding-bottom:$sc-padding-lv6;
+		h1{
+			text-align:center;
+			margin:$sc-margin-lv2 0;
+		}
+		h3{
+			font-family: "Candara", sans-serif;
+			text-align:center;
+		}
+		p{
+			margin:$sc-margin-lv3 0;
+			text-align:center;
+		}
+	}
+	.contact-us-hours{
+		p{
+			margin:$sc-margin-lv2 0;
+			text-align:center;
+		}
+	}
+	.contact-us-row{
+		@extend .row;
+		margin:0;
+		border-bottom: 2px solid #d0d0d0;
+		padding-bottom: $sc-padding-lv4;
+		.col-3{
+			@extend .col-sm-3;
+			padding:0;
+			text-align:center;
+			a{color:$sc-color-primary;}
+		}
+	}
+	h2{
+		font-size:45px;
+		line-height:60px;
+		margin:$sc-margin-lv4 0;
+		text-align:center;
+	}
+	.contact-us-info{
+		margin-bottom: 10%;
+		border: 1px solid #d0d0d0;
+		border-radius: 5px;
+		padding: 0 $sc-padding-lv6 $sc-padding-lv6 $sc-padding-lv6;
+		h4{
+			font-family: "Candara", sans-serif;
+			margin-top:$sc-margin-lv6;
+		}
+		p{margin-top:$sc-margin-lv1;}
+	}
+}

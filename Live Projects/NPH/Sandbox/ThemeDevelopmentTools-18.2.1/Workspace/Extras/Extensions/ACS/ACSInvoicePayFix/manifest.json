@@ -1,0 +1,44 @@
+{
+	"name": "ACSInvoicePayFix",
+	"fantasyName": "Invoice Payment Fix",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Make Invoice pyament issue fix",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ACSInvoicePayFix/JavaScript/ACSInvoicePayFix.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ACSInvoicePayFix/JavaScript/ACSInvoicePayFix.js",
+					"Modules/ACSInvoicePayFix/JavaScript/Invoice.OpenList.View.ACSInvoicePayFix.js",
+					"Modules/ACSInvoicePayFix/JavaScript/PaymentWizard.EditAmount.View.ACSInvoicePayFix.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/ACSInvoicePayFix@1.0.0",
+	"activation_id": "6",
+	"extension_id": "2201"
+}

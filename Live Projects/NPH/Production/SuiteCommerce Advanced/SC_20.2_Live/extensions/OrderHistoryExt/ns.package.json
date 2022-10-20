@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+		"ssp-libraries": [
+            "SuiteScript/*.js"
+        ]
+    },
+	"overrides": 
+    {
+		"Advanced/OrderHistory/SuiteScript/OrderHistory.Model.js":"SuiteScript/OrderHistory.Model.js",
+		"Advanced/OrderHistory/SuiteScript/OrderHistory.ServiceController.js":"SuiteScript/OrderHistory.ServiceController.js"
+
+    }
+}

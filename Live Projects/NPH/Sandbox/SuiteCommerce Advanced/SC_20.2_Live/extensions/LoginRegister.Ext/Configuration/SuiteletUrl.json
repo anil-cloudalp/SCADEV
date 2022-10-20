@@ -1,0 +1,18 @@
+{
+	"type": "object"
+,	"subtab": {
+		"id": "registerss"
+	,	"group": "advancedSettings"
+	,	"title": "Registration Page"
+	}
+,	"properties": {
+		"registerss.url": {
+			"group": "advancedSettings"
+		,	"subtab": "registerss"
+		,	"type": "string"
+		,	"title": "Suitelet Url"
+		,	"description": "Enter Suitelet Url for getting list options in registration Page."
+		,	"default": "/app/site/hosting/scriptlet.nl?script=488&deploy=1&compid=5331432&h=a452f17149ba737576fc"
+		}
+	}
+}

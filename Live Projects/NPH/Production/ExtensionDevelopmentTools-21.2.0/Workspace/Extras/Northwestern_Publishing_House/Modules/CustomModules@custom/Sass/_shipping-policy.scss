@@ -1,0 +1,84 @@
+.shipping-policy{
+	 @extend .container;
+	 a{
+		text-decoration:underline;
+		&:hover{text-decoration:none;}
+	 }
+	 .shipping-policy-heading{
+		h1{
+			text-align:center;
+			margin:$sc-margin-lv4 0;
+		}
+		p{margin-bottom:$sc-margin-lv4;}
+	}
+	.shipping-policy-faq{
+		h4{
+			font-family: "Candara", sans-serif;
+			margin-top:$sc-margin-lv6;
+		}
+		p{margin-top:$sc-margin-lv3;}
+	}
+	.shipping-policy-questions{
+		margin: $sc-margin-lv8 0 10% 0;
+		h2{text-align:center;}
+		p{
+			text-align:center;
+			margin-top:$sc-margin-lv3;
+		}
+	}
+	.shipping-policy-row{
+		@extend .row;
+		margin:0;
+		margin-top:$sc-margin-lv6;
+		.col-7{
+			@extend .col-md-7;
+			padding:0;
+		}
+		.col-5{
+			@extend .col-md-5;
+			padding:0;
+		}
+		h5{
+			font-family: "Candara", sans-serif;
+			font-size:20px;
+			color:#222;
+		}
+		table{
+			//width:100%;
+			color: #666;
+			font-size: 12px;
+			text-shadow: 1px 1px 0px #fff;
+			background: #eaebec;
+			margin: $sc-margin-lv3 0;
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			-moz-box-shadow: 0 1px 2px #d1d1d1;
+			-webkit-box-shadow: 0 1px 2px #d1d1d1;
+			box-shadow: 0 1px 2px #d1d1d1;
+			tr:hover{
+				background-color: #ccc;
+			}
+			th{
+				font-size: 12px;
+				padding: $sc-padding-lv4;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #e0e0e0;
+				background: #ededed;
+				background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+				background: -moz-linear-gradient(top, #ededed, #ebebeb);
+			}
+			td{
+				padding: $sc-padding-lv3 $sc-padding-lv4;
+				border-top: 1px solid #ffffff;
+				border-bottom: 1px solid #e0e0e0;
+				border-left: 1px solid #e0e0e0;
+				background: #fafafa;
+				background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+				background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+			}
+		}
+		
+	}
+}
