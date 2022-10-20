@@ -1,0 +1,143 @@
+@function getExtensionAssetsPath($asset){
+@return '../extensions/Acme/printquote/1.0.0/' + $asset;
+}
+
+@function getThemeAssetsPath($asset){
+@return '../extensions/TCI/TCI_Manor/1.0.0/' + $asset;
+}
+
+.print-quote {
+	margin-bottom: 2em;
+
+	h1 {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1.3em;
+
+		img {
+			display: none;
+		}
+	}
+
+	.quote-header {
+		font-family: "Roboto","Lato","Helvetica Neue","Calibri",Helvetica,Arial, sans-serif !important;
+		font-size: 1.73rem !important;
+		color: #222426 !important;
+		font-style: normal !important;
+		text-decoration: none !important;
+		line-height: 1.2 !important;
+		letter-spacing: 0 !important;
+		margin-top: 0 !important;
+		text-transform: none !important;
+		font-weight: 700 !important;
+	}
+
+	
+	p {
+		margin-bottom: 1em;
+	}
+
+	.item-table {
+		margin: 2em 0;
+		width: 100%;
+
+		tr {
+			border-bottom: 1px solid #eee;
+		}
+		th {
+			font-size:14px !important;
+			color:#7e858b !important;
+			padding: 0.5em 0;
+		}
+
+		th.print-quote-left {
+			text-align: left;
+		}
+
+		th.print-quote-right {
+			text-align: right;
+		}
+
+		td {
+			font-size: 0.85em;
+			padding: 0.5em 0;
+			padding-right:0;
+		}
+
+		td.print-quote-left {
+			text-align: left;
+		}
+
+		td.print-quote-right{
+			text-align: right;
+		}
+	}
+
+	.fine-print {
+		p {
+			font-size: 0.75em;
+		}
+	}
+}
+
+.print-quote-cta {
+	button {
+		margin-left: 0.5em;
+	}
+}
+
+@media print {
+	.print-quote {
+		h1 {
+			
+			margin-top: 20px;
+			justify-content: flex-start;
+
+			img {
+				display: block !important;
+			}
+		}
+	}
+
+	// hide elements while printing
+	#site-header,
+	#back-to-top,
+	.footer-content,
+	.print-quote-cta,
+	.quoting-new-form {
+		display: none;
+	}
+}
+
+// hide url and date
+@page {
+	size: auto;
+	margin: 0;
+}
+
+.quoting-new-form {
+	margin-bottom: 1em;
+}
+
+a[href]:after {
+	display: none;
+}
+
+
+.quote-model{
+	position: relative;
+
+.sendmail {
+
+		@extend .button-large;
+		@extend .button-primary;
+		// min-width: 190px;
+		background-color: #552e91 !important;
+		border:.5px #552e91;
+		margin-bottom: 0px !important;
+		@media (min-width: $screen-sm-min) {
+		//	margin-top: $sc-margin-lv2;
+			margin-left:390px;
+		}
+}
+}

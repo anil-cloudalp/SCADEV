@@ -1,0 +1,63 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "surcharge",
+        "group": "shoppingApplication",
+        "title": "Surcharge Set Up",
+        "description": "Configuration of the surcharge promotion for expedited lab items"
+    },
+    "properties": {
+        "surcharge.SurchargeTable": {
+            "group": "shoppingApplication",
+            "subtab": "surcharge",
+            "type": "array",
+            "title": "Surcharge Promotion Set Up",
+            "description": "Apply Surcharge Promotion",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "promotionCode": {
+                        "type": "string",
+                        "title": "Promo Code",
+                        "description": "Enter surcharge promotion code",
+                        "default": "lab"         
+                    },
+                    "enabled": {
+                        "type": "boolean",
+                        "title": "Enabled",
+                        "description": "Enabled",
+                        "default": "true"           
+                    }
+                }
+            }
+        },
+        "surcharge.ExpeditedShippingId": {
+            "group": "shoppingApplication",
+            "subtab": "surcharge",
+            "type": "string",
+            "title": "Expedited Shipping ID",
+            "description": "Enter the internal ID for the Expedited Shipping shipment method",
+            "default": "325"
+            
+        },
+        "surcharge.SurchargeText": {
+            "group": "shoppingApplication",
+            "subtab": "surcharge",
+            "type": "string",
+            "title": "Surcharge Modal Text",
+            "description": "Input text that you wish to display within the expedited surcharge modal",
+            "default": "Expedited shipping for lab materials will incur a 10% surcharge."
+           
+        },
+        "surcharge.GuestCustomerCat": {
+            "group": "shoppingApplication",
+            "subtab": "surcharge",
+            "type": "string",
+            "title": "Guest Customer Category",
+            "description": "Guest Customer Category",
+            "default": "6"
+           
+        }
+
+    }
+}

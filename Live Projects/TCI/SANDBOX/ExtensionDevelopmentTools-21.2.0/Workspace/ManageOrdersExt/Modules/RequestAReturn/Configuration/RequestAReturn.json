@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "RequestAReturn_subtab",
+        "group": "extensions",
+        "title": "Request A Return",
+        "description": "Request A Return settings"
+    },
+    "properties": { 
+        "customReturns.author": {
+            "group": "extensions",
+            "subtab": "RequestAReturn_subtab",
+            "type": "string",
+            "title": "Author",
+            "description": "Enter the internal id of the Employee record.",
+            "default": "150125"
+        },
+        "customReturns.recipient": {
+            "group": "extensions",
+            "subtab": "RequestAReturn_subtab",
+            "type": "string",
+            "title": "Recipient",
+            "description": "Enter the email address of the recipient for the return request.",
+            "default": "info@teachtci.com"
+        },
+        "customReturns.entity": {
+            "group": "extensions",
+            "subtab": "RequestAReturn_subtab",
+            "type": "string",
+            "title": "Entity",
+            "description": "Enter the internal id of the entity for the return request -- communication tab.",
+            "default": "3352"
+        },
+        "customReturns.title": {
+            "group": "extensions",
+            "subtab": "RequestAReturn_subtab",
+            "type": "string",
+            "title": "Request A Return Title",
+            "description": "Input the title to display on the returns page.",
+            "default": "Returns"
+        },
+        "customReturns.subtitle": {
+            "group": "extensions",
+            "subtab": "RequestAReturn_subtab",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Request A Return Description",
+            "description": "Input the description to display on the returns page.",
+            "default": "<p>One year teacher or student licenses for any program may not be returned. You may return any other purchased, unused product in saleable condition within 60 days of the invoice date of your order. Please read more about our <a href='https://www.teachtci.com/faqs/'> return policy </a> before completing this form.</p>."
+        }
+    }
+}

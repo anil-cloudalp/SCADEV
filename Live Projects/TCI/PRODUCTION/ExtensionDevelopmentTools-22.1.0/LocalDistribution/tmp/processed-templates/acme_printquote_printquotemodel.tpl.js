@@ -1,0 +1,9 @@
+define('acme_printquote_printquotemodel.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<section class=\"quote-model\">\r\n    <!-- <h2>"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"pagetitle") || (depth0 != null ? compilerNameLookup(depth0,"pagetitle") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pagetitle","hash":{},"data":data,"loc":{"start":{"line":2,"column":13},"end":{"line":2,"column":26}}}) : helper)))
+    + "</h2> -->\r\n    <input type=\"email\" name=\"email\" data-type=\"validemail\" id=\"email\"></input>\r\n    <div class=\"email-validation\"></div>\r\n    <button type=\"submit\" class=\"sendmail\" data-type=\"add-to-cart\" data-action=\"sendmail\">\r\n                   "
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"buttontext") || (depth0 != null ? compilerNameLookup(depth0,"buttontext") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"buttontext","hash":{},"data":data,"loc":{"start":{"line":6,"column":19},"end":{"line":6,"column":33}}}) : helper)))
+    + "\r\n    </button>\r\n</section>";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Acme/printquote/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/TCI/TCI_Manor/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'acme_printquote_printquotemodel'; return template;});

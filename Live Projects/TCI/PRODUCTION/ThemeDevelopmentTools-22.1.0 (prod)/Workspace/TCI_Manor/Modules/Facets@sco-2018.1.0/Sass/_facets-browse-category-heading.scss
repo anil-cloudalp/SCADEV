@@ -1,0 +1,100 @@
+/* Edited for Manor Theme */
+
+/*.facets-browse-category-heading-list-header {
+    position: relative;
+    padding-bottom: $sc-padding-lv3;
+    margin-top: -20px;
+
+    @media (min-width: $screen-md-min) {
+        &.facets-browse-category-heading-list-header-with-image {
+            margin-top: -70px;
+            .facets-browse-category-heading-main-image {
+              img {
+                width: 100%;
+              }
+            }
+        }
+    }
+}
+
+.facets-browse-category-heading-main-description {
+    margin: $sc-margin-lv2 0;
+    padding-left: $sc-padding-lv3;
+
+    .facets-browse-category-heading-list-header-with-image & {
+        @media (min-width: $screen-sm-min) {
+            position: absolute;
+            top: 50%;
+            transform: perspective(1px) translateY(-50%);
+            margin: 0;
+        }
+    }
+}
+
+.facets-browse-category-heading-main-description h1 {
+    @media (max-width: $screen-sm-max) {
+        text-align: center;
+        font-size: $sc-font-size-xxxl * 2;
+    }
+}*/
+.facets-browse-category-heading-list-header
+{
+	display: table;
+	padding-bottom: $sc-padding-lv3;
+	width: 100%;
+}
+
+.facets-browse-category-heading-main-description
+{
+	width: auto;
+	margin: 0; //$sc-margin-lv2;
+
+	// @media (min-width: $screen-md-min)
+	// {
+	// 	margin-left: $sc-margin-lv4;
+	// }
+
+	h1 {
+		margin-bottom: .4em;
+	}
+
+}
+
+.facets-browse-category-heading-main-description h3
+{
+	text-transform: none;
+	font-weight: normal;
+}
+
+.facets-browse-category-heading-main-image
+{
+	display: none;
+	width: 100%;
+
+	img
+	{
+		width: 100%;
+	}
+
+	@media (min-width: $screen-md-min)
+	{
+		display: inherit;
+	}
+}
+
+.facets-browse-category-versions {
+
+	a {
+		border: 1px solid #eee;
+    padding: .2em .5em;
+    text-transform: uppercase;
+    font-size: .85em;
+    margin: .25em;
+	}
+	
+	.isVersionDisplayed {
+		background-color: $sc-color-primary;
+		color: #fff;
+	}
+}
+

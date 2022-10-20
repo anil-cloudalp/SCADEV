@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": { 
+	
+	"quote.quotetitle": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+	        "title": "Quote title",
+	        "description": "Quote title",
+	        "default": "Quote"
+	    },
+      "quote.subtext": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+            "nsType": "textarea",
+	        "title": "Quote Subtext",
+	        "description": "Quote Subtext"
+	    },
+	  "quote.notes": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+            "nsType": "textarea",
+	        "title": "Quote Notes",
+	        "description": "Quote Notes"
+	    },
+	   "quote.shippingrate": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+	        "title": "Quote Shipping Rate",
+	        "description": "Enter shipping rate for Quote"
+	    },
+
+		"quote.senderemailAddress": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+	        "title": "PrintQuote email employeeId",
+	        "description": "enter the email address or employee internalid to send the mail"
+		},
+		"quote.emailsubject": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+	        "title": "email subject",
+	        "description": "enter the email subject to send the mail"
+		},
+		"quote.popupboxtitle": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+	        "title": "email Popupbox Model title",
+	        "description": "enter the title to show in the email popupbox"
+		},
+		"quote.buttontext": {
+        	"group": "myAccountApp",
+            "subtab": "quote",
+	        "type": "string",
+	        "title": "email Popupbox button title",
+	        "description": "enter the title to show in the email button title"
+		}
+    }
+}

@@ -1,0 +1,120 @@
+.home {
+    @extend .container;
+    @include site-max-width-container;
+}
+
+/* INFOBLOCKS */
+.home-infoblock-layout {
+    display: flex;
+    margin: $sc-margin-lv2 $sc-margin-lv4 $sc-margin-lv4 $sc-margin-lv4;
+    flex-wrap: wrap;
+}
+
+.home-infoblock-layout-more {
+    margin-bottom: $sc-margin-lv8;
+}
+
+.home-infoblock {
+	position: relative;
+    //width: $sc-infoblock-width;
+    flex: 1 0 $sc-infoblock-width;
+    margin-bottom: 10px;
+    @media (min-width: $screen-sm-min) {
+        //width: $sc-infoblock-desktop-width;
+        flex: 1 4 $sc-infoblock-desktop-width;
+        margin-bottom: 0;
+    }
+}
+
+.home-infoblock-image {
+	width: 100%;
+	height: auto;
+}
+
+.home-infoblock-image:hover,
+.home-infoblock-link:hover .home-infoblock-image {
+    opacity: 0.8;
+    //transition: opacity 0.75s;
+	//-webkit-transition: opacity 0.75s;
+}
+
+.home-infoblock-text { /*caption*/
+    width: 100%;
+    text-align: center;
+    font-family: $sc-theme-secondary-font;
+    font-size: $sc-font-size-xl;
+    text-transform: uppercase;
+    color: $sc-color-copy-dark;
+    font-weight: $sc-font-weight-normal;
+
+    a:hover & {
+        color: $sc-color-copy;
+    }
+}
+
+
+/* Hero Banner */
+.home-hero {
+    position: relative;
+    background-color: lighten($sc-color-secondary, 77); //was #F6F6F6;
+
+    @media (min-width: $screen-md-min) {
+        background-color: transparent;
+    }
+
+    & p {
+        margin: 10px 0 15px;
+    }
+}
+
+.home-hero-image {
+    @media (max-width: $screen-sm-max) {
+        background-image: none !important;
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    & img {
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+}
+
+.home-hero-text {
+    text-align: center;
+    padding: 30px 40px 50px;
+    height: 100%;
+
+    @media (min-width: $screen-md-min) {
+        margin: 0 25%;
+        position: absolute;
+        padding: 0;
+        top: 0;
+        min-width: 50%;
+    }
+    .flex-zone {
+      @media (min-width: $screen-md-min) {
+        display: flex;
+        align-content: baseline;
+        flex-wrap: wrap;
+        height: 100%;
+        overflow: hidden;
+      }
+      .flex-content {
+        a {
+            @extend .button-primary;
+            @extend .button-large;
+        }
+        @media (min-width: $screen-md-min) {
+           flex: auto;
+           padding: 50px 0;
+        }
+      }
+    }
+
+}

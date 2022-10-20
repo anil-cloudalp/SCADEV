@@ -1,0 +1,117 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.trackmyorder-info-card {
+    @extend .info-card;
+}
+
+.trackmyorder-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.track-your-order {
+	@extend .find-invoice;
+  }
+  .track-your-order-fields {
+	@extend .find-invoice-form;
+  }
+  .track-your-order-group {
+	@extend .find-invoice-form-group;
+  }
+  .track-your-order-controls {
+	@extend .find-invoice-form-container;
+  }
+  .track-your-order-input {
+	@extend .input-medium;
+	width: 100%;
+  }
+  .track-your-order-button-submit{
+	@extend .button-primary;
+	@extend .button-medium;
+  }
+  .track-your-order-details {
+	padding: $sc-padding-lv4 $sc-padding-lv1;
+	padding-left: 0;  
+	margin: $sc-margin-lv4 0;
+	width: 50%;
+  }
+  .track-your-order-details-title {
+	margin-bottom: $sc-margin-lv2;
+  }
+  .track-your-order-details-labels {
+	font-weight: bold;
+  }
+  .cart-detailed-left-product {
+	display: none;
+
+	@media(min-width: $screen-sm-min) {
+		display:flex;
+		padding:$sc-padding-lv4 0;
+	}
+}
+  .track-your-order-item-container-product {
+	@extend .cart-detailed-left-product;
+  }
+  .track-your-order-item-container-product-item-label {
+	flex-basis:(100%/6 - 5%);
+	
+	&.description, &.tracking{
+	  flex-basis:(100%/6 + 10%);
+	}
+  }
+  .track-table {
+	// @extend .cart-detailed-item-view-cell-actionable-table;
+	margin-bottom: $sc-margin-lv4;
+  }
+  .track-table-row {
+	@extend .row;
+	&:not(:first-child) {
+		border-top: 1px solid #f1f1f1;
+		padding-top: $sc-padding-lv4;
+	}
+  }
+  .track-table-row-middle {
+	@extend .col-xs-8;
+	@extend .col-lg-5;
+	width:100%;
+	display: flex;
+	flex-wrap:wrap;
+	align-items: flex-start;
+  }
+  .track-table-column {
+	margin-bottom:$sc-margin-lv2;
+	width:100%;
+	padding-right: $sc-padding-lv2;
+
+	@media (min-width: $screen-sm-min) {
+		width:30%;
+		//need padding top to line up with rest of columns
+		padding-top: 8px;
+	}
+
+	flex-basis:(100%/6 - 5%);
+	
+	&.description, &.tracking {
+	  flex-basis:(100%/6 + 10%);
+	}
+	
+	&.tracking > p {
+	//   text-align: justify;
+	}
+  }
+  .track-order-not-available-holder {
+	font-size: 1.1rem;
+	color: red;
+  }
+  input.track-your-order-input {
+	@media (min-width: $screen-sm-min) {
+		width:100%;
+	}
+  }

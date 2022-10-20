@@ -1,0 +1,26 @@
+@function getExtensionAssetsPath($asset){
+@return '../extensions/TCI/FooterExt/1.0.0/' + $asset;
+}
+
+@function getThemeAssetsPath($asset){
+@return '../extensions/TCI/TCI_Manor/1.0.0/' + $asset;
+}
+
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.extrafooterlinks-info-card {
+    @extend .info-card;
+}
+
+.extrafooterlinks-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}

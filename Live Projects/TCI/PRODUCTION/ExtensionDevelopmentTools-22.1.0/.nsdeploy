@@ -1,0 +1,14 @@
+{
+  "credentials": {
+    "user_agent": "sc-extension-devtools/2022.1.0",
+    "authID": "tciproduction",
+    "account": "1312783",
+    "hostname": "1312783.restlets.api.netsuite.com",
+    "website": 2,
+    "domain": "shopprod.teachtci.com",
+    "webapp_id": "929090",
+    "ssp_folder": "929090",
+    "is_scis": false
+  },
+  "product": "gulp"
+}

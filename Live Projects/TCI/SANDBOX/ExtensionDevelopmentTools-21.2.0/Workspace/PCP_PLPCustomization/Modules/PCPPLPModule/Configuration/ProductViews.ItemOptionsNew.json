@@ -1,0 +1,14 @@
+{
+	"type": "object",
+
+	"resource": {
+		"template": {
+			"productview-option-facet": [
+				"",
+				"product_views_option_facets_dropdown.tpl",
+				"product_views_option_facets_tile.tpl",
+				"product_views_option_facets_color.tpl"
+			]
+		}
+	}
+}

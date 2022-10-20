@@ -1,0 +1,105 @@
+{
+    "name": "CheckoutCustomizationsExtension",
+    "fantasyName": "Checkout Customizations Extension",
+    "vendor": "TCI",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">= 21.1.0",
+        "SCS": ">= 21.1.0"
+    },
+    "description": "Checkout Customization",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CheckoutCustomizationsModule.Service.ss",
+                "services/SchoolDistrictLookup.Service.ss",
+                "services/UploadFile.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CheckoutCustomizationsModule/Configuration/CheckoutCustomizationsModule.json",
+            "Modules/CheckoutCustomizationsModule/Configuration/SurgeSetup.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutCustomizationsModule/Sass/_checkoutcustomizationsextension-checkoutcustomizationsmodule.scss"
+        },
+        "files": [
+            "Modules/CheckoutCustomizationsModule/Sass/_checkoutcustomizationsextension-checkoutcustomizationsmodule.scss",
+            "Modules/CheckoutCustomizationsModule/Sass/_order-wizard-module-payingwith.scss",
+            "Modules/CheckoutCustomizationsModule/Sass/_order-wizard-module-subscriptionemail.scss",
+            "Modules/CheckoutCustomizationsModule/Sass/_schooldistrictlookup.scss",
+            "Modules/CheckoutCustomizationsModule/Sass/_upload-file.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutCustomizationsModule/Templates/tci_checkoutcustomizationsextension_checkoutcustomizationsmodule.tpl",
+                    "Modules/CheckoutCustomizationsModule/Templates/order_wizard_module_payingwith.tpl",
+                    "Modules/CheckoutCustomizationsModule/Templates/order_wizard_module_subscriptionemail.tpl",
+                    "Modules/CheckoutCustomizationsModule/Templates/schooldistrictlookup.tpl",
+                    "Modules/CheckoutCustomizationsModule/Templates/upload_file.tpl",
+                    "Modules/CheckoutCustomizationsModule/Templates/order_wizard_module_schoolclosuredeliverydate.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/CheckoutCustomizationsModule/JavaScript/TCI.CheckoutCustomizationsExtension.CheckoutCustomizationsModule.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/CheckoutCustomizationsModule/JavaScript/TCI.CheckoutCustomizationsExtension.CheckoutCustomizationsModule.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/CheckoutCustomizationsModule.View.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/TCI.CheckoutCustomizationsExtension.CheckoutCustomizationsModule.Model.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/TCI.CheckoutCustomizationsExtension.CheckoutCustomizationsModule.SS2Model.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/OrderWizard.Module.PayingWithStep.View.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/SchoolDistrictLookup.View.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/TCI.CheckoutCustomizationsExtension.SchoolDistrictLookup.Model.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/OrderWizardModuleCartSummaryExt.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/OrderWizardModulePaymentMethodPurchaseNumberExt.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/OrderWizardModuleShipmethodExt.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/AddressEditViewExt.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/UploadFile.View.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/AddressEditFieldsViewExt.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/OrderWizard.Module.SubscriptionEmail.View.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/Extension.OrderWizard.Module.Confirmation.js",
+                    "Modules/CheckoutCustomizationsModule/JavaScript/OrderWizard.Module.SchoolClosureDeliveryDate.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CheckoutCustomizationsModule/SuiteScript/TCI.CheckoutCustomizationsExtension.CheckoutCustomizationsModule.js",
+        "files": [
+            "Modules/CheckoutCustomizationsModule/SuiteScript/TCI.CheckoutCustomizationsExtension.CheckoutCustomizationsModule.js",
+            "Modules/CheckoutCustomizationsModule/SuiteScript/CheckoutCustomizationsModule.ServiceController.js",
+            "Modules/CheckoutCustomizationsModule/SuiteScript/SchoolDistrictLookup.ServiceController.js",
+            "Modules/CheckoutCustomizationsModule/SuiteScript/TCI.CheckoutCustomizationsExtension.SchoolDistrictLookupSS.Model.js",
+            "Modules/CheckoutCustomizationsModule/SuiteScript/TCI.CheckoutCustomizationsExtension.UploadFile.Model.js",
+            "Modules/CheckoutCustomizationsModule/SuiteScript/UploadFile.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CheckoutCustomizationsExtension",
+    "suitescript2": {
+        "files": [
+            "Modules/CheckoutCustomizationsModule/SuiteScript2/CheckoutCustomizationsModule.Service.ss"
+        ]
+    }
+}

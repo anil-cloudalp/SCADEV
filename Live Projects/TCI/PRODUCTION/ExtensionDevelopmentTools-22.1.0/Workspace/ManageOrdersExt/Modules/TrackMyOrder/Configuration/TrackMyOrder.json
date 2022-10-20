@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "TrackMyOrder_subtab",
+        "group": "extensions",
+        "title": "Track Your Order",
+        "description": "Track Your Order settings"
+    },
+    "properties": { 
+        "trackyourorder.title": {
+            "group": "extensions",
+            "subtab": "TrackMyOrder_subtab",
+            "type": "string",
+            "title": "Track Your Order Title",
+            "description": "Input the title to display on the track your order page.",
+            "default": "Track Your Order"
+        },
+        "trackyourorder.subtitle": {
+            "group": "extensions",
+            "subtab": "TrackMyOrder_subtab",
+            "type": "string",
+		    "nsType": "textarea",
+            "title": "Track Your Order Description",
+            "description": "Input the description to display on the track your order page.",
+            "default": "<p>To check the shipping status and details of an order, please enter your TCI Order Number and Billing ZIP Code, then click Continue.</p>"
+        },
+        "trackyourorder.orderNumberLabel": {
+            "group": "extensions",
+            "subtab": "TrackMyOrder_subtab",
+            "type": "string",
+            "title": "Track Your Order Order Number Label",
+            "description": "Input the label to display on the track your order page for the Order Number/PO Number",
+            "default": "PO Number (or TCI Order Number in case of credit card orders):"
+        },
+        "trackyourorder.billZipLabel": {
+            "group": "extensions",
+            "subtab": "TrackMyOrder_subtab",
+            "type": "string",
+            "title": "Track Your Order Bill Zip Label",
+            "description": "Input the label to display on the track your order page for the Billing Zip.",
+            "default": "Billing Zip Code:"
+        },
+        "trackyourorder.notrackinfo": {
+            "group": "extensions",
+            "subtab": "TrackMyOrder_subtab",
+            "type": "string",
+			"nsType": "textarea",
+            "title": "Tracking Information Not Available",
+            "description": "Enter the description of not Available tracking information.",
+            "default": "Not Available"
+        },
+        "trackyourorder.noTrackingMessage": {
+            "group": "extensions",
+            "subtab": "TrackMyOrder_subtab",
+            "type": "string",
+            "title": "Message For Items With No Tracking Info",
+            "description": "Input message to display for subscription items.",
+            "default": "Please note that license-only items will not have tracking info. Instructions on how to get started with online access were sent to "
+        }
+    }
+}

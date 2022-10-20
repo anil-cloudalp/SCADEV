@@ -1,0 +1,115 @@
+{
+	"name": "printquote",
+	"fantasyName": "PrintQuote",
+	"vendor": "Acme",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "email quote",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/PrintQuote.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/PrintQuote/Configuration/PrintQuote.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PrintQuote/Templates/acme_printquote_printquote.tpl",
+					"Modules/PrintQuote/Templates/acme_printquote_printquotemodel.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/PrintQuote/Templates/acme_printquote_printquote.tpl",
+					"Modules/PrintQuote/Templates/acme_printquote_printquotemodel.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/PrintQuote/Templates/acme_printquote_printquote.tpl",
+					"Modules/PrintQuote/Templates/acme_printquote_printquotemodel.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/PrintQuote/Sass/_printquote-printquote.scss",
+			"myaccount": "Modules/PrintQuote/Sass/_printquote-printquote.scss",
+			"checkout": "Modules/PrintQuote/Sass/_printquote-printquote.scss"
+		},
+		"files": [
+			"Modules/PrintQuote/Sass/_printquote-printquote.scss",
+			"Modules/PrintQuote/Sass/_printquote-printquotemodel.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.js",
+			"myaccount": "Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.js",
+			"checkout": "Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.js",
+					"Modules/PrintQuote/JavaScript/PrintQuote.View.js",
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.Model.js",
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.SS2Model.js",
+					"Modules/PrintQuote/JavaScript/PrintQuoteModel.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.js",
+					"Modules/PrintQuote/JavaScript/PrintQuote.View.js",
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.Model.js",
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.SS2Model.js",
+					"Modules/PrintQuote/JavaScript/PrintQuoteModel.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.js",
+					"Modules/PrintQuote/JavaScript/PrintQuote.View.js",
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.Model.js",
+					"Modules/PrintQuote/JavaScript/Acme.printquote.PrintQuote.SS2Model.js",
+					"Modules/PrintQuote/JavaScript/PrintQuoteModel.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/PrintQuote/SuiteScript/Acme.printquote.PrintQuote.js",
+		"files": [
+			"Modules/PrintQuote/SuiteScript/Acme.printquote.PrintQuote.js",
+			"Modules/PrintQuote/SuiteScript/PrintQuote.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/PrintQuote/SuiteScript2/PrintQuote.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Acme/printquote@1.0.0",
+	"activation_id": "4",
+	"extension_id": "2101"
+}

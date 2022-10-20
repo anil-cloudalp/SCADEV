@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "PCPPLPModule.config": {
+            "group": "extensions",
+            "subtab": "PCPPLPModule_subtab",
+            "type": "string",
+            "title": "PCPPLPModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

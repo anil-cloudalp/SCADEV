@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "RequestAnInvoice_subtab",
+        "group": "extensions",
+        "title": "Request An Invoice",
+        "description": "Request An Invoice settings"
+    },
+    "properties": { 
+        "findInvoice.title": {
+            "group": "extensions",
+            "subtab": "RequestAnInvoice_subtab",
+            "type": "string",
+            "title": "Request An Invoice Title",
+            "description": "Input the title to display on the request an invoice page.",
+            "default": "Request An Invoice"
+        },
+        "findInvoice.subtitle": {
+            "group": "extensions",
+            "subtab": "RequestAnInvoice_subtab",
+            "type": "string",
+            "nsType": "textarea",
+            "title": "Request An Invoice Description",
+            "description": "Input the description to display on the request an invoice page.",
+            "default": "<p>Input text in both fields to find your invoice.</p>"
+        },
+        "findInvoice.folder": {
+            "group": "extensions",
+            "subtab": "RequestAnInvoice_subtab",
+            "type": "string",
+            "title": "Folder ID",
+            "description": "Enter the internal id of the PO Folder in the file cabinet.",
+            "default": "35408"
+        }
+    }
+}

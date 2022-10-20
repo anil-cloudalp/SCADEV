@@ -1,0 +1,83 @@
+{
+    "type": "object",
+	"subtab": {
+            "id": "checkoutMessaging",
+            "group": "checkoutApp",
+            "title": "TCI Custom Checkout Messaging",
+            "description": "Configuration of the TCI Custom Checkout Messaging that will display during checkout"
+    },
+    "properties": { 
+        "CheckoutCustomizationsModule.config": {
+            "group": "extensions",
+            "subtab": "CheckoutCustomizationsModule_subtab",
+            "type": "string",
+            "title": "CheckoutCustomizationsModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        },
+        "checkoutApp.fileUploadFolderId": {
+            "group": "checkoutApp",
+             "type": "string",
+             "title": "FILE UPLOAD FOLDER ID",
+             "description": "Input Folder id for uploading file",
+             "default": "190"
+         },
+		"checkoutMessaging.tooltip": {
+			"group": "checkoutApp",
+			"subtab": "checkoutMessaging",
+			"type": "string",
+			"title": "TCI Custom Checkout Messaging for Tooltip",
+			"description": "Input text that you wish to display when hovering over tooltip in checkout review page",
+			"default": "Enter only one email. Subscription access information will be sent to this email. If left blank, it will be sent to the purchaser email."
+		},
+		"checkoutMessaging.confirmation": {
+			"group": "checkoutApp",
+			"subtab": "checkoutMessaging",
+			"type": "string",
+			"title": "TCI Custom Checkout Messaging for Tooltip",
+			"description": "Input text that you wish to display when hovering over tooltip in checkout review page",
+			"nsType": "textarea",
+			"default": "<div><b>!!!What Happens Next</b></div><p> You'll receive 2-3 important emails from us...depending on what you ordered. <b>CHECK YOUR SPAM FOLDER</b> if an email is missing. </p><ul><li><b>Email #1: Order Confirmation</b></li><br><li><b>Email #2: Subscription Instructions</b></li><li> If you ordered a subscription, we'll send you instructions to get your subscriptions up and running. </li><li> This email is sent 1 business day after you place your order.<br>Check your <b>SPAM FOLDER</b> for this email. </li><br><li><b>Email #3: Shipping Confirmation</b></li><li> If you ordered print materials, we'll send you a tracking number when your order is shipped. </li><li> This email is sent 1-3 business days after you place your order. </li></ul><br><p> Questions? Email us at <a href='mailto:info@teachtci.com'>info@teachtci.com</a>. </p>"
+		},
+		"checkoutMessaging.subscriptionEmailLabel": {
+                "group": "checkoutApp",
+                "subtab": "checkoutMessaging",
+                "type": "string",
+                "title": "Subscription Email Label",
+                "description": "Input label that you wish to display for the subscription email",
+                "default": "License Email Contact"
+        },
+        "checkoutMessaging.schoolclosureLable": {
+                "group": "checkoutApp",
+                "subtab": "checkoutMessaging",
+                "type": "string",
+                "title": "School Closure or Delivery Date",
+                "description": "Input label that you wish to display for the School Closure or Delivery Date",
+                "default": "School Closure or Delivery Date"
+        },
+        "checkoutMessaging.schoolclosuretooltip": {
+			"group": "checkoutApp",
+			"subtab": "checkoutMessaging",
+			"type": "string",
+			"title": "TCI Custom Checkout Messaging for School clouser Tooltip",
+			"description": "Input text that you wish to display when hovering over school closure tooltip in checkout review page",
+			"default": "Provide school closure or add desired delivery date. Delivery date cannot be less than 15 days from the order date. TCI cannot guarantee delivery date during the month of August."
+		},
+		"checkoutMessaging.defalutShippingmethod": {
+                "group": "checkoutApp",
+                "subtab": "checkoutMessaging",
+                "type": "string",
+                "title": "Defalut Shipmethod",
+                "description": "This shipmethod will set as default When cart  does not contains service item",
+                "default":"326"
+        },
+        "checkoutMessaging.defalutShippingmethodforservice": {
+                "group": "checkoutApp",
+                "subtab": "checkoutMessaging",
+                "type": "string",
+                "title": "Shipmethod For Sevice Items",
+                "description": "This shipmethod will set as default When cart contains atleast one service item",
+                "default":"325"
+        }
+    }
+}

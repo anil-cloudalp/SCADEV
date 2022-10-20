@@ -1,0 +1,34 @@
+@if $theme-selection-search == search-legacy {
+
+  #site-header {
+
+    @media (min-width: $screen-md-min) {
+      .header-menu-search {
+        float: none;
+        clear: both;
+        width: 100%;
+        margin-top: 12px; //this is for resolve a weird behavior: the menu items was jumping a little bit when the search oppens.
+
+        .site-search {
+          border-top: 1px solid transparent;// transparentizing the border instead of remove; we don't want to affect the total height on this view.
+        }
+
+      }
+
+      .header-menu-search-link {
+        float: right;
+        margin-top: 22px;
+        margin-right: -($sc-margin-lv3);
+      }
+
+      .header-site-search {
+        &.search-mobile {
+          display: none;
+        }
+        &.search-desktop {
+          display: none !important; //overriding an inline style.
+        }
+      }
+    }
+  }
+}

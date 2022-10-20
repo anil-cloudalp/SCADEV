@@ -1,0 +1,77 @@
+.order-wizard-paymentmethod-purchasenumber-module {
+	@extend .box-column;
+	background-color: #f1f1f1;
+	margin-left: 0;
+	margin-right: 0;
+	border:	1px solid darkgray;
+	overflow:hidden;
+
+	.order-wizard-paymentmethod-purchasenumber-module-container
+	{
+		margin-top: 20px;
+	}
+
+}
+
+// .uploadfile-module
+// {
+//     @extend .order-wizard-shipmethod-module;
+
+//     h3
+//     {
+//         float: left;
+//     }
+// }
+
+
+
+// .uploadfile-module-title
+// {
+//     @extend .order-wizard-shipmethod-module-title;
+// }
+
+// .uploadfile-module-filename
+// {
+//     float: right;
+// }
+
+// #uploadfileform
+// {
+//     margin-top: 16px;
+// }
+
+// #file-upload
+// {
+//     @extend .address-details-change-address;
+// }
+
+
+
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-value {
+	@extend .input-large;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-label {
+	@extend .sc-value;
+	display: block;
+	margin-bottom: $sc-margin-lv1;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-row {
+	@extend .clearfix;
+	width: 100%;
+	margin-bottom: $sc-margin-lv3;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-optional {
+	@extend .input-optional;
+	font-weight: $sc-font-weight-normal;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-title {
+	margin-bottom: $sc-margin-lv3;
+	color: $sc-color-theme-700;
+}

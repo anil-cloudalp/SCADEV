@@ -1,0 +1,93 @@
+{
+    "name": "FooterExt",
+    "fantasyName": "Footer Extension",
+    "vendor": "TCI",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "This extension is used to make changes to OOTB footer.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ExtraFooterLinks/Configuration/ExtraFooterLinks.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ExtraFooterLinks/Sass/_footerext-extrafooterlinks.scss",
+            "myaccount": "Modules/ExtraFooterLinks/Sass/_footerext-extrafooterlinks.scss",
+            "checkout": "Modules/ExtraFooterLinks/Sass/_footerext-extrafooterlinks.scss"
+        },
+        "files": [
+            "Modules/ExtraFooterLinks/Sass/_footerext-extrafooterlinks.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ExtraFooterLinks/Templates/tci_footerext_extrafooterlinks.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ExtraFooterLinks/Templates/tci_footerext_extrafooterlinks.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ExtraFooterLinks/Templates/tci_footerext_extrafooterlinks.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.js",
+            "myaccount": "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.js",
+            "checkout": "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.js",
+                    "Modules/ExtraFooterLinks/JavaScript/ExtraFooterLinks.View.js",
+                    "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.js",
+                    "Modules/ExtraFooterLinks/JavaScript/ExtraFooterLinks.View.js",
+                    "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.js",
+                    "Modules/ExtraFooterLinks/JavaScript/ExtraFooterLinks.View.js",
+                    "Modules/ExtraFooterLinks/JavaScript/TCI.FooterExt.ExtraFooterLinks.Model.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\FooterExt",
+    "suitescript2": {
+        "files": []
+    }
+}

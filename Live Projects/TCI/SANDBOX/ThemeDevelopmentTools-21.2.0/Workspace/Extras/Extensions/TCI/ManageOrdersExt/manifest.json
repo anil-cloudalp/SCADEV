@@ -1,0 +1,118 @@
+{
+	"name": "ManageOrdersExt",
+	"fantasyName": "Manage Orders",
+	"vendor": "TCI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "This extension contains modules for Managing Orders",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/TrackMyOrder.Service.ss",
+				"services/RequestAnInvoice.Service.ss",
+				"services/RequestAnInvoice.PrintButton.Service.ss",
+				"services/ManageOrdersExt.Service.ss",
+				"services/RequestAReturn.Service.ss",
+				"services/RequestAReturn.Items.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/TrackMyOrder/Configuration/TrackMyOrder.json",
+			"Modules/RequestAnInvoice/Configuration/RequestAnInvoice.json",
+			"Modules/RequestAReturn/Configuration/RequestAReturn.json",
+			"Modules/ManageOrdersExt/Configuration/ManageOrdersExt.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TrackMyOrder/Templates/tci_manageordersext_trackmyorder.tpl",
+					"Modules/RequestAnInvoice/Templates/tci_manageordersext_requestaninvoice_print_button.tpl",
+					"Modules/RequestAnInvoice/Templates/tci_manageordersext_requestaninvoice.tpl",
+					"Modules/RequestAReturn/Templates/tci_manageordersext_requestareturn_items.tpl",
+					"Modules/RequestAReturn/Templates/tci_manageordersext_requestareturn.tpl",
+					"Modules/ManageOrdersExt/Templates/tci_manageordersext_manageordersext_header_link.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ManageOrdersExt/Sass/_manageordersext-manageordersext.scss"
+		},
+		"files": [
+			"Modules/ManageOrdersExt/Sass/_manageordersext-manageordersext.scss",
+			"Modules/TrackMyOrder/Sass/_manageordersext-trackmyorder.scss",
+			"Modules/RequestAnInvoice/Sass/_manageordersext-requestaninvoice.scss",
+			"Modules/RequestAReturn/Sass/_manageordersext-requestareturn.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ManageOrdersExt/JavaScript/TCI.ManageOrdersExt.ManageOrdersExt.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ManageOrdersExt/JavaScript/TCI.ManageOrdersExt.ManageOrdersExt.js",
+					"Modules/TrackMyOrder/JavaScript/TCI.ManageOrdersExt.TrackMyOrder.js",
+					"Modules/TrackMyOrder/JavaScript/TrackMyOrder.View.js",
+					"Modules/TrackMyOrder/JavaScript/TCI.ManageOrdersExt.TrackMyOrder.Model.js",
+					"Modules/RequestAnInvoice/JavaScript/RequestAnInvoice.PrintButton.Model.js",
+					"Modules/RequestAnInvoice/JavaScript/RequestAnInvoice.PrintButton.View.js",
+					"Modules/RequestAnInvoice/JavaScript/RequestAnInvoice.View.js",
+					"Modules/RequestAnInvoice/JavaScript/TCI.ManageOrdersExt.RequestAnInvoice.js",
+					"Modules/RequestAnInvoice/JavaScript/TCI.ManageOrdersExt.RequestAnInvoice.Model.js",
+					"Modules/RequestAReturn/JavaScript/RequestAReturn.View.js",
+					"Modules/RequestAReturn/JavaScript/TCI.ManageOrdersExt.RequestAReturn.js",
+					"Modules/RequestAReturn/JavaScript/TCI.ManageOrdersExt.RequestAReturn.Model.js",
+					"Modules/ManageOrdersExt/JavaScript/ManageOrdersExt.View.js",
+					"Modules/ManageOrdersExt/JavaScript/TCI.ManageOrdersExt.ManageOrdersExt.Model.js",
+					"Modules/ManageOrdersExt/JavaScript/TCI.ManageOrdersExt.ManageOrdersExt.SS2Model.js",
+					"Modules/RequestAReturn/JavaScript/RequestAReturn.Items.View.js",
+					"Modules/RequestAReturn/JavaScript/TCI.ManageOrdersExt.RequestAReturn.Items.Model.js",
+					"Modules/ManageOrdersExt/JavaScript/ManageOrdersExt.HeaderLink.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ManageOrdersExt/SuiteScript/ManageOrdersExt.ServiceController.js",
+		"files": [
+			"Modules/ManageOrdersExt/SuiteScript/ManageOrdersExt.ServiceController.js",
+			"Modules/ManageOrdersExt/SuiteScript/TCI.ManageOrdersExt.ManageOrdersExt.js",
+			"Modules/RequestAnInvoice/SuiteScript/RequestAnInvoice.PrintButton.ServiceController.js",
+			"Modules/RequestAnInvoice/SuiteScript/RequestAnInvoice.ServiceController.js",
+			"Modules/RequestAnInvoice/SuiteScript/TCI.ManageOrdersExt.RequestAnInvoice.js",
+			"Modules/RequestAnInvoice/SuiteScript/TCI.ManageOrdersExt.RequestAnInvoice.PrintButton.js",
+			"Modules/TrackMyOrder/SuiteScript/TCI.ManageOrdersExt.TrackMyOrder.js",
+			"Modules/TrackMyOrder/SuiteScript/TrackMyOrder.ServiceController.js",
+			"Modules/RequestAReturn/SuiteScript/RequestAReturn.ServiceController.js",
+			"Modules/RequestAReturn/SuiteScript/TCI.ManageOrdersExt.RequestAReturn.js",
+			"Modules/RequestAReturn/SuiteScript/RequestAReturn.Items.ServiceController.js",
+			"Modules/RequestAReturn/SuiteScript/TCI.ManageOrdersExt.RequestAReturn.Items.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ManageOrdersExt/SuiteScript2/ManageOrdersExt.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/TCI/ManageOrdersExt@1.0.0",
+	"activation_id": "4",
+	"extension_id": "1701"
+}

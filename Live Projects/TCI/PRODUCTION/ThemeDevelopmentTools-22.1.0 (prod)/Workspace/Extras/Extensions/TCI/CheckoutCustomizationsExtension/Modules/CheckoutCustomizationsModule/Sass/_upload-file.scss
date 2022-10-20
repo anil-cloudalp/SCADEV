@@ -1,0 +1,31 @@
+.uploadfile-module
+{
+    @extend .order-wizard-shipmethod-module;
+
+    h3
+    {
+        float: left;
+    }
+}
+
+
+
+.uploadfile-module-title
+{
+    @extend .order-wizard-shipmethod-module-title;
+}
+
+.uploadfile-module-filename
+{
+    float: right;
+}
+
+#uploadfileform
+{
+    margin-top: 16px;
+}
+
+#file-upload
+{
+    @extend .address-details-change-address;
+}

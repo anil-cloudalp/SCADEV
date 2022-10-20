@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": { 
+        "manageOrder.title": {
+            "group": "extensions",
+            "type": "string",
+            "title": "Manage My Order Link Text",
+            "description": "Input the link title to display on the header.",
+            "default": "Manage My Order"
+        },
+        "manageOrder.showLink": {
+            "group": "extensions",
+            "type": "boolean",
+            "title": "Show Manage My Order Link",
+            "description": "Check this box to enable the Manage My Order hyperlink.",
+            "default": true
+        }
+    }
+}

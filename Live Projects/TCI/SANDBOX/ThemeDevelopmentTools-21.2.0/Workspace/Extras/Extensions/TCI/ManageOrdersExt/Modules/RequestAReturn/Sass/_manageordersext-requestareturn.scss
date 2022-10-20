@@ -1,0 +1,107 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.requestareturn-info-card {
+    @extend .info-card;
+}
+
+.requestareturn-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.find-invoice-form-group > label {
+	margin-top: 20px;
+}
+.return-container {
+	display:flex;
+	margin:20px 0;
+  }
+  .return-eligibility-error {
+	color:red;
+	margin:$sc-margin-lv4 0 $sc-margin-lv8;
+  }
+  .return-eligibility-container {
+	padding:10px;
+	margin-bottom:10px;
+  }
+  .return-requestor-container {
+	@extend .return-eligibility-container;
+	flex-basis:33%;
+  }
+  .return-requestor {
+	@extend .return-eligibility-eligible-title;
+	color:#000;
+	padding-bottom:15px;
+  }
+  .return-item-container {
+	flex-basis:67%;
+	padding:10px;
+  }
+  .return-eligibility-eligible-title {
+	color:#551A8B;
+  }
+  .return-eligibility-eligible-items {
+	display:flex;
+	align-items: center;
+  }
+  .return-eligibility-eligible-item-details {
+	padding:15px 0;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+  }
+  .return-eligibility-eligible-item-amount-and-quantity {
+	display:flex;
+	align-items: center;
+  }
+  .return-eligibility-eligible-item-amount {
+	flex-basis:15%;
+  }
+  .return-eligibility-eligible-item-quantity {
+	flex-basis:22%;
+	display: flex;
+	align-items: center;
+	
+	.returnQuantity {
+	  margin:0 $sc-margin-lv2;
+	  text-align:center;
+	}
+  }
+  .request-line-item-return {
+	@extend .button-primary;
+	@extend .button-medium;
+  }
+  .return-ineligibility-container {
+	@extend .return-eligibility-container;
+  }
+  .return-ineligible-title {
+	color:red;
+  }
+  .return-ineligible-item-details {
+	@extend .return-eligibility-eligible-item-details;
+	padding-left: 22px;
+	flex-direction:row;
+  }
+  .return-ineligible-item-details-left {
+	flex-basis:50%;
+  }
+  .return-ineligible-item-amount-and-quantity {
+	@extend .return-eligibility-eligible-item-amount-and-quantity;
+  }
+  .return-ineligible-item-amount {
+	flex-basis:30%;
+  }
+  .return-ineligible-item-quantity {
+	@extend .return-eligibility-eligible-item-quantity;
+  }
+  .return-ineligible-item-details-right {
+	flex-basis:50%;
+  }
+  

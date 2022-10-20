@@ -1,0 +1,85 @@
+{
+    "name": "PCP_PLPCustomization",
+    "fantasyName": "PCP/PLP",
+    "vendor": "TCI",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">= 21.1.0",
+        "SCS": ">= 21.1.0"
+    },
+    "description": "PCP AND PLP CUSTOMIZATIONS",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/PCPPLPModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/PCPPLPModule/Configuration/PCPPLPModule.json",
+            "Modules/PCPPLPModule/Configuration/ProductViews.ItemOptionsNew.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PCPPLPModule/Sass/_pcp_plpcustomization-pcpplpmodule.scss"
+        },
+        "files": [
+            "Modules/PCPPLPModule/Sass/_pcp_plpcustomization-pcpplpmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PCPPLPModule/Templates/tci_pcp_plpcustomization_pcpplpmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PCPPLPModule/JavaScript/TCI.PCP_PLPCustomization.PCPPLPModule.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PCPPLPModule/JavaScript/TCI.PCP_PLPCustomization.PCPPLPModule.js",
+                    "Modules/PCPPLPModule/JavaScript/PCPPLPModule.View.js",
+                    "Modules/PCPPLPModule/JavaScript/Facets.Browse.CategoryHeading.ViewExt.js",
+                    "Modules/PCPPLPModule/JavaScript/Facets.Browse.ViewExt.js",
+                    "Modules/PCPPLPModule/JavaScript/Facets.ItemCell.ViewExt.js",
+                    "Modules/PCPPLPModule/JavaScript/TCI.PCP_PLPCustomization.PCPPLPModule.Model.js",
+                    "Modules/PCPPLPModule/JavaScript/TCI.PCP_PLPCustomization.PCPPLPModule.SS2Model.js",
+                    "Modules/PCPPLPModule/JavaScript/Cart.AddToCart.Button.ViewExt.js",
+                    "Modules/PCPPLPModule/JavaScript/Cart.QuickAddToCart.ViewExt.js",
+                    "Modules/PCPPLPModule/JavaScript/ProductDetails.Options.Selector.ViewExt.js",
+                    "Modules/PCPPLPModule/JavaScript/ProductViews.Option.ViewExt.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/PCPPLPModule/SuiteScript/TCI.PCP_PLPCustomization.PCPPLPModule.js",
+        "files": [
+            "Modules/PCPPLPModule/SuiteScript/TCI.PCP_PLPCustomization.PCPPLPModule.js",
+            "Modules/PCPPLPModule/SuiteScript/PCPPLPModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\PCP_PLPCustomization",
+    "suitescript2": {
+        "files": [
+            "Modules/PCPPLPModule/SuiteScript2/PCPPLPModule.Service.ss"
+        ]
+    }
+}

@@ -1,0 +1,229 @@
+/* Edited for Manor Theme */
+
+.facets-item-cell-list {
+//	@extend .row;
+//	@extend .item-cell;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+
+		.cart-add-to-cart-button-container {
+			padding-left:0px;
+		}
+
+		.cart-quickaddtocart-price {
+			margin-bottom:$sc-margin-lv2;
+		}
+
+		.product-line-stock {
+			clear:both;
+		}
+	}
+
+//	.cart-add-to-cart-button-container {
+//		padding-left:0px;
+//	}
+
+//	.product-line-stock {
+		clear:both;
+//	}
+
+//	.cart-add-to-cart-button-button {
+//		margin-bottom: $sc-margin-lv3;
+//	}
+}
+
+.facets-item-cell-list-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-list-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-list-title {
+	font-weight: bold;
+	padding: 0;
+	margin-bottom: .2em;
+}
+
+.facets-item-cell-list-name {
+	color: #000000;
+}
+.facets-item-cell-list-left {
+//	@extend .col-xs-3;
+	display: flex;
+	align-items: center;
+
+	
+	&.isItemWithReferenceTexts {
+		align-items: flex-start;
+	}
+
+	@media screen and (min-width: 768px) {
+		//change to 10% w/o facets
+		// width: 100px;
+		width: 10%;
+		justify-content: center;
+	}
+}
+
+.facets-item-cell-list-right {
+//	@extend .col-xs-9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+//	align-items: center;
+
+  @media screen and (min-width: 768px) {
+	    flex-direction: row;
+	}
+	.item-views-price {
+		text-align:left;
+	}
+
+	.cart-add-to-cart-button-container {
+		//min-width: 300px;
+		padding: 0;
+		width: 100%;
+		//since we're hiding the labels >= sm-min, need to pull button up
+		@media (min-width: $screen-sm-min) {
+			margin-top: -28px;
+		}
+
+	}
+
+	.cart-quickaddtocart-price {
+		display: none;
+	}
+
+	.cart-add-to-cart-button-button {
+		// background-color: #f38f1d;
+		// border-color: #f38f1d;
+		font-size: .8rem;
+		padding: 1.17em 1.6em;
+	//	min-width: 135px;
+		text-transform: uppercase;
+	}
+}
+
+.facets-item-cell-list-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	padding: 1em;
+	margin-bottom: 10px;
+
+	@media(min-width: 768px) {
+		//change to 25% w/o facets
+		// width: 400px;
+		width: 50%;
+		margin-bottom: 0;
+	}
+	// @media(min-width: $screen-md-min) {
+	
+	// 	width: 35%;
+		
+	// }
+}
+
+.facets-item-cell-list-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-list-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-list-options {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+
+	@media (min-width: 768px) {
+		justify-content: flex-end;
+		//change to 75% w/o facets, add flex-direction and align items, too
+		// width: 360px;
+		width: 50%;
+		flex-direction: column;
+		align-items: flex-end;
+		padding-top: $sc-padding-lv6;
+	}
+	// @media (min-width: $screen-md-min) {
+	// 	//change to 75% w/o facets, add flex-direction and align items, too
+	// 	// width: 360px;
+	// 	width: 40%;
+
+	// }
+
+
+}
+
+.facets-item-cell-list-options-input-wrapper {
+	display: flex;
+	padding: .5em;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.facets-item-cell-list-options-label {
+	font-weight: bold;
+	font-size: .8rem;
+	margin-bottom: .7em;
+	text-transform: uppercase;
+
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
+.facets-item-cell-list-options-input {
+
+	@media screen and (min-width: 768px) {
+		max-width: 70px;
+	}
+}
+
+.facets-item-cell-list-cart {
+	display: flex;
+  //flex-basis: 25%;
+  align-items: center;
+}
+.facets-item-cell-list-details {
+	text-align:center;
+}
+
+.facets-item-cell-list-image {
+	 width:100%;
+	 height:auto;
+}
+
+.facets-item-cell-list-title {
+	@extend .item-cell-title;
+	text-align:left;
+}
+
+.facets-item-cell-list-price {
+	@extend .small-price;
+	margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-list-rating {
+    text-align:center;
+	display: inline-block;
+}
+
+
+.facets-item-cell-list {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
