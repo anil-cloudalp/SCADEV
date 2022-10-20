@@ -1,0 +1,50 @@
+<%
+	response.setCDNCacheable(response.CACHE_DURATION_SHORT);
+	response.setContentType('JAVASCRIPT');
+	var SC_COLORMAPS = [];
+	
+	var Application = require('Application')
+	,   _ = require('underscore');
+	
+	try{
+		
+		
+		var filters = {
+			'isinactive': ['isinactive', 'is', 'F']
+		};
+
+		var columns = {
+				'col_code': new nlobjSearchColumn('custrecord_appf_b2b_color_code')
+			,	'col_label': new nlobjSearchColumn('custrecord_appf_b2b_color_label')
+			,	'col_html_code': new nlobjSearchColumn('custrecord_appf_b2b_color_code_html')
+			,	'matrix_parent': new nlobjSearchColumn('custrecord_appf_matrix_parent_item')
+		};
+		
+		var search_results = Application.getAllSearchResults('customrecord_appf_b2b_color_mapping', _.values(filters), _.values(columns));
+		
+		var allTypes = [];
+		
+		SC_COLORMAPS = _.map(search_results || [], function (record)
+		{
+			var result = {
+				
+				code: record.getValue('custrecord_appf_b2b_color_code')
+			,	label: record.getValue('custrecord_appf_b2b_color_label')
+			,	hexcode: record.getValue('custrecord_appf_b2b_color_code_html')
+			,	matrix_parent: record.getValue('custrecord_appf_matrix_parent_item')
+			};
+
+			return result;
+		});
+		
+
+    }
+	catch(e)
+    {
+		
+		//objOutputData.error = e.toString();
+    }
+%>
+
+var COLORMAPS  = window.COLORMAPS = <%= JSON.stringify(SC_COLORMAPS) %>;
+

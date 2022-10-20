@@ -1,0 +1,13 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*",
+            "JavaScript/*.ts"
+        ]
+    },
+	"overrides":{
+		
+		"Advanced/Invoice/JavaScript/Invoice.OpenList.View.ts": "JavaScript/Invoice.OpenList.View.ts",
+		"Advanced/Invoice/JavaScript/Invoice.PaidList.View.ts": "JavaScript/Invoice.PaidList.View.ts"
+	}
+}

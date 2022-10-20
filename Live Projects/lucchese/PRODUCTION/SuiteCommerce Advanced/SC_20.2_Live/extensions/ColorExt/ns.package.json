@@ -1,0 +1,21 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+		"ssp-files": {
+            "SuiteScript/ColorMaps.ssp": "ColorMaps.ssp"
+        },
+		"ssp-libraries": [
+            "SuiteScript/*.js"
+        ]
+    },
+	"overrides": 
+    {
+		
+		"Commons/Facets/JavaScript/Facets.FacetedNavigationItem.View.ts": "JavaScript/Facets.FacetedNavigationItem.View.ts",
+		"Commons/Transaction.Line.Views/JavaScript/Transaction.Line.Views.Option.View.ts": "JavaScript/Transaction.Line.Views.Option.View.ts",
+		"Commons/Facets/JavaScript/Facets.Model.ts": "JavaScript/Facets.Model.ts",
+		"Commons/Facets/JavaScript/Facets.ItemCell.View.ts": "JavaScript/Facets.ItemCell.View.ts"
+	}
+}

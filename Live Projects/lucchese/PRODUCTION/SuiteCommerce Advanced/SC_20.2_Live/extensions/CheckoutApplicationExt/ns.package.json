@@ -1,0 +1,13 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js",
+            "JavaScript/*.ts"
+        ]
+    },
+	"overrides": 
+    {
+		
+		"Advanced/CheckoutApplication/JavaScript/SC.Checkout.Configuration.Steps.OPC.ts": "JavaScript/SC.Checkout.Configuration.Steps.OPC.ts"
+	}
+}

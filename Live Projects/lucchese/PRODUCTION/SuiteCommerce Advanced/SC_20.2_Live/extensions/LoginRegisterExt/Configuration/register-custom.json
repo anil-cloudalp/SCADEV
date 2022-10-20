@@ -1,0 +1,33 @@
+{
+	"type": "object",
+	"group": {
+        "id": "registration",
+        "title": "Registration",
+        "docRef": "bridgehead_4393268747",
+        "description": "Recaptcha Configuration"
+    },
+    "subtab": {
+        "id": "recaptcha",
+        "title": "Google Recaptcha",
+        "description": "Google Recaptcha settings ffor new user registration",
+        "group": "registration"
+    }
+,	"properties": {
+		"recaptcha.sitekey": {
+			"group": "registration",
+			"subtab": "recaptcha"
+		,	"type": "string"
+		,	"title": "Google Recaptcha Site key"
+		,	"description": "Specify Google Recaptcha Site key."
+		,	"default": ""
+		}
+	,	"recaptcha.secretkey": {
+			"group": "registration",
+			"subtab": "recaptcha"
+		,	"type": "string"
+		,	"title": "Google Recaptcha Secret key"
+		,	"description": "Specify Google Recaptcha Secret key"
+		,	"default": ""
+		}
+	}
+}
