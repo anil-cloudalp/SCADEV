@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "SuiteScriptExt.config": {
+            "group": "extensions",
+            "subtab": "SuiteScriptExt_subtab",
+            "type": "string",
+            "title": "SuiteScriptExt_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

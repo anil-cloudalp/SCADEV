@@ -1,0 +1,107 @@
+{
+    "name": "SuiteScriptExt",
+    "fantasyName": "SuiteScriptExt",
+    "vendor": "Acme",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "My cool extension does magic!",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/SuiteScriptExt.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/SuiteScriptExt/Configuration/SuiteScriptExt.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/SuiteScriptExt/Sass/_suitescriptext-suitescriptext.scss",
+            "myaccount": "Modules/SuiteScriptExt/Sass/_suitescriptext-suitescriptext.scss",
+            "checkout": "Modules/SuiteScriptExt/Sass/_suitescriptext-suitescriptext.scss"
+        },
+        "files": [
+            "Modules/SuiteScriptExt/Sass/_suitescriptext-suitescriptext.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SuiteScriptExt/Templates/acme_suitescriptext_suitescriptext.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/SuiteScriptExt/Templates/acme_suitescriptext_suitescriptext.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/SuiteScriptExt/Templates/acme_suitescriptext_suitescriptext.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+            "myaccount": "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+            "checkout": "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+                    "Modules/SuiteScriptExt/JavaScript/SuiteScriptExt.View.js",
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.Model.js",
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+                    "Modules/SuiteScriptExt/JavaScript/SuiteScriptExt.View.js",
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.Model.js",
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+                    "Modules/SuiteScriptExt/JavaScript/SuiteScriptExt.View.js",
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.Model.js",
+                    "Modules/SuiteScriptExt/JavaScript/Acme.SuiteScriptExt.SuiteScriptExt.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/SuiteScriptExt/SuiteScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+        "files": [
+            "Modules/SuiteScriptExt/SuiteScript/Acme.SuiteScriptExt.SuiteScriptExt.js",
+            "Modules/SuiteScriptExt/SuiteScript/SuiteScriptExt.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\SuiteScriptExt",
+    "suitescript2": {
+        "files": [
+            "Modules/SuiteScriptExt/SuiteScript2/SuiteScriptExt.Service.ss"
+        ]
+    }
+}
