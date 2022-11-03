@@ -16,6 +16,7 @@ define('MIA.PrincipalRegistration.PrincipalRegistrationModule.Model', [
 
 
     return SCModel.extend({
+
         name: 'MIA.PrincipalRegistration.PrincipalRegistrationModule.Model',
 
         getListData: function (email) {
@@ -48,12 +49,9 @@ define('MIA.PrincipalRegistration.PrincipalRegistrationModule.Model', [
                 .replace(/(?:\r\n|\r|\n)/g, ' ')
                 .replace(/'/g, "\\");
             //   .replace(/'/g, "&#039;");
-
-
-
         },
         submit: function (data) {
-
+            
             var returnString = {};
             //console.log("data",JSON.stringify(data));
             try {
@@ -114,12 +112,11 @@ define('MIA.PrincipalRegistration.PrincipalRegistrationModule.Model', [
                                 record.setFieldValue(FLD_TERMS_DOCUMENTS, fileID);
                             }
                         }
-
                     }
-
                 }
 
                 returnString.recordId = nlapiSubmitRecord(record, true, true);
+
             } catch (e) {
                 returnString.error = e.toString();
             }

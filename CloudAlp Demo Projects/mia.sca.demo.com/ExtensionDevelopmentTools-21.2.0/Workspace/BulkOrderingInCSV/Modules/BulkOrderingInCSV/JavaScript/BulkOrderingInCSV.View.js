@@ -111,21 +111,19 @@ define('CA.BulkOrderingInCSV.BulkOrderingInCSV.View'
 			, autohide: true
 			});
 			return this.options.Layout.showContent(removeAllLinesConfirmationView, {showInModal:true});
-			
 		}
 	,	removeAllItem:function(){
-		var Livemodel = LiveOrderModel.getInstance();
-		$.ajax({
-			method: "DELETE",
-			url: Utils.getAbsoluteUrl(
-				getExtensionAssetsPath(
-					"services/RemoveAllItemsCart.Service.ss"
+			var Livemodel = LiveOrderModel.getInstance();
+			$.ajax({
+				method: "DELETE",
+				url: Utils.getAbsoluteUrl(
+					getExtensionAssetsPath(
+						"services/RemoveAllItemsCart.Service.ss"
+					)
 				)
-			)
-		  })
-			.done(function(response) {
-				Livemodel.set(response);
-			});
+			  }).done(function(response) {
+					Livemodel.set(response);
+				});
 		}
 	,	inputfieldData: function (e) {
 			var files = this.$('[data-action="csv_validations"]')[0].files;

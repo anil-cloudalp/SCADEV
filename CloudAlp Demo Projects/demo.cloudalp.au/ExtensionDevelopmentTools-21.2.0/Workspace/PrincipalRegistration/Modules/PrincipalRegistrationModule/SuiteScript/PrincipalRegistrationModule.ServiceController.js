@@ -12,8 +12,8 @@ define("MIA.PrincipalRegistration.PrincipalRegistrationModule.ServiceController"
     },
 
     get: function get() {
-      var email = this.request.getParameter('email') ;
-      return PrincipalRegistrationModuleModel.getListData(email);
+        var email = this.request.getParameter('email') ;
+        return PrincipalRegistrationModuleModel.getListData(email);
     },
 
     post: function post() {

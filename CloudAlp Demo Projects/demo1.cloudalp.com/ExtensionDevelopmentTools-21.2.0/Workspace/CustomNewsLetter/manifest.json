@@ -1,0 +1,107 @@
+{
+    "name": "CustomNewsLetter",
+    "fantasyName": "CustomNewsletterExt",
+    "vendor": "Acme",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "setting globalSubscription value for contacts",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/CustomNewsLetter.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/CustomNewsLetter/Configuration/CustomNewsLetter.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/CustomNewsLetter/Sass/_customnewsletter-customnewsletter.scss",
+            "myaccount": "Modules/CustomNewsLetter/Sass/_customnewsletter-customnewsletter.scss",
+            "checkout": "Modules/CustomNewsLetter/Sass/_customnewsletter-customnewsletter.scss"
+        },
+        "files": [
+            "Modules/CustomNewsLetter/Sass/_customnewsletter-customnewsletter.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CustomNewsLetter/Templates/acme_customnewsletter_customnewsletter.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/CustomNewsLetter/Templates/acme_customnewsletter_customnewsletter.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/CustomNewsLetter/Templates/acme_customnewsletter_customnewsletter.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+            "myaccount": "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+            "checkout": "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+                    "Modules/CustomNewsLetter/JavaScript/CustomNewsLetter.View.js",
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.Model.js",
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+                    "Modules/CustomNewsLetter/JavaScript/CustomNewsLetter.View.js",
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.Model.js",
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+                    "Modules/CustomNewsLetter/JavaScript/CustomNewsLetter.View.js",
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.Model.js",
+                    "Modules/CustomNewsLetter/JavaScript/Acme.CustomNewsLetter.CustomNewsLetter.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/CustomNewsLetter/SuiteScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+        "files": [
+            "Modules/CustomNewsLetter/SuiteScript/Acme.CustomNewsLetter.CustomNewsLetter.js",
+            "Modules/CustomNewsLetter/SuiteScript/CustomNewsLetter.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\CustomNewsLetter",
+    "suitescript2": {
+        "files": [
+            "Modules/CustomNewsLetter/SuiteScript2/CustomNewsLetter.Service.ss"
+        ]
+    }
+}

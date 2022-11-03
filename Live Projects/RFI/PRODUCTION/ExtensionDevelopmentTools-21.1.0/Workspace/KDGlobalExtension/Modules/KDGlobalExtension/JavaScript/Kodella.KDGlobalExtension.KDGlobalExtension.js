@@ -70,9 +70,6 @@ define(
 					 jQuery('.custom-change-submenu-only').children('ul').css('display', 'block');
 					 jQuery('.cms-menu').css('position', 'initial');
 					 jQuery('.list-type').parent().css('position', 'relative');
-
-
-
 				});
 			}
 
