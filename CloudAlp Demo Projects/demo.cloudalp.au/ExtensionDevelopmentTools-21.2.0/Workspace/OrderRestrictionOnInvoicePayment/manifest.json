@@ -1,0 +1,92 @@
+{
+    "name": "OrderRestrictionOnInvoicePayment",
+    "fantasyName": "OrderRestrictionOnInvoicePayment",
+    "vendor": "acme",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=20.1.0",
+        "SCS": ">=20.1.0"
+    },
+    "description": "restricting the order if the invoice amount is more than 10000",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/OrderRestrictionOnInvoicePaymentAmount.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/OrderRestrictionOnInvoicePaymentAmount/Configuration/OrderRestrictionOnInvoicePaymentAmount.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/OrderRestrictionOnInvoicePaymentAmount/Sass/_orderrestrictiononinvoicepayment-orderrestrictiononinvoicepaymentamount.scss",
+            "checkout": "Modules/OrderRestrictionOnInvoicePaymentAmount/Sass/_orderrestrictiononinvoicepayment-orderrestrictiononinvoicepaymentamount.scss"
+        },
+        "files": [
+            "Modules/OrderRestrictionOnInvoicePaymentAmount/Sass/_orderrestrictiononinvoicepayment-orderrestrictiononinvoicepaymentamount.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/Templates/acme_orderrestrictiononinvoicepayment_orderrestrictiononinvoicepaymentamount.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/Templates/acme_orderrestrictiononinvoicepayment_orderrestrictiononinvoicepaymentamount.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.js",
+            "checkout": "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.js",
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/OrderRestrictionOnInvoicePaymentAmount.View.js",
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.Model.js",
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.js",
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/OrderRestrictionOnInvoicePaymentAmount.View.js",
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.Model.js",
+                    "Modules/OrderRestrictionOnInvoicePaymentAmount/JavaScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/OrderRestrictionOnInvoicePaymentAmount/SuiteScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.js",
+        "files": [
+            "Modules/OrderRestrictionOnInvoicePaymentAmount/SuiteScript/Acme.OrderRestrictionOnInvoicePayment.OrderRestrictionOnInvoicePaymentAmount.js",
+            "Modules/OrderRestrictionOnInvoicePaymentAmount/SuiteScript/OrderRestrictionOnInvoicePaymentAmount.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\OrderRestrictionOnInvoicePayment",
+    "suitescript2": {
+        "files": [
+            "Modules/OrderRestrictionOnInvoicePaymentAmount/SuiteScript2/OrderRestrictionOnInvoicePaymentAmount.Service.ss"
+        ]
+    }
+}

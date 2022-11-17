@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "OrderRestrictionOnInvoicePaymentAmount.config": {
+            "group": "extensions",
+            "subtab": "OrderRestrictionOnInvoicePaymentAmount_subtab",
+            "type": "string",
+            "title": "Restrict_order_on_invoice_payment_method",
+            "description": "Enter the Amount the user can purchase with invoice payment Method",
+            "default": 10000
+        }
+    }
+}
