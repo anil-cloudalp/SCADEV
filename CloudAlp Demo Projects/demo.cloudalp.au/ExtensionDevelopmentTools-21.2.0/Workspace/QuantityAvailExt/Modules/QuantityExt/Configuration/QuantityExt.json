@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "QuantityExt.config": {
+            "group": "extensions",
+            "subtab": "QuantityExt_subtab",
+            "type": "string",
+            "title": "QuantityExt_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "name": "QuantityAvailExt",
+    "fantasyName": "QuantityavailExt",
+    "vendor": "CA",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "Quantity available for each location",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/QuantityExt.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/QuantityExt/Configuration/QuantityExt.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/QuantityExt/Sass/_quantityavailext-quantityext.scss"
+        },
+        "files": [
+            "Modules/QuantityExt/Sass/_quantityavailext-quantityext.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/QuantityExt/Templates/acme_quantityavailext_quantityext.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/QuantityExt/JavaScript/Acme.QuantityAvailExt.QuantityExt.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/QuantityExt/JavaScript/Acme.QuantityAvailExt.QuantityExt.js",
+                    "Modules/QuantityExt/JavaScript/QuantityExt.View.js",
+                    "Modules/QuantityExt/JavaScript/Acme.QuantityAvailExt.QuantityExt.Model.js",
+                    "Modules/QuantityExt/JavaScript/Acme.QuantityAvailExt.QuantityExt.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/QuantityExt/SuiteScript/Acme.QuantityAvailExt.QuantityExt.js",
+        "files": [
+            "Modules/QuantityExt/SuiteScript/Acme.QuantityAvailExt.QuantityExt.js",
+            "Modules/QuantityExt/SuiteScript/QuantityExt.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\QuantityAvailExt",
+    "suitescript2": {
+        "files": [
+            "Modules/QuantityExt/SuiteScript2/QuantityExt.Service.ss"
+        ]
+    }
+}
