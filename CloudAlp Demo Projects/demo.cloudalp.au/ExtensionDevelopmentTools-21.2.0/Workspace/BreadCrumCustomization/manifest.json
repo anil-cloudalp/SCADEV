@@ -1,0 +1,77 @@
+{
+    "name": "BreadCrumCustomization",
+    "fantasyName": "PDPBreadCrumCustomization",
+    "vendor": "Acme",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=20.1.0",
+        "SCA": ">=20.1.0"
+    },
+    "description": "changing PDP Breadcrum",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/PDPBreadCrumCustomization.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/PDPBreadCrumCustomization/Configuration/PDPBreadCrumCustomization.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PDPBreadCrumCustomization/Sass/_breadcrumcustomization-pdpbreadcrumcustomization.scss"
+        },
+        "files": [
+            "Modules/PDPBreadCrumCustomization/Sass/_breadcrumcustomization-pdpbreadcrumcustomization.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PDPBreadCrumCustomization/Templates/acme_breadcrumcustomization_pdpbreadcrumcustomization.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PDPBreadCrumCustomization/JavaScript/Acme.BreadCrumCustomization.PDPBreadCrumCustomization.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PDPBreadCrumCustomization/JavaScript/Acme.BreadCrumCustomization.PDPBreadCrumCustomization.js",
+                    "Modules/PDPBreadCrumCustomization/JavaScript/PDPBreadCrumCustomization.View.js",
+                    "Modules/PDPBreadCrumCustomization/JavaScript/Acme.BreadCrumCustomization.PDPBreadCrumCustomization.Model.js",
+                    "Modules/PDPBreadCrumCustomization/JavaScript/Acme.BreadCrumCustomization.PDPBreadCrumCustomization.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/PDPBreadCrumCustomization/SuiteScript/Acme.BreadCrumCustomization.PDPBreadCrumCustomization.js",
+        "files": [
+            "Modules/PDPBreadCrumCustomization/SuiteScript/Acme.BreadCrumCustomization.PDPBreadCrumCustomization.js",
+            "Modules/PDPBreadCrumCustomization/SuiteScript/PDPBreadCrumCustomization.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\BreadCrumCustomization",
+    "suitescript2": {
+        "files": [
+            "Modules/PDPBreadCrumCustomization/SuiteScript2/PDPBreadCrumCustomization.Service.ss"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "PDPBreadCrumCustomization.config": {
+            "group": "extensions",
+            "subtab": "PDPBreadCrumCustomization_subtab",
+            "type": "string",
+            "title": "PDPBreadCrumCustomization_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}
