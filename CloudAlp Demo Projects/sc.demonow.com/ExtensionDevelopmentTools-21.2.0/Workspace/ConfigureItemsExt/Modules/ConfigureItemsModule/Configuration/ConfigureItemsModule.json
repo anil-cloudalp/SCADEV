@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ConfigureItemsModule.config": {
+            "group": "extensions",
+            "subtab": "ConfigureItemsModule_subtab",
+            "type": "string",
+            "title": "ConfigureItemsModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

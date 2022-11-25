@@ -1,0 +1,78 @@
+{
+    "name": "ConfigureItemsExt",
+    "fantasyName": "Configure Items",
+    "vendor": "CLOUDALPSCS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "description": "Allows to add item to quote through search",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ConfigureItemsModule.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ConfigureItemsModule/Configuration/ConfigureItemsModule.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/ConfigureItemsModule/Sass/_configureitemsext-configureitemsmodule.scss"
+        },
+        "files": [
+            "Modules/ConfigureItemsModule/Sass/_configureitemsext-configureitemsmodule.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ConfigureItemsModule/Templates/cloudalpscs_configureitemsext_configureitemsmodule.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/ConfigureItemsModule/JavaScript/CLOUDALPSCS.ConfigureItemsExt.ConfigureItemsModule.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ConfigureItemsModule/JavaScript/CLOUDALPSCS.ConfigureItemsExt.ConfigureItemsModule.js",
+                    "Modules/ConfigureItemsModule/JavaScript/ConfigureItemsModule.View.js",
+                    "Modules/ConfigureItemsModule/JavaScript/CLOUDALPSCS.ConfigureItemsExt.ConfigureItemsModule.Model.js",
+                    "Modules/ConfigureItemsModule/JavaScript/CLOUDALPSCS.ConfigureItemsExt.ConfigureItemsModule.SS2Model.js",
+                    "Modules/ConfigureItemsModule/JavaScript/ConfigureItems.Collection.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ConfigureItemsModule/SuiteScript/CLOUDALPSCS.ConfigureItemsExt.ConfigureItemsModule.js",
+        "files": [
+            "Modules/ConfigureItemsModule/SuiteScript/CLOUDALPSCS.ConfigureItemsExt.ConfigureItemsModule.js",
+            "Modules/ConfigureItemsModule/SuiteScript/ConfigureItemsModule.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\ConfigureItemsExt",
+    "suitescript2": {
+        "files": [
+            "Modules/ConfigureItemsModule/SuiteScript2/ConfigureItemsModule.Service.ss"
+        ]
+    }
+}
